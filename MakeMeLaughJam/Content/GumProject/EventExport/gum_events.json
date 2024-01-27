@@ -1,3 +1,188 @@
 {
-  "UserEvents": {}
+  "UserEvents": {
+    "Logan": [
+      {
+        "NewName": "MainMenu",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 0,
+        "TimestampUtc": "2024-01-27T05:04:00.117364Z"
+      },
+      {
+        "NewName": "MainMenu (Container).ButtonStandardInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-27T05:04:26.0878028Z"
+      },
+      {
+        "NewName": "MainMenu (Container).Play",
+        "OldName": "MainMenu (Container).ButtonStandardInstance",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-27T05:05:14.867989Z"
+      },
+      {
+        "NewName": "MainMenu (Container).PlayButton",
+        "OldName": "MainMenu (Container).Play",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-27T05:05:17.7271445Z"
+      },
+      {
+        "NewName": "MainMenu (Container).PlayButton1",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-27T05:05:22.60509Z"
+      },
+      {
+        "NewName": "MainMenu (Container).PlayButton2",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-27T05:05:26.6580992Z"
+      },
+      {
+        "NewName": "MainMenu (Container).OptionsButton",
+        "OldName": "MainMenu (Container).PlayButton1",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-27T05:05:38.929608Z"
+      },
+      {
+        "NewName": "MainMenu (Container).QuitButton",
+        "OldName": "MainMenu (Container).PlayButton2",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-27T05:05:48.6853706Z"
+      },
+      {
+        "NewName": "MainMenu (Container).TextInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-27T05:06:14.2476408Z"
+      },
+      {
+        "NewName": "MainMenuGum.MainMenuInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-27T05:08:59.4552249Z"
+      },
+      {
+        "NewName": "Options",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 0,
+        "TimestampUtc": "2024-01-27T05:09:06.344217Z"
+      },
+      {
+        "NewName": "Options (Container).ButtonStandardInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-27T05:09:30.8808211Z"
+      },
+      {
+        "NewName": "Options (Container).SettingsViewInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-27T05:09:52.7639392Z"
+      },
+      {
+        "NewName": "Pause",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 0,
+        "TimestampUtc": "2024-01-27T05:10:40.2616216Z"
+      },
+      {
+        "NewName": "Pause (Container).ButtonStandardInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-27T05:10:53.3557488Z"
+      },
+      {
+        "NewName": "Options (Container).BackButton",
+        "OldName": "Options (Container).ButtonStandardInstance",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-27T05:11:01.866738Z"
+      },
+      {
+        "NewName": "Pause (Container).ResumeButton",
+        "OldName": "Pause (Container).ButtonStandardInstance",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-27T05:11:11.5205204Z"
+      },
+      {
+        "NewName": "Pause (Container).ResumeButton1",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-27T05:11:31.4305564Z"
+      },
+      {
+        "NewName": "Pause (Container).ResumeButton2",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-27T05:11:33.9525986Z"
+      },
+      {
+        "NewName": "Pause (Container).ResumeButton3",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-27T05:11:42.337664Z"
+      },
+      {
+        "NewName": "Pause (Container).OptionsButton",
+        "OldName": "Pause (Container).ResumeButton1",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-27T05:12:01.0706703Z"
+      },
+      {
+        "NewName": "Pause (Container).MainMenuButton",
+        "OldName": "Pause (Container).ResumeButton2",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-27T05:12:16.3031622Z"
+      },
+      {
+        "NewName": "Pause (Container).QuitButton",
+        "OldName": "Pause (Container).ResumeButton3",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-27T05:12:23.1733567Z"
+      },
+      {
+        "NewName": "MainMenuGum.OptionsInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-27T05:12:56.0031166Z"
+      },
+      {
+        "NewName": "GameScreenGum.PauseInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-27T05:14:59.8214559Z"
+      },
+      {
+        "NewName": "GameScreenGum.OptionsInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-27T05:15:04.0511769Z"
+      }
+    ]
+  }
 }

@@ -54,7 +54,7 @@
   ],
   "GlobalContentSettingsSave": {},
   "SyncedProjects": [],
-  "StartUpScreen": "Screens\\Level1",
+  "StartUpScreen": "Screens\\MainMenu",
   "ResolutionPresets": [],
   "PerformanceSettingsSave": {},
   "IgnoredDirectories": [],
@@ -98,6 +98,9 @@
     },
     {
       "Name": "Screens\\Level2"
+    },
+    {
+      "Name": "Screens\\MainMenu"
     }
   ],
   "EntityReferences": [

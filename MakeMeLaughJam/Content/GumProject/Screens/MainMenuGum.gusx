@@ -1,44 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ScreenSave xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>GameScreenGum</Name>
+  <Name>MainMenuGum</Name>
   <State>
     <Name>Default</Name>
     <Variable>
-      <Type>Pause</Type>
-      <Name>PauseState</Name>
+      <Type>MainMenu</Type>
+      <Name>MainMenuState</Name>
       <SetsValue>false</SetsValue>
     </Variable>
   </State>
   <Category>
-    <Name>Pause</Name>
+    <Name>MainMenu</Name>
     <IsSetRecursively>false</IsSetRecursively>
-    <State>
-      <Name>NotPaused</Name>
-      <Variable>
-        <Type>bool</Type>
-        <Name>OptionsInstance.Visible</Name>
-        <Value xsi:type="xsd:boolean">false</Value>
-        <SetsValue>true</SetsValue>
-      </Variable>
-      <Variable>
-        <Type>bool</Type>
-        <Name>PauseInstance.Visible</Name>
-        <Value xsi:type="xsd:boolean">false</Value>
-        <SetsValue>true</SetsValue>
-      </Variable>
-    </State>
     <State>
       <Name>Main</Name>
       <Variable>
         <Type>bool</Type>
-        <Name>OptionsInstance.Visible</Name>
-        <Value xsi:type="xsd:boolean">false</Value>
+        <Name>MainMenuInstance.Visible</Name>
+        <Value xsi:type="xsd:boolean">true</Value>
         <SetsValue>true</SetsValue>
       </Variable>
       <Variable>
         <Type>bool</Type>
-        <Name>PauseInstance.Visible</Name>
-        <Value xsi:type="xsd:boolean">true</Value>
+        <Name>OptionsInstance.Visible</Name>
+        <Value xsi:type="xsd:boolean">false</Value>
         <SetsValue>true</SetsValue>
       </Variable>
     </State>
@@ -46,21 +31,21 @@
       <Name>Options</Name>
       <Variable>
         <Type>bool</Type>
-        <Name>OptionsInstance.Visible</Name>
-        <Value xsi:type="xsd:boolean">true</Value>
+        <Name>MainMenuInstance.Visible</Name>
+        <Value xsi:type="xsd:boolean">false</Value>
         <SetsValue>true</SetsValue>
       </Variable>
       <Variable>
         <Type>bool</Type>
-        <Name>PauseInstance.Visible</Name>
-        <Value xsi:type="xsd:boolean">false</Value>
+        <Name>OptionsInstance.Visible</Name>
+        <Value xsi:type="xsd:boolean">true</Value>
         <SetsValue>true</SetsValue>
       </Variable>
     </State>
   </Category>
   <Instance>
-    <Name>PauseInstance</Name>
-    <BaseType>Pause</BaseType>
+    <Name>MainMenuInstance</Name>
+    <BaseType>MainMenu</BaseType>
     <DefinedByBase>false</DefinedByBase>
   </Instance>
   <Instance>

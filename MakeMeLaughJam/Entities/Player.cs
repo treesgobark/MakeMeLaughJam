@@ -8,6 +8,7 @@ using FlatRedBall.AI.Pathfinding;
 using FlatRedBall.Graphics.Animation;
 using FlatRedBall.Graphics.Particle;
 using FlatRedBall.Math.Geometry;
+using FlatRedBall.Screens;
 using MakeMeLaughJam.Utils;
 using Microsoft.Xna.Framework;
 
@@ -21,7 +22,7 @@ namespace MakeMeLaughJam.Entities
         private double TotalPunchTime => PunchDuration + PunchRecovery;
         public bool CanPunch => TimeManager.CurrentScreenSecondsSince(_lastPunchTime)      > TotalPunchTime;
         public bool IsPunchActive => TimeManager.CurrentScreenSecondsSince(_lastPunchTime) < PunchDuration;
-        private GameplayInputDevice GameplayInputDevice { get; set; }
+        public GameplayInputDevice GameplayInputDevice { get; set; }
         
         /// <summary>
         /// Initialization logic which is executed only one time for this Entity (unless the Entity is pooled).

@@ -1,5 +1,8 @@
 using FlatRedBall.Input;
 using MakeMeLaughJam.Entities;
+using Microsoft.Xna.Framework.Input;
+using Keyboard = FlatRedBall.Input.Keyboard;
+using Mouse = FlatRedBall.Input.Mouse;
 
 namespace MakeMeLaughJam.Utils;
 
@@ -7,14 +10,15 @@ public class GameplayInputDevice
 {
     public GameplayInputDevice(IInputDevice inputDevice, Player player)
     {
+        Movement = inputDevice.Default2DInput;
+        Pause    = inputDevice.DefaultPauseInput;
+        
         switch (inputDevice)
         {
             case Xbox360GamePad gamePad:
-                Movement = inputDevice.Default2DInput;
                 Attack   = gamePad.GetButton(Xbox360GamePad.Button.RightShoulder);
                 break;
             case Keyboard keyboard:
-                Movement = keyboard.GetWasdInput();
                 Attack   = InputManager.Mouse.GetButton(Mouse.MouseButtons.LeftButton);
                 break;
         }
@@ -22,4 +26,5 @@ public class GameplayInputDevice
     
     public I2DInput Movement { get; }
     public IPressableInput Attack { get; }
+    public IPressableInput Pause { get; }
 }
