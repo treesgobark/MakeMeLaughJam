@@ -79,7 +79,8 @@
     {
       "Name": "PlatformerValues",
       "CsvFilesUsingThis": [
-        "Entities/Player/PlatformerValuesStatic.csv"
+        "Entities/Player/PlatformerValuesStatic.csv",
+        "Entities/Puppet/PlatformerValuesStatic.csv"
       ],
       "RequiredProperties": [],
       "GenerateCode": true
@@ -101,7 +102,13 @@
   ],
   "EntityReferences": [
     {
+      "Name": "Entities\\Button"
+    },
+    {
       "Name": "Entities\\Player"
+    },
+    {
+      "Name": "Entities\\Puppet"
     }
   ],
   "Bookmarks": [],

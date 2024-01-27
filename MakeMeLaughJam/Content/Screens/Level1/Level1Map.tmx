@@ -3,7 +3,7 @@
  <tileset firstgid="1" source="../../StandardTileset.tsx"/>
  <layer id="1" name="GameplayLayer" width="32" height="18" tintcolor="#ffffff">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAACmNgGAWjYBSMgoEBjIMADxQYtX9w2M+ChgkBdPXk6hss/h9o+wcSAwCKZ5gFAAkAAA==
+   H4sIAAAAAAAACmNgGAWDHTQCcROJGKingVr2A81LwMcnVs2o/aP2owPGQYAJAVr5f6jYDyxLHMgofw5Qy35aAZj9LGiYEEBXT66+weL/gbZ/IDEAlwBEUQAJAAA=
   </data>
  </layer>
 </map>

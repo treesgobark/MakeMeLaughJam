@@ -174,6 +174,64 @@
       "DefinedByBase": true
     },
     {
+      "InstanceName": "PuppetCollision",
+      "SourceClassType": "FlatRedBall.TileCollisions.TileShapeCollection",
+      "Properties": [
+        {
+          "Name": "AssociateWithFactory",
+          "Value": true,
+          "Type": "bool"
+        },
+        {
+          "Name": "CollisionCreationOptions",
+          "Value": 4,
+          "Type": "Object"
+        },
+        {
+          "Name": "SourceTmxName",
+          "Value": "Map",
+          "Type": "Object"
+        },
+        {
+          "Name": "CollisionTileTypeName",
+          "Value": "PuppetCollision",
+          "Type": "Object"
+        },
+        {
+          "Name": "CollisionTileSize",
+          "Value": 16.0,
+          "Type": "float"
+        },
+        {
+          "Name": "CollisionFillWidth",
+          "Value": 32,
+          "Type": "int"
+        },
+        {
+          "Name": "CollisionFillHeight",
+          "Value": 1,
+          "Type": "int"
+        },
+        {
+          "Name": "InnerSizeWidth",
+          "Value": 800.0,
+          "Type": "float"
+        },
+        {
+          "Name": "InnerSizeHeight",
+          "Value": 600.0,
+          "Type": "float"
+        }
+      ],
+      "InstructionSaves": [],
+      "SourceType": 2,
+      "SourceFile": "TileShapeCollection",
+      "HasPublicProperty": true,
+      "AttachToContainer": true,
+      "GenerateTimedEmit": true,
+      "DefinedByBase": true
+    },
+    {
       "InstanceName": "PlayerList",
       "SourceClassType": "FlatRedBall.Math.PositionedObjectList<T>",
       "Properties": [
@@ -224,6 +282,271 @@
           "GenerateTimedEmit": true,
           "DefinedByBase": true,
           "InstantiatedByBase": true
+        }
+      ]
+    },
+    {
+      "InstanceName": "PuppetList",
+      "SourceClassType": "FlatRedBall.Math.PositionedObjectList<T>",
+      "Properties": [
+        {
+          "Name": "AssociateWithFactory",
+          "Value": true,
+          "Type": "bool"
+        }
+      ],
+      "InstructionSaves": [],
+      "SourceType": 2,
+      "SourceFile": "PositionedObjectList (Generic)",
+      "SourceClassGenericType": "Entities\\Puppet",
+      "ExposedInDerived": true,
+      "AttachToContainer": true,
+      "GenerateTimedEmit": true,
+      "DefinedByBase": true,
+      "InstantiatedByBase": true,
+      "ContainedObjects": [
+        {
+          "InstanceName": "Puppet1",
+          "SourceClassType": "Entities\\Puppet",
+          "Properties": [
+            {
+              "Name": "AssociateWithFactory",
+              "Value": true,
+              "Type": "bool"
+            }
+          ],
+          "InstructionSaves": [
+            {
+              "Type": "Color",
+              "Member": "AxisAlignedRectangleInstanceColor",
+              "Value": "Red",
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "X",
+              "Value": 184.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Y",
+              "Value": -136.0,
+              "Time": 0.0
+            }
+          ],
+          "SourceType": 1,
+          "SourceFile": "Entities\\Puppet",
+          "AttachToContainer": true,
+          "GenerateTimedEmit": true
+        },
+        {
+          "InstanceName": "Puppet2",
+          "SourceClassType": "Entities\\Puppet",
+          "Properties": [
+            {
+              "Name": "AssociateWithFactory",
+              "Value": true,
+              "Type": "bool"
+            }
+          ],
+          "InstructionSaves": [
+            {
+              "Type": "Color",
+              "Member": "AxisAlignedRectangleInstanceColor",
+              "Value": "Green",
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "X",
+              "Value": 256.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Y",
+              "Value": -136.0,
+              "Time": 0.0
+            }
+          ],
+          "SourceType": 1,
+          "SourceFile": "Entities\\Puppet",
+          "AttachToContainer": true,
+          "GenerateTimedEmit": true
+        },
+        {
+          "InstanceName": "Puppet4",
+          "SourceClassType": "Entities\\Puppet",
+          "Properties": [
+            {
+              "Name": "AssociateWithFactory",
+              "Value": true,
+              "Type": "bool"
+            }
+          ],
+          "InstructionSaves": [
+            {
+              "Type": "Color",
+              "Member": "AxisAlignedRectangleInstanceColor",
+              "Value": "Blue",
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "X",
+              "Value": 328.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Y",
+              "Value": -136.0,
+              "Time": 0.0
+            }
+          ],
+          "SourceType": 1,
+          "SourceFile": "Entities\\Puppet",
+          "AttachToContainer": true,
+          "GenerateTimedEmit": true
+        }
+      ]
+    },
+    {
+      "InstanceName": "ButtonList",
+      "SourceClassType": "FlatRedBall.Math.PositionedObjectList<T>",
+      "Properties": [
+        {
+          "Name": "AssociateWithFactory",
+          "Value": true,
+          "Type": "bool"
+        }
+      ],
+      "InstructionSaves": [],
+      "SourceType": 2,
+      "SourceFile": "PositionedObjectList (Generic)",
+      "SourceClassGenericType": "Entities\\Button",
+      "ExposedInDerived": true,
+      "AttachToContainer": true,
+      "GenerateTimedEmit": true,
+      "DefinedByBase": true,
+      "InstantiatedByBase": true,
+      "ContainedObjects": [
+        {
+          "InstanceName": "Button1",
+          "SourceClassType": "Entities\\Button",
+          "Properties": [
+            {
+              "Name": "AssociateWithFactory",
+              "Value": true,
+              "Type": "bool"
+            }
+          ],
+          "InstructionSaves": [
+            {
+              "Type": "float",
+              "Member": "X",
+              "Value": 32.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Y",
+              "Value": -256.0,
+              "Time": 0.0
+            }
+          ],
+          "SourceType": 1,
+          "SourceFile": "Entities\\Button",
+          "AttachToContainer": true,
+          "GenerateTimedEmit": true
+        },
+        {
+          "InstanceName": "Button2",
+          "SourceClassType": "Entities\\Button",
+          "Properties": [
+            {
+              "Name": "AssociateWithFactory",
+              "Value": true,
+              "Type": "bool"
+            }
+          ],
+          "InstructionSaves": [
+            {
+              "Type": "float",
+              "Member": "X",
+              "Value": 32.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Y",
+              "Value": -208.0,
+              "Time": 0.0
+            }
+          ],
+          "SourceType": 1,
+          "SourceFile": "Entities\\Button",
+          "AttachToContainer": true,
+          "GenerateTimedEmit": true
+        },
+        {
+          "InstanceName": "Button3",
+          "SourceClassType": "Entities\\Button",
+          "Properties": [
+            {
+              "Name": "AssociateWithFactory",
+              "Value": true,
+              "Type": "bool"
+            }
+          ],
+          "InstructionSaves": [
+            {
+              "Type": "float",
+              "Member": "X",
+              "Value": 480.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Y",
+              "Value": -208.0,
+              "Time": 0.0
+            }
+          ],
+          "SourceType": 1,
+          "SourceFile": "Entities\\Button",
+          "AttachToContainer": true,
+          "GenerateTimedEmit": true
+        },
+        {
+          "InstanceName": "Button4",
+          "SourceClassType": "Entities\\Button",
+          "Properties": [
+            {
+              "Name": "AssociateWithFactory",
+              "Value": true,
+              "Type": "bool"
+            }
+          ],
+          "InstructionSaves": [
+            {
+              "Type": "float",
+              "Member": "X",
+              "Value": 480.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Y",
+              "Value": -256.0,
+              "Time": 0.0
+            }
+          ],
+          "SourceType": 1,
+          "SourceFile": "Entities\\Button",
+          "AttachToContainer": true,
+          "GenerateTimedEmit": true
         }
       ]
     }

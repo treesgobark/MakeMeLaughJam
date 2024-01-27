@@ -1,12 +1,13 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <RollForward>Major</RollForward>
     <PublishReadyToRun>false</PublishReadyToRun>
     <TieredCompilation>false</TieredCompilation>
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
     <DefineConstants>MONOGAME;DESKTOP_GL;XNA4;FRB_XNA;MONOGAME_381</DefineConstants>
+    <LangVersion>default</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationManifest>app.manifest</ApplicationManifest>
@@ -28,6 +29,10 @@
       <Name>PlatformerAnimations</Name>
     </None>
     <None Include="content\entities\player\platformervaluesstatic.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>PlatformerValuesStatic</Name>
+    </None>
+    <None Include="content\entities\puppet\platformervaluesstatic.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Name>PlatformerValuesStatic</Name>
     </None>
@@ -327,11 +332,21 @@
   <ItemGroup>
     <Compile Include="DataTypes\PlatformerValues.Generated.cs" />
     <Compile Include="DataTypes\TileMapInfo.Generated.cs" />
+    <Compile Include="Entities\Button.cs" />
+    <Compile Include="Entities\Button.Generated.cs">
+      <DependentUpon>Button.cs</DependentUpon>
+    </Compile>
     <Compile Include="Entities\Player.cs" />
     <Compile Include="Entities\Player.Generated.cs">
       <DependentUpon>Player.cs</DependentUpon>
     </Compile>
+    <Compile Include="Entities\Puppet.cs" />
+    <Compile Include="Entities\Puppet.Generated.cs">
+      <DependentUpon>Puppet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Factories\ButtonFactory.Generated.cs" />
     <Compile Include="Factories\PlayerFactory.Generated.cs" />
+    <Compile Include="Factories\PuppetFactory.Generated.cs" />
     <Compile Include="FileAliases.Generated.cs" />
     <Compile Include="Forms\Screens\GameScreenGumForms.Generated.cs" />
     <Compile Include="Forms\Screens\Level1GumForms.Generated.cs" />
@@ -579,7 +594,13 @@
     <Compile Include="Platformer\PlatformerAnimationController.Generated.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Screens\GameScreen.cs" />
+    <Compile Include="Screens\GameScreen.Event.cs">
+      <DependentUpon>GameScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="Screens\GameScreen.Generated.cs">
+      <DependentUpon>GameScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\GameScreen.Generated.Event.cs">
       <DependentUpon>GameScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="Screens\Level1.cs" />
@@ -616,6 +637,7 @@
     <Compile Include="TileGraphics\TileNodeNetworkCreator.Generated.cs" />
     <Compile Include="TileGraphics\Tileset.Generated.cs" />
     <Compile Include="TileGraphics\TilesetExtensionMethods.Generated.cs" />
+    <Compile Include="Utils\GameplayInputDevice.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Icon.ico" />
@@ -656,6 +678,9 @@
     <None Update="Content\ShaderForcePoint.xnb">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="R:\Repositories\FRB\ANLG.Utilities\ANLG.Utilities.FlatRedBall\ANLG.Utilities.FlatRedBall.csproj" />
   </ItemGroup>
   <Target Name="RestoreDotnetTools" BeforeTargets="Restore">
     <Message Text="Restoring dotnet tools" Importance="High" />
