@@ -7,6 +7,26 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MakeMeLaughJam", "MakeMeLau
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ANLG.Utilities.FlatRedBall", "R:\Repositories\FRB\ANLG.Utilities\ANLG.Utilities.FlatRedBall\ANLG.Utilities.FlatRedBall.csproj", "{1EE0F0AE-21A3-4616-A87C-8145D23E0C76}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StateInterpolation.DesktopNet6", "..\FlatRedBall\Engines\Forms\FlatRedBall.Forms\StateInterpolation\StateInterpolation.DesktopGlNet6\StateInterpolation.DesktopNet6.csproj", "{0FCD2050-FA6E-46F0-B381-E192CE674F52}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlatRedBallDesktopGLNet6", "..\FlatRedBall\Engines\FlatRedBallXNA\FlatRedBallDesktopGLNet6\FlatRedBallDesktopGLNet6.csproj", "{727984D2-5B12-4A28-BE06-B7E29874DD12}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlatRedBall.Forms.DesktopGlNet6", "..\FlatRedBall\Engines\Forms\FlatRedBall.Forms\FlatRedBall.Forms.DesktopGlNet6\FlatRedBall.Forms.DesktopGlNet6.csproj", "{55AD7E13-98F7-47FE-B114-78F06DD83EDE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GumCore.DesktopGlNet6", "..\Gum\GumCore\GumCoreXnaPc\GumCore.DesktopGlNet6\GumCore.DesktopGlNet6.csproj", "{4554411C-7D36-4109-BC1A-8E64EB6DF5DA}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "FlatRedBallShared", "..\FlatRedBall\Engines\FlatRedBallXNA\FlatRedBall\FlatRedBallShared.shproj", "{0BB8CBE3-8503-46C1-9272-D98E153A230E}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "FlatRedBall.Forms.Shared", "..\FlatRedBall\Engines\Forms\FlatRedBall.Forms\FlatRedBall.Forms.Shared\FlatRedBall.Forms.Shared.shproj", "{728151F0-03E0-4253-94FE-46B9C77EDEA6}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "GumCoreShared", "..\Gum\GumCoreShared.shproj", "{F919C045-EAC7-4806-9A1F-CE421F923E97}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "GumCoreShared.FlatRedBall", "..\FlatRedBall\FRBDK\Glue\GumPlugin\GumPlugin\GumCoreShared.FlatRedBall.shproj", "{0EE8A96C-A754-453D-9E65-19A24E9A5E76}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "StateInterpolationShared", "..\FlatRedBall\FRBDK\Glue\StateInterpolationPlugin\StateInterpolationPlugin\StateInterpolationShared.shproj", "{D00D287D-385B-42FB-BF5F-04401E7D37D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkiaInGum", "..\Gum\SvgPlugin\SkiaInGumShared\SkiaInGum.csproj", "{93CCF9D1-0A1D-4C88-823B-9645F42336E9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +41,26 @@ Global
 		{1EE0F0AE-21A3-4616-A87C-8145D23E0C76}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1EE0F0AE-21A3-4616-A87C-8145D23E0C76}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1EE0F0AE-21A3-4616-A87C-8145D23E0C76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FCD2050-FA6E-46F0-B381-E192CE674F52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FCD2050-FA6E-46F0-B381-E192CE674F52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FCD2050-FA6E-46F0-B381-E192CE674F52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FCD2050-FA6E-46F0-B381-E192CE674F52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{727984D2-5B12-4A28-BE06-B7E29874DD12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{727984D2-5B12-4A28-BE06-B7E29874DD12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{727984D2-5B12-4A28-BE06-B7E29874DD12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{727984D2-5B12-4A28-BE06-B7E29874DD12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55AD7E13-98F7-47FE-B114-78F06DD83EDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55AD7E13-98F7-47FE-B114-78F06DD83EDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55AD7E13-98F7-47FE-B114-78F06DD83EDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55AD7E13-98F7-47FE-B114-78F06DD83EDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4554411C-7D36-4109-BC1A-8E64EB6DF5DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4554411C-7D36-4109-BC1A-8E64EB6DF5DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4554411C-7D36-4109-BC1A-8E64EB6DF5DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4554411C-7D36-4109-BC1A-8E64EB6DF5DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93CCF9D1-0A1D-4C88-823B-9645F42336E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93CCF9D1-0A1D-4C88-823B-9645F42336E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93CCF9D1-0A1D-4C88-823B-9645F42336E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93CCF9D1-0A1D-4C88-823B-9645F42336E9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
