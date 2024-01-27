@@ -23,6 +23,42 @@
       "Name": "MaxAudienceHealth",
       "DefaultValue": 100.0,
       "SetByDerived": true
+    },
+    {
+      "Properties": [
+        {
+          "Name": "Type",
+          "Value": "double",
+          "Type": "String"
+        }
+      ],
+      "Name": "PuppetDeployTime",
+      "DefaultValue": 0.5,
+      "SetByDerived": true
+    },
+    {
+      "Properties": [
+        {
+          "Name": "Type",
+          "Value": "float",
+          "Type": "String"
+        }
+      ],
+      "Name": "MusicBoxPercentageGainOnHit",
+      "DefaultValue": 30.0,
+      "SetByDerived": true
+    },
+    {
+      "Properties": [
+        {
+          "Name": "Type",
+          "Value": "float",
+          "Type": "String"
+        }
+      ],
+      "Name": "MusicBoxPercentageLossPerSecond",
+      "DefaultValue": 5.0,
+      "SetByDerived": true
     }
   ],
   "NamedObjects": [
@@ -107,7 +143,97 @@
       "InstructionSaves": [],
       "SourceType": 2,
       "SourceFile": "PositionedObjectList (Generic)",
-      "SourceClassGenericType": "Entities\\Button",
+      "SourceClassGenericType": "Entities\\WallButton",
+      "ExposedInDerived": true,
+      "AttachToContainer": true,
+      "GenerateTimedEmit": true
+    },
+    {
+      "InstanceName": "SpriteContainerList",
+      "SourceClassType": "FlatRedBall.Math.PositionedObjectList<T>",
+      "Properties": [
+        {
+          "Name": "AssociateWithFactory",
+          "Value": true,
+          "Type": "bool"
+        }
+      ],
+      "InstructionSaves": [],
+      "SourceType": 2,
+      "SourceFile": "PositionedObjectList (Generic)",
+      "SourceClassGenericType": "Entities\\SpriteContainer",
+      "ExposedInDerived": true,
+      "AttachToContainer": true,
+      "GenerateTimedEmit": true
+    },
+    {
+      "InstanceName": "ConfirmLeverList",
+      "SourceClassType": "FlatRedBall.Math.PositionedObjectList<T>",
+      "Properties": [
+        {
+          "Name": "AssociateWithFactory",
+          "Value": true,
+          "Type": "bool"
+        }
+      ],
+      "InstructionSaves": [],
+      "SourceType": 2,
+      "SourceFile": "PositionedObjectList (Generic)",
+      "SourceClassGenericType": "Entities\\ConfirmLever",
+      "ExposedInDerived": true,
+      "AttachToContainer": true,
+      "GenerateTimedEmit": true
+    },
+    {
+      "InstanceName": "MusicBoxList",
+      "SourceClassType": "FlatRedBall.Math.PositionedObjectList<T>",
+      "Properties": [
+        {
+          "Name": "AssociateWithFactory",
+          "Value": true,
+          "Type": "bool"
+        }
+      ],
+      "InstructionSaves": [],
+      "SourceType": 2,
+      "SourceFile": "PositionedObjectList (Generic)",
+      "SourceClassGenericType": "Entities\\MusicBox",
+      "ExposedInDerived": true,
+      "AttachToContainer": true,
+      "GenerateTimedEmit": true
+    },
+    {
+      "InstanceName": "ActionSelectorList",
+      "SourceClassType": "FlatRedBall.Math.PositionedObjectList<T>",
+      "Properties": [
+        {
+          "Name": "AssociateWithFactory",
+          "Value": true,
+          "Type": "bool"
+        }
+      ],
+      "InstructionSaves": [],
+      "SourceType": 2,
+      "SourceFile": "PositionedObjectList (Generic)",
+      "SourceClassGenericType": "Entities\\ActionSelector",
+      "ExposedInDerived": true,
+      "AttachToContainer": true,
+      "GenerateTimedEmit": true
+    },
+    {
+      "InstanceName": "CeilingButtonList",
+      "SourceClassType": "FlatRedBall.Math.PositionedObjectList<T>",
+      "Properties": [
+        {
+          "Name": "AssociateWithFactory",
+          "Value": true,
+          "Type": "bool"
+        }
+      ],
+      "InstructionSaves": [],
+      "SourceType": 2,
+      "SourceFile": "PositionedObjectList (Generic)",
+      "SourceClassGenericType": "Entities\\CeilingButton",
       "ExposedInDerived": true,
       "AttachToContainer": true,
       "GenerateTimedEmit": true
@@ -533,8 +659,8 @@
       "GenerateTimedEmit": true
     },
     {
-      "InstanceName": "PlayerVsPuppet",
-      "SourceClassType": "FlatRedBall.Math.Collision.ListVsListRelationship<Entities.Player, Entities.Puppet>",
+      "InstanceName": "PlayerPunchHitboxVsConfirmLever",
+      "SourceClassType": "FlatRedBall.Math.Collision.ListVsListRelationship<Entities.Player, Entities.ConfirmLever>",
       "Properties": [
         {
           "Name": "AssociateWithFactory",
@@ -553,7 +679,12 @@
         },
         {
           "Name": "SecondCollisionName",
-          "Value": "PuppetList",
+          "Value": "ConfirmLeverList",
+          "Type": "String"
+        },
+        {
+          "Name": "FirstSubCollisionSelectedItem",
+          "Value": "PunchHitbox",
           "Type": "String"
         },
         {
@@ -578,7 +709,83 @@
         },
         {
           "Name": "SecondCollisionMass",
-          "Value": 0.0,
+          "Value": 1.0,
+          "Type": "float"
+        },
+        {
+          "Name": "SoftCollisionCoefficient",
+          "Value": 1.0,
+          "Type": "float"
+        },
+        {
+          "Name": "CollisionElasticity",
+          "Value": 1.0,
+          "Type": "float"
+        },
+        {
+          "Name": "IsDealDamageChecked",
+          "Value": true,
+          "Type": "Object"
+        },
+        {
+          "Name": "IsDestroyFirstOnDamageChecked",
+          "Value": true,
+          "Type": "Object"
+        },
+        {
+          "Name": "IsDestroySecondOnDamageChecked",
+          "Value": true,
+          "Type": "Object"
+        }
+      ],
+      "InstructionSaves": [],
+      "SourceType": 2,
+      "SourceFile": "FlatRedBall.Math.Collision.ListVsListRelationship<Entities.Player, Entities.ConfirmLever>",
+      "AttachToContainer": true,
+      "GenerateTimedEmit": true
+    },
+    {
+      "InstanceName": "PlayerPunchHitboxVsMusicBox",
+      "SourceClassType": "FlatRedBall.Math.Collision.ListVsListRelationship<Entities.Player, Entities.MusicBox>",
+      "Properties": [
+        {
+          "Name": "AssociateWithFactory",
+          "Value": true,
+          "Type": "bool"
+        },
+        {
+          "Name": "IsAutoNameEnabled",
+          "Value": true,
+          "Type": "bool"
+        },
+        {
+          "Name": "FirstCollisionName",
+          "Value": "PlayerList",
+          "Type": "String"
+        },
+        {
+          "Name": "SecondCollisionName",
+          "Value": "MusicBoxList",
+          "Type": "String"
+        },
+        {
+          "Name": "IsCollisionActive",
+          "Value": true,
+          "Type": "bool"
+        },
+        {
+          "Name": "IsAutomaticallyApplyPhysicsChecked",
+          "Value": true,
+          "Type": "bool"
+        },
+        {
+          "Name": "FirstCollisionMass",
+          "Value": 1.0,
+          "Type": "float"
+        },
+        {
+          "Name": "SecondCollisionMass",
+          "Value": 1.0,
           "Type": "float"
         },
         {
@@ -593,6 +800,11 @@
         },
         {
           "Name": "FirstSubCollisionSelectedItem",
+          "Value": "PunchHitbox",
+          "Type": "String"
+        },
+        {
+          "Name": "SecondSubCollisionSelectedItem",
           "Value": "<Entire Object>",
           "Type": "String"
         },
@@ -610,16 +822,269 @@
           "Name": "IsDestroySecondOnDamageChecked",
           "Value": true,
           "Type": "Object"
-        },
-        {
-          "Name": "CollisionType",
-          "Value": 2,
-          "Type": "int"
         }
       ],
       "InstructionSaves": [],
       "SourceType": 2,
-      "SourceFile": "FlatRedBall.Math.Collision.ListVsListRelationship<Entities.Player, Entities.Puppet>",
+      "SourceFile": "FlatRedBall.Math.Collision.ListVsListRelationship<Entities.Player, Entities.MusicBox>",
+      "AttachToContainer": true,
+      "GenerateTimedEmit": true
+    },
+    {
+      "InstanceName": "PlayerPunchHitboxVsActionSelector",
+      "SourceClassType": "FlatRedBall.Math.Collision.ListVsListRelationship<Entities.Player, Entities.ActionSelector>",
+      "Properties": [
+        {
+          "Name": "AssociateWithFactory",
+          "Value": true,
+          "Type": "bool"
+        },
+        {
+          "Name": "IsAutoNameEnabled",
+          "Value": true,
+          "Type": "bool"
+        },
+        {
+          "Name": "FirstCollisionName",
+          "Value": "PlayerList",
+          "Type": "String"
+        },
+        {
+          "Name": "SecondCollisionName",
+          "Value": "ActionSelectorList",
+          "Type": "String"
+        },
+        {
+          "Name": "IsCollisionActive",
+          "Value": true,
+          "Type": "bool"
+        },
+        {
+          "Name": "IsAutomaticallyApplyPhysicsChecked",
+          "Value": true,
+          "Type": "bool"
+        },
+        {
+          "Name": "FirstCollisionMass",
+          "Value": 1.0,
+          "Type": "float"
+        },
+        {
+          "Name": "SecondCollisionMass",
+          "Value": 1.0,
+          "Type": "float"
+        },
+        {
+          "Name": "SoftCollisionCoefficient",
+          "Value": 1.0,
+          "Type": "float"
+        },
+        {
+          "Name": "CollisionElasticity",
+          "Value": 1.0,
+          "Type": "float"
+        },
+        {
+          "Name": "FirstSubCollisionSelectedItem",
+          "Value": "PunchHitbox",
+          "Type": "String"
+        },
+        {
+          "Name": "SecondSubCollisionSelectedItem",
+          "Value": "<Entire Object>",
+          "Type": "String"
+        },
+        {
+          "Name": "IsDealDamageChecked",
+          "Value": true,
+          "Type": "Object"
+        },
+        {
+          "Name": "IsDestroyFirstOnDamageChecked",
+          "Value": true,
+          "Type": "Object"
+        },
+        {
+          "Name": "IsDestroySecondOnDamageChecked",
+          "Value": true,
+          "Type": "Object"
+        }
+      ],
+      "InstructionSaves": [],
+      "SourceType": 2,
+      "SourceFile": "FlatRedBall.Math.Collision.ListVsListRelationship<Entities.Player, Entities.ActionSelector>",
+      "AttachToContainer": true,
+      "GenerateTimedEmit": true
+    },
+    {
+      "InstanceName": "PlayerPunchHitboxVsCeilingButton",
+      "SourceClassType": "FlatRedBall.Math.Collision.ListVsListRelationship<Entities.Player, Entities.CeilingButton>",
+      "Properties": [
+        {
+          "Name": "AssociateWithFactory",
+          "Value": true,
+          "Type": "bool"
+        },
+        {
+          "Name": "IsAutoNameEnabled",
+          "Value": true,
+          "Type": "bool"
+        },
+        {
+          "Name": "FirstCollisionName",
+          "Value": "PlayerList",
+          "Type": "String"
+        },
+        {
+          "Name": "SecondCollisionName",
+          "Value": "CeilingButtonList",
+          "Type": "String"
+        },
+        {
+          "Name": "IsCollisionActive",
+          "Value": true,
+          "Type": "bool"
+        },
+        {
+          "Name": "IsAutomaticallyApplyPhysicsChecked",
+          "Value": true,
+          "Type": "bool"
+        },
+        {
+          "Name": "FirstCollisionMass",
+          "Value": 1.0,
+          "Type": "float"
+        },
+        {
+          "Name": "SecondCollisionMass",
+          "Value": 1.0,
+          "Type": "float"
+        },
+        {
+          "Name": "SoftCollisionCoefficient",
+          "Value": 1.0,
+          "Type": "float"
+        },
+        {
+          "Name": "CollisionElasticity",
+          "Value": 1.0,
+          "Type": "float"
+        },
+        {
+          "Name": "FirstSubCollisionSelectedItem",
+          "Value": "PunchHitbox",
+          "Type": "String"
+        },
+        {
+          "Name": "SecondSubCollisionSelectedItem",
+          "Value": "<Entire Object>",
+          "Type": "String"
+        },
+        {
+          "Name": "IsDealDamageChecked",
+          "Value": true,
+          "Type": "Object"
+        },
+        {
+          "Name": "IsDestroyFirstOnDamageChecked",
+          "Value": true,
+          "Type": "Object"
+        },
+        {
+          "Name": "IsDestroySecondOnDamageChecked",
+          "Value": true,
+          "Type": "Object"
+        }
+      ],
+      "InstructionSaves": [],
+      "SourceType": 2,
+      "SourceFile": "FlatRedBall.Math.Collision.ListVsListRelationship<Entities.Player, Entities.CeilingButton>",
+      "AttachToContainer": true,
+      "GenerateTimedEmit": true
+    },
+    {
+      "InstanceName": "PlayerPunchHitboxVsButton",
+      "SourceClassType": "FlatRedBall.Math.Collision.ListVsListRelationship<Entities.Player, Entities.WallButton>",
+      "Properties": [
+        {
+          "Name": "AssociateWithFactory",
+          "Value": true,
+          "Type": "bool"
+        },
+        {
+          "Name": "IsAutoNameEnabled",
+          "Value": true,
+          "Type": "bool"
+        },
+        {
+          "Name": "FirstCollisionName",
+          "Value": "PlayerList",
+          "Type": "String"
+        },
+        {
+          "Name": "SecondCollisionName",
+          "Value": "ButtonList",
+          "Type": "String"
+        },
+        {
+          "Name": "IsCollisionActive",
+          "Value": true,
+          "Type": "bool"
+        },
+        {
+          "Name": "IsAutomaticallyApplyPhysicsChecked",
+          "Value": true,
+          "Type": "bool"
+        },
+        {
+          "Name": "FirstCollisionMass",
+          "Value": 1.0,
+          "Type": "float"
+        },
+        {
+          "Name": "SecondCollisionMass",
+          "Value": 1.0,
+          "Type": "float"
+        },
+        {
+          "Name": "SoftCollisionCoefficient",
+          "Value": 1.0,
+          "Type": "float"
+        },
+        {
+          "Name": "CollisionElasticity",
+          "Value": 1.0,
+          "Type": "float"
+        },
+        {
+          "Name": "FirstSubCollisionSelectedItem",
+          "Value": "PunchHitbox",
+          "Type": "String"
+        },
+        {
+          "Name": "SecondSubCollisionSelectedItem",
+          "Value": "<Entire Object>",
+          "Type": "String"
+        },
+        {
+          "Name": "IsDealDamageChecked",
+          "Value": true,
+          "Type": "Object"
+        },
+        {
+          "Name": "IsDestroyFirstOnDamageChecked",
+          "Value": true,
+          "Type": "Object"
+        },
+        {
+          "Name": "IsDestroySecondOnDamageChecked",
+          "Value": true,
+          "Type": "Object"
+        }
+      ],
+      "InstructionSaves": [],
+      "SourceType": 2,
+      "SourceFile": "FlatRedBall.Math.Collision.ListVsListRelationship<Entities.Player, Entities.WallButton>",
       "AttachToContainer": true,
       "GenerateTimedEmit": true
     },
@@ -651,190 +1116,33 @@
       "SourceFile": "FlatRedBall.Entities.CameraControllingEntity",
       "AttachToContainer": true,
       "GenerateTimedEmit": true
-    },
-    {
-      "InstanceName": "PuppetVsPuppetCollision",
-      "SourceClassType": "FlatRedBall.Math.Collision.CollidableListVsTileShapeCollectionRelationship<Entities.Puppet>",
-      "Properties": [
-        {
-          "Name": "AssociateWithFactory",
-          "Value": true,
-          "Type": "bool"
-        },
-        {
-          "Name": "IsAutoNameEnabled",
-          "Value": true,
-          "Type": "bool"
-        },
-        {
-          "Name": "FirstCollisionName",
-          "Value": "PuppetList",
-          "Type": "String"
-        },
-        {
-          "Name": "SecondCollisionName",
-          "Value": "PuppetCollision",
-          "Type": "String"
-        },
-        {
-          "Name": "FirstSubCollisionSelectedItem",
-          "Value": "<Entire Object>",
-          "Type": "String"
-        },
-        {
-          "Name": "IsCollisionActive",
-          "Value": true,
-          "Type": "bool"
-        },
-        {
-          "Name": "IsAutomaticallyApplyPhysicsChecked",
-          "Value": true,
-          "Type": "bool"
-        },
-        {
-          "Name": "FirstCollisionMass",
-          "Value": 0.0,
-          "Type": "float"
-        },
-        {
-          "Name": "SecondCollisionMass",
-          "Value": 1.0,
-          "Type": "float"
-        },
-        {
-          "Name": "SoftCollisionCoefficient",
-          "Value": 1.0,
-          "Type": "float"
-        },
-        {
-          "Name": "CollisionElasticity",
-          "Value": 1.0,
-          "Type": "float"
-        },
-        {
-          "Name": "IsDealDamageChecked",
-          "Value": true,
-          "Type": "Object"
-        },
-        {
-          "Name": "IsDestroyFirstOnDamageChecked",
-          "Value": true,
-          "Type": "Object"
-        },
-        {
-          "Name": "IsDestroySecondOnDamageChecked",
-          "Value": true,
-          "Type": "Object"
-        },
-        {
-          "Name": "CollisionType",
-          "Value": 1,
-          "Type": "int"
-        }
-      ],
-      "InstructionSaves": [],
-      "SourceType": 2,
-      "SourceFile": "FlatRedBall.Math.Collision.CollidableListVsTileShapeCollectionRelationship<Entities.Puppet>",
-      "AttachToContainer": true,
-      "GenerateTimedEmit": true
-    },
-    {
-      "InstanceName": "ButtonVsPlayer",
-      "SourceClassType": "FlatRedBall.Math.Collision.ListVsListRelationship<Entities.Button, Entities.Player>",
-      "Properties": [
-        {
-          "Name": "AssociateWithFactory",
-          "Value": true,
-          "Type": "bool"
-        },
-        {
-          "Name": "IsAutoNameEnabled",
-          "Value": true,
-          "Type": "bool"
-        },
-        {
-          "Name": "FirstCollisionName",
-          "Value": "ButtonList",
-          "Type": "String"
-        },
-        {
-          "Name": "SecondCollisionName",
-          "Value": "PlayerList",
-          "Type": "String"
-        },
-        {
-          "Name": "SecondSubCollisionSelectedItem",
-          "Value": "<Entire Object>",
-          "Type": "String"
-        },
-        {
-          "Name": "IsCollisionActive",
-          "Value": true,
-          "Type": "bool"
-        },
-        {
-          "Name": "IsAutomaticallyApplyPhysicsChecked",
-          "Value": true,
-          "Type": "bool"
-        },
-        {
-          "Name": "FirstCollisionMass",
-          "Value": 1.0,
-          "Type": "float"
-        },
-        {
-          "Name": "SecondCollisionMass",
-          "Value": 0.0,
-          "Type": "float"
-        },
-        {
-          "Name": "SoftCollisionCoefficient",
-          "Value": 1.0,
-          "Type": "float"
-        },
-        {
-          "Name": "CollisionElasticity",
-          "Value": 0.0,
-          "Type": "float"
-        },
-        {
-          "Name": "FirstSubCollisionSelectedItem",
-          "Value": "<Entire Object>",
-          "Type": "String"
-        },
-        {
-          "Name": "IsDealDamageChecked",
-          "Value": false,
-          "Type": "Object"
-        },
-        {
-          "Name": "IsDestroyFirstOnDamageChecked",
-          "Value": true,
-          "Type": "Object"
-        },
-        {
-          "Name": "IsDestroySecondOnDamageChecked",
-          "Value": false,
-          "Type": "Object"
-        },
-        {
-          "Name": "CollisionType",
-          "Value": 2,
-          "Type": "int"
-        }
-      ],
-      "InstructionSaves": [],
-      "SourceType": 2,
-      "SourceFile": "FlatRedBall.Math.Collision.ListVsListRelationship<Entities.Button, Entities.Player>",
-      "AttachToContainer": true,
-      "GenerateTimedEmit": true
     }
   ],
   "Name": "Screens\\GameScreen",
   "Events": [
     {
-      "EventName": "ButtonVsPlayerCollided",
-      "SourceObject": "ButtonVsPlayer",
+      "EventName": "PlayerVsConfirmLeverCollided",
+      "SourceObject": "PlayerPunchHitboxVsConfirmLever",
+      "SourceObjectEvent": "CollisionOccurred"
+    },
+    {
+      "EventName": "PlayerVsMusicBoxCollided",
+      "SourceObject": "PlayerPunchHitboxVsMusicBox",
+      "SourceObjectEvent": "CollisionOccurred"
+    },
+    {
+      "EventName": "PlayerVsActionSelectorCollided",
+      "SourceObject": "PlayerPunchHitboxVsActionSelector",
+      "SourceObjectEvent": "CollisionOccurred"
+    },
+    {
+      "EventName": "PlayerVsButtonCollided",
+      "SourceObject": "PlayerPunchHitboxVsButton",
+      "SourceObjectEvent": "CollisionOccurred"
+    },
+    {
+      "EventName": "PlayerVsCeilingButtonCollided",
+      "SourceObject": "PlayerPunchHitboxVsCeilingButton",
       "SourceObjectEvent": "CollisionOccurred"
     }
   ],

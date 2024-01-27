@@ -5,6 +5,7 @@ using FlatRedBall;
 using FlatRedBall.Input;
 using FlatRedBall.Instructions;
 using FlatRedBall.AI.Pathfinding;
+using FlatRedBall.Debugging;
 using FlatRedBall.Graphics.Animation;
 using FlatRedBall.Graphics.Particle;
 using FlatRedBall.Math.Geometry;
@@ -21,7 +22,8 @@ namespace MakeMeLaughJam.Entities
         private double _lastPunchTime { get; set; } = -69_420;
         private double TotalPunchTime => PunchDuration + PunchRecovery;
         public bool CanPunch => TimeManager.CurrentScreenSecondsSince(_lastPunchTime)      > TotalPunchTime;
-        public bool IsPunchActive => TimeManager.CurrentScreenSecondsSince(_lastPunchTime) < PunchDuration;
+        public bool IsPunchActive => !PunchConsumed && TimeManager.CurrentScreenSecondsSince(_lastPunchTime) < PunchDuration;
+        public bool PunchConsumed { get; set; }
         public GameplayInputDevice GameplayInputDevice { get; set; }
         
         /// <summary>
@@ -44,8 +46,19 @@ namespace MakeMeLaughJam.Entities
             HandleInput();
             if (CanPunch)
             {
-                IsPunching = false;
+                IsPunching                         = false;
                 AxisAlignedRectangleInstance.Color = Color.White;
+                PunchConsumed                      = false;
+            }
+            Debugger.Write(PunchConsumed);
+
+            if (DirectionFacing == HorizontalDirection.Left)
+            {
+                PunchHitbox.RelativeX = -8;
+            }
+            else if (DirectionFacing == HorizontalDirection.Right)
+            {
+                PunchHitbox.RelativeX = 8;
             }
         }
 

@@ -511,6 +511,160 @@
         "ElementType": "Components",
         "EventType": 7,
         "TimestampUtc": "2024-01-27T17:48:39.8617272Z"
+      },
+      {
+        "NewName": "FancyAudienceBar",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 0,
+        "TimestampUtc": "2024-01-27T20:34:34.667713Z"
+      },
+      {
+        "NewName": "FancyAudienceBar (Container).SpriteInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-27T20:36:37.0980926Z"
+      },
+      {
+        "NewName": "GameScreenGum.FancyAudienceBarInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-27T20:40:30.6347657Z"
+      },
+      {
+        "NewName": "Controls/Slider (Container).SpriteInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-27T21:48:52.4332799Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "Controls/Slider (Container).Sprite SpriteInstance in Controls/Slider (Container)",
+        "ElementType": "Components",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-27T21:48:59.0426341Z"
+      },
+      {
+        "NewName": "SpriteButton",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 0,
+        "TimestampUtc": "2024-01-27T21:49:12.0202426Z"
+      },
+      {
+        "NewName": "SpriteButton (Container).SpriteInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-27T21:49:49.1550224Z"
+      },
+      {
+        "NewName": "Controls/ButtonStandard1",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 0,
+        "TimestampUtc": "2024-01-27T21:53:48.9529452Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "SpriteButton",
+        "ElementType": "Components",
+        "EventType": 1,
+        "TimestampUtc": "2024-01-27T21:53:51.8836452Z"
+      },
+      {
+        "NewName": "Controls/SpriteButton",
+        "OldName": "Controls/ButtonStandard1",
+        "ElementType": "Components",
+        "EventType": 2,
+        "TimestampUtc": "2024-01-27T21:54:11.9100854Z"
+      },
+      {
+        "NewName": "Controls/ButtonSprite (Container).ButtonTabInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-27T21:54:21.4850412Z"
+      },
+      {
+        "NewName": "Controls/ButtonSprite",
+        "OldName": "Controls/SpriteButton",
+        "ElementType": "Components",
+        "EventType": 2,
+        "TimestampUtc": "2024-01-27T21:54:22.0781283Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "Controls/ButtonSprite (Container).Controls/ButtonTab ButtonTabInstance in Controls/ButtonSprite (Container)",
+        "ElementType": "Components",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-27T21:54:34.8409676Z"
+      },
+      {
+        "NewName": "Controls/ButtonSprite (Container).SpriteInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-27T21:55:54.4618346Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "Controls/ButtonSprite (Container).NineSlice Background in Controls/ButtonSprite (Container)",
+        "ElementType": "Components",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-27T21:57:09.0458729Z"
+      },
+      {
+        "NewName": "Controls/Slider1",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 0,
+        "TimestampUtc": "2024-01-27T21:58:21.8578598Z"
+      },
+      {
+        "NewName": "Controls/SliderSprites",
+        "OldName": "Controls/Slider1",
+        "ElementType": "Components",
+        "EventType": 2,
+        "TimestampUtc": "2024-01-27T21:58:29.5961876Z"
+      },
+      {
+        "NewName": "Controls/SliderSprites (Container).ButtonSpriteInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-27T21:58:46.8084431Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "Controls/SliderSprites (Container).Controls/ButtonStandard ThumbInstance in Controls/SliderSprites (Container)",
+        "ElementType": "Components",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-27T21:59:27.8729585Z"
+      },
+      {
+        "NewName": "Controls/SliderSprites (Container).SpriteInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-27T21:59:39.3671708Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "Controls/SliderSprites (Container).Sprite SpriteInstance in Controls/SliderSprites (Container)",
+        "ElementType": "Components",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-27T21:59:55.8343668Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "Controls/SliderSprites (Container).NineSlice NineSliceInstance in Controls/SliderSprites (Container)",
+        "ElementType": "Components",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-27T22:00:01.2154304Z"
       }
     ]
   }

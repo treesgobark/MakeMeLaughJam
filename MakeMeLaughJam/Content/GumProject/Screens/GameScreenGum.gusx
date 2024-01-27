@@ -4,6 +4,12 @@
   <State>
     <Name>Default</Name>
     <Variable>
+      <Type>bool</Type>
+      <Name>AudienceBarInstance.Visible</Name>
+      <Value xsi:type="xsd:boolean">false</Value>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
       <Type>Pause</Type>
       <Name>PauseState</Name>
       <SetsValue>false</SetsValue>
@@ -71,6 +77,11 @@
   <Instance>
     <Name>AudienceBarInstance</Name>
     <BaseType>AudienceBar</BaseType>
+    <DefinedByBase>false</DefinedByBase>
+  </Instance>
+  <Instance>
+    <Name>FancyAudienceBarInstance</Name>
+    <BaseType>FancyAudienceBar</BaseType>
     <DefinedByBase>false</DefinedByBase>
   </Instance>
   <Behaviors />

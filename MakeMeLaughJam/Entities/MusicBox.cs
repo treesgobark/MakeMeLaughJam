@@ -12,7 +12,7 @@ using Microsoft.Xna.Framework;
 
 namespace MakeMeLaughJam.Entities
 {
-    public partial class Button
+    public partial class MusicBox
     {
         /// <summary>
         /// Initialization logic which is executed only one time for this Entity (unless the Entity is pooled).

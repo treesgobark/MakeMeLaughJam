@@ -7,11 +7,17 @@
       "MaxXVelocityAbsolute": null,
       "MinYVelocity": null,
       "MaxYVelocity": null,
+      "MinHorizontalInputAbsolute": null,
+      "MaxHorizontalInputAbsolute": null,
       "AbsoluteXVelocityAnimationSpeedMultiplier": null,
       "AbsoluteYVelocityAnimationSpeedMultiplier": null,
+      "MaxSpeedXRatioMultiplier": null,
+      "MaxSpeedYRatioMultiplier": null,
       "OnGroundRequirement": null,
       "MovementName": null,
-      "AnimationSpeedAssignment": 0
+      "CustomCondition": null,
+      "AnimationSpeedAssignment": 0,
+      "Notes": null
     },
     {
       "AnimationName": "CharacterWalk",
@@ -20,11 +26,17 @@
       "MaxXVelocityAbsolute": null,
       "MinYVelocity": null,
       "MaxYVelocity": null,
+      "MinHorizontalInputAbsolute": null,
+      "MaxHorizontalInputAbsolute": null,
       "AbsoluteXVelocityAnimationSpeedMultiplier": null,
       "AbsoluteYVelocityAnimationSpeedMultiplier": null,
+      "MaxSpeedXRatioMultiplier": null,
+      "MaxSpeedYRatioMultiplier": null,
       "OnGroundRequirement": null,
       "MovementName": null,
-      "AnimationSpeedAssignment": 0
+      "CustomCondition": null,
+      "AnimationSpeedAssignment": 0,
+      "Notes": null
     },
     {
       "AnimationName": "CharacterFall",
@@ -33,11 +45,17 @@
       "MaxXVelocityAbsolute": null,
       "MinYVelocity": null,
       "MaxYVelocity": null,
+      "MinHorizontalInputAbsolute": null,
+      "MaxHorizontalInputAbsolute": null,
       "AbsoluteXVelocityAnimationSpeedMultiplier": null,
       "AbsoluteYVelocityAnimationSpeedMultiplier": null,
+      "MaxSpeedXRatioMultiplier": null,
+      "MaxSpeedYRatioMultiplier": null,
       "OnGroundRequirement": false,
       "MovementName": null,
-      "AnimationSpeedAssignment": 0
+      "CustomCondition": null,
+      "AnimationSpeedAssignment": 0,
+      "Notes": null
     },
     {
       "AnimationName": "CharacterJump",
@@ -46,11 +64,36 @@
       "MaxXVelocityAbsolute": null,
       "MinYVelocity": 0.0,
       "MaxYVelocity": null,
+      "MinHorizontalInputAbsolute": null,
+      "MaxHorizontalInputAbsolute": null,
       "AbsoluteXVelocityAnimationSpeedMultiplier": null,
       "AbsoluteYVelocityAnimationSpeedMultiplier": null,
+      "MaxSpeedXRatioMultiplier": null,
+      "MaxSpeedYRatioMultiplier": null,
       "OnGroundRequirement": false,
       "MovementName": null,
-      "AnimationSpeedAssignment": 0
+      "CustomCondition": null,
+      "AnimationSpeedAssignment": 0,
+      "Notes": null
+    },
+    {
+      "AnimationName": "CharacterPunch",
+      "HasLeftAndRight": true,
+      "MinXVelocityAbsolute": null,
+      "MaxXVelocityAbsolute": null,
+      "MinYVelocity": null,
+      "MaxYVelocity": null,
+      "MinHorizontalInputAbsolute": null,
+      "MaxHorizontalInputAbsolute": null,
+      "AbsoluteXVelocityAnimationSpeedMultiplier": null,
+      "AbsoluteYVelocityAnimationSpeedMultiplier": null,
+      "MaxSpeedXRatioMultiplier": null,
+      "MaxSpeedYRatioMultiplier": null,
+      "OnGroundRequirement": null,
+      "MovementName": null,
+      "CustomCondition": "IsPunching",
+      "AnimationSpeedAssignment": 0,
+      "Notes": null
     }
   ]
 }

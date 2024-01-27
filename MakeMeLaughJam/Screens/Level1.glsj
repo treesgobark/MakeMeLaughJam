@@ -17,6 +17,18 @@
       "IsSharedStatic": true,
       "RuntimeType": "FlatRedBall.TileGraphics.LayeredTileMap",
       "ProjectsToExcludeFrom": []
+    },
+    {
+      "Name": "Screens/Level1/CurtainsForeground.png",
+      "IsSharedStatic": true,
+      "RuntimeType": "Microsoft.Xna.Framework.Graphics.Texture2D",
+      "ProjectsToExcludeFrom": []
+    },
+    {
+      "Name": "Screens/Level1/WhiteSquare32.png",
+      "IsSharedStatic": true,
+      "RuntimeType": "Microsoft.Xna.Framework.Graphics.Texture2D",
+      "ProjectsToExcludeFrom": []
     }
   ],
   "CustomVariables": [
@@ -321,7 +333,7 @@
       "InstantiatedByBase": true,
       "ContainedObjects": [
         {
-          "InstanceName": "Puppet1",
+          "InstanceName": "JohnPuppet",
           "SourceClassType": "Entities\\Puppet",
           "Properties": [
             {
@@ -334,7 +346,25 @@
             {
               "Type": "Color",
               "Member": "AxisAlignedRectangleInstanceColor",
-              "Value": "Red",
+              "Value": "Yellow",
+              "Time": 0.0
+            },
+            {
+              "Type": "Action",
+              "Member": "CurrentActionState",
+              "Value": "Idle",
+              "Time": 0.0
+            },
+            {
+              "Type": "Deployment",
+              "Member": "CurrentDeploymentState",
+              "Value": "Down",
+              "Time": 0.0
+            },
+            {
+              "Type": "PuppetName",
+              "Member": "CurrentPuppetNameState",
+              "Value": "JohnIdle",
               "Time": 0.0
             },
             {
@@ -346,7 +376,7 @@
             {
               "Type": "float",
               "Member": "Y",
-              "Value": -296.0,
+              "Value": -432.0,
               "Time": 0.0
             }
           ],
@@ -356,42 +386,7 @@
           "GenerateTimedEmit": true
         },
         {
-          "InstanceName": "Puppet2",
-          "SourceClassType": "Entities\\Puppet",
-          "Properties": [
-            {
-              "Name": "AssociateWithFactory",
-              "Value": true,
-              "Type": "bool"
-            }
-          ],
-          "InstructionSaves": [
-            {
-              "Type": "Color",
-              "Member": "AxisAlignedRectangleInstanceColor",
-              "Value": "Green",
-              "Time": 0.0
-            },
-            {
-              "Type": "float",
-              "Member": "X",
-              "Value": 512.0,
-              "Time": 0.0
-            },
-            {
-              "Type": "float",
-              "Member": "Y",
-              "Value": -296.0,
-              "Time": 0.0
-            }
-          ],
-          "SourceType": 1,
-          "SourceFile": "Entities\\Puppet",
-          "AttachToContainer": true,
-          "GenerateTimedEmit": true
-        },
-        {
-          "InstanceName": "Puppet4",
+          "InstanceName": "PeepoPuppet",
           "SourceClassType": "Entities\\Puppet",
           "Properties": [
             {
@@ -408,21 +403,79 @@
               "Time": 0.0
             },
             {
+              "Type": "Action",
+              "Member": "CurrentActionState",
+              "Value": "Idle",
+              "Time": 0.0
+            },
+            {
+              "Type": "PuppetName",
+              "Member": "CurrentPuppetNameState",
+              "Value": "PeepoIdle",
+              "Time": 0.0
+            },
+            {
               "Type": "float",
               "Member": "X",
-              "Value": 616.0,
+              "Value": 512.0,
               "Time": 0.0
             },
             {
               "Type": "float",
               "Member": "Y",
-              "Value": -296.0,
+              "Value": -432.0,
               "Time": 0.0
             }
           ],
           "SourceType": 1,
           "SourceFile": "Entities\\Puppet",
           "AttachToContainer": true,
+          "GenerateTimedEmit": true
+        },
+        {
+          "InstanceName": "SmelvinPuppet",
+          "SourceClassType": "Entities\\Puppet",
+          "Properties": [
+            {
+              "Name": "AssociateWithFactory",
+              "Value": true,
+              "Type": "bool"
+            }
+          ],
+          "InstructionSaves": [
+            {
+              "Type": "Color",
+              "Member": "AxisAlignedRectangleInstanceColor",
+              "Value": "Red",
+              "Time": 0.0
+            },
+            {
+              "Type": "Action",
+              "Member": "CurrentActionState",
+              "Value": "Idle",
+              "Time": 0.0
+            },
+            {
+              "Type": "PuppetName",
+              "Member": "CurrentPuppetNameState",
+              "Value": "SmelvinIdle",
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "X",
+              "Value": 608.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Y",
+              "Value": -432.0,
+              "Time": 0.0
+            }
+          ],
+          "SourceType": 1,
+          "SourceFile": "Entities\\Puppet",
           "GenerateTimedEmit": true
         }
       ]
@@ -440,7 +493,7 @@
       "InstructionSaves": [],
       "SourceType": 2,
       "SourceFile": "PositionedObjectList (Generic)",
-      "SourceClassGenericType": "Entities\\Button",
+      "SourceClassGenericType": "Entities\\WallButton",
       "ExposedInDerived": true,
       "AttachToContainer": true,
       "GenerateTimedEmit": true,
@@ -448,8 +501,8 @@
       "InstantiatedByBase": true,
       "ContainedObjects": [
         {
-          "InstanceName": "Button1",
-          "SourceClassType": "Entities\\Button",
+          "InstanceName": "PeepoButton",
+          "SourceClassType": "Entities\\WallButton",
           "Properties": [
             {
               "Name": "AssociateWithFactory",
@@ -459,34 +512,11 @@
           ],
           "InstructionSaves": [
             {
-              "Type": "float",
-              "Member": "X",
-              "Value": 192.0,
+              "Type": "Facing",
+              "Member": "CurrentFacingState",
+              "Value": "Right",
               "Time": 0.0
             },
-            {
-              "Type": "float",
-              "Member": "Y",
-              "Value": -496.0,
-              "Time": 0.0
-            }
-          ],
-          "SourceType": 1,
-          "SourceFile": "Entities\\Button",
-          "AttachToContainer": true,
-          "GenerateTimedEmit": true
-        },
-        {
-          "InstanceName": "Button2",
-          "SourceClassType": "Entities\\Button",
-          "Properties": [
-            {
-              "Name": "AssociateWithFactory",
-              "Value": true,
-              "Type": "bool"
-            }
-          ],
-          "InstructionSaves": [
             {
               "Type": "float",
               "Member": "X",
@@ -506,8 +536,8 @@
           "GenerateTimedEmit": true
         },
         {
-          "InstanceName": "Button3",
-          "SourceClassType": "Entities\\Button",
+          "InstanceName": "SmelvinButton",
+          "SourceClassType": "Entities\\WallButton",
           "Properties": [
             {
               "Name": "AssociateWithFactory",
@@ -517,34 +547,11 @@
           ],
           "InstructionSaves": [
             {
-              "Type": "float",
-              "Member": "X",
-              "Value": 816.0,
+              "Type": "Facing",
+              "Member": "CurrentFacingState",
+              "Value": "Left",
               "Time": 0.0
             },
-            {
-              "Type": "float",
-              "Member": "Y",
-              "Value": -496.0,
-              "Time": 0.0
-            }
-          ],
-          "SourceType": 1,
-          "SourceFile": "Entities\\Button",
-          "AttachToContainer": true,
-          "GenerateTimedEmit": true
-        },
-        {
-          "InstanceName": "Button4",
-          "SourceClassType": "Entities\\Button",
-          "Properties": [
-            {
-              "Name": "AssociateWithFactory",
-              "Value": true,
-              "Type": "bool"
-            }
-          ],
-          "InstructionSaves": [
             {
               "Type": "float",
               "Member": "X",
@@ -564,6 +571,408 @@
           "GenerateTimedEmit": true
         }
       ]
+    },
+    {
+      "InstanceName": "SpriteContainerList",
+      "SourceClassType": "FlatRedBall.Math.PositionedObjectList<T>",
+      "Properties": [
+        {
+          "Name": "AssociateWithFactory",
+          "Value": true,
+          "Type": "bool"
+        }
+      ],
+      "InstructionSaves": [],
+      "SourceType": 2,
+      "SourceFile": "PositionedObjectList (Generic)",
+      "SourceClassGenericType": "Entities\\SpriteContainer",
+      "ExposedInDerived": true,
+      "AttachToContainer": true,
+      "GenerateTimedEmit": true,
+      "DefinedByBase": true,
+      "InstantiatedByBase": true,
+      "ContainedObjects": [
+        {
+          "InstanceName": "ForegroundContainer",
+          "SourceClassType": "Entities\\SpriteContainer",
+          "Properties": [
+            {
+              "Name": "AssociateWithFactory",
+              "Value": true,
+              "Type": "bool"
+            }
+          ],
+          "InstructionSaves": [
+            {
+              "Type": "Texture2D",
+              "Member": "SpriteInstanceTexture",
+              "Value": "CurtainsForeground",
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "X",
+              "Value": 512.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Y",
+              "Value": -288.0,
+              "Time": 0.0
+            }
+          ],
+          "SourceType": 1,
+          "SourceFile": "Entities\\SpriteContainer",
+          "AttachToContainer": true,
+          "GenerateTimedEmit": true
+        }
+      ]
+    },
+    {
+      "InstanceName": "ConfirmLeverList",
+      "SourceClassType": "FlatRedBall.Math.PositionedObjectList<T>",
+      "Properties": [
+        {
+          "Name": "AssociateWithFactory",
+          "Value": true,
+          "Type": "bool"
+        }
+      ],
+      "InstructionSaves": [],
+      "SourceType": 2,
+      "SourceFile": "PositionedObjectList (Generic)",
+      "SourceClassGenericType": "Entities\\ConfirmLever",
+      "ExposedInDerived": true,
+      "AttachToContainer": true,
+      "GenerateTimedEmit": true,
+      "DefinedByBase": true,
+      "InstantiatedByBase": true,
+      "ContainedObjects": [
+        {
+          "InstanceName": "ConfirmLever1",
+          "SourceClassType": "Entities\\ConfirmLever",
+          "Properties": [
+            {
+              "Name": "AssociateWithFactory",
+              "Value": true,
+              "Type": "bool"
+            }
+          ],
+          "InstructionSaves": [
+            {
+              "Type": "float",
+              "Member": "X",
+              "Value": 512.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Y",
+              "Value": -496.0,
+              "Time": 0.0
+            }
+          ],
+          "SourceType": 1,
+          "SourceFile": "Entities\\ConfirmLever",
+          "AttachToContainer": true,
+          "GenerateTimedEmit": true
+        }
+      ]
+    },
+    {
+      "InstanceName": "MusicBoxList",
+      "SourceClassType": "FlatRedBall.Math.PositionedObjectList<T>",
+      "Properties": [
+        {
+          "Name": "AssociateWithFactory",
+          "Value": true,
+          "Type": "bool"
+        }
+      ],
+      "InstructionSaves": [],
+      "SourceType": 2,
+      "SourceFile": "PositionedObjectList (Generic)",
+      "SourceClassGenericType": "Entities\\MusicBox",
+      "ExposedInDerived": true,
+      "AttachToContainer": true,
+      "GenerateTimedEmit": true,
+      "DefinedByBase": true,
+      "InstantiatedByBase": true,
+      "ContainedObjects": [
+        {
+          "InstanceName": "MusicBox1",
+          "SourceClassType": "Entities\\MusicBox",
+          "Properties": [
+            {
+              "Name": "AssociateWithFactory",
+              "Value": true,
+              "Type": "bool"
+            }
+          ],
+          "InstructionSaves": [
+            {
+              "Type": "float",
+              "Member": "X",
+              "Value": 208.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Y",
+              "Value": -496.0,
+              "Time": 0.0
+            }
+          ],
+          "SourceType": 1,
+          "SourceFile": "Entities\\MusicBox",
+          "AttachToContainer": true,
+          "GenerateTimedEmit": true
+        }
+      ]
+    },
+    {
+      "InstanceName": "ActionSelectorList",
+      "SourceClassType": "FlatRedBall.Math.PositionedObjectList<T>",
+      "Properties": [
+        {
+          "Name": "AssociateWithFactory",
+          "Value": true,
+          "Type": "bool"
+        }
+      ],
+      "InstructionSaves": [],
+      "SourceType": 2,
+      "SourceFile": "PositionedObjectList (Generic)",
+      "SourceClassGenericType": "Entities\\ActionSelector",
+      "ExposedInDerived": true,
+      "AttachToContainer": true,
+      "GenerateTimedEmit": true,
+      "DefinedByBase": true,
+      "InstantiatedByBase": true,
+      "ContainedObjects": [
+        {
+          "InstanceName": "ActionSelector1",
+          "SourceClassType": "Entities\\ActionSelector",
+          "Properties": [
+            {
+              "Name": "AssociateWithFactory",
+              "Value": true,
+              "Type": "bool"
+            }
+          ],
+          "InstructionSaves": [
+            {
+              "Type": "float",
+              "Member": "X",
+              "Value": 816.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Y",
+              "Value": -496.0,
+              "Time": 0.0
+            }
+          ],
+          "SourceType": 1,
+          "SourceFile": "Entities\\ActionSelector",
+          "AttachToContainer": true,
+          "GenerateTimedEmit": true
+        }
+      ]
+    },
+    {
+      "InstanceName": "CeilingButtonList",
+      "SourceClassType": "FlatRedBall.Math.PositionedObjectList<T>",
+      "Properties": [
+        {
+          "Name": "AssociateWithFactory",
+          "Value": true,
+          "Type": "bool"
+        }
+      ],
+      "InstructionSaves": [],
+      "SourceType": 2,
+      "SourceFile": "PositionedObjectList (Generic)",
+      "SourceClassGenericType": "Entities\\CeilingButton",
+      "ExposedInDerived": true,
+      "AttachToContainer": true,
+      "GenerateTimedEmit": true,
+      "DefinedByBase": true,
+      "InstantiatedByBase": true,
+      "ContainedObjects": [
+        {
+          "InstanceName": "JohnButton",
+          "SourceClassType": "Entities\\CeilingButton",
+          "Properties": [
+            {
+              "Name": "AssociateWithFactory",
+              "Value": true,
+              "Type": "bool"
+            }
+          ],
+          "InstructionSaves": [
+            {
+              "Type": "float",
+              "Member": "X",
+              "Value": 512.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Y",
+              "Value": -424.0,
+              "Time": 0.0
+            }
+          ],
+          "SourceType": 1,
+          "SourceFile": "Entities\\CeilingButton",
+          "AttachToContainer": true,
+          "GenerateTimedEmit": true
+        }
+      ]
+    },
+    {
+      "InstanceName": "Background",
+      "SourceClassType": "FlatRedBall.Sprite",
+      "Properties": [
+        {
+          "Name": "AssociateWithFactory",
+          "Value": true,
+          "Type": "bool"
+        }
+      ],
+      "InstructionSaves": [
+        {
+          "Type": "float",
+          "Member": "Blue",
+          "Value": 0.11372549,
+          "Time": 0.0
+        },
+        {
+          "Type": "ColorOperation",
+          "Member": "ColorOperation",
+          "Value": 6,
+          "Time": 0.0
+        },
+        {
+          "Type": "float",
+          "Member": "Green",
+          "Value": 0.105882354,
+          "Time": 0.0
+        },
+        {
+          "Type": "float",
+          "Member": "Height",
+          "Value": 576.0,
+          "Time": 0.0
+        },
+        {
+          "Type": "float",
+          "Member": "Red",
+          "Value": 0.18431373,
+          "Time": 0.0
+        },
+        {
+          "Type": "Texture2D",
+          "Member": "Texture",
+          "Value": "WhiteSquare32",
+          "Time": 0.0
+        },
+        {
+          "Type": "float",
+          "Member": "TextureScale",
+          "Value": 1.0,
+          "Time": 0.0
+        },
+        {
+          "Type": "float",
+          "Member": "Width",
+          "Value": 1024.0,
+          "Time": 0.0
+        },
+        {
+          "Type": "float",
+          "Member": "X",
+          "Value": 512.0,
+          "Time": 0.0
+        },
+        {
+          "Type": "float",
+          "Member": "Y",
+          "Value": -288.0,
+          "Time": 0.0
+        },
+        {
+          "Type": "float",
+          "Member": "Z",
+          "Value": -1.0,
+          "Time": 0.0
+        }
+      ],
+      "SourceType": 2,
+      "SourceFile": "Sprite",
+      "GenerateTimedEmit": true
+    },
+    {
+      "InstanceName": "CurtainsForegroundInstance",
+      "SourceClassType": "FlatRedBall.Sprite",
+      "Properties": [
+        {
+          "Name": "AssociateWithFactory",
+          "Value": true,
+          "Type": "bool"
+        }
+      ],
+      "InstructionSaves": [
+        {
+          "Type": "Texture2D",
+          "Member": "Texture",
+          "Value": "CurtainsForeground",
+          "Time": 0.0
+        },
+        {
+          "Type": "float",
+          "Member": "TextureScale",
+          "Value": 1.0,
+          "Time": 0.0
+        },
+        {
+          "Type": "bool",
+          "Member": "Visible",
+          "Value": false,
+          "Time": 0.0
+        },
+        {
+          "Type": "float",
+          "Member": "Width",
+          "Value": 192.0,
+          "Time": 0.0
+        },
+        {
+          "Type": "float",
+          "Member": "X",
+          "Value": 512.0,
+          "Time": 0.0
+        },
+        {
+          "Type": "float",
+          "Member": "Y",
+          "Value": -288.0,
+          "Time": 0.0
+        },
+        {
+          "Type": "float",
+          "Member": "Z",
+          "Value": 0.0,
+          "Time": 0.0
+        }
+      ],
+      "SourceType": 2,
+      "SourceFile": "Sprite",
+      "AttachToContainer": true,
+      "GenerateTimedEmit": true
     }
   ],
   "Name": "Screens\\Level1",

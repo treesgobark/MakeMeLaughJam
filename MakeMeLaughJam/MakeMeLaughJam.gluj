@@ -102,13 +102,28 @@
   ],
   "EntityReferences": [
     {
-      "Name": "Entities\\Button"
+      "Name": "Entities\\ActionSelector"
+    },
+    {
+      "Name": "Entities\\CeilingButton"
+    },
+    {
+      "Name": "Entities\\ConfirmLever"
+    },
+    {
+      "Name": "Entities\\MusicBox"
     },
     {
       "Name": "Entities\\Player"
     },
     {
       "Name": "Entities\\Puppet"
+    },
+    {
+      "Name": "Entities\\SpriteContainer"
+    },
+    {
+      "Name": "Entities\\WallButton"
     }
   ],
   "Bookmarks": [],

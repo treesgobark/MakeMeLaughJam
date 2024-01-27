@@ -1,0 +1,23 @@
+{
+  "Values": [
+    {
+      "AnimationName": "Pie",
+      "HasLeftAndRight": true,
+      "MinXVelocityAbsolute": null,
+      "MaxXVelocityAbsolute": null,
+      "MinYVelocity": null,
+      "MaxYVelocity": null,
+      "MinHorizontalInputAbsolute": null,
+      "MaxHorizontalInputAbsolute": null,
+      "AbsoluteXVelocityAnimationSpeedMultiplier": null,
+      "AbsoluteYVelocityAnimationSpeedMultiplier": null,
+      "MaxSpeedXRatioMultiplier": null,
+      "MaxSpeedYRatioMultiplier": null,
+      "OnGroundRequirement": null,
+      "MovementName": null,
+      "CustomCondition": null,
+      "AnimationSpeedAssignment": 0,
+      "Notes": null
+    }
+  ]
+}

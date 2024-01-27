@@ -20,6 +20,10 @@
     <None Remove="**\*.glsj" />
     <None Remove="**\*.glej" />
     <None Remove="**\*.gluj" />
+    <None Include="content\entities\player\boysprite-sheet.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>boysprite-sheet</Name>
+    </None>
     <None Include="content\entities\player\frbeefcakespritesheet.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Name>frbeefcakespritesheet</Name>
@@ -31,6 +35,10 @@
     <None Include="content\entities\player\platformervaluesstatic.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Name>PlatformerValuesStatic</Name>
+    </None>
+    <None Include="content\entities\puppet\puppetanimations.achx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>PuppetAnimations</Name>
     </None>
     <None Include="content\entities\puppet\platformervaluesstatic.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -55,6 +63,10 @@
     <None Include="content\gumproject\components\controls\buttonicon.gucx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Name>buttonicon</Name>
+    </None>
+    <None Include="content\gumproject\components\controls\buttonsprite.gucx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>buttonsprite</Name>
     </None>
     <None Include="content\gumproject\components\controls\buttonstandard.gucx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -128,6 +140,10 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Name>slider</Name>
     </None>
+    <None Include="content\gumproject\components\controls\slidersprites.gucx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>slidersprites</Name>
+    </None>
     <None Include="content\gumproject\components\controls\textbox.gucx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Name>textbox</Name>
@@ -187,6 +203,10 @@
     <None Include="content\gumproject\components\elements\verticallines.gucx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Name>verticallines</Name>
+    </None>
+    <None Include="content\gumproject\components\fancyaudiencebar.gucx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>fancyaudiencebar</Name>
     </None>
     <None Include="content\gumproject\components\mainmenu.gucx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -364,6 +384,166 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Name>uispritesheet</Name>
     </None>
+    <None Include="content\screens\level1\curtainsforeground.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>CurtainsForeground</Name>
+    </None>
+    <None Include="content\screens\level1\img_3326.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>img_3326</Name>
+    </None>
+    <None Include="content\screens\level1\img_3327.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>img_3327</Name>
+    </None>
+    <None Include="content\screens\level1\img_3328.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>img_3328</Name>
+    </None>
+    <None Include="content\screens\level1\img_3329.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>img_3329</Name>
+    </None>
+    <None Include="content\screens\level1\img_3330.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>img_3330</Name>
+    </None>
+    <None Include="content\screens\level1\img_3331.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>img_3331</Name>
+    </None>
+    <None Include="content\screens\level1\img_3332.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>img_3332</Name>
+    </None>
+    <None Include="content\screens\level1\img_3333.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>img_3333</Name>
+    </None>
+    <None Include="content\screens\level1\img_3334.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>img_3334</Name>
+    </None>
+    <None Include="content\screens\level1\img_3335.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>img_3335</Name>
+    </None>
+    <None Include="content\screens\level1\img_3336.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>img_3336</Name>
+    </None>
+    <None Include="content\screens\level1\img_3337.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>img_3337</Name>
+    </None>
+    <None Include="content\screens\level1\img_3338.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>img_3338</Name>
+    </None>
+    <None Include="content\screens\level1\img_3339.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>img_3339</Name>
+    </None>
+    <None Include="content\screens\level1\img_3340.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>img_3340</Name>
+    </None>
+    <None Include="content\screens\level1\img_3341.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>img_3341</Name>
+    </None>
+    <None Include="content\screens\level1\img_3342.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>img_3342</Name>
+    </None>
+    <None Include="content\screens\level1\img_3343.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>img_3343</Name>
+    </None>
+    <None Include="content\screens\level1\img_3344.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>img_3344</Name>
+    </None>
+    <None Include="content\screens\level1\img_3345.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>img_3345</Name>
+    </None>
+    <None Include="content\screens\level1\img_3346.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>img_3346</Name>
+    </None>
+    <None Include="content\screens\level1\img_3347.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>img_3347</Name>
+    </None>
+    <None Include="content\screens\level1\img_3348.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>img_3348</Name>
+    </None>
+    <None Include="content\screens\level1\img_3349.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>img_3349</Name>
+    </None>
+    <None Include="content\screens\level1\img_3350.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>img_3350</Name>
+    </None>
+    <None Include="content\screens\level1\img_3351.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>img_3351</Name>
+    </None>
+    <None Include="content\screens\level1\img_3352.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>img_3352</Name>
+    </None>
+    <None Include="content\screens\level1\img_3353.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>img_3353</Name>
+    </None>
+    <None Include="content\screens\level1\img_3354.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>img_3354</Name>
+    </None>
+    <None Include="content\screens\level1\img_3355.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>img_3355</Name>
+    </None>
+    <None Include="content\screens\level1\img_3356.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>img_3356</Name>
+    </None>
+    <None Include="content\screens\level1\img_3357.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>img_3357</Name>
+    </None>
+    <None Include="content\screens\level1\img_3358.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>img_3358</Name>
+    </None>
+    <None Include="content\screens\level1\img_3359.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>img_3359</Name>
+    </None>
+    <None Include="content\screens\level1\img_3360.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>img_3360</Name>
+    </None>
+    <None Include="content\screens\level1\img_3361.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>img_3361</Name>
+    </None>
+    <None Include="content\screens\level1\img_3362.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>img_3362</Name>
+    </None>
+    <None Include="content\screens\level1\img_3363.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>img_3363</Name>
+    </None>
+    <None Include="content\screens\level1\img_3364.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>img_3364</Name>
+    </None>
     <None Include="content\screens\level1\level1map.tmx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Name>Level1Map</Name>
@@ -388,6 +568,10 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Name>mask5</Name>
     </None>
+    <None Include="content\screens\level1\whitesquare32.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>WhiteSquare32</Name>
+    </None>
     <None Include="content\standardtileset.tsx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Name>standardtileset</Name>
@@ -400,9 +584,25 @@
   <ItemGroup>
     <Compile Include="DataTypes\PlatformerValues.Generated.cs" />
     <Compile Include="DataTypes\TileMapInfo.Generated.cs" />
-    <Compile Include="Entities\Button.cs" />
-    <Compile Include="Entities\Button.Generated.cs">
-      <DependentUpon>Button.cs</DependentUpon>
+    <Compile Include="Entities\ActionSelector.cs" />
+    <Compile Include="Entities\ActionSelector.Generated.cs">
+      <DependentUpon>ActionSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\CeilingButton.cs" />
+    <Compile Include="Entities\CeilingButton.Generated.cs">
+      <DependentUpon>CeilingButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\WallButton.cs" />
+    <Compile Include="Entities\WallButton.Generated.cs">
+      <DependentUpon>WallButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\ConfirmLever.cs" />
+    <Compile Include="Entities\ConfirmLever.Generated.cs">
+      <DependentUpon>ConfirmLever.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\MusicBox.cs" />
+    <Compile Include="Entities\MusicBox.Generated.cs">
+      <DependentUpon>MusicBox.cs</DependentUpon>
     </Compile>
     <Compile Include="Entities\Player.cs" />
     <Compile Include="Entities\Player.Generated.cs">
@@ -412,9 +612,18 @@
     <Compile Include="Entities\Puppet.Generated.cs">
       <DependentUpon>Puppet.cs</DependentUpon>
     </Compile>
-    <Compile Include="Factories\ButtonFactory.Generated.cs" />
+    <Compile Include="Entities\SpriteContainer.cs" />
+    <Compile Include="Entities\SpriteContainer.Generated.cs">
+      <DependentUpon>SpriteContainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Factories\ActionSelectorFactory.Generated.cs" />
+    <Compile Include="Factories\CeilingButtonFactory.Generated.cs" />
+    <Compile Include="Factories\WallButtonFactory.Generated.cs" />
+    <Compile Include="Factories\ConfirmLeverFactory.Generated.cs" />
+    <Compile Include="Factories\MusicBoxFactory.Generated.cs" />
     <Compile Include="Factories\PlayerFactory.Generated.cs" />
     <Compile Include="Factories\PuppetFactory.Generated.cs" />
+    <Compile Include="Factories\SpriteContainerFactory.Generated.cs" />
     <Compile Include="FileAliases.Generated.cs" />
     <Compile Include="Forms\Components\MainMenuForms.Generated.cs" />
     <Compile Include="Forms\Components\OptionsForms.Generated.cs" />
@@ -515,6 +724,10 @@
     <Compile Include="GumRuntimes\Controls\ButtonIconRuntime.Generated.cs">
       <DependentUpon>ButtonIconRuntime.cs</DependentUpon>
     </Compile>
+    <Compile Include="GumRuntimes\Controls\ButtonSpriteRuntime.cs" />
+    <Compile Include="GumRuntimes\Controls\ButtonSpriteRuntime.Generated.cs">
+      <DependentUpon>ButtonSpriteRuntime.cs</DependentUpon>
+    </Compile>
     <Compile Include="GumRuntimes\Controls\ButtonStandardIconRuntime.cs" />
     <Compile Include="GumRuntimes\Controls\ButtonStandardIconRuntime.Generated.cs">
       <DependentUpon>ButtonStandardIconRuntime.cs</DependentUpon>
@@ -587,6 +800,10 @@
     <Compile Include="GumRuntimes\Controls\SliderRuntime.Generated.cs">
       <DependentUpon>SliderRuntime.cs</DependentUpon>
     </Compile>
+    <Compile Include="GumRuntimes\Controls\SliderSpritesRuntime.cs" />
+    <Compile Include="GumRuntimes\Controls\SliderSpritesRuntime.Generated.cs">
+      <DependentUpon>SliderSpritesRuntime.cs</DependentUpon>
+    </Compile>
     <Compile Include="GumRuntimes\Controls\TextBoxRuntime.cs" />
     <Compile Include="GumRuntimes\Controls\TextBoxRuntime.Generated.cs">
       <DependentUpon>TextBoxRuntime.cs</DependentUpon>
@@ -646,6 +863,10 @@
     <Compile Include="GumRuntimes\Elements\VerticalLinesRuntime.cs" />
     <Compile Include="GumRuntimes\Elements\VerticalLinesRuntime.Generated.cs">
       <DependentUpon>VerticalLinesRuntime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GumRuntimes\FancyAudienceBarRuntime.cs" />
+    <Compile Include="GumRuntimes\FancyAudienceBarRuntime.Generated.cs">
+      <DependentUpon>FancyAudienceBarRuntime.cs</DependentUpon>
     </Compile>
     <Compile Include="GumRuntimes\GameScreenGumRuntime.cs" />
     <Compile Include="GumRuntimes\GameScreenGumRuntime.Generated.cs">

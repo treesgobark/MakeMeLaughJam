@@ -12,6 +12,12 @@
       "HasPublicProperty": true,
       "CreatesDictionary": true,
       "ProjectsToExcludeFrom": []
+    },
+    {
+      "Name": "Entities/Puppet/PuppetAnimations.achx",
+      "IsSharedStatic": true,
+      "RuntimeType": "FlatRedBall.Graphics.Animation.AnimationChainList",
+      "ProjectsToExcludeFrom": []
     }
   ],
   "CustomVariables": [
@@ -105,6 +111,68 @@
       "Name": "AfterDoubleJump",
       "SetByDerived": true,
       "CreatesEvent": true
+    },
+    {
+      "Properties": [
+        {
+          "Name": "Type",
+          "Value": "PuppetName",
+          "Type": "String"
+        }
+      ],
+      "Name": "CurrentPuppetNameState",
+      "SetByDerived": true
+    },
+    {
+      "Properties": [
+        {
+          "Name": "Type",
+          "Value": "Deployment",
+          "Type": "String"
+        }
+      ],
+      "Name": "CurrentDeploymentState",
+      "SetByDerived": true
+    },
+    {
+      "Properties": [
+        {
+          "Name": "Type",
+          "Value": "float",
+          "Type": "String"
+        },
+        {
+          "Name": "Category",
+          "Value": "Position",
+          "Type": "String"
+        }
+      ],
+      "Name": "SpriteInstanceY",
+      "DefaultValue": 0.0,
+      "SetByDerived": true,
+      "SourceObject": "SpriteInstance",
+      "SourceObjectProperty": "Y",
+      "Category": "Position"
+    },
+    {
+      "Properties": [
+        {
+          "Name": "Type",
+          "Value": "float",
+          "Type": "String"
+        },
+        {
+          "Name": "Category",
+          "Value": "Position",
+          "Type": "String"
+        }
+      ],
+      "Name": "AxisAlignedRectangleInstanceY",
+      "DefaultValue": 0.0,
+      "SetByDerived": true,
+      "SourceObject": "AxisAlignedRectangleInstance",
+      "SourceObjectProperty": "Y",
+      "Category": "Position"
     }
   ],
   "Properties": [
@@ -172,6 +240,113 @@
       "HasPublicProperty": true,
       "AttachToContainer": true,
       "GenerateTimedEmit": true
+    }
+  ],
+  "StateCategoryList": [
+    {
+      "Name": "PuppetName",
+      "States": [
+        {
+          "Name": "PeepoIdle",
+          "InstructionSaves": []
+        },
+        {
+          "Name": "PeepoPie",
+          "InstructionSaves": []
+        },
+        {
+          "Name": "PeepoDancing",
+          "InstructionSaves": []
+        },
+        {
+          "Name": "PeepoFire",
+          "InstructionSaves": []
+        },
+        {
+          "Name": "SmelvinIdle",
+          "InstructionSaves": []
+        },
+        {
+          "Name": "SmelvinPie",
+          "InstructionSaves": []
+        },
+        {
+          "Name": "SmelvinDancing",
+          "InstructionSaves": []
+        },
+        {
+          "Name": "SmelvinFire",
+          "InstructionSaves": []
+        },
+        {
+          "Name": "JohnIdle",
+          "InstructionSaves": []
+        },
+        {
+          "Name": "JohnPie",
+          "InstructionSaves": []
+        },
+        {
+          "Name": "JohnDancing",
+          "InstructionSaves": []
+        },
+        {
+          "Name": "JohnFire",
+          "InstructionSaves": []
+        }
+      ],
+      "ExcludedVariables": [
+        "X",
+        "Y",
+        "Z",
+        "AxisAlignedRectangleInstanceColor",
+        "GroundMovement",
+        "AirMovement",
+        "AfterDoubleJump",
+        "CurrentActionState",
+        "CurrentNameState",
+        "CurrentPuppetNameState",
+        "CurrentDeploymentState",
+        "SpriteInstanceY",
+        "AxisAlignedRectangleInstanceY"
+      ]
+    },
+    {
+      "Name": "Deployment",
+      "States": [
+        {
+          "Name": "Up",
+          "InstructionSaves": [
+            {
+              "Type": "float",
+              "Member": "SpriteInstanceY",
+              "Value": 40.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "AxisAlignedRectangleInstanceY",
+              "Value": 40.0,
+              "Time": 0.0
+            }
+          ]
+        },
+        {
+          "Name": "Down",
+          "InstructionSaves": []
+        }
+      ],
+      "ExcludedVariables": [
+        "X",
+        "Y",
+        "Z",
+        "AxisAlignedRectangleInstanceColor",
+        "GroundMovement",
+        "AirMovement",
+        "AfterDoubleJump",
+        "CurrentPuppetNameState",
+        "CurrentDeploymentState"
+      ]
     }
   ],
   "Name": "Entities\\Puppet",

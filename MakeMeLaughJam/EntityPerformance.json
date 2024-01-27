@@ -1,0 +1,18 @@
+{
+  "EntityManagementValueList": [
+    {
+      "Name": "Entities\\Button",
+      "SelectedProperties": [],
+      "InstanceManagementValuesList": [
+        {
+          "SelectedProperties": [],
+          "Name": "SpriteInstance"
+        },
+        {
+          "SelectedProperties": [],
+          "Name": "AxisAlignedRectangleInstance"
+        }
+      ]
+    }
+  ]
+}

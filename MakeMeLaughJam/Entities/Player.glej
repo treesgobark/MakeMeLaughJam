@@ -113,7 +113,7 @@
         }
       ],
       "Name": "PunchRecovery",
-      "DefaultValue": 0.1,
+      "DefaultValue": 0.2,
       "SetByDerived": true
     },
     {
@@ -175,6 +175,12 @@
           "Member": "TextureScale",
           "Value": 1.0,
           "Time": 0.0
+        },
+        {
+          "Type": "float",
+          "Member": "Width",
+          "Value": 31.999996,
+          "Time": 0.0
         }
       ],
       "SourceType": 2,
@@ -200,15 +206,21 @@
           "Time": 0.0
         },
         {
+          "Type": "bool",
+          "Member": "Visible",
+          "Value": false,
+          "Time": 0.0
+        },
+        {
           "Type": "float",
           "Member": "Width",
-          "Value": 32.0,
+          "Value": 16.0,
           "Time": 0.0
         },
         {
           "Type": "float",
           "Member": "Y",
-          "Value": 8.0,
+          "Value": 0.0,
           "Time": 0.0
         }
       ],
@@ -217,6 +229,43 @@
       "HasPublicProperty": true,
       "AttachToContainer": true,
       "GenerateTimedEmit": true
+    },
+    {
+      "InstanceName": "PunchHitbox",
+      "SourceClassType": "FlatRedBall.Math.Geometry.Circle",
+      "Properties": [
+        {
+          "Name": "AssociateWithFactory",
+          "Value": true,
+          "Type": "bool"
+        }
+      ],
+      "InstructionSaves": [
+        {
+          "Type": "float",
+          "Member": "Radius",
+          "Value": 12.0,
+          "Time": 0.0
+        },
+        {
+          "Type": "float",
+          "Member": "X",
+          "Value": 8.0,
+          "Time": 0.0
+        },
+        {
+          "Type": "bool",
+          "Member": "Visible",
+          "Value": false,
+          "Time": 0.0
+        }
+      ],
+      "SourceType": 2,
+      "SourceFile": "Circle",
+      "HasPublicProperty": true,
+      "AttachToContainer": true,
+      "GenerateTimedEmit": true,
+      "IncludeInICollidable": false
     }
   ],
   "Name": "Entities\\Player",
