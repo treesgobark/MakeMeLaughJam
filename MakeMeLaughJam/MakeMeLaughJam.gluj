@@ -97,9 +97,6 @@
       "Name": "Screens\\Level1"
     },
     {
-      "Name": "Screens\\Level2"
-    },
-    {
       "Name": "Screens\\MainMenu"
     }
   ],
@@ -128,15 +125,15 @@
     "Name": "Custom",
     "GenerateDisplayCode": true,
     "Is2D": true,
-    "ResolutionWidth": 512,
-    "ResolutionHeight": 288,
+    "ResolutionWidth": 1024,
+    "ResolutionHeight": 576,
     "FixedAspectRatio": true,
     "AspectRatioBehavior": 1,
     "AspectRatioWidth": 16.0,
     "AspectRatioHeight": 9.0,
     "SupportLandscape": true,
     "AllowWindowResizing": true,
-    "Scale": 300,
+    "Scale": 200,
     "ScaleGum": 100,
     "DominantInternalCoordinates": 1,
     "TextureFilter": 1

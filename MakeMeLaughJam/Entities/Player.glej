@@ -125,7 +125,7 @@
         }
       ],
       "Name": "PunchKnockbackSpeed",
-      "DefaultValue": 300.0,
+      "DefaultValue": 600.0,
       "SetByDerived": true
     }
   ],

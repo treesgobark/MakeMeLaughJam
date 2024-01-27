@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="32" height="18" tilewidth="16" tileheight="16" infinite="0" nextlayerid="2" nextobjectid="1">
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="32" height="18" tilewidth="32" tileheight="32" infinite="0" nextlayerid="2" nextobjectid="1">
  <tileset firstgid="1" source="../../StandardTileset.tsx"/>
  <layer id="1" name="GameplayLayer" width="32" height="18" tintcolor="#ffffff">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAACmNgGAWDHTQCcROJGKingVr2A81LwMcnVs2o/aP2owPGQYAJAVr5f6jYDyxLHMgofw5Qy35aAZj9LGiYEEBXT66+weL/gbZ/IDEAlwBEUQAJAAA=
+   H4sIAAAAAAAACmNgGAWjYBSMglEwCiCAkUaYFPupDUi1nwUJkwuQzRhq/h/I+KcnAAAzVOm9AAkAAA==
   </data>
  </layer>
 </map>

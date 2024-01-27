@@ -265,13 +265,13 @@
             {
               "Type": "float",
               "Member": "X",
-              "Value": 256.0,
+              "Value": 480.0,
               "Time": 0.0
             },
             {
               "Type": "float",
               "Member": "Y",
-              "Value": -224.0,
+              "Value": -488.0,
               "Time": 0.0
             }
           ],
@@ -325,13 +325,13 @@
             {
               "Type": "float",
               "Member": "X",
-              "Value": 184.0,
+              "Value": 408.0,
               "Time": 0.0
             },
             {
               "Type": "float",
               "Member": "Y",
-              "Value": -136.0,
+              "Value": -296.0,
               "Time": 0.0
             }
           ],
@@ -360,13 +360,13 @@
             {
               "Type": "float",
               "Member": "X",
-              "Value": 256.0,
+              "Value": 512.0,
               "Time": 0.0
             },
             {
               "Type": "float",
               "Member": "Y",
-              "Value": -136.0,
+              "Value": -296.0,
               "Time": 0.0
             }
           ],
@@ -395,13 +395,13 @@
             {
               "Type": "float",
               "Member": "X",
-              "Value": 328.0,
+              "Value": 616.0,
               "Time": 0.0
             },
             {
               "Type": "float",
               "Member": "Y",
-              "Value": -136.0,
+              "Value": -296.0,
               "Time": 0.0
             }
           ],
@@ -446,13 +446,13 @@
             {
               "Type": "float",
               "Member": "X",
-              "Value": 32.0,
+              "Value": 208.0,
               "Time": 0.0
             },
             {
               "Type": "float",
               "Member": "Y",
-              "Value": -256.0,
+              "Value": -496.0,
               "Time": 0.0
             }
           ],
@@ -475,13 +475,13 @@
             {
               "Type": "float",
               "Member": "X",
-              "Value": 32.0,
+              "Value": 208.0,
               "Time": 0.0
             },
             {
               "Type": "float",
               "Member": "Y",
-              "Value": -208.0,
+              "Value": -432.0,
               "Time": 0.0
             }
           ],
@@ -504,13 +504,13 @@
             {
               "Type": "float",
               "Member": "X",
-              "Value": 480.0,
+              "Value": 816.0,
               "Time": 0.0
             },
             {
               "Type": "float",
               "Member": "Y",
-              "Value": -208.0,
+              "Value": -496.0,
               "Time": 0.0
             }
           ],
@@ -533,13 +533,13 @@
             {
               "Type": "float",
               "Member": "X",
-              "Value": 480.0,
+              "Value": 816.0,
               "Time": 0.0
             },
             {
               "Type": "float",
               "Member": "Y",
-              "Value": -256.0,
+              "Value": -432.0,
               "Time": 0.0
             }
           ],
