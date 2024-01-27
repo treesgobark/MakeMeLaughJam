@@ -68,5 +68,10 @@
     <BaseType>Options</BaseType>
     <DefinedByBase>false</DefinedByBase>
   </Instance>
+  <Instance>
+    <Name>AudienceBarInstance</Name>
+    <BaseType>AudienceBar</BaseType>
+    <DefinedByBase>false</DefinedByBase>
+  </Instance>
   <Behaviors />
 </ScreenSave>

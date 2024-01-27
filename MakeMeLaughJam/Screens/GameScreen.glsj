@@ -11,6 +11,20 @@
       "ProjectsToExcludeFrom": []
     }
   ],
+  "CustomVariables": [
+    {
+      "Properties": [
+        {
+          "Name": "Type",
+          "Value": "float",
+          "Type": "String"
+        }
+      ],
+      "Name": "MaxAudienceHealth",
+      "DefaultValue": 100.0,
+      "SetByDerived": true
+    }
+  ],
   "NamedObjects": [
     {
       "InstanceName": "PlayerList",

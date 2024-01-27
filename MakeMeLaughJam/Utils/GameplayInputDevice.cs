@@ -16,7 +16,7 @@ public class GameplayInputDevice
         switch (inputDevice)
         {
             case Xbox360GamePad gamePad:
-                Attack   = gamePad.GetButton(Xbox360GamePad.Button.RightShoulder);
+                Attack   = gamePad.GetButton(Xbox360GamePad.Button.X);
                 break;
             case Keyboard keyboard:
                 Attack   = InputManager.Mouse.GetButton(Mouse.MouseButtons.LeftButton);

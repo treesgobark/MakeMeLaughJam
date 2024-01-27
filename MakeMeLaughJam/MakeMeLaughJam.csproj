@@ -36,6 +36,10 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Name>PlatformerValuesStatic</Name>
     </None>
+    <None Include="content\gumproject\components\audiencebar.gucx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>audiencebar</Name>
+    </None>
     <None Include="content\gumproject\components\controls\buttonclose.gucx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Name>buttonclose</Name>
@@ -187,6 +191,10 @@
     <None Include="content\gumproject\components\mainmenu.gucx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Name>mainmenu</Name>
+    </None>
+    <None Include="content\gumproject\components\masks.gucx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>masks</Name>
     </None>
     <None Include="content\gumproject\components\options.gucx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -360,6 +368,26 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Name>Level1Map</Name>
     </None>
+    <None Include="content\screens\level1\mask1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>mask1</Name>
+    </None>
+    <None Include="content\screens\level1\mask2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>mask2</Name>
+    </None>
+    <None Include="content\screens\level1\mask3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>mask3</Name>
+    </None>
+    <None Include="content\screens\level1\mask4.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>mask4</Name>
+    </None>
+    <None Include="content\screens\level1\mask5.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>mask5</Name>
+    </None>
     <None Include="content\standardtileset.tsx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Name>standardtileset</Name>
@@ -440,6 +468,10 @@
     <Compile Include="GlueControl\Runtime\DynamicEntity.Generated.cs" />
     <Compile Include="GlueControl\Screens\EntityViewingScreen.Generated.cs" />
     <Compile Include="GumRuntimes\ArcRuntime.Generated.cs" />
+    <Compile Include="GumRuntimes\AudienceBarRuntime.cs" />
+    <Compile Include="GumRuntimes\AudienceBarRuntime.Generated.cs">
+      <DependentUpon>AudienceBarRuntime.cs</DependentUpon>
+    </Compile>
     <Compile Include="GumRuntimes\Behaviors\IButtonBehavior.Generated.cs" />
     <Compile Include="GumRuntimes\Behaviors\ICheckBoxBehavior.Generated.cs" />
     <Compile Include="GumRuntimes\Behaviors\IComboBoxBehavior.Generated.cs" />
@@ -633,6 +665,7 @@
     <Compile Include="GumRuntimes\MainMenuRuntime.Generated.cs">
       <DependentUpon>MainMenuRuntime.cs</DependentUpon>
     </Compile>
+    <Compile Include="GumRuntimes\MasksRuntime.Generated.cs" />
     <Compile Include="GumRuntimes\NineSliceRuntime.Generated.cs" />
     <Compile Include="GumRuntimes\OptionsRuntime.cs" />
     <Compile Include="GumRuntimes\OptionsRuntime.Generated.cs">

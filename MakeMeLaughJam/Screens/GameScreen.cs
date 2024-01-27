@@ -23,9 +23,32 @@ namespace MakeMeLaughJam.Screens
 {
     public partial class GameScreen
     {
+        private float _currentAudienceHealth;
+
+        public float CurrentAudienceHealth
+        {
+            get => _currentAudienceHealth;
+            set
+            {
+                _currentAudienceHealth                      = value;
+                var percent = 50 * _currentAudienceHealth / MaxAudienceHealth;
+                GumScreen.AudienceBarInstance.BarPercentageLeft = percent;
+                GumScreen.AudienceBarInstance.BarPercentageRight = percent;
+                GumScreen.AudienceBarInstance.MasksInstance.CurrentMasksState = percent switch
+                {
+                    > 40 => MasksRuntime.Masks.Ecstatic,
+                    > 30 => MasksRuntime.Masks.Satisfied,
+                    > 20 => MasksRuntime.Masks.Indifferent,
+                    > 10 => MasksRuntime.Masks.Upset,
+                    _    => MasksRuntime.Masks.Livid,
+                };
+            }
+        }
 
         void CustomInitialize()
         {
+            CurrentAudienceHealth = MaxAudienceHealth;
+            
             GumScreen.CurrentPauseState = GameScreenGumRuntime.Pause.NotPaused;
             
             Forms.PauseInstance.OptionsButton.Click += (sender, args) =>
@@ -47,6 +70,7 @@ namespace MakeMeLaughJam.Screens
         void CustomActivity(bool firstTimeCalled)
         {
             HandleInput();
+            CurrentAudienceHealth -= 10 * TimeManager.SecondDifference;
         }
 
         private void HandleInput()

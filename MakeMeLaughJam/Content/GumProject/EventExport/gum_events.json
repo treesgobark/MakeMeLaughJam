@@ -182,6 +182,335 @@
         "ElementType": "Screens",
         "EventType": 5,
         "TimestampUtc": "2024-01-27T05:15:04.0511769Z"
+      },
+      {
+        "NewName": "AudienceBar",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 0,
+        "TimestampUtc": "2024-01-27T16:40:49.3004534Z"
+      },
+      {
+        "NewName": "AudienceBar (Container).ColoredRectangleInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-27T16:41:23.7561757Z"
+      },
+      {
+        "NewName": "AudienceBar (Container).BackgroundColor",
+        "OldName": "AudienceBar (Container).ColoredRectangleInstance",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-27T16:41:51.5815357Z"
+      },
+      {
+        "NewName": "AudienceBar (Container).BackgroundRectangle",
+        "OldName": "AudienceBar (Container).BackgroundColor",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-27T16:41:57.5546222Z"
+      },
+      {
+        "NewName": "AudienceBar (Container).ColoredRectangleInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-27T16:42:56.4703744Z"
+      },
+      {
+        "NewName": "AudienceBar (Container).ForegroundRectangle",
+        "OldName": "AudienceBar (Container).ColoredRectangleInstance",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-27T16:43:13.3914038Z"
+      },
+      {
+        "NewName": "AudienceBar (Container).SpriteInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-27T16:45:19.8107304Z"
+      },
+      {
+        "NewName": "AudienceBar (Container).MaskSprite",
+        "OldName": "AudienceBar (Container).SpriteInstance",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-27T16:46:33.9332901Z"
+      },
+      {
+        "NewName": "AudienceBar (Container).MaskSpriteLivid",
+        "OldName": "AudienceBar (Container).MaskSprite",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-27T16:47:18.3929121Z"
+      },
+      {
+        "NewName": "AudienceBar (Container).MaskSpriteLivid1",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-27T16:47:20.4729114Z"
+      },
+      {
+        "NewName": "AudienceBar (Container).MaskSpriteUpset",
+        "OldName": "AudienceBar (Container).MaskSpriteLivid1",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-27T16:47:30.4429675Z"
+      },
+      {
+        "NewName": "AudienceBar (Container).MaskSpriteUpset1",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-27T16:47:33.0819686Z"
+      },
+      {
+        "NewName": "AudienceBar (Container).MaskSpriteUpset2",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-27T16:47:33.6329681Z"
+      },
+      {
+        "NewName": "AudienceBar (Container).MaskSpriteUpset3",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-27T16:47:33.879968Z"
+      },
+      {
+        "NewName": "AudienceBar (Container).MaskSpriteIndifferent",
+        "OldName": "AudienceBar (Container).MaskSpriteUpset1",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-27T16:47:40.6125811Z"
+      },
+      {
+        "NewName": "AudienceBar (Container).MaskSpriteSatisfied",
+        "OldName": "AudienceBar (Container).MaskSpriteUpset2",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-27T16:47:47.2345813Z"
+      },
+      {
+        "NewName": "AudienceBar (Container).MaskSpriteEcstatic",
+        "OldName": "AudienceBar (Container).MaskSpriteUpset3",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-27T16:47:54.0390225Z"
+      },
+      {
+        "NewName": "Masks",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 0,
+        "TimestampUtc": "2024-01-27T16:57:03.9742132Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "Masks",
+        "ElementType": "Components",
+        "EventType": 1,
+        "TimestampUtc": "2024-01-27T16:57:13.109473Z"
+      },
+      {
+        "NewName": "Masks",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 0,
+        "TimestampUtc": "2024-01-27T16:57:42.7299842Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "AudienceBar (Container).Sprite MaskSpriteLivid in AudienceBar (Container)",
+        "ElementType": "Components",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-27T16:57:46.7059645Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "AudienceBar (Container).Sprite MaskSpriteUpset in AudienceBar (Container)",
+        "ElementType": "Components",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-27T16:57:46.7069651Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "AudienceBar (Container).Sprite MaskSpriteIndifferent in AudienceBar (Container)",
+        "ElementType": "Components",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-27T16:57:46.7129652Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "AudienceBar (Container).Sprite MaskSpriteSatisfied in AudienceBar (Container)",
+        "ElementType": "Components",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-27T16:57:46.7169671Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "AudienceBar (Container).Sprite MaskSpriteEcstatic in AudienceBar (Container)",
+        "ElementType": "Components",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-27T16:57:46.7209653Z"
+      },
+      {
+        "NewName": "Masks (Container).MaskSpriteLivid",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-27T16:57:48.7041913Z"
+      },
+      {
+        "NewName": "Masks (Container).MaskSpriteUpset",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-27T16:57:48.7041913Z"
+      },
+      {
+        "NewName": "Masks (Container).MaskSpriteIndifferent",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-27T16:57:48.7101918Z"
+      },
+      {
+        "NewName": "Masks (Container).MaskSpriteSatisfied",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-27T16:57:48.7141908Z"
+      },
+      {
+        "NewName": "Masks (Container).MaskSpriteEcstatic",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-27T16:57:48.7181919Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "Masks",
+        "ElementType": "Components",
+        "EventType": 1,
+        "TimestampUtc": "2024-01-27T16:58:16.5745514Z"
+      },
+      {
+        "NewName": "Masks",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 0,
+        "TimestampUtc": "2024-01-27T16:58:36.2762876Z"
+      },
+      {
+        "NewName": "Masks (Container).SpriteInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-27T16:58:47.5105139Z"
+      },
+      {
+        "NewName": "Masks (Container).SpriteInstance1",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-27T16:58:54.1632422Z"
+      },
+      {
+        "NewName": "Masks (Container).SpriteInstance2",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-27T16:58:54.4162441Z"
+      },
+      {
+        "NewName": "Masks (Container).SpriteInstance3",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-27T16:58:54.7173303Z"
+      },
+      {
+        "NewName": "Masks (Container).SpriteInstance4",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-27T16:58:55.0703307Z"
+      },
+      {
+        "NewName": "Masks (Container).Livid",
+        "OldName": "Masks (Container).SpriteInstance",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-27T16:58:59.3438359Z"
+      },
+      {
+        "NewName": "Masks (Container).Upset",
+        "OldName": "Masks (Container).SpriteInstance1",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-27T16:59:05.379366Z"
+      },
+      {
+        "NewName": "Masks (Container).Indifferent",
+        "OldName": "Masks (Container).SpriteInstance2",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-27T16:59:08.9277143Z"
+      },
+      {
+        "NewName": "Masks (Container).Satisfied",
+        "OldName": "Masks (Container).SpriteInstance3",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-27T16:59:14.6528404Z"
+      },
+      {
+        "NewName": "Masks (Container).Ecstatic",
+        "OldName": "Masks (Container).SpriteInstance4",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-27T16:59:18.8098395Z"
+      },
+      {
+        "NewName": "AudienceBar (Container).MasksInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-27T17:11:19.2518597Z"
+      },
+      {
+        "NewName": "GameScreenGum.AudienceBarInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-27T17:14:14.8252775Z"
+      },
+      {
+        "NewName": "AudienceBar (Container).ForegroundRectangleRight",
+        "OldName": "AudienceBar (Container).ForegroundRectangle",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-27T17:48:31.2333913Z"
+      },
+      {
+        "NewName": "AudienceBar (Container).ForegroundRectangleRight1",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-27T17:48:36.0721342Z"
+      },
+      {
+        "NewName": "AudienceBar (Container).ForegroundRectangleLeft",
+        "OldName": "AudienceBar (Container).ForegroundRectangleRight1",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-27T17:48:39.8617272Z"
       }
     ]
   }

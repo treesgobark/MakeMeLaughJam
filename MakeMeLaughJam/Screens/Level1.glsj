@@ -19,6 +19,21 @@
       "ProjectsToExcludeFrom": []
     }
   ],
+  "CustomVariables": [
+    {
+      "Properties": [
+        {
+          "Name": "Type",
+          "Value": "float",
+          "Type": "String"
+        }
+      ],
+      "Name": "MaxAudienceHealth",
+      "DefaultValue": 100.0,
+      "SetByDerived": true,
+      "DefinedByBase": true
+    }
+  ],
   "NamedObjects": [
     {
       "InstanceName": "Map",
@@ -446,7 +461,7 @@
             {
               "Type": "float",
               "Member": "X",
-              "Value": 208.0,
+              "Value": 192.0,
               "Time": 0.0
             },
             {
@@ -475,7 +490,7 @@
             {
               "Type": "float",
               "Member": "X",
-              "Value": 208.0,
+              "Value": 192.0,
               "Time": 0.0
             },
             {

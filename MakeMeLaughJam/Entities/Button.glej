@@ -96,7 +96,13 @@
         {
           "Type": "float",
           "Member": "Width",
-          "Value": 32.0,
+          "Value": 16.0,
+          "Time": 0.0
+        },
+        {
+          "Type": "float",
+          "Member": "X",
+          "Value": 8.0,
           "Time": 0.0
         }
       ],
