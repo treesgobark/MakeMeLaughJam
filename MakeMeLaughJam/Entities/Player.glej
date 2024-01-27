@@ -199,13 +199,13 @@
         {
           "Type": "float",
           "Member": "Width",
-          "Value": 10.0,
+          "Value": 32.0,
           "Time": 0.0
         },
         {
           "Type": "float",
           "Member": "Height",
-          "Value": 16.0,
+          "Value": 32.0,
           "Time": 0.0
         },
         {
