@@ -29,6 +29,33 @@ namespace MakeMeLaughJam.Screens
         public Puppets SelectedPuppet { get; set; }
         public Actions SelectedAction { get; set; }
 
+        public List<AudienceGroup> AvailableAudience =>
+            AudienceGroupList.Where(g =>
+            {
+                var found = g.SignSprite.CurrentChainName.Contains("Down");
+                return found;
+            }).ToList();
+
+        public readonly string[] SignChains =
+        [
+            "SmelvinFire",
+            "SmelvinPie",
+            "SmelvinDance",
+            "JohnFire",
+            "JohnPie",
+            "JohnDance",
+            "PeepoFire",
+            "PeepoPie",
+            "PeepoDance"
+        ];
+
+        public readonly string[] SignDownChains = new[]
+        {
+            "SmelvinDown",
+            "JohnDown",
+            "PeepoDown",
+        };
+
         public float CurrentAudienceHealth
         {
             get => _currentAudienceHealth;
@@ -88,6 +115,11 @@ namespace MakeMeLaughJam.Screens
                     > 1f  * 100f / 38f => FancyAudienceBarRuntime.Filled._1,
                     _                  => FancyAudienceBarRuntime.Filled._0,
                 };
+
+                if (percent <= 0)
+                {
+                    ScreenManager.MoveToScreen("GameOverScreen");
+                }
             }
         }
 
@@ -186,13 +218,6 @@ namespace MakeMeLaughJam.Screens
             group.SignSprite.CurrentChainName = FlatRedBallServices.Random.In(SignChains);
         }
 
-        public List<AudienceGroup> AvailableAudience =>
-            AudienceGroupList.Where(g =>
-            {
-                var found = g.SignSprite.CurrentChainName.Contains("Down");
-                return found;
-            }).ToList();
-
         public void TryFulfillAudienceRequests(string chainName)
         {
             bool wasSomethingFulfilled = false;
@@ -218,26 +243,6 @@ namespace MakeMeLaughJam.Screens
             CurrentAudienceHealth += AudienceHealthPercentGainOnSuccess;
             group.SignSprite.CurrentChainName = FlatRedBallServices.Random.In(SignDownChains);
         }
-
-        public readonly string[] SignChains =
-        [
-            "SmelvinFire",
-            "SmelvinPie",
-            "SmelvinDance",
-            "JohnFire",
-            "JohnPie",
-            "JohnDance",
-            "PeepoFire",
-            "PeepoPie",
-            "PeepoDance"
-        ];
-
-        public readonly string[] SignDownChains = new[]
-        {
-            "SmelvinDown",
-            "JohnDown",
-            "PeepoDown",
-        };
 
         public bool IsAudienceAvailable(AudienceGroup group)
         {

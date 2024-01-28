@@ -224,7 +224,7 @@
   </Instance>
   <Instance>
     <Name>BackButton</Name>
-    <BaseType>Controls/ButtonQuit</BaseType>
+    <BaseType>Controls/ButtonMenu</BaseType>
     <DefinedByBase>false</DefinedByBase>
   </Instance>
   <Instance>

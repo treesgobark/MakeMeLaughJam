@@ -1540,6 +1540,97 @@
         "ElementType": "Components",
         "EventType": 6,
         "TimestampUtc": "2024-01-28T04:49:59.4744587Z"
+      },
+      {
+        "NewName": "ScoreDisplay",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 0,
+        "TimestampUtc": "2024-01-28T17:55:07.3782019Z"
+      },
+      {
+        "NewName": "GameOverScreenGum.ScoreDisplayInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-28T17:55:09.2742586Z"
+      },
+      {
+        "NewName": "ScoreDisplay (Container).TextInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-28T17:55:53.611049Z"
+      },
+      {
+        "NewName": "ScoreDisplay (Container).ButtonStartInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-28T18:01:09.090717Z"
+      },
+      {
+        "NewName": "Controls/ButtonStart1",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 0,
+        "TimestampUtc": "2024-01-28T18:02:34.3123866Z"
+      },
+      {
+        "NewName": "Controls/ButtonMenu",
+        "OldName": "Controls/ButtonStart1",
+        "ElementType": "Components",
+        "EventType": 2,
+        "TimestampUtc": "2024-01-28T18:02:39.2086687Z"
+      },
+      {
+        "NewName": "ScoreDisplay (Container).ButtonMenuInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-28T18:03:37.8825671Z"
+      },
+      {
+        "NewName": "ScoreDisplay (Container).StartButton",
+        "OldName": "ScoreDisplay (Container).ButtonStartInstance",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-28T18:04:58.5679114Z"
+      },
+      {
+        "NewName": "ScoreDisplay (Container).MenuButton",
+        "OldName": "ScoreDisplay (Container).ButtonMenuInstance",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-28T18:05:02.3709111Z"
+      },
+      {
+        "NewName": "ScoreDisplay (Container).ButtonQuitInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-28T18:14:18.5434626Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "Pause (Container).Controls/ButtonCredits MainMenuButton in Pause (Container)",
+        "ElementType": "Components",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-28T18:16:42.1978309Z"
+      },
+      {
+        "NewName": "Pause (Container).ButtonMenuInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-28T18:16:46.0747207Z"
+      },
+      {
+        "NewName": "Pause (Container).MainMenuButton",
+        "OldName": "Pause (Container).ButtonMenuInstance",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-28T18:16:50.8875213Z"
       }
     ]
   }

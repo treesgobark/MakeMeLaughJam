@@ -57,7 +57,7 @@
         }
       ],
       "Name": "MusicBoxPercentageLossPerSecond",
-      "DefaultValue": 10.0,
+      "DefaultValue": 15.0,
       "SetByDerived": true
     },
     {
@@ -117,7 +117,19 @@
         }
       ],
       "Name": "TimeBetweenRequests",
-      "DefaultValue": 5.0,
+      "DefaultValue": 3.0,
+      "SetByDerived": true
+    },
+    {
+      "Properties": [
+        {
+          "Name": "Type",
+          "Value": "float",
+          "Type": "String"
+        }
+      ],
+      "Name": "MaxAudienceHealthPercentLostPerSecond",
+      "DefaultValue": 15.0,
       "SetByDerived": true
     }
   ],
@@ -313,6 +325,24 @@
       "SourceFile": "PositionedObjectList (Generic)",
       "SourceClassGenericType": "Entities\\AudienceGroup",
       "ExposedInDerived": true,
+      "GenerateTimedEmit": true
+    },
+    {
+      "InstanceName": "EndScreenAnimationThingList",
+      "SourceClassType": "FlatRedBall.Math.PositionedObjectList<T>",
+      "Properties": [
+        {
+          "Name": "AssociateWithFactory",
+          "Value": true,
+          "Type": "bool"
+        }
+      ],
+      "InstructionSaves": [],
+      "SourceType": 2,
+      "SourceFile": "PositionedObjectList (Generic)",
+      "SourceClassGenericType": "Entities\\EndScreenAnimationThing",
+      "ExposedInDerived": true,
+      "AttachToContainer": true,
       "GenerateTimedEmit": true
     },
     {

@@ -91,6 +91,9 @@
   "FileVersion": 52,
   "ScreenReferences": [
     {
+      "Name": "Screens\\GameOverScreen"
+    },
+    {
       "Name": "Screens\\GameScreen"
     },
     {
@@ -112,6 +115,9 @@
     },
     {
       "Name": "Entities\\ConfirmLever"
+    },
+    {
+      "Name": "Entities\\EndScreenAnimationThing"
     },
     {
       "Name": "Entities\\MusicBox"

@@ -37,7 +37,7 @@
     <Variable>
       <Type>float</Type>
       <Name>MainMenuButton.Y</Name>
-      <Value xsi:type="xsd:float">67</Value>
+      <Value xsi:type="xsd:float">71</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
@@ -191,7 +191,7 @@
   </Instance>
   <Instance>
     <Name>MainMenuButton</Name>
-    <BaseType>Controls/ButtonCredits</BaseType>
+    <BaseType>Controls/ButtonMenu</BaseType>
     <DefinedByBase>false</DefinedByBase>
   </Instance>
   <Instance>

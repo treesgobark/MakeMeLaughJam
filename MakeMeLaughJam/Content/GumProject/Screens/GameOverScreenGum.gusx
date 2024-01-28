@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ScreenSave xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>GameOverScreenGum</Name>
+  <State>
+    <Name>Default</Name>
+    <Variable>
+      <Type>Score</Type>
+      <Name>ScoreState</Name>
+      <SetsValue>false</SetsValue>
+    </Variable>
+  </State>
+  <Category>
+    <Name>Score</Name>
+    <IsSetRecursively>false</IsSetRecursively>
+    <State>
+      <Name>Show</Name>
+      <Variable>
+        <Type>bool</Type>
+        <Name>ScoreDisplayInstance.Visible</Name>
+        <Value xsi:type="xsd:boolean">true</Value>
+        <SetsValue>true</SetsValue>
+      </Variable>
+    </State>
+    <State>
+      <Name>Hide</Name>
+      <Variable>
+        <Type>bool</Type>
+        <Name>ScoreDisplayInstance.Visible</Name>
+        <Value xsi:type="xsd:boolean">false</Value>
+        <SetsValue>true</SetsValue>
+      </Variable>
+    </State>
+  </Category>
+  <Instance>
+    <Name>ScoreDisplayInstance</Name>
+    <BaseType>ScoreDisplay</BaseType>
+    <DefinedByBase>false</DefinedByBase>
+  </Instance>
+  <Behaviors />
+</ScreenSave>

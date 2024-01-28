@@ -140,6 +140,10 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Name>buttonicon</Name>
     </None>
+    <None Include="content\gumproject\components\controls\buttonmenu.gucx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>buttonmenu</Name>
+    </None>
     <None Include="content\gumproject\components\controls\buttonoptions.gucx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Name>buttonoptions</Name>
@@ -320,6 +324,10 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Name>pause</Name>
     </None>
+    <None Include="content\gumproject\components\scoredisplay.gucx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>scoredisplay</Name>
+    </None>
     <None Include="content\gumproject\fontcache\font10arial.fnt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Name>font10arial</Name>
@@ -392,9 +400,21 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Name>font28arial_bold_0</Name>
     </None>
+    <None Include="content\gumproject\fontcache\font48onyx_nosmooth.fnt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>font48onyx_nosmooth</Name>
+    </None>
+    <None Include="content\gumproject\fontcache\font48onyx_nosmooth_0.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>font48onyx_nosmooth_0</Name>
+    </None>
     <None Include="content\gumproject\gumproject.gumx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Name>GumProject</Name>
+    </None>
+    <None Include="content\gumproject\screens\gameoverscreengum.gusx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>GameOverScreenGum</Name>
     </None>
     <None Include="content\gumproject\screens\gamescreengum.gusx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -471,6 +491,14 @@
     <None Include="content\gumproject\uispritesheet.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Name>uispritesheet</Name>
+    </None>
+    <None Include="content\screens\gameoverscreen\endanimation.achx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>EndAnimation</Name>
+    </None>
+    <None Include="content\screens\gameoverscreen\deathscreenanimationsheet.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>DeathScreenAnimationSheet</Name>
     </None>
     <None Include="content\screens\level1\background.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -712,6 +740,14 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Name>credits tall</Name>
     </None>
+    <None Include="content\screens\mainmenu\main menu button.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>main menu button</Name>
+    </None>
+    <None Include="content\screens\mainmenu\main menu hover.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>main menu hover</Name>
+    </None>
     <None Include="content\screens\mainmenu\settings tall.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Name>settings tall</Name>
@@ -756,6 +792,10 @@
     <Compile Include="Entities\ConfirmLever.Generated.cs">
       <DependentUpon>ConfirmLever.cs</DependentUpon>
     </Compile>
+    <Compile Include="Entities\EndScreenAnimationThing.cs" />
+    <Compile Include="Entities\EndScreenAnimationThing.Generated.cs">
+      <DependentUpon>EndScreenAnimationThing.cs</DependentUpon>
+    </Compile>
     <Compile Include="Entities\MusicBox.cs" />
     <Compile Include="Entities\MusicBox.Generated.cs">
       <DependentUpon>MusicBox.cs</DependentUpon>
@@ -776,6 +816,7 @@
     <Compile Include="Factories\AudienceGroupFactory.Generated.cs" />
     <Compile Include="Factories\ButtonFactory.Generated.cs" />
     <Compile Include="Factories\ConfirmLeverFactory.Generated.cs" />
+    <Compile Include="Factories\EndScreenAnimationThingFactory.Generated.cs" />
     <Compile Include="Factories\MusicBoxFactory.Generated.cs" />
     <Compile Include="Factories\PlayerFactory.Generated.cs" />
     <Compile Include="Factories\PuppetFactory.Generated.cs" />
@@ -785,6 +826,8 @@
     <Compile Include="Forms\Components\MainMenuForms.Generated.cs" />
     <Compile Include="Forms\Components\OptionsForms.Generated.cs" />
     <Compile Include="Forms\Components\PauseForms.Generated.cs" />
+    <Compile Include="Forms\Components\ScoreDisplayForms.Generated.cs" />
+    <Compile Include="Forms\Screens\GameOverScreenGumForms.Generated.cs" />
     <Compile Include="Forms\Screens\GameScreenGumForms.Generated.cs" />
     <Compile Include="Forms\Screens\Level1GumForms.Generated.cs" />
     <Compile Include="Forms\Screens\MainMenuGumForms.Generated.cs" />
@@ -884,6 +927,10 @@
     <Compile Include="GumRuntimes\Controls\ButtonIconRuntime.cs" />
     <Compile Include="GumRuntimes\Controls\ButtonIconRuntime.Generated.cs">
       <DependentUpon>ButtonIconRuntime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GumRuntimes\Controls\ButtonMenuRuntime.cs" />
+    <Compile Include="GumRuntimes\Controls\ButtonMenuRuntime.Generated.cs">
+      <DependentUpon>ButtonMenuRuntime.cs</DependentUpon>
     </Compile>
     <Compile Include="GumRuntimes\Controls\ButtonOptionsRuntime.cs" />
     <Compile Include="GumRuntimes\Controls\ButtonOptionsRuntime.Generated.cs">
@@ -1049,6 +1096,10 @@
     <Compile Include="GumRuntimes\FancyAudienceBarRuntime.Generated.cs">
       <DependentUpon>FancyAudienceBarRuntime.cs</DependentUpon>
     </Compile>
+    <Compile Include="GumRuntimes\GameOverScreenGumRuntime.cs" />
+    <Compile Include="GumRuntimes\GameOverScreenGumRuntime.Generated.cs">
+      <DependentUpon>GameOverScreenGumRuntime.cs</DependentUpon>
+    </Compile>
     <Compile Include="GumRuntimes\GameScreenGumRuntime.cs" />
     <Compile Include="GumRuntimes\GameScreenGumRuntime.Generated.cs">
       <DependentUpon>GameScreenGumRuntime.cs</DependentUpon>
@@ -1080,6 +1131,10 @@
     <Compile Include="GumRuntimes\PolygonRuntime.Generated.cs" />
     <Compile Include="GumRuntimes\RectangleRuntime.Generated.cs" />
     <Compile Include="GumRuntimes\RoundedRectangleRuntime.Generated.cs" />
+    <Compile Include="GumRuntimes\ScoreDisplayRuntime.cs" />
+    <Compile Include="GumRuntimes\ScoreDisplayRuntime.Generated.cs">
+      <DependentUpon>ScoreDisplayRuntime.cs</DependentUpon>
+    </Compile>
     <Compile Include="GumRuntimes\SpriteRuntime.Generated.cs" />
     <Compile Include="GumRuntimes\SvgRuntime.Generated.cs" />
     <Compile Include="GumRuntimes\TextRuntime.Generated.cs" />
@@ -1089,6 +1144,10 @@
     <Compile Include="Platformer\IPlatformer.Generated.cs" />
     <Compile Include="Platformer\PlatformerAnimationController.Generated.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="Screens\GameOverScreen.cs" />
+    <Compile Include="Screens\GameOverScreen.Generated.cs">
+      <DependentUpon>GameOverScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="Screens\GameScreen.cs" />
     <Compile Include="Screens\GameScreen.Event.cs">
       <DependentUpon>GameScreen.cs</DependentUpon>

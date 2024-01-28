@@ -17,6 +17,11 @@
   <ShowLocalizationInGum>true</ShowLocalizationInGum>
   <CurrentLanguageIndex>0</CurrentLanguageIndex>
   <ScreenReference>
+    <Name>GameOverScreenGum</Name>
+    <ElementType>Screen</ElementType>
+    <LinkType>ReferenceOriginal</LinkType>
+  </ScreenReference>
+  <ScreenReference>
     <Name>GameScreenGum</Name>
     <ElementType>Screen</ElementType>
     <LinkType>ReferenceOriginal</LinkType>
@@ -88,6 +93,11 @@
   </ComponentReference>
   <ComponentReference>
     <Name>Controls/ButtonStart</Name>
+    <ElementType>Component</ElementType>
+    <LinkType>ReferenceOriginal</LinkType>
+  </ComponentReference>
+  <ComponentReference>
+    <Name>Controls/ButtonMenu</Name>
     <ElementType>Component</ElementType>
     <LinkType>ReferenceOriginal</LinkType>
   </ComponentReference>
@@ -283,6 +293,11 @@
   </ComponentReference>
   <ComponentReference>
     <Name>Pause</Name>
+    <ElementType>Component</ElementType>
+    <LinkType>ReferenceOriginal</LinkType>
+  </ComponentReference>
+  <ComponentReference>
+    <Name>ScoreDisplay</Name>
     <ElementType>Component</ElementType>
     <LinkType>ReferenceOriginal</LinkType>
   </ComponentReference>

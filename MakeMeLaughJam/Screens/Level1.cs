@@ -23,6 +23,11 @@ namespace MakeMeLaughJam.Screens
     {
         private float _musicBoxPercentage = 100;
 
+        public double LastRequestTime { get; set; } = -69420;
+        public static double TimeElapsed { get; set; }
+        public bool ShouldRequest => TimeManager.CurrentScreenSecondsSince(LastRequestTime) > TimeBetweenRequests;
+        public double CurrentTimeBetweenRequests => TimeBetweenRequests;
+
         public float MusicBoxPercentage
         {
             get => _musicBoxPercentage;
@@ -54,6 +59,7 @@ namespace MakeMeLaughJam.Screens
         
         void CustomInitialize()
         {
+            TimeElapsed = 0;
         }
 
         void CustomActivity(bool firstTimeCalled)
@@ -62,6 +68,7 @@ namespace MakeMeLaughJam.Screens
             {
                 MusicBoxPercentage    -= MusicBoxPercentageLossPerSecond * TimeManager.SecondDifference;
                 CurrentAudienceHealth -= AudiencePercentLossPerSecond    * TimeManager.SecondDifference;
+                TimeElapsed           += TimeManager.SecondDifference;
             }
 
             if (ShouldRequest)
@@ -70,9 +77,6 @@ namespace MakeMeLaughJam.Screens
                 LastRequestTime = TimeManager.CurrentScreenTime;
             }
         }
-
-        public double LastRequestTime { get; set; } = -69420;
-        public bool ShouldRequest => TimeManager.CurrentScreenSecondsSince(LastRequestTime) > TimeBetweenRequests;
 
         void CustomDestroy()
         {

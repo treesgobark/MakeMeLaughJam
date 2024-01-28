@@ -1,0 +1,85 @@
+{
+  "Tags": [
+    "GLUE"
+  ],
+  "Source": "GLUE",
+  "ReferencedFiles": [
+    {
+      "Name": "gumproject/Screens/GameOverScreenGum.gusx",
+      "IsSharedStatic": true,
+      "RuntimeType": "MakeMeLaughJam.GumRuntimes.GameOverScreenGumRuntime",
+      "ProjectsToExcludeFrom": []
+    },
+    {
+      "Name": "Screens/GameOverScreen/DeathScreenAnimationSheet.png",
+      "IsSharedStatic": true,
+      "RuntimeType": "Microsoft.Xna.Framework.Graphics.Texture2D",
+      "ProjectsToExcludeFrom": []
+    },
+    {
+      "Name": "Screens/GameOverScreen/EndAnimation.achx",
+      "IsSharedStatic": true,
+      "RuntimeType": "FlatRedBall.Graphics.Animation.AnimationChainList",
+      "ProjectsToExcludeFrom": []
+    }
+  ],
+  "CustomVariables": [
+    {
+      "Properties": [
+        {
+          "Name": "Type",
+          "Value": "float",
+          "Type": "String"
+        }
+      ],
+      "Name": "FadeInTime",
+      "DefaultValue": 4.0,
+      "SetByDerived": true
+    },
+    {
+      "Properties": [
+        {
+          "Name": "Type",
+          "Value": "double",
+          "Type": "String"
+        }
+      ],
+      "Name": "TimeBeforeAnimation",
+      "DefaultValue": 2.0,
+      "SetByDerived": true
+    }
+  ],
+  "NamedObjects": [
+    {
+      "InstanceName": "EndScreenAnimationThingInstance",
+      "SourceClassType": "Entities\\EndScreenAnimationThing",
+      "Properties": [
+        {
+          "Name": "AssociateWithFactory",
+          "Value": true,
+          "Type": "bool"
+        }
+      ],
+      "InstructionSaves": [
+        {
+          "Type": "float",
+          "Member": "X",
+          "Value": 0.0,
+          "Time": 0.0
+        },
+        {
+          "Type": "float",
+          "Member": "Y",
+          "Value": 0.0,
+          "Time": 0.0
+        }
+      ],
+      "SourceType": 1,
+      "SourceFile": "Entities\\EndScreenAnimationThing",
+      "AttachToContainer": true,
+      "GenerateTimedEmit": true
+    }
+  ],
+  "Name": "Screens\\GameOverScreen",
+  "CustomClassesForExport": []
+}
