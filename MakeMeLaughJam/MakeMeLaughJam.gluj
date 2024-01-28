@@ -105,6 +105,9 @@
       "Name": "Entities\\ActionSelector"
     },
     {
+      "Name": "Entities\\Audience"
+    },
+    {
       "Name": "Entities\\Button"
     },
     {

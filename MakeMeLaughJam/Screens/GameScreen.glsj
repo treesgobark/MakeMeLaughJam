@@ -233,6 +233,24 @@
       "GenerateTimedEmit": true
     },
     {
+      "InstanceName": "AudienceList",
+      "SourceClassType": "FlatRedBall.Math.PositionedObjectList<T>",
+      "Properties": [
+        {
+          "Name": "AssociateWithFactory",
+          "Value": true,
+          "Type": "bool"
+        }
+      ],
+      "InstructionSaves": [],
+      "SourceType": 2,
+      "SourceFile": "PositionedObjectList (Generic)",
+      "SourceClassGenericType": "Entities\\Audience",
+      "ExposedInDerived": true,
+      "AttachToContainer": true,
+      "GenerateTimedEmit": true
+    },
+    {
       "InstanceName": "Map",
       "SourceClassType": "FlatRedBall.TileGraphics.LayeredTileMap",
       "Properties": [
@@ -310,6 +328,11 @@
           "Name": "CollisionTileTypeName",
           "Value": "SolidCollision",
           "Type": "String"
+        },
+        {
+          "Name": "RemoveTilesAfterCreatingCollision",
+          "Value": true,
+          "Type": "bool"
         }
       ],
       "InstructionSaves": [],
@@ -368,6 +391,11 @@
           "Name": "CollisionTileTypeName",
           "Value": "CloudCollision",
           "Type": "String"
+        },
+        {
+          "Name": "RemoveTilesAfterCreatingCollision",
+          "Value": true,
+          "Type": "bool"
         }
       ],
       "InstructionSaves": [
@@ -450,6 +478,11 @@
           "Name": "CollisionTileTypeName",
           "Value": "PuppetCollision",
           "Type": "String"
+        },
+        {
+          "Name": "RemoveTilesAfterCreatingCollision",
+          "Value": true,
+          "Type": "bool"
         }
       ],
       "InstructionSaves": [],

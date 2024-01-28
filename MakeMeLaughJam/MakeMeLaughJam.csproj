@@ -448,9 +448,17 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Name>uispritesheet</Name>
     </None>
+    <None Include="content\screens\level1\background.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>BackGround</Name>
+    </None>
     <None Include="content\screens\level1\curtainsforeground.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Name>CurtainsForeground</Name>
+    </None>
+    <None Include="content\screens\level1\foreground.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>ForeGround</Name>
     </None>
     <None Include="content\screens\level1\img_3326.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -696,6 +704,10 @@
     <Compile Include="Entities\ActionSelector.Generated.cs">
       <DependentUpon>ActionSelector.cs</DependentUpon>
     </Compile>
+    <Compile Include="Entities\Audience.cs" />
+    <Compile Include="Entities\Audience.Generated.cs">
+      <DependentUpon>Audience.cs</DependentUpon>
+    </Compile>
     <Compile Include="Entities\Button.cs" />
     <Compile Include="Entities\Button.Generated.cs">
       <DependentUpon>Button.cs</DependentUpon>
@@ -721,6 +733,7 @@
       <DependentUpon>SpriteContainer.cs</DependentUpon>
     </Compile>
     <Compile Include="Factories\ActionSelectorFactory.Generated.cs" />
+    <Compile Include="Factories\AudienceFactory.Generated.cs" />
     <Compile Include="Factories\ButtonFactory.Generated.cs" />
     <Compile Include="Factories\ConfirmLeverFactory.Generated.cs" />
     <Compile Include="Factories\MusicBoxFactory.Generated.cs" />

@@ -29,6 +29,18 @@
       "IsSharedStatic": true,
       "RuntimeType": "Microsoft.Xna.Framework.Graphics.Texture2D",
       "ProjectsToExcludeFrom": []
+    },
+    {
+      "Name": "Screens/Level1/BackGround.png",
+      "IsSharedStatic": true,
+      "RuntimeType": "Microsoft.Xna.Framework.Graphics.Texture2D",
+      "ProjectsToExcludeFrom": []
+    },
+    {
+      "Name": "Screens/Level1/ForeGround.png",
+      "IsSharedStatic": true,
+      "RuntimeType": "Microsoft.Xna.Framework.Graphics.Texture2D",
+      "ProjectsToExcludeFrom": []
     }
   ],
   "CustomVariables": [
@@ -177,6 +189,11 @@
           "Name": "CollisionTileTypeName",
           "Value": "SolidCollision",
           "Type": "String"
+        },
+        {
+          "Name": "RemoveTilesAfterCreatingCollision",
+          "Value": true,
+          "Type": "Object"
         }
       ],
       "InstructionSaves": [],
@@ -235,6 +252,11 @@
           "Name": "CollisionTileTypeName",
           "Value": "CloudCollision",
           "Type": "String"
+        },
+        {
+          "Name": "RemoveTilesAfterCreatingCollision",
+          "Value": true,
+          "Type": "Object"
         }
       ],
       "InstructionSaves": [
@@ -300,6 +322,11 @@
           "Name": "InnerSizeHeight",
           "Value": 600.0,
           "Type": "float"
+        },
+        {
+          "Name": "RemoveTilesAfterCreatingCollision",
+          "Value": true,
+          "Type": "Object"
         }
       ],
       "InstructionSaves": [],
@@ -422,13 +449,19 @@
             {
               "Type": "float",
               "Member": "X",
-              "Value": 408.0,
+              "Value": 424.0,
               "Time": 0.0
             },
             {
               "Type": "float",
               "Member": "Y",
-              "Value": -432.0,
+              "Value": -400.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Z",
+              "Value": -2.0,
               "Time": 0.0
             }
           ],
@@ -475,7 +508,13 @@
             {
               "Type": "float",
               "Member": "Y",
-              "Value": -432.0,
+              "Value": -400.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Z",
+              "Value": -2.0,
               "Time": 0.0
             }
           ],
@@ -516,13 +555,19 @@
             {
               "Type": "float",
               "Member": "X",
-              "Value": 608.0,
+              "Value": 600.0,
               "Time": 0.0
             },
             {
               "Type": "float",
               "Member": "Y",
-              "Value": -432.0,
+              "Value": -400.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Z",
+              "Value": -2.0,
               "Time": 0.0
             }
           ],
@@ -602,7 +647,7 @@
             {
               "Type": "float",
               "Member": "Y",
-              "Value": -432.0,
+              "Value": -464.0,
               "Time": 0.0
             }
           ],
@@ -661,7 +706,7 @@
             {
               "Type": "float",
               "Member": "Y",
-              "Value": -432.0,
+              "Value": -464.0,
               "Time": 0.0
             }
           ],
@@ -953,22 +998,62 @@
       "InstructionSaves": [
         {
           "Type": "float",
-          "Member": "Blue",
-          "Value": 0.11372549,
+          "Member": "Height",
+          "Value": 576.0,
           "Time": 0.0
         },
         {
-          "Type": "ColorOperation",
-          "Member": "ColorOperation",
-          "Value": 6,
+          "Type": "Texture2D",
+          "Member": "Texture",
+          "Value": "BackGround",
           "Time": 0.0
         },
         {
           "Type": "float",
-          "Member": "Green",
-          "Value": 0.105882354,
+          "Member": "TextureScale",
+          "Value": 1.0,
           "Time": 0.0
         },
+        {
+          "Type": "float",
+          "Member": "Width",
+          "Value": 1024.0,
+          "Time": 0.0
+        },
+        {
+          "Type": "float",
+          "Member": "X",
+          "Value": 512.0,
+          "Time": 0.0
+        },
+        {
+          "Type": "float",
+          "Member": "Y",
+          "Value": -288.0,
+          "Time": 0.0
+        },
+        {
+          "Type": "float",
+          "Member": "Z",
+          "Value": -100.0,
+          "Time": 0.0
+        }
+      ],
+      "SourceType": 2,
+      "SourceFile": "Sprite",
+      "GenerateTimedEmit": true
+    },
+    {
+      "InstanceName": "Foreground",
+      "SourceClassType": "FlatRedBall.Sprite",
+      "Properties": [
+        {
+          "Name": "AssociateWithFactory",
+          "Value": true,
+          "Type": "bool"
+        }
+      ],
+      "InstructionSaves": [
         {
           "Type": "float",
           "Member": "Height",
@@ -976,15 +1061,9 @@
           "Time": 0.0
         },
         {
-          "Type": "float",
-          "Member": "Red",
-          "Value": 0.18431373,
-          "Time": 0.0
-        },
-        {
           "Type": "Texture2D",
           "Member": "Texture",
-          "Value": "WhiteSquare32",
+          "Value": "ForeGround",
           "Time": 0.0
         },
         {
@@ -1020,65 +1099,6 @@
       ],
       "SourceType": 2,
       "SourceFile": "Sprite",
-      "GenerateTimedEmit": true
-    },
-    {
-      "InstanceName": "CurtainsForegroundInstance",
-      "SourceClassType": "FlatRedBall.Sprite",
-      "Properties": [
-        {
-          "Name": "AssociateWithFactory",
-          "Value": true,
-          "Type": "bool"
-        }
-      ],
-      "InstructionSaves": [
-        {
-          "Type": "Texture2D",
-          "Member": "Texture",
-          "Value": "CurtainsForeground",
-          "Time": 0.0
-        },
-        {
-          "Type": "float",
-          "Member": "TextureScale",
-          "Value": 1.0,
-          "Time": 0.0
-        },
-        {
-          "Type": "bool",
-          "Member": "Visible",
-          "Value": false,
-          "Time": 0.0
-        },
-        {
-          "Type": "float",
-          "Member": "Width",
-          "Value": 192.0,
-          "Time": 0.0
-        },
-        {
-          "Type": "float",
-          "Member": "X",
-          "Value": 512.0,
-          "Time": 0.0
-        },
-        {
-          "Type": "float",
-          "Member": "Y",
-          "Value": -288.0,
-          "Time": 0.0
-        },
-        {
-          "Type": "float",
-          "Member": "Z",
-          "Value": 0.0,
-          "Time": 0.0
-        }
-      ],
-      "SourceType": 2,
-      "SourceFile": "Sprite",
-      "AttachToContainer": true,
       "GenerateTimedEmit": true
     }
   ],
