@@ -45,7 +45,7 @@
         }
       ],
       "Name": "MusicBoxPercentageGainOnHit",
-      "DefaultValue": 30.0,
+      "DefaultValue": 50.0,
       "SetByDerived": true
     },
     {
@@ -70,6 +70,18 @@
       ],
       "Name": "AudiencePercentLossPerSecond",
       "DefaultValue": 5.0,
+      "SetByDerived": true
+    },
+    {
+      "Properties": [
+        {
+          "Name": "Type",
+          "Value": "double",
+          "Type": "String"
+        }
+      ],
+      "Name": "PuppetDeployedDuration",
+      "DefaultValue": 2.0,
       "SetByDerived": true
     }
   ],

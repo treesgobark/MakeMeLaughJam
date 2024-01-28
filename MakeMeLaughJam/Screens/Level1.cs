@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Linq;
-
+using System.Threading.Tasks;
 using FlatRedBall;
 using FlatRedBall.Input;
 using FlatRedBall.Instructions;
@@ -112,6 +112,7 @@ namespace MakeMeLaughJam.Screens
             }
             
             SelectedPuppetEntity.InterpolateToState(Puppet.Deployment.Up, PuppetDeployTime);
+            MovePuppetDown(SelectedPuppetEntity, PuppetDeployedDuration);
 
             SelectedPuppetEntity.CurrentPuppetNameState = (SelectedPuppet, SelectedAction) switch
             {
@@ -125,6 +126,17 @@ namespace MakeMeLaughJam.Screens
                 (Puppets.Peepo, Actions.Pie)     => Puppet.PuppetName.PeepoPie,
                 (Puppets.Peepo, Actions.Dance)   => Puppet.PuppetName.PeepoDancing,
             };
+            
+            SmelvinButton.CurrentIsPressedState = Button.IsPressed.UnpressedRed;
+            JohnButton.CurrentIsPressedState    = Button.IsPressed.UnpressedYellow;
+            PeepoButton.CurrentIsPressedState   = Button.IsPressed.UnpressedBlue;
+            SelectedPuppet                      = Puppets.None;
+        }
+
+        protected async Task MovePuppetDown(Puppet puppet, double afterSeconds)
+        {
+            await TimeManager.DelaySeconds(afterSeconds);
+            puppet.InterpolateToState(Puppet.Deployment.Down, PuppetDeployTime);
         }
 
         protected override void OnMusicBoxPressed()

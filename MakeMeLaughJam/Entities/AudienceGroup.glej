@@ -73,7 +73,7 @@
         }
       ],
       "SourceType": 1,
-      "SourceFile": "Entities\\Audience",
+      "SourceFile": "Entities/Audience",
       "AttachToContainer": true,
       "GenerateTimedEmit": true
     },
@@ -96,7 +96,7 @@
         }
       ],
       "SourceType": 1,
-      "SourceFile": "Entities\\Audience",
+      "SourceFile": "Entities/Audience",
       "AttachToContainer": true,
       "GenerateTimedEmit": true
     },
@@ -131,7 +131,7 @@
         }
       ],
       "SourceType": 1,
-      "SourceFile": "Entities\\Audience",
+      "SourceFile": "Entities/Audience",
       "AttachToContainer": true,
       "GenerateTimedEmit": true
     },
@@ -172,7 +172,7 @@
         }
       ],
       "SourceType": 1,
-      "SourceFile": "Entities\\Audience",
+      "SourceFile": "Entities/Audience",
       "AttachToContainer": true,
       "GenerateTimedEmit": true
     },
@@ -213,7 +213,7 @@
         }
       ],
       "SourceType": 1,
-      "SourceFile": "Entities\\Audience",
+      "SourceFile": "Entities/Audience",
       "AttachToContainer": true,
       "GenerateTimedEmit": true
     }

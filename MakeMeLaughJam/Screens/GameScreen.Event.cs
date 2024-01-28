@@ -6,34 +6,34 @@ namespace MakeMeLaughJam.Screens
 {
     public partial class GameScreen
     {
+        private void ApplyKnockback(Player player)
+        {
+            player.PunchConsumed = true;
+            
+            if (player.DirectionFacing == HorizontalDirection.Left)
+            {
+                player.Velocity += Vector3.UnitX * player.PunchKnockbackSpeed;
+            }
+            else
+            {
+                player.Velocity += -Vector3.UnitX * player.PunchKnockbackSpeed;
+            }
+        }
+        
         void OnPlayerVsConfirmLeverCollided (Entities.Player player, Entities.ConfirmLever confirmLever) 
         {
             if (player.IsPunchActive)
             {
-                player.PunchConsumed = true;
-                
-                var toPlayer = confirmLever.Position.GetVectorTo(player.Position);
-                if (toPlayer.X >= 0)
-                {
-                    toPlayer = Vector3.UnitX;
-                }
-                else
-                {
-                    toPlayer = -Vector3.UnitX;
-                }
-                player.Velocity += toPlayer * player.PunchKnockbackSpeed;
-                
+                ApplyKnockback(player);
                 OnConfirmationLeverPressed();
             }
         }
+        
         void OnPlayerVsMusicBoxCollided (Entities.Player player, Entities.MusicBox musicBox) 
         {
             if (player.IsPunchActive)
             {
-                player.PunchConsumed = true;
-                
-                player.Velocity += Vector3.UnitX * player.PunchKnockbackSpeed;
-                
+                ApplyKnockback(player);
                 OnMusicBoxPressed();
             }
         }
@@ -41,10 +41,7 @@ namespace MakeMeLaughJam.Screens
         {
             if (player.IsPunchActive)
             {
-                player.PunchConsumed = true;
-                
-                player.Velocity += -Vector3.UnitX * player.PunchKnockbackSpeed;
-                
+                ApplyKnockback(player);
                 OnActionSelectorPressed();
             }
         }
@@ -52,36 +49,22 @@ namespace MakeMeLaughJam.Screens
         {
             if (player.IsPunchActive)
             {
-                player.PunchConsumed = true;
-                
-                var vector = wallButton.Position.GetVectorTo(player.Position);
-                if (wallButton.CurrentFacingState == Button.Facing.Right)
-                {
-                    vector = Vector3.UnitX;
-                }
-                else if (wallButton.CurrentFacingState == Button.Facing.Left)
-                {
-                    vector = -Vector3.UnitX;
-                }
-                else if (wallButton.CurrentFacingState == Button.Facing.Down)
-                {
-                    vector = -Vector3.UnitY;
-                }
-
-                player.Velocity += vector * player.PunchKnockbackSpeed;
-
                 if (wallButton.Name == "JohnButton")
                 {
+                    ApplyKnockback(player);
                     OnPuppetButtonPressed(Puppets.John);
                 }
                 
                 if (wallButton.Name == "SmelvinButton")
                 {
+                    ApplyKnockback(player);
                     OnPuppetButtonPressed(Puppets.Smelvin);
                 }
                 
                 if (wallButton.Name == "PeepoButton")
                 {
+                    player.PunchConsumed =  true;
+                    player.Velocity      += -Vector3.UnitY * player.PunchKnockbackSpeed;
                     OnPuppetButtonPressed(Puppets.Peepo);
                 }
             }

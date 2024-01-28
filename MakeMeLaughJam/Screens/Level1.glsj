@@ -371,13 +371,13 @@
             {
               "Type": "float",
               "Member": "X",
-              "Value": 480.0,
+              "Value": 440.0,
               "Time": 0.0
             },
             {
               "Type": "float",
               "Member": "Y",
-              "Value": -488.0,
+              "Value": -496.0,
               "Time": 0.0
             }
           ],
@@ -461,7 +461,7 @@
             {
               "Type": "float",
               "Member": "Z",
-              "Value": -2.0,
+              "Value": -3.0,
               "Time": 0.0
             }
           ],
@@ -514,7 +514,7 @@
             {
               "Type": "float",
               "Member": "Z",
-              "Value": -2.0,
+              "Value": -3.0,
               "Time": 0.0
             }
           ],
@@ -567,7 +567,7 @@
             {
               "Type": "float",
               "Member": "Z",
-              "Value": -2.0,
+              "Value": -3.0,
               "Time": 0.0
             }
           ],
@@ -649,6 +649,12 @@
               "Member": "Y",
               "Value": -464.0,
               "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Z",
+              "Value": -1.0,
+              "Time": 0.0
             }
           ],
           "SourceType": 1,
@@ -707,6 +713,12 @@
               "Type": "float",
               "Member": "Y",
               "Value": -464.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Z",
+              "Value": -1.0,
               "Time": 0.0
             }
           ],
@@ -767,67 +779,16 @@
               "Member": "Y",
               "Value": -420.5,
               "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Z",
+              "Value": -1.0,
+              "Time": 0.0
             }
           ],
           "SourceType": 1,
           "SourceFile": "Entities\\Button",
-          "GenerateTimedEmit": true
-        }
-      ]
-    },
-    {
-      "InstanceName": "SpriteContainerList",
-      "SourceClassType": "FlatRedBall.Math.PositionedObjectList<T>",
-      "Properties": [
-        {
-          "Name": "AssociateWithFactory",
-          "Value": true,
-          "Type": "bool"
-        }
-      ],
-      "InstructionSaves": [],
-      "SourceType": 2,
-      "SourceFile": "PositionedObjectList (Generic)",
-      "SourceClassGenericType": "Entities\\SpriteContainer",
-      "ExposedInDerived": true,
-      "AttachToContainer": true,
-      "GenerateTimedEmit": true,
-      "DefinedByBase": true,
-      "InstantiatedByBase": true,
-      "ContainedObjects": [
-        {
-          "InstanceName": "ForegroundContainer",
-          "SourceClassType": "Entities\\SpriteContainer",
-          "Properties": [
-            {
-              "Name": "AssociateWithFactory",
-              "Value": true,
-              "Type": "bool"
-            }
-          ],
-          "InstructionSaves": [
-            {
-              "Type": "Texture2D",
-              "Member": "SpriteInstanceTexture",
-              "Value": "CurtainsForeground",
-              "Time": 0.0
-            },
-            {
-              "Type": "float",
-              "Member": "X",
-              "Value": 512.0,
-              "Time": 0.0
-            },
-            {
-              "Type": "float",
-              "Member": "Y",
-              "Value": -288.0,
-              "Time": 0.0
-            }
-          ],
-          "SourceType": 1,
-          "SourceFile": "Entities\\SpriteContainer",
-          "AttachToContainer": true,
           "GenerateTimedEmit": true
         }
       ]
@@ -873,6 +834,12 @@
               "Type": "float",
               "Member": "Y",
               "Value": -500.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Z",
+              "Value": -1.0,
               "Time": 0.0
             }
           ],
@@ -924,6 +891,12 @@
               "Type": "float",
               "Member": "Y",
               "Value": -482.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Z",
+              "Value": -1.0,
               "Time": 0.0
             }
           ],
@@ -1017,6 +990,12 @@
           ],
           "InstructionSaves": [
             {
+              "Type": "Tex",
+              "Member": "CurrentTexState",
+              "Value": "Schlumbo",
+              "Time": 0.0
+            },
+            {
               "Type": "float",
               "Member": "X",
               "Value": 88.0,
@@ -1026,12 +1005,6 @@
               "Type": "float",
               "Member": "Y",
               "Value": -312.0,
-              "Time": 0.0
-            },
-            {
-              "Type": "Tex",
-              "Member": "CurrentTexState",
-              "Value": "Schlumbo",
               "Time": 0.0
             },
             {
@@ -1058,6 +1031,12 @@
           ],
           "InstructionSaves": [
             {
+              "Type": "Tex",
+              "Member": "CurrentTexState",
+              "Value": "Beebo",
+              "Time": 0.0
+            },
+            {
               "Type": "float",
               "Member": "X",
               "Value": 136.0,
@@ -1067,12 +1046,6 @@
               "Type": "float",
               "Member": "Y",
               "Value": -312.0,
-              "Time": 0.0
-            },
-            {
-              "Type": "Tex",
-              "Member": "CurrentTexState",
-              "Value": "Beebo",
               "Time": 0.0
             },
             {
@@ -1098,6 +1071,12 @@
           ],
           "InstructionSaves": [
             {
+              "Type": "Tex",
+              "Member": "CurrentTexState",
+              "Value": "Phil",
+              "Time": 0.0
+            },
+            {
               "Type": "float",
               "Member": "X",
               "Value": 200.0,
@@ -1107,12 +1086,6 @@
               "Type": "float",
               "Member": "Y",
               "Value": -312.0,
-              "Time": 0.0
-            },
-            {
-              "Type": "Tex",
-              "Member": "CurrentTexState",
-              "Value": "Phil",
               "Time": 0.0
             },
             {
@@ -1236,7 +1209,7 @@
         {
           "Type": "float",
           "Member": "Z",
-          "Value": -1.0,
+          "Value": -2.0,
           "Time": 0.0
         }
       ],
