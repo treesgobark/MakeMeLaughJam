@@ -28,6 +28,18 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Name>switcher-sheet</Name>
     </None>
+    <None Include="content\entities\audience\beebo.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>Beebo</Name>
+    </None>
+    <None Include="content\entities\audience\phil.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>Phil</Name>
+    </None>
+    <None Include="content\entities\audience\schlumbo.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>Schlumbo</Name>
+    </None>
     <None Include="content\entities\button\bluebutton.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Name>BlueButton</Name>
@@ -732,6 +744,10 @@
     <Compile Include="Entities\Audience.Generated.cs">
       <DependentUpon>Audience.cs</DependentUpon>
     </Compile>
+    <Compile Include="Entities\AudienceGroup.cs" />
+    <Compile Include="Entities\AudienceGroup.Generated.cs">
+      <DependentUpon>AudienceGroup.cs</DependentUpon>
+    </Compile>
     <Compile Include="Entities\Button.cs" />
     <Compile Include="Entities\Button.Generated.cs">
       <DependentUpon>Button.cs</DependentUpon>
@@ -758,6 +774,7 @@
     </Compile>
     <Compile Include="Factories\ActionSelectorFactory.Generated.cs" />
     <Compile Include="Factories\AudienceFactory.Generated.cs" />
+    <Compile Include="Factories\AudienceGroupFactory.Generated.cs" />
     <Compile Include="Factories\ButtonFactory.Generated.cs" />
     <Compile Include="Factories\ConfirmLeverFactory.Generated.cs" />
     <Compile Include="Factories\MusicBoxFactory.Generated.cs" />

@@ -5,6 +5,26 @@
   "Source": "GLUE",
   "CreatedByOtherEntities": true,
   "Is2D": true,
+  "ReferencedFiles": [
+    {
+      "Name": "Entities/Audience/Beebo.png",
+      "IsSharedStatic": true,
+      "RuntimeType": "Microsoft.Xna.Framework.Graphics.Texture2D",
+      "ProjectsToExcludeFrom": []
+    },
+    {
+      "Name": "Entities/Audience/Phil.png",
+      "IsSharedStatic": true,
+      "RuntimeType": "Microsoft.Xna.Framework.Graphics.Texture2D",
+      "ProjectsToExcludeFrom": []
+    },
+    {
+      "Name": "Entities/Audience/Schlumbo.png",
+      "IsSharedStatic": true,
+      "RuntimeType": "Microsoft.Xna.Framework.Graphics.Texture2D",
+      "ProjectsToExcludeFrom": []
+    }
+  ],
   "CustomVariables": [
     {
       "Properties": [
@@ -38,6 +58,37 @@
       ],
       "Name": "Z",
       "SetByDerived": true
+    },
+    {
+      "Properties": [
+        {
+          "Name": "Type",
+          "Value": "Texture2D",
+          "Type": "String"
+        },
+        {
+          "Name": "Category",
+          "Value": "Texture",
+          "Type": "String"
+        }
+      ],
+      "Name": "SpriteInstanceTexture",
+      "DefaultValue": "Schlumbo",
+      "SetByDerived": true,
+      "SourceObject": "SpriteInstance",
+      "SourceObjectProperty": "Texture",
+      "Category": "Texture"
+    },
+    {
+      "Properties": [
+        {
+          "Name": "Type",
+          "Value": "Tex",
+          "Type": "String"
+        }
+      ],
+      "Name": "CurrentTexState",
+      "SetByDerived": true
     }
   ],
   "Properties": [
@@ -64,12 +115,57 @@
           "Member": "TextureScale",
           "Value": 1.0,
           "Time": 0.0
+        },
+        {
+          "Type": "Texture2D",
+          "Member": "Texture",
+          "Value": "Schlumbo",
+          "Time": 0.0
         }
       ],
       "SourceType": 2,
       "SourceFile": "Sprite",
       "AttachToContainer": true,
       "GenerateTimedEmit": true
+    }
+  ],
+  "StateCategoryList": [
+    {
+      "Name": "Tex",
+      "States": [
+        {
+          "Name": "Beebo",
+          "InstructionSaves": [
+            {
+              "Type": "Texture2D",
+              "Member": "SpriteInstanceTexture",
+              "Value": "Beebo",
+              "Time": 0.0
+            }
+          ]
+        },
+        {
+          "Name": "Phil",
+          "InstructionSaves": [
+            {
+              "Type": "Texture2D",
+              "Member": "SpriteInstanceTexture",
+              "Value": "Phil",
+              "Time": 0.0
+            }
+          ]
+        },
+        {
+          "Name": "Schlumbo",
+          "InstructionSaves": []
+        }
+      ],
+      "ExcludedVariables": [
+        "X",
+        "Y",
+        "Z",
+        "CurrentTexState"
+      ]
     }
   ],
   "Name": "Entities\\Audience",

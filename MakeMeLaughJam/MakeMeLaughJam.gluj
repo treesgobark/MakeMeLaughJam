@@ -108,6 +108,9 @@
       "Name": "Entities\\Audience"
     },
     {
+      "Name": "Entities\\AudienceGroup"
+    },
+    {
       "Name": "Entities\\Button"
     },
     {
