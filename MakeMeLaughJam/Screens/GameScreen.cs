@@ -133,11 +133,6 @@ namespace MakeMeLaughJam.Screens
                     GumScreen.CurrentPauseState = GameScreenGumRuntime.Pause.NotPaused;
                 }
             }
-
-            if (Player1.GameplayInputDevice.Attack.WasJustPressed)
-            {
-                AudienceStartMoving();
-            }
         }
 
         void CustomDestroy()
@@ -157,11 +152,13 @@ namespace MakeMeLaughJam.Screens
             foreach (var audienceGroup in AudienceGroupList)
             {
                 audienceGroup.AudienceSprite.CurrentChainName = "Shaking";
+                audienceGroup.AudienceSprite.AnimationSpeed = FlatRedBallServices.Random.Between(0.5f, 1.5f);
             }
-            // foreach (var audienceGroup in audiencelis)
-            // {
-            //     audienceGroup.AudienceSprite.CurrentChainName = "Shaking";
-            // }
+            foreach (var audienceGroup in AudienceThatLooksCoolList)
+            {
+                audienceGroup.AudienceSprite.CurrentChainName = "Shaking";
+                audienceGroup.AudienceSprite.AnimationSpeed   = FlatRedBallServices.Random.Between(0.5f, 1.5f);
+            }
             AudienceStopMovingIn(AudienceMovingDuration);
         }
 
@@ -177,10 +174,10 @@ namespace MakeMeLaughJam.Screens
             {
                 audienceGroup.AudienceSprite.CurrentChainName = "Idle";
             }
-            // foreach (var audienceGroup in audiencelis)
-            // {
-            //     audienceGroup.AudienceSprite.CurrentChainName = "Shaking";
-            // }
+            foreach (var audienceGroup in AudienceThatLooksCoolList)
+            {
+                audienceGroup.AudienceSprite.CurrentChainName = "Idle";
+            }
         }
 
         public void RandomAudienceRandomRequest()
@@ -198,6 +195,7 @@ namespace MakeMeLaughJam.Screens
 
         public void TryFulfillAudienceRequests(string chainName)
         {
+            bool wasSomethingFulfilled = false;
             foreach (var group in AudienceGroupList)
             {
                 if (group.SignSprite.CurrentChainName != chainName)
@@ -205,7 +203,13 @@ namespace MakeMeLaughJam.Screens
                     continue;
                 }
 
+                wasSomethingFulfilled = true;
                 AudienceRequestFulfilled(group);
+            }
+
+            if (wasSomethingFulfilled)
+            {
+                AudienceStartMoving();
             }
         }
 

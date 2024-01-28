@@ -1073,7 +1073,7 @@
             {
               "Type": "float",
               "Member": "Z",
-              "Value": -5.0,
+              "Value": -8.0,
               "Time": 0.0
             }
           ],
@@ -1107,7 +1107,7 @@
             {
               "Type": "float",
               "Member": "Z",
-              "Value": -7.0,
+              "Value": -8.0,
               "Time": 0.0
             }
           ],
@@ -1197,19 +1197,19 @@
             {
               "Type": "float",
               "Member": "X",
-              "Value": 712.0,
+              "Value": 688.0,
               "Time": 0.0
             },
             {
               "Type": "float",
               "Member": "Y",
-              "Value": -136.0,
+              "Value": -152.0,
               "Time": 0.0
             },
             {
               "Type": "float",
               "Member": "Z",
-              "Value": -6.0,
+              "Value": -9.0,
               "Time": 0.0
             }
           ],
@@ -1231,19 +1231,19 @@
             {
               "Type": "float",
               "Member": "X",
-              "Value": 312.0,
+              "Value": 328.0,
               "Time": 0.0
             },
             {
               "Type": "float",
               "Member": "Y",
-              "Value": -136.0,
+              "Value": -152.0,
               "Time": 0.0
             },
             {
               "Type": "float",
               "Member": "Z",
-              "Value": -6.0,
+              "Value": -9.0,
               "Time": 0.0
             }
           ],
@@ -1271,13 +1271,1355 @@
             {
               "Type": "float",
               "Member": "Y",
-              "Value": -128.0,
+              "Value": -160.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Z",
+              "Value": -9.0,
+              "Time": 0.0
+            }
+          ],
+          "SourceType": 1,
+          "SourceFile": "Entities\\AudienceGroup",
+          "GenerateTimedEmit": true
+        }
+      ]
+    },
+    {
+      "InstanceName": "AudienceThatLooksCoolList",
+      "SourceClassType": "FlatRedBall.Math.PositionedObjectList<T>",
+      "Properties": [
+        {
+          "Name": "AssociateWithFactory",
+          "Value": true,
+          "Type": "bool"
+        }
+      ],
+      "InstructionSaves": [],
+      "SourceType": 2,
+      "SourceFile": "PositionedObjectList (Generic)",
+      "SourceClassGenericType": "Entities\\AudienceGroup",
+      "ExposedInDerived": true,
+      "GenerateTimedEmit": true,
+      "DefinedByBase": true,
+      "InstantiatedByBase": true,
+      "ContainedObjects": [
+        {
+          "InstanceName": "AudienceGroup69",
+          "SourceClassType": "Entities\\AudienceGroup",
+          "Properties": [
+            {
+              "Name": "AssociateWithFactory",
+              "Value": true,
+              "Type": "bool"
+            }
+          ],
+          "InstructionSaves": [
+            {
+              "Type": "float",
+              "Member": "X",
+              "Value": 88.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Y",
+              "Value": -312.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "string",
+              "Member": "SignSpriteCurrentChainName",
+              "Value": "None",
               "Time": 0.0
             },
             {
               "Type": "float",
               "Member": "Z",
               "Value": -6.0,
+              "Time": 0.0
+            }
+          ],
+          "SourceType": 1,
+          "SourceFile": "Entities\\AudienceGroup",
+          "AttachToContainer": true,
+          "GenerateTimedEmit": true
+        },
+        {
+          "InstanceName": "AudienceGroup70",
+          "SourceClassType": "Entities\\AudienceGroup",
+          "Properties": [
+            {
+              "Name": "AssociateWithFactory",
+              "Value": true,
+              "Type": "bool"
+            }
+          ],
+          "InstructionSaves": [
+            {
+              "Type": "float",
+              "Member": "X",
+              "Value": 184.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Y",
+              "Value": -312.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "string",
+              "Member": "SignSpriteCurrentChainName",
+              "Value": "None",
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Z",
+              "Value": -6.0,
+              "Time": 0.0
+            }
+          ],
+          "SourceType": 1,
+          "SourceFile": "Entities\\AudienceGroup",
+          "GenerateTimedEmit": true
+        },
+        {
+          "InstanceName": "AudienceGroup71",
+          "SourceClassType": "Entities\\AudienceGroup",
+          "Properties": [
+            {
+              "Name": "AssociateWithFactory",
+              "Value": true,
+              "Type": "bool"
+            }
+          ],
+          "InstructionSaves": [
+            {
+              "Type": "float",
+              "Member": "X",
+              "Value": 384.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Y",
+              "Value": -320.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "string",
+              "Member": "SignSpriteCurrentChainName",
+              "Value": "None",
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Z",
+              "Value": -6.0,
+              "Time": 0.0
+            }
+          ],
+          "SourceType": 1,
+          "SourceFile": "Entities\\AudienceGroup",
+          "GenerateTimedEmit": true
+        },
+        {
+          "InstanceName": "AudienceGroup72",
+          "SourceClassType": "Entities\\AudienceGroup",
+          "Properties": [
+            {
+              "Name": "AssociateWithFactory",
+              "Value": true,
+              "Type": "bool"
+            }
+          ],
+          "InstructionSaves": [
+            {
+              "Type": "float",
+              "Member": "X",
+              "Value": 496.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Y",
+              "Value": -320.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "string",
+              "Member": "SignSpriteCurrentChainName",
+              "Value": "None",
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Z",
+              "Value": -6.0,
+              "Time": 0.0
+            }
+          ],
+          "SourceType": 1,
+          "SourceFile": "Entities\\AudienceGroup",
+          "GenerateTimedEmit": true
+        },
+        {
+          "InstanceName": "AudienceGroup73",
+          "SourceClassType": "Entities\\AudienceGroup",
+          "Properties": [
+            {
+              "Name": "AssociateWithFactory",
+              "Value": true,
+              "Type": "bool"
+            }
+          ],
+          "InstructionSaves": [
+            {
+              "Type": "float",
+              "Member": "X",
+              "Value": 616.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Y",
+              "Value": -320.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "string",
+              "Member": "SignSpriteCurrentChainName",
+              "Value": "None",
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Z",
+              "Value": -6.0,
+              "Time": 0.0
+            }
+          ],
+          "SourceType": 1,
+          "SourceFile": "Entities\\AudienceGroup",
+          "GenerateTimedEmit": true
+        },
+        {
+          "InstanceName": "AudienceGroup74",
+          "SourceClassType": "Entities\\AudienceGroup",
+          "Properties": [
+            {
+              "Name": "AssociateWithFactory",
+              "Value": true,
+              "Type": "bool"
+            }
+          ],
+          "InstructionSaves": [
+            {
+              "Type": "float",
+              "Member": "X",
+              "Value": 832.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Y",
+              "Value": -320.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "string",
+              "Member": "SignSpriteCurrentChainName",
+              "Value": "None",
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Z",
+              "Value": -6.0,
+              "Time": 0.0
+            }
+          ],
+          "SourceType": 1,
+          "SourceFile": "Entities\\AudienceGroup",
+          "GenerateTimedEmit": true
+        },
+        {
+          "InstanceName": "AudienceGroup75",
+          "SourceClassType": "Entities\\AudienceGroup",
+          "Properties": [
+            {
+              "Name": "AssociateWithFactory",
+              "Value": true,
+              "Type": "bool"
+            }
+          ],
+          "InstructionSaves": [
+            {
+              "Type": "float",
+              "Member": "X",
+              "Value": 136.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Y",
+              "Value": -248.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "string",
+              "Member": "SignSpriteCurrentChainName",
+              "Value": "None",
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Z",
+              "Value": -7.0,
+              "Time": 0.0
+            }
+          ],
+          "SourceType": 1,
+          "SourceFile": "Entities\\AudienceGroup",
+          "GenerateTimedEmit": true
+        },
+        {
+          "InstanceName": "AudienceGroup76",
+          "SourceClassType": "Entities\\AudienceGroup",
+          "Properties": [
+            {
+              "Name": "AssociateWithFactory",
+              "Value": true,
+              "Type": "bool"
+            }
+          ],
+          "InstructionSaves": [
+            {
+              "Type": "float",
+              "Member": "X",
+              "Value": 24.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Y",
+              "Value": -248.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "string",
+              "Member": "SignSpriteCurrentChainName",
+              "Value": "None",
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Z",
+              "Value": -7.0,
+              "Time": 0.0
+            }
+          ],
+          "SourceType": 1,
+          "SourceFile": "Entities\\AudienceGroup",
+          "GenerateTimedEmit": true
+        },
+        {
+          "InstanceName": "AudienceGroup77",
+          "SourceClassType": "Entities\\AudienceGroup",
+          "Properties": [
+            {
+              "Name": "AssociateWithFactory",
+              "Value": true,
+              "Type": "bool"
+            }
+          ],
+          "InstructionSaves": [
+            {
+              "Type": "float",
+              "Member": "X",
+              "Value": 232.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Y",
+              "Value": -256.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "string",
+              "Member": "SignSpriteCurrentChainName",
+              "Value": "None",
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Z",
+              "Value": -7.0,
+              "Time": 0.0
+            }
+          ],
+          "SourceType": 1,
+          "SourceFile": "Entities\\AudienceGroup",
+          "GenerateTimedEmit": true
+        },
+        {
+          "InstanceName": "AudienceGroup101",
+          "SourceClassType": "Entities\\AudienceGroup",
+          "Properties": [
+            {
+              "Name": "AssociateWithFactory",
+              "Value": true,
+              "Type": "bool"
+            }
+          ],
+          "InstructionSaves": [
+            {
+              "Type": "float",
+              "Member": "X",
+              "Value": 792.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Y",
+              "Value": -88.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "string",
+              "Member": "SignSpriteCurrentChainName",
+              "Value": "None",
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Z",
+              "Value": -10.0,
+              "Time": 0.0
+            }
+          ],
+          "SourceType": 1,
+          "SourceFile": "Entities\\AudienceGroup",
+          "GenerateTimedEmit": true
+        },
+        {
+          "InstanceName": "AudienceGroup100",
+          "SourceClassType": "Entities\\AudienceGroup",
+          "Properties": [
+            {
+              "Name": "AssociateWithFactory",
+              "Value": true,
+              "Type": "bool"
+            }
+          ],
+          "InstructionSaves": [
+            {
+              "Type": "float",
+              "Member": "X",
+              "Value": 664.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Y",
+              "Value": -80.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "string",
+              "Member": "SignSpriteCurrentChainName",
+              "Value": "None",
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Z",
+              "Value": -10.0,
+              "Time": 0.0
+            }
+          ],
+          "SourceType": 1,
+          "SourceFile": "Entities\\AudienceGroup",
+          "GenerateTimedEmit": true
+        },
+        {
+          "InstanceName": "AudienceGroup99",
+          "SourceClassType": "Entities\\AudienceGroup",
+          "Properties": [
+            {
+              "Name": "AssociateWithFactory",
+              "Value": true,
+              "Type": "bool"
+            }
+          ],
+          "InstructionSaves": [
+            {
+              "Type": "float",
+              "Member": "X",
+              "Value": 536.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Y",
+              "Value": -80.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "string",
+              "Member": "SignSpriteCurrentChainName",
+              "Value": "None",
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Z",
+              "Value": -10.0,
+              "Time": 0.0
+            }
+          ],
+          "SourceType": 1,
+          "SourceFile": "Entities\\AudienceGroup",
+          "GenerateTimedEmit": true
+        },
+        {
+          "InstanceName": "AudienceGroup98",
+          "SourceClassType": "Entities\\AudienceGroup",
+          "Properties": [
+            {
+              "Name": "AssociateWithFactory",
+              "Value": true,
+              "Type": "bool"
+            }
+          ],
+          "InstructionSaves": [
+            {
+              "Type": "float",
+              "Member": "X",
+              "Value": 416.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Y",
+              "Value": -96.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "string",
+              "Member": "SignSpriteCurrentChainName",
+              "Value": "None",
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Z",
+              "Value": -10.0,
+              "Time": 0.0
+            }
+          ],
+          "SourceType": 1,
+          "SourceFile": "Entities\\AudienceGroup",
+          "GenerateTimedEmit": true
+        },
+        {
+          "InstanceName": "AudienceGroup97",
+          "SourceClassType": "Entities\\AudienceGroup",
+          "Properties": [
+            {
+              "Name": "AssociateWithFactory",
+              "Value": true,
+              "Type": "bool"
+            }
+          ],
+          "InstructionSaves": [
+            {
+              "Type": "float",
+              "Member": "X",
+              "Value": 296.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Y",
+              "Value": -88.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "string",
+              "Member": "SignSpriteCurrentChainName",
+              "Value": "None",
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Z",
+              "Value": -10.0,
+              "Time": 0.0
+            }
+          ],
+          "SourceType": 1,
+          "SourceFile": "Entities\\AudienceGroup",
+          "GenerateTimedEmit": true
+        },
+        {
+          "InstanceName": "AudienceGroup96",
+          "SourceClassType": "Entities\\AudienceGroup",
+          "Properties": [
+            {
+              "Name": "AssociateWithFactory",
+              "Value": true,
+              "Type": "bool"
+            }
+          ],
+          "InstructionSaves": [
+            {
+              "Type": "float",
+              "Member": "X",
+              "Value": 176.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Y",
+              "Value": -88.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "string",
+              "Member": "SignSpriteCurrentChainName",
+              "Value": "None",
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Z",
+              "Value": -10.0,
+              "Time": 0.0
+            }
+          ],
+          "SourceType": 1,
+          "SourceFile": "Entities\\AudienceGroup",
+          "GenerateTimedEmit": true
+        },
+        {
+          "InstanceName": "AudienceGroup95",
+          "SourceClassType": "Entities\\AudienceGroup",
+          "Properties": [
+            {
+              "Name": "AssociateWithFactory",
+              "Value": true,
+              "Type": "bool"
+            }
+          ],
+          "InstructionSaves": [
+            {
+              "Type": "float",
+              "Member": "X",
+              "Value": 920.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Y",
+              "Value": -128.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "string",
+              "Member": "SignSpriteCurrentChainName",
+              "Value": "None",
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Z",
+              "Value": -9.0,
+              "Time": 0.0
+            }
+          ],
+          "SourceType": 1,
+          "SourceFile": "Entities\\AudienceGroup",
+          "GenerateTimedEmit": true
+        },
+        {
+          "InstanceName": "AudienceGroup94",
+          "SourceClassType": "Entities\\AudienceGroup",
+          "Properties": [
+            {
+              "Name": "AssociateWithFactory",
+              "Value": true,
+              "Type": "bool"
+            }
+          ],
+          "InstructionSaves": [
+            {
+              "Type": "float",
+              "Member": "X",
+              "Value": 784.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Y",
+              "Value": -136.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "string",
+              "Member": "SignSpriteCurrentChainName",
+              "Value": "None",
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Z",
+              "Value": -9.0,
+              "Time": 0.0
+            }
+          ],
+          "SourceType": 1,
+          "SourceFile": "Entities\\AudienceGroup",
+          "GenerateTimedEmit": true
+        },
+        {
+          "InstanceName": "AudienceGroup93",
+          "SourceClassType": "Entities\\AudienceGroup",
+          "Properties": [
+            {
+              "Name": "AssociateWithFactory",
+              "Value": true,
+              "Type": "bool"
+            }
+          ],
+          "InstructionSaves": [
+            {
+              "Type": "float",
+              "Member": "X",
+              "Value": 632.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Y",
+              "Value": -128.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "string",
+              "Member": "SignSpriteCurrentChainName",
+              "Value": "None",
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Z",
+              "Value": -9.0,
+              "Time": 0.0
+            }
+          ],
+          "SourceType": 1,
+          "SourceFile": "Entities\\AudienceGroup",
+          "GenerateTimedEmit": true
+        },
+        {
+          "InstanceName": "AudienceGroup92",
+          "SourceClassType": "Entities\\AudienceGroup",
+          "Properties": [
+            {
+              "Name": "AssociateWithFactory",
+              "Value": true,
+              "Type": "bool"
+            }
+          ],
+          "InstructionSaves": [
+            {
+              "Type": "float",
+              "Member": "X",
+              "Value": 512.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Y",
+              "Value": -120.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "string",
+              "Member": "SignSpriteCurrentChainName",
+              "Value": "None",
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Z",
+              "Value": -9.0,
+              "Time": 0.0
+            }
+          ],
+          "SourceType": 1,
+          "SourceFile": "Entities\\AudienceGroup",
+          "GenerateTimedEmit": true
+        },
+        {
+          "InstanceName": "AudienceGroup91",
+          "SourceClassType": "Entities\\AudienceGroup",
+          "Properties": [
+            {
+              "Name": "AssociateWithFactory",
+              "Value": true,
+              "Type": "bool"
+            }
+          ],
+          "InstructionSaves": [
+            {
+              "Type": "float",
+              "Member": "X",
+              "Value": 392.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Y",
+              "Value": -128.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "string",
+              "Member": "SignSpriteCurrentChainName",
+              "Value": "None",
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Z",
+              "Value": -9.0,
+              "Time": 0.0
+            }
+          ],
+          "SourceType": 1,
+          "SourceFile": "Entities\\AudienceGroup",
+          "GenerateTimedEmit": true
+        },
+        {
+          "InstanceName": "AudienceGroup90",
+          "SourceClassType": "Entities\\AudienceGroup",
+          "Properties": [
+            {
+              "Name": "AssociateWithFactory",
+              "Value": true,
+              "Type": "bool"
+            }
+          ],
+          "InstructionSaves": [
+            {
+              "Type": "float",
+              "Member": "X",
+              "Value": 264.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Y",
+              "Value": -136.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "string",
+              "Member": "SignSpriteCurrentChainName",
+              "Value": "None",
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Z",
+              "Value": -9.0,
+              "Time": 0.0
+            }
+          ],
+          "SourceType": 1,
+          "SourceFile": "Entities\\AudienceGroup",
+          "GenerateTimedEmit": true
+        },
+        {
+          "InstanceName": "AudienceGroup89",
+          "SourceClassType": "Entities\\AudienceGroup",
+          "Properties": [
+            {
+              "Name": "AssociateWithFactory",
+              "Value": true,
+              "Type": "bool"
+            }
+          ],
+          "InstructionSaves": [
+            {
+              "Type": "float",
+              "Member": "X",
+              "Value": 144.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Y",
+              "Value": -136.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "string",
+              "Member": "SignSpriteCurrentChainName",
+              "Value": "None",
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Z",
+              "Value": -8.0,
+              "Time": 0.0
+            }
+          ],
+          "SourceType": 1,
+          "SourceFile": "Entities\\AudienceGroup",
+          "GenerateTimedEmit": true
+        },
+        {
+          "InstanceName": "AudienceGroup88",
+          "SourceClassType": "Entities\\AudienceGroup",
+          "Properties": [
+            {
+              "Name": "AssociateWithFactory",
+              "Value": true,
+              "Type": "bool"
+            }
+          ],
+          "InstructionSaves": [
+            {
+              "Type": "float",
+              "Member": "X",
+              "Value": 272.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Y",
+              "Value": -200.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "string",
+              "Member": "SignSpriteCurrentChainName",
+              "Value": "None",
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Z",
+              "Value": -8.0,
+              "Time": 0.0
+            }
+          ],
+          "SourceType": 1,
+          "SourceFile": "Entities\\AudienceGroup",
+          "GenerateTimedEmit": true
+        },
+        {
+          "InstanceName": "AudienceGroup87",
+          "SourceClassType": "Entities\\AudienceGroup",
+          "Properties": [
+            {
+              "Name": "AssociateWithFactory",
+              "Value": true,
+              "Type": "bool"
+            }
+          ],
+          "InstructionSaves": [
+            {
+              "Type": "float",
+              "Member": "X",
+              "Value": 400.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Y",
+              "Value": -184.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "string",
+              "Member": "SignSpriteCurrentChainName",
+              "Value": "None",
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Z",
+              "Value": -8.0,
+              "Time": 0.0
+            }
+          ],
+          "SourceType": 1,
+          "SourceFile": "Entities\\AudienceGroup",
+          "GenerateTimedEmit": true
+        },
+        {
+          "InstanceName": "AudienceGroup86",
+          "SourceClassType": "Entities\\AudienceGroup",
+          "Properties": [
+            {
+              "Name": "AssociateWithFactory",
+              "Value": true,
+              "Type": "bool"
+            }
+          ],
+          "InstructionSaves": [
+            {
+              "Type": "float",
+              "Member": "X",
+              "Value": 576.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Y",
+              "Value": -184.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "string",
+              "Member": "SignSpriteCurrentChainName",
+              "Value": "None",
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Z",
+              "Value": -8.0,
+              "Time": 0.0
+            }
+          ],
+          "SourceType": 1,
+          "SourceFile": "Entities\\AudienceGroup",
+          "GenerateTimedEmit": true
+        },
+        {
+          "InstanceName": "AudienceGroup85",
+          "SourceClassType": "Entities\\AudienceGroup",
+          "Properties": [
+            {
+              "Name": "AssociateWithFactory",
+              "Value": true,
+              "Type": "bool"
+            }
+          ],
+          "InstructionSaves": [
+            {
+              "Type": "float",
+              "Member": "X",
+              "Value": 728.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Y",
+              "Value": -208.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "string",
+              "Member": "SignSpriteCurrentChainName",
+              "Value": "None",
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Z",
+              "Value": -8.0,
+              "Time": 0.0
+            }
+          ],
+          "SourceType": 1,
+          "SourceFile": "Entities\\AudienceGroup",
+          "GenerateTimedEmit": true
+        },
+        {
+          "InstanceName": "AudienceGroup84",
+          "SourceClassType": "Entities\\AudienceGroup",
+          "Properties": [
+            {
+              "Name": "AssociateWithFactory",
+              "Value": true,
+              "Type": "bool"
+            }
+          ],
+          "InstructionSaves": [
+            {
+              "Type": "float",
+              "Member": "X",
+              "Value": 920.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Y",
+              "Value": -200.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "string",
+              "Member": "SignSpriteCurrentChainName",
+              "Value": "None",
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Z",
+              "Value": -8.0,
+              "Time": 0.0
+            }
+          ],
+          "SourceType": 1,
+          "SourceFile": "Entities\\AudienceGroup",
+          "GenerateTimedEmit": true
+        },
+        {
+          "InstanceName": "AudienceGroup83",
+          "SourceClassType": "Entities\\AudienceGroup",
+          "Properties": [
+            {
+              "Name": "AssociateWithFactory",
+              "Value": true,
+              "Type": "bool"
+            }
+          ],
+          "InstructionSaves": [
+            {
+              "Type": "float",
+              "Member": "X",
+              "Value": 936.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Y",
+              "Value": -256.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "string",
+              "Member": "SignSpriteCurrentChainName",
+              "Value": "None",
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Z",
+              "Value": -7.0,
+              "Time": 0.0
+            }
+          ],
+          "SourceType": 1,
+          "SourceFile": "Entities\\AudienceGroup",
+          "GenerateTimedEmit": true
+        },
+        {
+          "InstanceName": "AudienceGroup82",
+          "SourceClassType": "Entities\\AudienceGroup",
+          "Properties": [
+            {
+              "Name": "AssociateWithFactory",
+              "Value": true,
+              "Type": "bool"
+            }
+          ],
+          "InstructionSaves": [
+            {
+              "Type": "float",
+              "Member": "X",
+              "Value": 832.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Y",
+              "Value": -256.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "string",
+              "Member": "SignSpriteCurrentChainName",
+              "Value": "None",
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Z",
+              "Value": -7.0,
+              "Time": 0.0
+            }
+          ],
+          "SourceType": 1,
+          "SourceFile": "Entities\\AudienceGroup",
+          "GenerateTimedEmit": true
+        },
+        {
+          "InstanceName": "AudienceGroup81",
+          "SourceClassType": "Entities\\AudienceGroup",
+          "Properties": [
+            {
+              "Name": "AssociateWithFactory",
+              "Value": true,
+              "Type": "bool"
+            }
+          ],
+          "InstructionSaves": [
+            {
+              "Type": "float",
+              "Member": "X",
+              "Value": 712.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Y",
+              "Value": -256.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "string",
+              "Member": "SignSpriteCurrentChainName",
+              "Value": "None",
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Z",
+              "Value": -7.0,
+              "Time": 0.0
+            }
+          ],
+          "SourceType": 1,
+          "SourceFile": "Entities\\AudienceGroup",
+          "GenerateTimedEmit": true
+        },
+        {
+          "InstanceName": "AudienceGroup80",
+          "SourceClassType": "Entities\\AudienceGroup",
+          "Properties": [
+            {
+              "Name": "AssociateWithFactory",
+              "Value": true,
+              "Type": "bool"
+            }
+          ],
+          "InstructionSaves": [
+            {
+              "Type": "float",
+              "Member": "X",
+              "Value": 568.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Y",
+              "Value": -264.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "string",
+              "Member": "SignSpriteCurrentChainName",
+              "Value": "None",
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Z",
+              "Value": -7.0,
+              "Time": 0.0
+            }
+          ],
+          "SourceType": 1,
+          "SourceFile": "Entities\\AudienceGroup",
+          "GenerateTimedEmit": true
+        },
+        {
+          "InstanceName": "AudienceGroup79",
+          "SourceClassType": "Entities\\AudienceGroup",
+          "Properties": [
+            {
+              "Name": "AssociateWithFactory",
+              "Value": true,
+              "Type": "bool"
+            }
+          ],
+          "InstructionSaves": [
+            {
+              "Type": "float",
+              "Member": "X",
+              "Value": 456.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Y",
+              "Value": -272.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "string",
+              "Member": "SignSpriteCurrentChainName",
+              "Value": "None",
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Z",
+              "Value": -7.0,
+              "Time": 0.0
+            }
+          ],
+          "SourceType": 1,
+          "SourceFile": "Entities\\AudienceGroup",
+          "GenerateTimedEmit": true
+        },
+        {
+          "InstanceName": "AudienceGroup78",
+          "SourceClassType": "Entities\\AudienceGroup",
+          "Properties": [
+            {
+              "Name": "AssociateWithFactory",
+              "Value": true,
+              "Type": "bool"
+            }
+          ],
+          "InstructionSaves": [
+            {
+              "Type": "float",
+              "Member": "X",
+              "Value": 344.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Y",
+              "Value": -248.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "string",
+              "Member": "SignSpriteCurrentChainName",
+              "Value": "None",
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Z",
+              "Value": -7.0,
               "Time": 0.0
             }
           ],
