@@ -7,6 +7,7 @@ using FlatRedBall;
 using FlatRedBall.Input;
 using FlatRedBall.Instructions;
 using FlatRedBall.AI.Pathfinding;
+using FlatRedBall.Audio;
 using FlatRedBall.Graphics.Animation;
 using FlatRedBall.Gui;
 using FlatRedBall.Math;
@@ -69,9 +70,10 @@ namespace MakeMeLaughJam.Screens
         {
             if (!IsPaused)
             {
-                MusicBoxPercentage    -= MusicBoxPercentageLossPerSecond * TimeManager.SecondDifference;
-                CurrentAudienceHealth -= AudiencePercentLossPerSecond    * TimeManager.SecondDifference;
-                TimeElapsed           += TimeManager.SecondDifference;
+                MusicBoxPercentage            -= MusicBoxPercentageLossPerSecond * TimeManager.SecondDifference;
+                AudioManager.MasterSongVolume =  MathHelper.Lerp(MinVolume * MainMenu.SongVolume, MainMenu.SongVolume, MusicBoxPercentage / 100);
+                CurrentAudienceHealth         -= AudiencePercentLossPerSecond * TimeManager.SecondDifference;
+                TimeElapsed                   += TimeManager.SecondDifference;
             }
 
             if (ShouldRequest)
@@ -129,6 +131,16 @@ namespace MakeMeLaughJam.Screens
             
             SelectedPuppetEntity.InterpolateToState(Puppet.Deployment.Up, PuppetDeployTime);
             MovePuppetDown(SelectedPuppetEntity, PuppetDeployedDuration);
+
+            switch (SelectedAction)
+            {
+                case Actions.Fire: AudioManager.Play(fire);
+                    break;
+                case Actions.Pie: AudioManager.Play(piesplat);
+                    break;
+                case Actions.Dance: AudioManager.Play(littledance);
+                    break;
+            }
 
             switch (SelectedPuppet, SelectedAction)
             {

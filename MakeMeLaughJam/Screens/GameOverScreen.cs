@@ -7,6 +7,7 @@ using FlatRedBall;
 using FlatRedBall.Input;
 using FlatRedBall.Instructions;
 using FlatRedBall.AI.Pathfinding;
+using FlatRedBall.Audio;
 using FlatRedBall.Glue.StateInterpolation;
 using FlatRedBall.Graphics.Animation;
 using FlatRedBall.Gui;
@@ -44,6 +45,7 @@ namespace MakeMeLaughJam.Screens
                 EndScreenAnimationThingInstance.SpriteInstance.CurrentChainName                  = "Final";
                 GumScreen.ScoreDisplayInstance.TextInstance.Text = $"You performed for {Level1.TimeElapsed:0.00} seconds";
                 GumScreen.CurrentScoreState                      = GameOverScreenGumRuntime.Score.Show;
+                AudioManager.Play(slash);
             }
 
         }

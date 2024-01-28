@@ -39,14 +39,14 @@ namespace MakeMeLaughJam.Screens
 
         public readonly string[] SignChains =
         [
-            "SmelvinFire",
-            "SmelvinPie",
-            "SmelvinDance",
-            "JohnFire",
-            "JohnPie",
-            "JohnDance",
-            "PeepoFire",
-            "PeepoPie",
+            // "SmelvinFire",
+            // "SmelvinPie",
+            // "SmelvinDance",
+            // "JohnFire",
+            // "JohnPie",
+            // "JohnDance",
+            // "PeepoFire",
+            // "PeepoPie",
             "PeepoDance"
         ];
 
@@ -169,7 +169,10 @@ namespace MakeMeLaughJam.Screens
             Forms.OptionsInstance.MusicSlider.Maximum = 100;
             Forms.OptionsInstance.MusicSlider.Value   = 50;
             Forms.OptionsInstance.MusicSlider.ValueChanged += (sender, args) =>
+            {
                 AudioManager.MasterSongVolume = (float)Forms.OptionsInstance.MusicSlider.Value / 100;
+                MainMenu.SongVolume           = AudioManager.MasterSongVolume ?? 0.5f;
+            };
             
             Forms.OptionsInstance.SoundEffectSlider.Minimum = 0;
             Forms.OptionsInstance.SoundEffectSlider.Maximum = 100;
@@ -247,7 +250,12 @@ namespace MakeMeLaughJam.Screens
 
         public void RandomAudienceRandomRequest()
         {
-            var group = FlatRedBallServices.Random.In(AvailableAudience);
+            var audience = AvailableAudience;
+            if (audience.Count == 0)
+            {
+                return;
+            }
+            var group    = FlatRedBallServices.Random.In(AvailableAudience);
             group.SignSprite.CurrentChainName = FlatRedBallServices.Random.In(SignChains);
         }
 
@@ -268,6 +276,7 @@ namespace MakeMeLaughJam.Screens
             if (wasSomethingFulfilled)
             {
                 AudienceStartMoving();
+                AudioManager.Play(CrowdLaughter);
             }
         }
 

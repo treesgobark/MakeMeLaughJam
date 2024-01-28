@@ -1,4 +1,5 @@
 using ANLG.Utilities.FlatRedBall.Extensions;
+using FlatRedBall.Audio;
 using MakeMeLaughJam.Entities;
 using Microsoft.Xna.Framework;
 
@@ -9,6 +10,7 @@ namespace MakeMeLaughJam.Screens
         private void ApplyKnockback(Player player)
         {
             player.PunchConsumed = true;
+            AudioManager.Play(punchhit);
             
             if (player.DirectionFacing == HorizontalDirection.Left)
             {

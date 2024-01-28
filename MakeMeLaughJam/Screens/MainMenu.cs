@@ -27,9 +27,18 @@ namespace MakeMeLaughJam.Screens
 {
     public partial class MainMenu
     {
+        public static float SongVolume { get; set; }
+        public static bool MustSetVolume { get; set; } = true;
 
         void CustomInitialize()
         {
+            if (MustSetVolume)
+            {
+                AudioManager.MasterSongVolume  = 0.5f;
+                AudioManager.MasterSoundVolume = 0.5f;
+                MustSetVolume                  = false;
+            }
+            
             // AudioManager.PlaySong(Entitled, true, true);
             MediaPlayer.Play(Entitled);
             MediaPlayer.IsRepeating = true;
@@ -65,9 +74,12 @@ namespace MakeMeLaughJam.Screens
 
             Forms.OptionsInstance.MusicSlider.Minimum = 0;
             Forms.OptionsInstance.MusicSlider.Maximum = 100;
-            Forms.OptionsInstance.MusicSlider.Value = 50;
+            Forms.OptionsInstance.MusicSlider.Value   = 50;
             Forms.OptionsInstance.MusicSlider.ValueChanged += (sender, args) =>
+            {
                 AudioManager.MasterSongVolume = (float)Forms.OptionsInstance.MusicSlider.Value / 100;
+                SongVolume                    = AudioManager.MasterSongVolume ?? 0.5f;
+            };
             
             Forms.OptionsInstance.SoundEffectSlider.Minimum = 0;
             Forms.OptionsInstance.SoundEffectSlider.Maximum = 100;
