@@ -42,6 +42,18 @@
     </Variable>
     <Variable>
       <Type>float</Type>
+      <Name>FullscreenCheckBox.X</Name>
+      <Value xsi:type="xsd:float">210</Value>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
+      <Type>float</Type>
+      <Name>FullscreenCheckBox.Y</Name>
+      <Value xsi:type="xsd:float">240</Value>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
+      <Type>float</Type>
       <Name>Height</Name>
       <Value xsi:type="xsd:float">100</Value>
       <SetsValue>true</SetsValue>
@@ -54,37 +66,85 @@
     </Variable>
     <Variable>
       <Type>float</Type>
-      <Name>SettingsViewInstance.X</Name>
-      <Value xsi:type="xsd:float">0</Value>
+      <Name>MusicSlider.Width</Name>
+      <Value xsi:type="xsd:float">260</Value>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
+      <Type>float</Type>
+      <Name>MusicSlider.X</Name>
+      <Value xsi:type="xsd:float">262</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
       <Type>HorizontalAlignment</Type>
-      <Name>SettingsViewInstance.X Origin</Name>
+      <Name>MusicSlider.X Origin</Name>
       <Value xsi:type="xsd:int">1</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
       <Type>PositionUnitType</Type>
-      <Name>SettingsViewInstance.X Units</Name>
+      <Name>MusicSlider.X Units</Name>
       <Value xsi:type="xsd:int">6</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
       <Type>float</Type>
-      <Name>SettingsViewInstance.Y</Name>
-      <Value xsi:type="xsd:float">41</Value>
+      <Name>MusicSlider.Y</Name>
+      <Value xsi:type="xsd:float">-13</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
       <Type>VerticalAlignment</Type>
-      <Name>SettingsViewInstance.Y Origin</Name>
+      <Name>MusicSlider.Y Origin</Name>
       <Value xsi:type="xsd:int">1</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
       <Type>PositionUnitType</Type>
-      <Name>SettingsViewInstance.Y Units</Name>
+      <Name>MusicSlider.Y Units</Name>
+      <Value xsi:type="xsd:int">7</Value>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
+      <Type>float</Type>
+      <Name>SoundEffectSlider.Width</Name>
+      <Value xsi:type="xsd:float">260</Value>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
+      <Type>float</Type>
+      <Name>SoundEffectSlider.X</Name>
+      <Value xsi:type="xsd:float">-6</Value>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
+      <Type>HorizontalAlignment</Type>
+      <Name>SoundEffectSlider.X Origin</Name>
+      <Value xsi:type="xsd:int">1</Value>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
+      <Type>PositionUnitType</Type>
+      <Name>SoundEffectSlider.X Units</Name>
+      <Value xsi:type="xsd:int">6</Value>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
+      <Type>float</Type>
+      <Name>SoundEffectSlider.Y</Name>
+      <Value xsi:type="xsd:float">-13</Value>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
+      <Type>VerticalAlignment</Type>
+      <Name>SoundEffectSlider.Y Origin</Name>
+      <Value xsi:type="xsd:int">1</Value>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
+      <Type>PositionUnitType</Type>
+      <Name>SoundEffectSlider.Y Units</Name>
       <Value xsi:type="xsd:int">7</Value>
       <SetsValue>true</SetsValue>
     </Variable>
@@ -163,13 +223,23 @@
     <DefinedByBase>false</DefinedByBase>
   </Instance>
   <Instance>
-    <Name>SettingsViewInstance</Name>
-    <BaseType>Controls/SettingsView</BaseType>
+    <Name>BackButton</Name>
+    <BaseType>Controls/ButtonQuit</BaseType>
     <DefinedByBase>false</DefinedByBase>
   </Instance>
   <Instance>
-    <Name>BackButton</Name>
-    <BaseType>Controls/ButtonQuit</BaseType>
+    <Name>SoundEffectSlider</Name>
+    <BaseType>Controls/WoodSlider</BaseType>
+    <DefinedByBase>false</DefinedByBase>
+  </Instance>
+  <Instance>
+    <Name>MusicSlider</Name>
+    <BaseType>Controls/WoodSlider</BaseType>
+    <DefinedByBase>false</DefinedByBase>
+  </Instance>
+  <Instance>
+    <Name>FullscreenCheckBox</Name>
+    <BaseType>Controls/CheckBoxWood</BaseType>
     <DefinedByBase>false</DefinedByBase>
   </Instance>
   <Behaviors />

@@ -1379,6 +1379,167 @@
         "ElementType": "Components",
         "EventType": 7,
         "TimestampUtc": "2024-01-28T03:41:54.8994284Z"
+      },
+      {
+        "NewName": "Controls/SliderSprite",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 0,
+        "TimestampUtc": "2024-01-28T03:59:19.8586292Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "Controls/SliderSprite",
+        "ElementType": "Components",
+        "EventType": 1,
+        "TimestampUtc": "2024-01-28T03:59:48.4112302Z"
+      },
+      {
+        "NewName": "Controls/Slider1",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 0,
+        "TimestampUtc": "2024-01-28T03:59:50.1297139Z"
+      },
+      {
+        "NewName": "Controls/Slider1 (Container).ButtonSpriteInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-28T04:00:07.371205Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "Controls/Slider1 (Container).Controls/ButtonSprite ButtonSpriteInstance in Controls/Slider1 (Container)",
+        "ElementType": "Components",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-28T04:00:23.9723917Z"
+      },
+      {
+        "NewName": "Controls/WoodSlider",
+        "OldName": "Controls/Slider1",
+        "ElementType": "Components",
+        "EventType": 2,
+        "TimestampUtc": "2024-01-28T04:09:14.6097846Z"
+      },
+      {
+        "NewName": "Options (Container).WoodSliderInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-28T04:09:30.1681207Z"
+      },
+      {
+        "NewName": "Options (Container).SoundEffectSlider",
+        "OldName": "Options (Container).WoodSliderInstance",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-28T04:09:37.9317455Z"
+      },
+      {
+        "NewName": "Options (Container).SoundEffectSlider1",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-28T04:13:42.5506325Z"
+      },
+      {
+        "NewName": "Options (Container).MusicSlider",
+        "OldName": "Options (Container).SoundEffectSlider1",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-28T04:13:49.4779267Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "Options (Container).Controls/WoodSlider MusicSlider in Options (Container)",
+        "ElementType": "Components",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-28T04:14:09.6128707Z"
+      },
+      {
+        "NewName": "Options (Container).SoundEffectSlider1",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-28T04:14:11.2158649Z"
+      },
+      {
+        "NewName": "Options (Container).MusicSlider",
+        "OldName": "Options (Container).SoundEffectSlider1",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-28T04:14:16.8286135Z"
+      },
+      {
+        "NewName": "Controls/CheckBox1",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 0,
+        "TimestampUtc": "2024-01-28T04:20:50.6489178Z"
+      },
+      {
+        "NewName": "Controls/CheckBoxSprite",
+        "OldName": "Controls/CheckBox1",
+        "ElementType": "Components",
+        "EventType": 2,
+        "TimestampUtc": "2024-01-28T04:20:54.3466709Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "Controls/CheckBoxSprite (Container).Text TextInstance in Controls/CheckBoxSprite (Container)",
+        "ElementType": "Components",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-28T04:20:59.7706171Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "Controls/CheckBoxSprite (Container).Elements/Icon Check in Controls/CheckBoxSprite (Container)",
+        "ElementType": "Components",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-28T04:21:24.3650582Z"
+      },
+      {
+        "NewName": "Controls/CheckBoxSprite (Container).SpriteInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-28T04:21:44.4877757Z"
+      },
+      {
+        "NewName": "Controls/CheckBoxWood",
+        "OldName": "Controls/CheckBoxSprite",
+        "ElementType": "Components",
+        "EventType": 2,
+        "TimestampUtc": "2024-01-28T04:22:21.3840944Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "Controls/CheckBoxWood (Container).NineSlice CheckboxBackground in Controls/CheckBoxWood (Container)",
+        "ElementType": "Components",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-28T04:22:25.6570596Z"
+      },
+      {
+        "NewName": "Options (Container).CheckBoxWoodInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-28T04:23:37.4212467Z"
+      },
+      {
+        "NewName": "Options (Container).FullscreenCheckBox",
+        "OldName": "Options (Container).CheckBoxWoodInstance",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-28T04:23:44.415486Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "Options (Container).Controls/SettingsView SettingsViewInstance in Options (Container)",
+        "ElementType": "Components",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-28T04:49:59.4744587Z"
       }
     ]
   }

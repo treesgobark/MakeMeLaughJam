@@ -156,6 +156,10 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Name>checkbox</Name>
     </None>
+    <None Include="content\gumproject\components\controls\checkboxwood.gucx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>checkboxwood</Name>
+    </None>
     <None Include="content\gumproject\components\controls\combobox.gucx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Name>combobox</Name>
@@ -235,6 +239,10 @@
     <None Include="content\gumproject\components\controls\usercontrol.gucx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Name>usercontrol</Name>
+    </None>
+    <None Include="content\gumproject\components\controls\woodslider.gucx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>woodslider</Name>
     </None>
     <None Include="content\gumproject\components\credits.gucx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -676,6 +684,14 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Name>button 4 close</Name>
     </None>
+    <None Include="content\screens\mainmenu\checkboxchecked.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>checkboxchecked</Name>
+    </None>
+    <None Include="content\screens\mainmenu\checkboxempty.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>checkboxempty</Name>
+    </None>
     <None Include="content\screens\mainmenu\credits tall.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Name>credits tall</Name>
@@ -683,6 +699,14 @@
     <None Include="content\screens\mainmenu\settings tall.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Name>settings tall</Name>
+    </None>
+    <None Include="content\screens\mainmenu\sliderbutton.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>sliderbutton</Name>
+    </None>
+    <None Include="content\screens\mainmenu\sliderbuttonbig.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>sliderbuttonbig</Name>
     </None>
     <None Include="content\screens\mainmenu\title.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -877,6 +901,10 @@
     <Compile Include="GumRuntimes\Controls\CheckBoxRuntime.Generated.cs">
       <DependentUpon>CheckBoxRuntime.cs</DependentUpon>
     </Compile>
+    <Compile Include="GumRuntimes\Controls\CheckBoxWoodRuntime.cs" />
+    <Compile Include="GumRuntimes\Controls\CheckBoxWoodRuntime.Generated.cs">
+      <DependentUpon>CheckBoxWoodRuntime.cs</DependentUpon>
+    </Compile>
     <Compile Include="GumRuntimes\Controls\ComboBoxRuntime.cs" />
     <Compile Include="GumRuntimes\Controls\ComboBoxRuntime.Generated.cs">
       <DependentUpon>ComboBoxRuntime.cs</DependentUpon>
@@ -956,6 +984,10 @@
     <Compile Include="GumRuntimes\Controls\UserControlRuntime.cs" />
     <Compile Include="GumRuntimes\Controls\UserControlRuntime.Generated.cs">
       <DependentUpon>UserControlRuntime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GumRuntimes\Controls\WoodSliderRuntime.cs" />
+    <Compile Include="GumRuntimes\Controls\WoodSliderRuntime.Generated.cs">
+      <DependentUpon>WoodSliderRuntime.cs</DependentUpon>
     </Compile>
     <Compile Include="GumRuntimes\CreditsRuntime.cs" />
     <Compile Include="GumRuntimes\CreditsRuntime.Generated.cs">
