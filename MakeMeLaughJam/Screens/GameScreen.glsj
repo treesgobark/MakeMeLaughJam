@@ -136,7 +136,7 @@
         }
       ],
       "Name": "MusicBoxPercentageGainOnHit",
-      "DefaultValue": 50.0,
+      "DefaultValue": 60.0,
       "SetByDerived": true
     },
     {
@@ -148,7 +148,7 @@
         }
       ],
       "Name": "MusicBoxPercentageLossPerSecond",
-      "DefaultValue": 15.0,
+      "DefaultValue": 10.0,
       "SetByDerived": true
     },
     {
@@ -160,7 +160,7 @@
         }
       ],
       "Name": "AudiencePercentLossPerSecond",
-      "DefaultValue": 5.0,
+      "DefaultValue": 1.0,
       "SetByDerived": true
     },
     {
@@ -220,7 +220,7 @@
         }
       ],
       "Name": "MaxAudienceHealthPercentLostPerSecond",
-      "DefaultValue": 15.0,
+      "DefaultValue": 6.0,
       "SetByDerived": true
     },
     {

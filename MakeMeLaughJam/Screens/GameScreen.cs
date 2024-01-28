@@ -39,14 +39,14 @@ namespace MakeMeLaughJam.Screens
 
         public readonly string[] SignChains =
         [
-            // "SmelvinFire",
-            // "SmelvinPie",
-            // "SmelvinDance",
-            // "JohnFire",
-            // "JohnPie",
-            // "JohnDance",
-            // "PeepoFire",
-            // "PeepoPie",
+            "SmelvinFire",
+            "SmelvinPie",
+            "SmelvinDance",
+            "JohnFire",
+            "JohnPie",
+            "JohnDance",
+            "PeepoFire",
+            "PeepoPie",
             "PeepoDance"
         ];
 
@@ -63,17 +63,13 @@ namespace MakeMeLaughJam.Screens
             set
             {
                 _currentAudienceHealth                      = value;
-                var percent = 100 * _currentAudienceHealth / MaxAudienceHealth;
+                if (_currentAudienceHealth > 100)
+                {
+                    _currentAudienceHealth = 100;
+                }
+                float percent = 100 * _currentAudienceHealth / MaxAudienceHealth;
                 GumScreen.AudienceBarInstance.BarPercentageLeft = percent;
                 GumScreen.AudienceBarInstance.BarPercentageRight = percent;
-                // GumScreen.AudienceBarInstance.MasksInstance.CurrentMasksState = percent switch
-                // {
-                //     > 40 => MasksRuntime.Masks.Ecstatic,
-                //     > 30 => MasksRuntime.Masks.Satisfied,
-                //     > 20 => MasksRuntime.Masks.Indifferent,
-                //     > 10 => MasksRuntime.Masks.Upset,
-                //     _    => MasksRuntime.Masks.Livid,
-                // };
                 GumScreen.FancyAudienceBarInstance.CurrentFilledState = percent switch
                 {
                     > 38f * 100f / 38f => FancyAudienceBarRuntime.Filled._38,
@@ -139,8 +135,12 @@ namespace MakeMeLaughJam.Screens
                 GumScreen.CurrentPauseState = GameScreenGumRuntime.Pause.NotPaused;
             };
             
-            Forms.PauseInstance.MainMenuButton.Click += (sender, args) => ScreenManager.MoveToScreen("MainMenu");
-            Forms.PauseInstance.QuitButton.Click += (sender, args) => FlatRedBallServices.Game.Exit();
+            Forms.PauseInstance.MainMenuButton.Click += (sender, args) =>
+            {
+                AudioManager.MasterSongVolume = MainMenu.SongVolume;
+                ScreenManager.MoveToScreen("MainMenu");
+            };
+            Forms.PauseInstance.QuitButton.Click     += (sender, args) => FlatRedBallServices.Game.Exit();
             
             Forms.OptionsInstance.BackButton.Click += (sender, args) =>
                 GumScreen.CurrentPauseState = GameScreenGumRuntime.Pause.Main;
@@ -276,13 +276,13 @@ namespace MakeMeLaughJam.Screens
             if (wasSomethingFulfilled)
             {
                 AudienceStartMoving();
+                CurrentAudienceHealth += AudienceHealthPercentGainOnSuccess;
                 AudioManager.Play(CrowdLaughter);
             }
         }
 
         public void AudienceRequestFulfilled(AudienceGroup group)
         {
-            CurrentAudienceHealth += AudienceHealthPercentGainOnSuccess;
             group.SignSprite.CurrentChainName = FlatRedBallServices.Random.In(SignDownChains);
         }
 

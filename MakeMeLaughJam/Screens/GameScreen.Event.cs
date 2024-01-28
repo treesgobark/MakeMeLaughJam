@@ -67,6 +67,7 @@ namespace MakeMeLaughJam.Screens
                 {
                     player.PunchConsumed =  true;
                     player.Velocity      += -Vector3.UnitY * player.PunchKnockbackSpeed;
+                    AudioManager.Play(punchhit);
                     OnPuppetButtonPressed(Puppets.Peepo);
                 }
             }

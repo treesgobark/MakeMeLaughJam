@@ -71,9 +71,15 @@ namespace MakeMeLaughJam.Screens
             if (!IsPaused)
             {
                 MusicBoxPercentage            -= MusicBoxPercentageLossPerSecond * TimeManager.SecondDifference;
-                AudioManager.MasterSongVolume =  MathHelper.Lerp(MinVolume * MainMenu.SongVolume, MainMenu.SongVolume, MusicBoxPercentage / 100);
-                CurrentAudienceHealth         -= AudiencePercentLossPerSecond * TimeManager.SecondDifference;
-                TimeElapsed                   += TimeManager.SecondDifference;
+                
+                AudioManager.MasterSongVolume = MathHelper.Lerp(MinVolume * MainMenu.SongVolume, MainMenu.SongVolume,
+                    MusicBoxPercentage                                    / 100);
+                
+                var audienceHealthLoss = MathHelper.Lerp(MaxAudienceHealthPercentLostPerSecond,
+                    AudiencePercentLossPerSecond, MusicBoxPercentage / 100f);
+                
+                CurrentAudienceHealth -= audienceHealthLoss * TimeManager.SecondDifference;
+                TimeElapsed           += TimeManager.SecondDifference;
             }
 
             if (ShouldRequest)

@@ -1631,6 +1631,34 @@
         "ElementType": "Components",
         "EventType": 7,
         "TimestampUtc": "2024-01-28T18:16:50.8875213Z"
+      },
+      {
+        "NewName": "MainMenu (Container).SpriteInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-28T19:39:12.3090146Z"
+      },
+      {
+        "NewName": "MainMenu (Container).BackgroundSprite",
+        "OldName": "MainMenu (Container).SpriteInstance",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-28T19:39:19.5652032Z"
+      },
+      {
+        "NewName": "Credits (Container).TextInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-28T19:57:42.7982205Z"
+      },
+      {
+        "NewName": "Credits (Container).TextInstance1",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-28T19:58:55.1632672Z"
       }
     ]
   }

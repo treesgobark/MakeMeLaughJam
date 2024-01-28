@@ -5,6 +5,13 @@
   <State>
     <Name>Default</Name>
     <Variable>
+      <IsFile>true</IsFile>
+      <Type>string</Type>
+      <Name>BackgroundSprite.SourceFile</Name>
+      <Value xsi:type="xsd:string">../Screens/MainMenu/Without title.PNG</Value>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
       <Type>float</Type>
       <Name>ButtonCreditsInstance.X</Name>
       <Value xsi:type="xsd:float">-117</Value>
@@ -170,13 +177,13 @@
       <IsFile>true</IsFile>
       <Type>string</Type>
       <Name>TitleSprite.SourceFile</Name>
-      <Value xsi:type="xsd:string">../Screens/MainMenu/Title.PNG</Value>
+      <Value xsi:type="xsd:string">../Screens/MainMenu/TITLE UPDATED.PNG</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
       <Type>float</Type>
       <Name>TitleSprite.X</Name>
-      <Value xsi:type="xsd:float">0</Value>
+      <Value xsi:type="xsd:float">-1</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
@@ -194,7 +201,7 @@
     <Variable>
       <Type>float</Type>
       <Name>TitleSprite.Y</Name>
-      <Value xsi:type="xsd:float">-1</Value>
+      <Value xsi:type="xsd:float">13</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
@@ -228,7 +235,19 @@
       <IsHiddenInPropertyGrid>false</IsHiddenInPropertyGrid>
       <Value />
     </VariableList>
+    <VariableList xsi:type="VariableListSaveOfString">
+      <Type>string</Type>
+      <Name>BackgroundSprite.AnimationFrames</Name>
+      <IsFile>false</IsFile>
+      <IsHiddenInPropertyGrid>false</IsHiddenInPropertyGrid>
+      <Value />
+    </VariableList>
   </State>
+  <Instance>
+    <Name>BackgroundSprite</Name>
+    <BaseType>Sprite</BaseType>
+    <DefinedByBase>false</DefinedByBase>
+  </Instance>
   <Instance>
     <Name>TitleSprite</Name>
     <BaseType>Sprite</BaseType>

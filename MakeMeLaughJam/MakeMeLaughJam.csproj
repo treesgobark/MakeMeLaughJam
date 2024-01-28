@@ -384,6 +384,14 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Name>font12arial_0</Name>
     </None>
+    <None Include="content\gumproject\fontcache\font12courier_new_nosmooth_bold.fnt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>font12courier_new_nosmooth_bold</Name>
+    </None>
+    <None Include="content\gumproject\fontcache\font12courier_new_nosmooth_bold_0.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>font12courier_new_nosmooth_bold_0</Name>
+    </None>
     <None Include="content\gumproject\fontcache\font14arial.fnt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Name>font14arial</Name>
@@ -407,6 +415,14 @@
     <None Include="content\gumproject\fontcache\font14arial_italic_0.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Name>font14arial_italic_0</Name>
+    </None>
+    <None Include="content\gumproject\fontcache\font15courier_new_nosmooth_bold.fnt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>font15courier_new_nosmooth_bold</Name>
+    </None>
+    <None Include="content\gumproject\fontcache\font15courier_new_nosmooth_bold_0.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>font15courier_new_nosmooth_bold_0</Name>
     </None>
     <None Include="content\gumproject\fontcache\font16arial_bold.fnt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -808,9 +824,17 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Name>sliderbuttonbig</Name>
     </None>
+    <None Include="content\screens\mainmenu\title updated.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>title updated</Name>
+    </None>
     <None Include="content\screens\mainmenu\title.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Name>title</Name>
+    </None>
+    <None Include="content\screens\mainmenu\without title.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>without title</Name>
     </None>
     <None Include="content\standardtileset.tsx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
