@@ -63,7 +63,16 @@ namespace MakeMeLaughJam.Screens
                 MusicBoxPercentage    -= MusicBoxPercentageLossPerSecond * TimeManager.SecondDifference;
                 CurrentAudienceHealth -= AudiencePercentLossPerSecond    * TimeManager.SecondDifference;
             }
+
+            if (ShouldRequest)
+            {
+                RandomAudienceRandomRequest();
+                LastRequestTime = TimeManager.CurrentScreenTime;
+            }
         }
+
+        public double LastRequestTime { get; set; } = -69420;
+        public bool ShouldRequest => TimeManager.CurrentScreenSecondsSince(LastRequestTime) > TimeBetweenRequests;
 
         void CustomDestroy()
         {
@@ -114,19 +123,48 @@ namespace MakeMeLaughJam.Screens
             SelectedPuppetEntity.InterpolateToState(Puppet.Deployment.Up, PuppetDeployTime);
             MovePuppetDown(SelectedPuppetEntity, PuppetDeployedDuration);
 
-            SelectedPuppetEntity.CurrentPuppetNameState = (SelectedPuppet, SelectedAction) switch
+            switch (SelectedPuppet, SelectedAction)
             {
-                (Puppets.Smelvin, Actions.Fire)  => Puppet.PuppetName.SmelvinFire,
-                (Puppets.Smelvin, Actions.Pie)   => Puppet.PuppetName.SmelvinPie,
-                (Puppets.Smelvin, Actions.Dance) => Puppet.PuppetName.SmelvinDancing,
-                (Puppets.John, Actions.Fire)     => Puppet.PuppetName.JohnFire,
-                (Puppets.John, Actions.Pie)      => Puppet.PuppetName.JohnPie,
-                (Puppets.John, Actions.Dance)    => Puppet.PuppetName.JohnDancing,
-                (Puppets.Peepo, Actions.Fire)    => Puppet.PuppetName.PeepoFire,
-                (Puppets.Peepo, Actions.Pie)     => Puppet.PuppetName.PeepoPie,
-                (Puppets.Peepo, Actions.Dance)   => Puppet.PuppetName.PeepoDancing,
-            };
-            
+                case (Puppets.Smelvin, Actions.Fire):
+                    SelectedPuppetEntity.CurrentPuppetNameState = Puppet.PuppetName.SmelvinFire;
+                    TryFulfillAudienceRequests("SmelvinFire");
+                    break;
+                case (Puppets.Smelvin, Actions.Pie):
+                    SelectedPuppetEntity.CurrentPuppetNameState = Puppet.PuppetName.SmelvinPie;
+                    TryFulfillAudienceRequests("SmelvinPie");
+                    break;
+                case (Puppets.Smelvin, Actions.Dance):
+                    SelectedPuppetEntity.CurrentPuppetNameState = Puppet.PuppetName.SmelvinDancing;
+                    TryFulfillAudienceRequests("SmelvinDance");
+                    break;
+                case (Puppets.John, Actions.Fire):
+                    SelectedPuppetEntity.CurrentPuppetNameState = Puppet.PuppetName.JohnFire;
+                    TryFulfillAudienceRequests("JohnFire");
+                    break;
+                case (Puppets.John, Actions.Pie):
+                    SelectedPuppetEntity.CurrentPuppetNameState = Puppet.PuppetName.JohnPie;
+                    TryFulfillAudienceRequests("JohnPie");
+                    break;
+                case (Puppets.John, Actions.Dance):
+                    SelectedPuppetEntity.CurrentPuppetNameState = Puppet.PuppetName.JohnDancing;
+                    TryFulfillAudienceRequests("JohnDance");
+                    break;
+                case (Puppets.Peepo, Actions.Fire):
+                    SelectedPuppetEntity.CurrentPuppetNameState = Puppet.PuppetName.PeepoFire;
+                    TryFulfillAudienceRequests("PeepoFire");
+                    break;
+                case (Puppets.Peepo, Actions.Pie):
+                    SelectedPuppetEntity.CurrentPuppetNameState = Puppet.PuppetName.PeepoPie;
+                    TryFulfillAudienceRequests("PeepoPie");
+                    break;
+                case (Puppets.Peepo, Actions.Dance):
+                    SelectedPuppetEntity.CurrentPuppetNameState = Puppet.PuppetName.PeepoDancing;
+                    TryFulfillAudienceRequests("PeepoDance");
+                    break;
+                default:
+                    throw new ArgumentOutOfRangeException("(SelectedPuppet, SelectedAction)");
+            }
+
             SmelvinButton.CurrentIsPressedState = Button.IsPressed.UnpressedRed;
             JohnButton.CurrentIsPressedState    = Button.IsPressed.UnpressedYellow;
             PeepoButton.CurrentIsPressedState   = Button.IsPressed.UnpressedBlue;

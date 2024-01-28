@@ -28,17 +28,21 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Name>switcher-sheet</Name>
     </None>
-    <None Include="content\entities\audience\beebo.png">
+    <None Include="content\entities\audiencegroup\audienceanimations.achx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <Name>Beebo</Name>
+      <Name>AudienceAnimations</Name>
     </None>
-    <None Include="content\entities\audience\phil.png">
+    <None Include="content\entities\audiencegroup\crowd-sheet.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <Name>Phil</Name>
+      <Name>crowd-sheet</Name>
     </None>
-    <None Include="content\entities\audience\schlumbo.png">
+    <None Include="content\entities\audiencegroup\signanimations.achx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <Name>Schlumbo</Name>
+      <Name>SignAnimations</Name>
+    </None>
+    <None Include="content\entities\audiencegroup\signs-sheet.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>signs-sheet</Name>
     </None>
     <None Include="content\entities\button\bluebutton.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -740,10 +744,6 @@
     <Compile Include="Entities\ActionSelector.Generated.cs">
       <DependentUpon>ActionSelector.cs</DependentUpon>
     </Compile>
-    <Compile Include="Entities\Audience.cs" />
-    <Compile Include="Entities\Audience.Generated.cs">
-      <DependentUpon>Audience.cs</DependentUpon>
-    </Compile>
     <Compile Include="Entities\AudienceGroup.cs" />
     <Compile Include="Entities\AudienceGroup.Generated.cs">
       <DependentUpon>AudienceGroup.cs</DependentUpon>
@@ -773,7 +773,6 @@
       <DependentUpon>SpriteContainer.cs</DependentUpon>
     </Compile>
     <Compile Include="Factories\ActionSelectorFactory.Generated.cs" />
-    <Compile Include="Factories\AudienceFactory.Generated.cs" />
     <Compile Include="Factories\AudienceGroupFactory.Generated.cs" />
     <Compile Include="Factories\ButtonFactory.Generated.cs" />
     <Compile Include="Factories\ConfirmLeverFactory.Generated.cs" />

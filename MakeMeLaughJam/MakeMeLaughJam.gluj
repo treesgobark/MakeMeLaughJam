@@ -105,9 +105,6 @@
       "Name": "Entities\\ActionSelector"
     },
     {
-      "Name": "Entities\\Audience"
-    },
-    {
       "Name": "Entities\\AudienceGroup"
     },
     {

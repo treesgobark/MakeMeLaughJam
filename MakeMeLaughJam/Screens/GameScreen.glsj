@@ -83,6 +83,42 @@
       "Name": "PuppetDeployedDuration",
       "DefaultValue": 2.0,
       "SetByDerived": true
+    },
+    {
+      "Properties": [
+        {
+          "Name": "Type",
+          "Value": "float",
+          "Type": "String"
+        }
+      ],
+      "Name": "AudienceHealthPercentGainOnSuccess",
+      "DefaultValue": 20.0,
+      "SetByDerived": true
+    },
+    {
+      "Properties": [
+        {
+          "Name": "Type",
+          "Value": "double",
+          "Type": "String"
+        }
+      ],
+      "Name": "AudienceMovingDuration",
+      "DefaultValue": 2.0,
+      "SetByDerived": true
+    },
+    {
+      "Properties": [
+        {
+          "Name": "Type",
+          "Value": "double",
+          "Type": "String"
+        }
+      ],
+      "Name": "TimeBetweenRequests",
+      "DefaultValue": 5.0,
+      "SetByDerived": true
     }
   ],
   "NamedObjects": [
@@ -245,24 +281,6 @@
       "GenerateTimedEmit": true
     },
     {
-      "InstanceName": "AudienceList",
-      "SourceClassType": "FlatRedBall.Math.PositionedObjectList<T>",
-      "Properties": [
-        {
-          "Name": "AssociateWithFactory",
-          "Value": true,
-          "Type": "bool"
-        }
-      ],
-      "InstructionSaves": [],
-      "SourceType": 2,
-      "SourceFile": "PositionedObjectList (Generic)",
-      "SourceClassGenericType": "Entities\\Audience",
-      "ExposedInDerived": true,
-      "AttachToContainer": true,
-      "GenerateTimedEmit": true
-    },
-    {
       "InstanceName": "AudienceGroupList",
       "SourceClassType": "FlatRedBall.Math.PositionedObjectList<T>",
       "Properties": [
@@ -278,6 +296,23 @@
       "SourceClassGenericType": "Entities\\AudienceGroup",
       "ExposedInDerived": true,
       "AttachToContainer": true,
+      "GenerateTimedEmit": true
+    },
+    {
+      "InstanceName": "AudienceThatLooksCoolList",
+      "SourceClassType": "FlatRedBall.Math.PositionedObjectList<T>",
+      "Properties": [
+        {
+          "Name": "AssociateWithFactory",
+          "Value": true,
+          "Type": "bool"
+        }
+      ],
+      "InstructionSaves": [],
+      "SourceType": 2,
+      "SourceFile": "PositionedObjectList (Generic)",
+      "SourceClassGenericType": "Entities\\AudienceGroup",
+      "ExposedInDerived": true,
       "GenerateTimedEmit": true
     },
     {

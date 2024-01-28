@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Linq;
-
+using System.Threading.Tasks;
 using FlatRedBall;
 using FlatRedBall.Input;
 using FlatRedBall.Instructions;
@@ -13,6 +13,7 @@ using FlatRedBall.Math;
 using FlatRedBall.Math.Geometry;
 using FlatRedBall.Localization;
 using FlatRedBall.Screens;
+using MakeMeLaughJam.Entities;
 using MakeMeLaughJam.GumRuntimes;
 using Microsoft.Xna.Framework;
 
@@ -132,6 +133,11 @@ namespace MakeMeLaughJam.Screens
                     GumScreen.CurrentPauseState = GameScreenGumRuntime.Pause.NotPaused;
                 }
             }
+
+            if (Player1.GameplayInputDevice.Attack.WasJustPressed)
+            {
+                AudienceStartMoving();
+            }
         }
 
         void CustomDestroy()
@@ -144,6 +150,94 @@ namespace MakeMeLaughJam.Screens
         {
 
 
+        }
+
+        public void AudienceStartMoving()
+        {
+            foreach (var audienceGroup in AudienceGroupList)
+            {
+                audienceGroup.AudienceSprite.CurrentChainName = "Shaking";
+            }
+            // foreach (var audienceGroup in audiencelis)
+            // {
+            //     audienceGroup.AudienceSprite.CurrentChainName = "Shaking";
+            // }
+            AudienceStopMovingIn(AudienceMovingDuration);
+        }
+
+        public async Task AudienceStopMovingIn(double delay)
+        {
+            await TimeManager.DelaySeconds(delay);
+            AudienceStopMoving();
+        }
+
+        public void AudienceStopMoving()
+        {
+            foreach (var audienceGroup in AudienceGroupList)
+            {
+                audienceGroup.AudienceSprite.CurrentChainName = "Idle";
+            }
+            // foreach (var audienceGroup in audiencelis)
+            // {
+            //     audienceGroup.AudienceSprite.CurrentChainName = "Shaking";
+            // }
+        }
+
+        public void RandomAudienceRandomRequest()
+        {
+            var group = FlatRedBallServices.Random.In(AvailableAudience);
+            group.SignSprite.CurrentChainName = FlatRedBallServices.Random.In(SignChains);
+        }
+
+        public List<AudienceGroup> AvailableAudience =>
+            AudienceGroupList.Where(g =>
+            {
+                var found = g.SignSprite.CurrentChainName.Contains("Down");
+                return found;
+            }).ToList();
+
+        public void TryFulfillAudienceRequests(string chainName)
+        {
+            foreach (var group in AudienceGroupList)
+            {
+                if (group.SignSprite.CurrentChainName != chainName)
+                {
+                    continue;
+                }
+
+                AudienceRequestFulfilled(group);
+            }
+        }
+
+        public void AudienceRequestFulfilled(AudienceGroup group)
+        {
+            CurrentAudienceHealth += AudienceHealthPercentGainOnSuccess;
+            group.SignSprite.CurrentChainName = FlatRedBallServices.Random.In(SignDownChains);
+        }
+
+        public readonly string[] SignChains =
+        [
+            "SmelvinFire",
+            "SmelvinPie",
+            "SmelvinDance",
+            "JohnFire",
+            "JohnPie",
+            "JohnDance",
+            "PeepoFire",
+            "PeepoPie",
+            "PeepoDance"
+        ];
+
+        public readonly string[] SignDownChains = new[]
+        {
+            "SmelvinDown",
+            "JohnDown",
+            "PeepoDown",
+        };
+
+        public bool IsAudienceAvailable(AudienceGroup group)
+        {
+            return !group.SignSprite.CurrentChainName.Contains("Down");
         }
 
         protected abstract void OnPuppetButtonPressed(Puppets puppet);

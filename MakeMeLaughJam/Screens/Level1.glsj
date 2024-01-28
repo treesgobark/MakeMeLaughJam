@@ -959,7 +959,7 @@
       ]
     },
     {
-      "InstanceName": "AudienceList",
+      "InstanceName": "AudienceGroupList",
       "SourceClassType": "FlatRedBall.Math.PositionedObjectList<T>",
       "Properties": [
         {
@@ -971,7 +971,7 @@
       "InstructionSaves": [],
       "SourceType": 2,
       "SourceFile": "PositionedObjectList (Generic)",
-      "SourceClassGenericType": "Entities\\Audience",
+      "SourceClassGenericType": "Entities\\AudienceGroup",
       "ExposedInDerived": true,
       "AttachToContainer": true,
       "GenerateTimedEmit": true,
@@ -979,8 +979,8 @@
       "InstantiatedByBase": true,
       "ContainedObjects": [
         {
-          "InstanceName": "Audience1",
-          "SourceClassType": "Entities\\Audience",
+          "InstanceName": "AudienceGroup1",
+          "SourceClassType": "Entities\\AudienceGroup",
           "Properties": [
             {
               "Name": "AssociateWithFactory",
@@ -990,15 +990,9 @@
           ],
           "InstructionSaves": [
             {
-              "Type": "Tex",
-              "Member": "CurrentTexState",
-              "Value": "Schlumbo",
-              "Time": 0.0
-            },
-            {
               "Type": "float",
               "Member": "X",
-              "Value": 88.0,
+              "Value": 120.0,
               "Time": 0.0
             },
             {
@@ -1010,18 +1004,18 @@
             {
               "Type": "float",
               "Member": "Z",
-              "Value": -3.0,
+              "Value": -4.0,
               "Time": 0.0
             }
           ],
           "SourceType": 1,
-          "SourceFile": "Entities\\Audience",
+          "SourceFile": "Entities\\AudienceGroup",
           "AttachToContainer": true,
           "GenerateTimedEmit": true
         },
         {
-          "InstanceName": "Audience2",
-          "SourceClassType": "Entities\\Audience",
+          "InstanceName": "AudienceGroup2",
+          "SourceClassType": "Entities\\AudienceGroup",
           "Properties": [
             {
               "Name": "AssociateWithFactory",
@@ -1031,15 +1025,9 @@
           ],
           "InstructionSaves": [
             {
-              "Type": "Tex",
-              "Member": "CurrentTexState",
-              "Value": "Beebo",
-              "Time": 0.0
-            },
-            {
               "Type": "float",
               "Member": "X",
-              "Value": 136.0,
+              "Value": 272.0,
               "Time": 0.0
             },
             {
@@ -1051,17 +1039,17 @@
             {
               "Type": "float",
               "Member": "Z",
-              "Value": -3.0,
+              "Value": -4.0,
               "Time": 0.0
             }
           ],
           "SourceType": 1,
-          "SourceFile": "Entities\\Audience",
+          "SourceFile": "Entities\\AudienceGroup",
           "GenerateTimedEmit": true
         },
         {
-          "InstanceName": "Audience3",
-          "SourceClassType": "Entities\\Audience",
+          "InstanceName": "AudienceGroup3",
+          "SourceClassType": "Entities\\AudienceGroup",
           "Properties": [
             {
               "Name": "AssociateWithFactory",
@@ -1071,15 +1059,77 @@
           ],
           "InstructionSaves": [
             {
-              "Type": "Tex",
-              "Member": "CurrentTexState",
-              "Value": "Phil",
+              "Type": "float",
+              "Member": "X",
+              "Value": 184.0,
               "Time": 0.0
             },
             {
               "Type": "float",
+              "Member": "Y",
+              "Value": -184.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Z",
+              "Value": -5.0,
+              "Time": 0.0
+            }
+          ],
+          "SourceType": 1,
+          "SourceFile": "Entities\\AudienceGroup",
+          "GenerateTimedEmit": true
+        },
+        {
+          "InstanceName": "AudienceGroup4",
+          "SourceClassType": "Entities\\AudienceGroup",
+          "Properties": [
+            {
+              "Name": "AssociateWithFactory",
+              "Value": true,
+              "Type": "bool"
+            }
+          ],
+          "InstructionSaves": [
+            {
+              "Type": "float",
               "Member": "X",
-              "Value": 200.0,
+              "Value": 832.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Y",
+              "Value": -192.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Z",
+              "Value": -7.0,
+              "Time": 0.0
+            }
+          ],
+          "SourceType": 1,
+          "SourceFile": "Entities\\AudienceGroup",
+          "GenerateTimedEmit": true
+        },
+        {
+          "InstanceName": "AudienceGroup5",
+          "SourceClassType": "Entities\\AudienceGroup",
+          "Properties": [
+            {
+              "Name": "AssociateWithFactory",
+              "Value": true,
+              "Type": "bool"
+            }
+          ],
+          "InstructionSaves": [
+            {
+              "Type": "float",
+              "Member": "X",
+              "Value": 744.0,
               "Time": 0.0
             },
             {
@@ -1091,12 +1141,148 @@
             {
               "Type": "float",
               "Member": "Z",
-              "Value": -3.0,
+              "Value": -4.0,
               "Time": 0.0
             }
           ],
           "SourceType": 1,
-          "SourceFile": "Entities\\Audience",
+          "SourceFile": "Entities\\AudienceGroup",
+          "GenerateTimedEmit": true
+        },
+        {
+          "InstanceName": "AudienceGroup6",
+          "SourceClassType": "Entities\\AudienceGroup",
+          "Properties": [
+            {
+              "Name": "AssociateWithFactory",
+              "Value": true,
+              "Type": "bool"
+            }
+          ],
+          "InstructionSaves": [
+            {
+              "Type": "float",
+              "Member": "X",
+              "Value": 896.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Y",
+              "Value": -312.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Z",
+              "Value": -5.0,
+              "Time": 0.0
+            }
+          ],
+          "SourceType": 1,
+          "SourceFile": "Entities\\AudienceGroup",
+          "GenerateTimedEmit": true
+        },
+        {
+          "InstanceName": "AudienceGroup7",
+          "SourceClassType": "Entities\\AudienceGroup",
+          "Properties": [
+            {
+              "Name": "AssociateWithFactory",
+              "Value": true,
+              "Type": "bool"
+            }
+          ],
+          "InstructionSaves": [
+            {
+              "Type": "float",
+              "Member": "X",
+              "Value": 712.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Y",
+              "Value": -136.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Z",
+              "Value": -6.0,
+              "Time": 0.0
+            }
+          ],
+          "SourceType": 1,
+          "SourceFile": "Entities\\AudienceGroup",
+          "GenerateTimedEmit": true
+        },
+        {
+          "InstanceName": "AudienceGroup8",
+          "SourceClassType": "Entities\\AudienceGroup",
+          "Properties": [
+            {
+              "Name": "AssociateWithFactory",
+              "Value": true,
+              "Type": "bool"
+            }
+          ],
+          "InstructionSaves": [
+            {
+              "Type": "float",
+              "Member": "X",
+              "Value": 312.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Y",
+              "Value": -136.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Z",
+              "Value": -6.0,
+              "Time": 0.0
+            }
+          ],
+          "SourceType": 1,
+          "SourceFile": "Entities\\AudienceGroup",
+          "GenerateTimedEmit": true
+        },
+        {
+          "InstanceName": "AudienceGroup9",
+          "SourceClassType": "Entities\\AudienceGroup",
+          "Properties": [
+            {
+              "Name": "AssociateWithFactory",
+              "Value": true,
+              "Type": "bool"
+            }
+          ],
+          "InstructionSaves": [
+            {
+              "Type": "float",
+              "Member": "X",
+              "Value": 512.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Y",
+              "Value": -128.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Z",
+              "Value": -6.0,
+              "Time": 0.0
+            }
+          ],
+          "SourceType": 1,
+          "SourceFile": "Entities\\AudienceGroup",
           "GenerateTimedEmit": true
         }
       ]

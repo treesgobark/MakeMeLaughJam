@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AnimationChainArraySave xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <FileRelativeTextures>true</FileRelativeTextures>
+  <TimeMeasurementUnit>Undefined</TimeMeasurementUnit>
+  <CoordinateType>Pixel</CoordinateType>
+  <AnimationChain>
+    <Name>SmelvinFire</Name>
+    <Frame>
+      <TextureName>signs-sheet.png</TextureName>
+      <FrameLength>0.1</FrameLength>
+      <LeftCoordinate>533</LeftCoordinate>
+      <RightCoordinate>574</RightCoordinate>
+      <TopCoordinate>0</TopCoordinate>
+      <BottomCoordinate>45</BottomCoordinate>
+      <ShapeCollectionSave>
+        <AxisAlignedRectangleSaves />
+        <AxisAlignedCubeSaves />
+        <PolygonSaves />
+        <CircleSaves />
+        <SphereSaves />
+      </ShapeCollectionSave>
+    </Frame>
+  </AnimationChain>
+  <AnimationChain>
+    <Name>SmelvinPie</Name>
+    <Frame>
+      <TextureName>signs-sheet.png</TextureName>
+      <FrameLength>0.1</FrameLength>
+      <LeftCoordinate>41</LeftCoordinate>
+      <RightCoordinate>82</RightCoordinate>
+      <TopCoordinate>0</TopCoordinate>
+      <BottomCoordinate>45</BottomCoordinate>
+      <ShapeCollectionSave>
+        <AxisAlignedRectangleSaves />
+        <AxisAlignedCubeSaves />
+        <PolygonSaves />
+        <CircleSaves />
+        <SphereSaves />
+      </ShapeCollectionSave>
+    </Frame>
+  </AnimationChain>
+  <AnimationChain>
+    <Name>SmelvinDance</Name>
+    <Frame>
+      <TextureName>signs-sheet.png</TextureName>
+      <FrameLength>0.1</FrameLength>
+      <LeftCoordinate>287</LeftCoordinate>
+      <RightCoordinate>328</RightCoordinate>
+      <TopCoordinate>0</TopCoordinate>
+      <BottomCoordinate>45</BottomCoordinate>
+      <ShapeCollectionSave>
+        <AxisAlignedRectangleSaves />
+        <AxisAlignedCubeSaves />
+        <PolygonSaves />
+        <CircleSaves />
+        <SphereSaves />
+      </ShapeCollectionSave>
+    </Frame>
+  </AnimationChain>
+  <AnimationChain>
+    <Name>JohnFire</Name>
+    <Frame>
+      <TextureName>signs-sheet.png</TextureName>
+      <FrameLength>0.1</FrameLength>
+      <LeftCoordinate>615</LeftCoordinate>
+      <RightCoordinate>656</RightCoordinate>
+      <TopCoordinate>0</TopCoordinate>
+      <BottomCoordinate>45</BottomCoordinate>
+      <ShapeCollectionSave>
+        <AxisAlignedRectangleSaves />
+        <AxisAlignedCubeSaves />
+        <PolygonSaves />
+        <CircleSaves />
+        <SphereSaves />
+      </ShapeCollectionSave>
+    </Frame>
+  </AnimationChain>
+  <AnimationChain>
+    <Name>JohnPie</Name>
+    <Frame>
+      <TextureName>signs-sheet.png</TextureName>
+      <FrameLength>0.1</FrameLength>
+      <LeftCoordinate>123</LeftCoordinate>
+      <RightCoordinate>164</RightCoordinate>
+      <TopCoordinate>0</TopCoordinate>
+      <BottomCoordinate>45</BottomCoordinate>
+      <ShapeCollectionSave>
+        <AxisAlignedRectangleSaves />
+        <AxisAlignedCubeSaves />
+        <PolygonSaves />
+        <CircleSaves />
+        <SphereSaves />
+      </ShapeCollectionSave>
+    </Frame>
+  </AnimationChain>
+  <AnimationChain>
+    <Name>JohnDance</Name>
+    <Frame>
+      <TextureName>signs-sheet.png</TextureName>
+      <FrameLength>0.1</FrameLength>
+      <LeftCoordinate>451</LeftCoordinate>
+      <RightCoordinate>492</RightCoordinate>
+      <TopCoordinate>0</TopCoordinate>
+      <BottomCoordinate>45</BottomCoordinate>
+      <ShapeCollectionSave>
+        <AxisAlignedRectangleSaves />
+        <AxisAlignedCubeSaves />
+        <PolygonSaves />
+        <CircleSaves />
+        <SphereSaves />
+      </ShapeCollectionSave>
+    </Frame>
+  </AnimationChain>
+  <AnimationChain>
+    <Name>PeepoFire</Name>
+    <Frame>
+      <TextureName>signs-sheet.png</TextureName>
+      <FrameLength>0.1</FrameLength>
+      <LeftCoordinate>697</LeftCoordinate>
+      <RightCoordinate>738</RightCoordinate>
+      <TopCoordinate>0</TopCoordinate>
+      <BottomCoordinate>45</BottomCoordinate>
+      <ShapeCollectionSave>
+        <AxisAlignedRectangleSaves />
+        <AxisAlignedCubeSaves />
+        <PolygonSaves />
+        <CircleSaves />
+        <SphereSaves />
+      </ShapeCollectionSave>
+    </Frame>
+  </AnimationChain>
+  <AnimationChain>
+    <Name>PeepoPie</Name>
+    <Frame>
+      <TextureName>signs-sheet.png</TextureName>
+      <FrameLength>0.1</FrameLength>
+      <LeftCoordinate>205</LeftCoordinate>
+      <RightCoordinate>246</RightCoordinate>
+      <TopCoordinate>0</TopCoordinate>
+      <BottomCoordinate>45</BottomCoordinate>
+      <ShapeCollectionSave>
+        <AxisAlignedRectangleSaves />
+        <AxisAlignedCubeSaves />
+        <PolygonSaves />
+        <CircleSaves />
+        <SphereSaves />
+      </ShapeCollectionSave>
+    </Frame>
+  </AnimationChain>
+  <AnimationChain>
+    <Name>PeepoDance</Name>
+    <Frame>
+      <TextureName>signs-sheet.png</TextureName>
+      <FrameLength>0.1</FrameLength>
+      <LeftCoordinate>451</LeftCoordinate>
+      <RightCoordinate>492</RightCoordinate>
+      <TopCoordinate>0</TopCoordinate>
+      <BottomCoordinate>45</BottomCoordinate>
+      <ShapeCollectionSave>
+        <AxisAlignedRectangleSaves />
+        <AxisAlignedCubeSaves />
+        <PolygonSaves />
+        <CircleSaves />
+        <SphereSaves />
+      </ShapeCollectionSave>
+    </Frame>
+  </AnimationChain>
+  <AnimationChain>
+    <Name>SmelvinDown</Name>
+    <Frame>
+      <TextureName>signs-sheet.png</TextureName>
+      <FrameLength>0.1</FrameLength>
+      <LeftCoordinate>0</LeftCoordinate>
+      <RightCoordinate>41</RightCoordinate>
+      <TopCoordinate>0</TopCoordinate>
+      <BottomCoordinate>45</BottomCoordinate>
+      <ShapeCollectionSave>
+        <AxisAlignedRectangleSaves />
+        <AxisAlignedCubeSaves />
+        <PolygonSaves />
+        <CircleSaves />
+        <SphereSaves />
+      </ShapeCollectionSave>
+    </Frame>
+  </AnimationChain>
+  <AnimationChain>
+    <Name>JohnDown</Name>
+    <Frame>
+      <TextureName>signs-sheet.png</TextureName>
+      <FrameLength>0.1</FrameLength>
+      <LeftCoordinate>82</LeftCoordinate>
+      <RightCoordinate>123</RightCoordinate>
+      <TopCoordinate>0</TopCoordinate>
+      <BottomCoordinate>45</BottomCoordinate>
+      <ShapeCollectionSave>
+        <AxisAlignedRectangleSaves />
+        <AxisAlignedCubeSaves />
+        <PolygonSaves />
+        <CircleSaves />
+        <SphereSaves />
+      </ShapeCollectionSave>
+    </Frame>
+  </AnimationChain>
+  <AnimationChain>
+    <Name>PeepoDown</Name>
+    <Frame>
+      <TextureName>signs-sheet.png</TextureName>
+      <FrameLength>0.1</FrameLength>
+      <LeftCoordinate>164</LeftCoordinate>
+      <RightCoordinate>205</RightCoordinate>
+      <TopCoordinate>0</TopCoordinate>
+      <BottomCoordinate>45</BottomCoordinate>
+      <ShapeCollectionSave>
+        <AxisAlignedRectangleSaves />
+        <AxisAlignedCubeSaves />
+        <PolygonSaves />
+        <CircleSaves />
+        <SphereSaves />
+      </ShapeCollectionSave>
+    </Frame>
+  </AnimationChain>
+  <AnimationChain>
+    <Name>None</Name>
+    <Frame>
+      <TextureName>signs-sheet.png</TextureName>
+      <FrameLength>0.1</FrameLength>
+      <LeftCoordinate>0</LeftCoordinate>
+      <RightCoordinate>38</RightCoordinate>
+      <TopCoordinate>0</TopCoordinate>
+      <BottomCoordinate>40</BottomCoordinate>
+      <ShapeCollectionSave>
+        <AxisAlignedRectangleSaves />
+        <AxisAlignedCubeSaves />
+        <PolygonSaves />
+        <CircleSaves />
+        <SphereSaves />
+      </ShapeCollectionSave>
+    </Frame>
+  </AnimationChain>
+  <ProjectFile>../../../makemelaughjam.gluj</ProjectFile>
+</AnimationChainArraySave>

@@ -5,6 +5,20 @@
   "Source": "GLUE",
   "CreatedByOtherEntities": true,
   "Is2D": true,
+  "ReferencedFiles": [
+    {
+      "Name": "Entities/AudienceGroup/AudienceAnimations.achx",
+      "IsSharedStatic": true,
+      "RuntimeType": "FlatRedBall.Graphics.Animation.AnimationChainList",
+      "ProjectsToExcludeFrom": []
+    },
+    {
+      "Name": "Entities/AudienceGroup/SignAnimations.achx",
+      "IsSharedStatic": true,
+      "RuntimeType": "FlatRedBall.Graphics.Animation.AnimationChainList",
+      "ProjectsToExcludeFrom": []
+    }
+  ],
   "CustomVariables": [
     {
       "Properties": [
@@ -38,6 +52,26 @@
       ],
       "Name": "Z",
       "SetByDerived": true
+    },
+    {
+      "Properties": [
+        {
+          "Name": "Type",
+          "Value": "string",
+          "Type": "String"
+        },
+        {
+          "Name": "Category",
+          "Value": "Animation",
+          "Type": "String"
+        }
+      ],
+      "Name": "SignSpriteCurrentChainName",
+      "DefaultValue": "SmelvinDown",
+      "SetByDerived": true,
+      "SourceObject": "SignSprite",
+      "SourceObjectProperty": "CurrentChainName",
+      "Category": "Animation"
     }
   ],
   "Properties": [
@@ -49,8 +83,8 @@
   ],
   "NamedObjects": [
     {
-      "InstanceName": "AudienceInstance",
-      "SourceClassType": "Entities\\Audience",
+      "InstanceName": "AudienceSprite",
+      "SourceClassType": "FlatRedBall.Sprite",
       "Properties": [
         {
           "Name": "AssociateWithFactory",
@@ -60,67 +94,63 @@
       ],
       "InstructionSaves": [
         {
-          "Type": "Tex",
-          "Member": "CurrentTexState",
-          "Value": "Beebo",
+          "Type": "float",
+          "Member": "TextureScale",
+          "Value": 1.0,
+          "Time": 0.0
+        },
+        {
+          "Type": "AnimationChainList",
+          "Member": "AnimationChains",
+          "Value": "AudienceAnimations",
+          "Time": 0.0
+        },
+        {
+          "Type": "string",
+          "Member": "CurrentChainName",
+          "Value": "Idle",
+          "Time": 0.0
+        }
+      ],
+      "SourceType": 2,
+      "SourceFile": "Sprite",
+      "HasPublicProperty": true,
+      "AttachToContainer": true,
+      "GenerateTimedEmit": true
+    },
+    {
+      "InstanceName": "SignSprite",
+      "SourceClassType": "FlatRedBall.Sprite",
+      "Properties": [
+        {
+          "Name": "AssociateWithFactory",
+          "Value": true,
+          "Type": "bool"
+        }
+      ],
+      "InstructionSaves": [
+        {
+          "Type": "float",
+          "Member": "TextureScale",
+          "Value": 1.0,
+          "Time": 0.0
+        },
+        {
+          "Type": "AnimationChainList",
+          "Member": "AnimationChains",
+          "Value": "SignAnimations",
+          "Time": 0.0
+        },
+        {
+          "Type": "string",
+          "Member": "CurrentChainName",
+          "Value": "SmelvinDown",
           "Time": 0.0
         },
         {
           "Type": "float",
           "Member": "X",
-          "Value": -40.0,
-          "Time": 0.0
-        }
-      ],
-      "SourceType": 1,
-      "SourceFile": "Entities/Audience",
-      "AttachToContainer": true,
-      "GenerateTimedEmit": true
-    },
-    {
-      "InstanceName": "AudienceInstance2",
-      "SourceClassType": "Entities\\Audience",
-      "Properties": [
-        {
-          "Name": "AssociateWithFactory",
-          "Value": true,
-          "Type": "bool"
-        }
-      ],
-      "InstructionSaves": [
-        {
-          "Type": "Tex",
-          "Member": "CurrentTexState",
-          "Value": "Phil",
-          "Time": 0.0
-        }
-      ],
-      "SourceType": 1,
-      "SourceFile": "Entities/Audience",
-      "AttachToContainer": true,
-      "GenerateTimedEmit": true
-    },
-    {
-      "InstanceName": "AudienceInstance3",
-      "SourceClassType": "Entities\\Audience",
-      "Properties": [
-        {
-          "Name": "AssociateWithFactory",
-          "Value": true,
-          "Type": "bool"
-        }
-      ],
-      "InstructionSaves": [
-        {
-          "Type": "Tex",
-          "Member": "CurrentTexState",
-          "Value": "Schlumbo",
-          "Time": 0.0
-        },
-        {
-          "Type": "float",
-          "Member": "X",
-          "Value": 40.0,
+          "Value": -16.0,
           "Time": 0.0
         },
         {
@@ -128,92 +158,17 @@
           "Member": "Y",
           "Value": 0.0,
           "Time": 0.0
-        }
-      ],
-      "SourceType": 1,
-      "SourceFile": "Entities/Audience",
-      "AttachToContainer": true,
-      "GenerateTimedEmit": true
-    },
-    {
-      "InstanceName": "AudienceInstance1",
-      "SourceClassType": "Entities\\Audience",
-      "Properties": [
-        {
-          "Name": "AssociateWithFactory",
-          "Value": true,
-          "Type": "bool"
-        }
-      ],
-      "InstructionSaves": [
-        {
-          "Type": "Tex",
-          "Member": "CurrentTexState",
-          "Value": "Beebo",
-          "Time": 0.0
-        },
-        {
-          "Type": "float",
-          "Member": "X",
-          "Value": 16.0,
-          "Time": 0.0
-        },
-        {
-          "Type": "float",
-          "Member": "Y",
-          "Value": 8.0,
-          "Time": 0.0
         },
         {
           "Type": "float",
           "Member": "Z",
-          "Value": -1.0,
+          "Value": 0.1,
           "Time": 0.0
         }
       ],
-      "SourceType": 1,
-      "SourceFile": "Entities/Audience",
-      "AttachToContainer": true,
-      "GenerateTimedEmit": true
-    },
-    {
-      "InstanceName": "AudienceInstance5",
-      "SourceClassType": "Entities\\Audience",
-      "Properties": [
-        {
-          "Name": "AssociateWithFactory",
-          "Value": true,
-          "Type": "bool"
-        }
-      ],
-      "InstructionSaves": [
-        {
-          "Type": "Tex",
-          "Member": "CurrentTexState",
-          "Value": "Schlumbo",
-          "Time": 0.0
-        },
-        {
-          "Type": "float",
-          "Member": "X",
-          "Value": -24.0,
-          "Time": 0.0
-        },
-        {
-          "Type": "float",
-          "Member": "Y",
-          "Value": 8.0,
-          "Time": 0.0
-        },
-        {
-          "Type": "float",
-          "Member": "Z",
-          "Value": -1.0,
-          "Time": 0.0
-        }
-      ],
-      "SourceType": 1,
-      "SourceFile": "Entities/Audience",
+      "SourceType": 2,
+      "SourceFile": "Sprite",
+      "HasPublicProperty": true,
       "AttachToContainer": true,
       "GenerateTimedEmit": true
     }

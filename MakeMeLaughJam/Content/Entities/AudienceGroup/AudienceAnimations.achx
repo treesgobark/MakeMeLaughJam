@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AnimationChainArraySave xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <FileRelativeTextures>true</FileRelativeTextures>
+  <TimeMeasurementUnit>Undefined</TimeMeasurementUnit>
+  <CoordinateType>Pixel</CoordinateType>
+  <AnimationChain>
+    <Name>Idle</Name>
+    <Frame>
+      <TextureName>crowd-sheet.png</TextureName>
+      <FrameLength>0.1</FrameLength>
+      <LeftCoordinate>0</LeftCoordinate>
+      <RightCoordinate>124</RightCoordinate>
+      <TopCoordinate>0</TopCoordinate>
+      <BottomCoordinate>105</BottomCoordinate>
+      <ShapeCollectionSave>
+        <AxisAlignedRectangleSaves />
+        <AxisAlignedCubeSaves />
+        <PolygonSaves />
+        <CircleSaves />
+        <SphereSaves />
+      </ShapeCollectionSave>
+    </Frame>
+  </AnimationChain>
+  <AnimationChain>
+    <Name>Shaking</Name>
+    <Frame>
+      <TextureName>crowd-sheet.png</TextureName>
+      <FrameLength>0.1</FrameLength>
+      <LeftCoordinate>0</LeftCoordinate>
+      <RightCoordinate>124</RightCoordinate>
+      <TopCoordinate>0</TopCoordinate>
+      <BottomCoordinate>105</BottomCoordinate>
+      <ShapeCollectionSave>
+        <AxisAlignedRectangleSaves />
+        <AxisAlignedCubeSaves />
+        <PolygonSaves />
+        <CircleSaves />
+        <SphereSaves />
+      </ShapeCollectionSave>
+    </Frame>
+    <Frame>
+      <TextureName>crowd-sheet.png</TextureName>
+      <FrameLength>0.1</FrameLength>
+      <LeftCoordinate>124</LeftCoordinate>
+      <RightCoordinate>248</RightCoordinate>
+      <TopCoordinate>0</TopCoordinate>
+      <BottomCoordinate>105</BottomCoordinate>
+      <ShapeCollectionSave>
+        <AxisAlignedRectangleSaves />
+        <AxisAlignedCubeSaves />
+        <PolygonSaves />
+        <CircleSaves />
+        <SphereSaves />
+      </ShapeCollectionSave>
+    </Frame>
+  </AnimationChain>
+  <ProjectFile>../../../makemelaughjam.gluj</ProjectFile>
+</AnimationChainArraySave>
