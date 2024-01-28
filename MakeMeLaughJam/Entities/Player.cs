@@ -50,7 +50,6 @@ namespace MakeMeLaughJam.Entities
                 AxisAlignedRectangleInstance.Color = Color.White;
                 PunchConsumed                      = false;
             }
-            Debugger.Write(PunchConsumed);
 
             if (DirectionFacing == HorizontalDirection.Left)
             {

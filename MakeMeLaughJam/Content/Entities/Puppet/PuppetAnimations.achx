@@ -2,6 +2,672 @@
 <AnimationChainArraySave xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <FileRelativeTextures>true</FileRelativeTextures>
   <TimeMeasurementUnit>Undefined</TimeMeasurementUnit>
-  <CoordinateType>UV</CoordinateType>
+  <CoordinateType>Pixel</CoordinateType>
+  <AnimationChain>
+    <Name>SmelvinFire</Name>
+    <Frame>
+      <TextureName>puppetsheet.png</TextureName>
+      <FrameLength>0.1</FrameLength>
+      <LeftCoordinate>0</LeftCoordinate>
+      <RightCoordinate>64</RightCoordinate>
+      <TopCoordinate>0</TopCoordinate>
+      <BottomCoordinate>96</BottomCoordinate>
+      <ShapeCollectionSave>
+        <AxisAlignedRectangleSaves />
+        <AxisAlignedCubeSaves />
+        <PolygonSaves />
+        <CircleSaves />
+        <SphereSaves />
+      </ShapeCollectionSave>
+    </Frame>
+    <Frame>
+      <TextureName>puppetsheet.png</TextureName>
+      <FrameLength>0.1</FrameLength>
+      <LeftCoordinate>64</LeftCoordinate>
+      <RightCoordinate>128</RightCoordinate>
+      <TopCoordinate>0</TopCoordinate>
+      <BottomCoordinate>96</BottomCoordinate>
+      <ShapeCollectionSave>
+        <AxisAlignedRectangleSaves />
+        <AxisAlignedCubeSaves />
+        <PolygonSaves />
+        <CircleSaves />
+        <SphereSaves />
+      </ShapeCollectionSave>
+    </Frame>
+    <Frame>
+      <TextureName>puppetsheet.png</TextureName>
+      <FrameLength>0.1</FrameLength>
+      <LeftCoordinate>128</LeftCoordinate>
+      <RightCoordinate>192</RightCoordinate>
+      <TopCoordinate>0</TopCoordinate>
+      <BottomCoordinate>96</BottomCoordinate>
+      <ShapeCollectionSave>
+        <AxisAlignedRectangleSaves />
+        <AxisAlignedCubeSaves />
+        <PolygonSaves />
+        <CircleSaves />
+        <SphereSaves />
+      </ShapeCollectionSave>
+    </Frame>
+  </AnimationChain>
+  <AnimationChain>
+    <Name>JohnFire</Name>
+    <Frame>
+      <TextureName>puppetsheet.png</TextureName>
+      <FrameLength>0.1</FrameLength>
+      <LeftCoordinate>0</LeftCoordinate>
+      <RightCoordinate>64</RightCoordinate>
+      <TopCoordinate>96</TopCoordinate>
+      <BottomCoordinate>192</BottomCoordinate>
+      <ShapeCollectionSave>
+        <AxisAlignedRectangleSaves />
+        <AxisAlignedCubeSaves />
+        <PolygonSaves />
+        <CircleSaves />
+        <SphereSaves />
+      </ShapeCollectionSave>
+    </Frame>
+    <Frame>
+      <TextureName>puppetsheet.png</TextureName>
+      <FrameLength>0.1</FrameLength>
+      <LeftCoordinate>64</LeftCoordinate>
+      <RightCoordinate>128</RightCoordinate>
+      <TopCoordinate>96</TopCoordinate>
+      <BottomCoordinate>192</BottomCoordinate>
+      <ShapeCollectionSave>
+        <AxisAlignedRectangleSaves />
+        <AxisAlignedCubeSaves />
+        <PolygonSaves />
+        <CircleSaves />
+        <SphereSaves />
+      </ShapeCollectionSave>
+    </Frame>
+    <Frame>
+      <TextureName>puppetsheet.png</TextureName>
+      <FrameLength>0.1</FrameLength>
+      <LeftCoordinate>128</LeftCoordinate>
+      <RightCoordinate>192</RightCoordinate>
+      <TopCoordinate>96</TopCoordinate>
+      <BottomCoordinate>192</BottomCoordinate>
+      <ShapeCollectionSave>
+        <AxisAlignedRectangleSaves />
+        <AxisAlignedCubeSaves />
+        <PolygonSaves />
+        <CircleSaves />
+        <SphereSaves />
+      </ShapeCollectionSave>
+    </Frame>
+  </AnimationChain>
+  <AnimationChain>
+    <Name>PeepoFire</Name>
+    <Frame>
+      <TextureName>puppetsheet.png</TextureName>
+      <FrameLength>0.1</FrameLength>
+      <LeftCoordinate>0</LeftCoordinate>
+      <RightCoordinate>64</RightCoordinate>
+      <TopCoordinate>192</TopCoordinate>
+      <BottomCoordinate>288</BottomCoordinate>
+      <ShapeCollectionSave>
+        <AxisAlignedRectangleSaves />
+        <AxisAlignedCubeSaves />
+        <PolygonSaves />
+        <CircleSaves />
+        <SphereSaves />
+      </ShapeCollectionSave>
+    </Frame>
+    <Frame>
+      <TextureName>puppetsheet.png</TextureName>
+      <FrameLength>0.1</FrameLength>
+      <LeftCoordinate>64</LeftCoordinate>
+      <RightCoordinate>128</RightCoordinate>
+      <TopCoordinate>192</TopCoordinate>
+      <BottomCoordinate>288</BottomCoordinate>
+      <ShapeCollectionSave>
+        <AxisAlignedRectangleSaves />
+        <AxisAlignedCubeSaves />
+        <PolygonSaves />
+        <CircleSaves />
+        <SphereSaves />
+      </ShapeCollectionSave>
+    </Frame>
+    <Frame>
+      <TextureName>puppetsheet.png</TextureName>
+      <FrameLength>0.1</FrameLength>
+      <LeftCoordinate>128</LeftCoordinate>
+      <RightCoordinate>192</RightCoordinate>
+      <TopCoordinate>192</TopCoordinate>
+      <BottomCoordinate>288</BottomCoordinate>
+      <ShapeCollectionSave>
+        <AxisAlignedRectangleSaves />
+        <AxisAlignedCubeSaves />
+        <PolygonSaves />
+        <CircleSaves />
+        <SphereSaves />
+      </ShapeCollectionSave>
+    </Frame>
+  </AnimationChain>
+  <AnimationChain>
+    <Name>SmelvinPie</Name>
+    <Frame>
+      <TextureName>puppetsheet.png</TextureName>
+      <FrameLength>0.1</FrameLength>
+      <LeftCoordinate>0</LeftCoordinate>
+      <RightCoordinate>64</RightCoordinate>
+      <TopCoordinate>288</TopCoordinate>
+      <BottomCoordinate>384</BottomCoordinate>
+      <ShapeCollectionSave>
+        <AxisAlignedRectangleSaves />
+        <AxisAlignedCubeSaves />
+        <PolygonSaves />
+        <CircleSaves />
+        <SphereSaves />
+      </ShapeCollectionSave>
+    </Frame>
+    <Frame>
+      <TextureName>puppetsheet.png</TextureName>
+      <FrameLength>0.1</FrameLength>
+      <LeftCoordinate>64</LeftCoordinate>
+      <RightCoordinate>128</RightCoordinate>
+      <TopCoordinate>288</TopCoordinate>
+      <BottomCoordinate>384</BottomCoordinate>
+      <ShapeCollectionSave>
+        <AxisAlignedRectangleSaves />
+        <AxisAlignedCubeSaves />
+        <PolygonSaves />
+        <CircleSaves />
+        <SphereSaves />
+      </ShapeCollectionSave>
+    </Frame>
+    <Frame>
+      <TextureName>puppetsheet.png</TextureName>
+      <FrameLength>0.1</FrameLength>
+      <LeftCoordinate>128</LeftCoordinate>
+      <RightCoordinate>192</RightCoordinate>
+      <TopCoordinate>288</TopCoordinate>
+      <BottomCoordinate>384</BottomCoordinate>
+      <ShapeCollectionSave>
+        <AxisAlignedRectangleSaves />
+        <AxisAlignedCubeSaves />
+        <PolygonSaves />
+        <CircleSaves />
+        <SphereSaves />
+      </ShapeCollectionSave>
+    </Frame>
+    <Frame>
+      <TextureName>puppetsheet.png</TextureName>
+      <FrameLength>0.1</FrameLength>
+      <LeftCoordinate>192</LeftCoordinate>
+      <RightCoordinate>256</RightCoordinate>
+      <TopCoordinate>288</TopCoordinate>
+      <BottomCoordinate>384</BottomCoordinate>
+      <ShapeCollectionSave>
+        <AxisAlignedRectangleSaves />
+        <AxisAlignedCubeSaves />
+        <PolygonSaves />
+        <CircleSaves />
+        <SphereSaves />
+      </ShapeCollectionSave>
+    </Frame>
+    <Frame>
+      <TextureName>puppetsheet.png</TextureName>
+      <FrameLength>0.1</FrameLength>
+      <LeftCoordinate>256</LeftCoordinate>
+      <RightCoordinate>320</RightCoordinate>
+      <TopCoordinate>288</TopCoordinate>
+      <BottomCoordinate>384</BottomCoordinate>
+      <ShapeCollectionSave>
+        <AxisAlignedRectangleSaves />
+        <AxisAlignedCubeSaves />
+        <PolygonSaves />
+        <CircleSaves />
+        <SphereSaves />
+      </ShapeCollectionSave>
+    </Frame>
+    <Frame>
+      <TextureName>puppetsheet.png</TextureName>
+      <FrameLength>0.1</FrameLength>
+      <LeftCoordinate>320</LeftCoordinate>
+      <RightCoordinate>384</RightCoordinate>
+      <TopCoordinate>288</TopCoordinate>
+      <BottomCoordinate>384</BottomCoordinate>
+      <ShapeCollectionSave>
+        <AxisAlignedRectangleSaves />
+        <AxisAlignedCubeSaves />
+        <PolygonSaves />
+        <CircleSaves />
+        <SphereSaves />
+      </ShapeCollectionSave>
+    </Frame>
+    <Frame>
+      <TextureName>puppetsheet.png</TextureName>
+      <FrameLength>0.1</FrameLength>
+      <LeftCoordinate>384</LeftCoordinate>
+      <RightCoordinate>448</RightCoordinate>
+      <TopCoordinate>288</TopCoordinate>
+      <BottomCoordinate>384</BottomCoordinate>
+      <ShapeCollectionSave>
+        <AxisAlignedRectangleSaves />
+        <AxisAlignedCubeSaves />
+        <PolygonSaves />
+        <CircleSaves />
+        <SphereSaves />
+      </ShapeCollectionSave>
+    </Frame>
+  </AnimationChain>
+  <AnimationChain>
+    <Name>JohnPie</Name>
+    <Frame>
+      <TextureName>puppetsheet.png</TextureName>
+      <FrameLength>0.1</FrameLength>
+      <LeftCoordinate>0</LeftCoordinate>
+      <RightCoordinate>64</RightCoordinate>
+      <TopCoordinate>384</TopCoordinate>
+      <BottomCoordinate>480</BottomCoordinate>
+      <ShapeCollectionSave>
+        <AxisAlignedRectangleSaves />
+        <AxisAlignedCubeSaves />
+        <PolygonSaves />
+        <CircleSaves />
+        <SphereSaves />
+      </ShapeCollectionSave>
+    </Frame>
+    <Frame>
+      <TextureName>puppetsheet.png</TextureName>
+      <FrameLength>0.1</FrameLength>
+      <LeftCoordinate>64</LeftCoordinate>
+      <RightCoordinate>128</RightCoordinate>
+      <TopCoordinate>384</TopCoordinate>
+      <BottomCoordinate>480</BottomCoordinate>
+      <ShapeCollectionSave>
+        <AxisAlignedRectangleSaves />
+        <AxisAlignedCubeSaves />
+        <PolygonSaves />
+        <CircleSaves />
+        <SphereSaves />
+      </ShapeCollectionSave>
+    </Frame>
+    <Frame>
+      <TextureName>puppetsheet.png</TextureName>
+      <FrameLength>0.1</FrameLength>
+      <LeftCoordinate>128</LeftCoordinate>
+      <RightCoordinate>192</RightCoordinate>
+      <TopCoordinate>384</TopCoordinate>
+      <BottomCoordinate>480</BottomCoordinate>
+      <ShapeCollectionSave>
+        <AxisAlignedRectangleSaves />
+        <AxisAlignedCubeSaves />
+        <PolygonSaves />
+        <CircleSaves />
+        <SphereSaves />
+      </ShapeCollectionSave>
+    </Frame>
+    <Frame>
+      <TextureName>puppetsheet.png</TextureName>
+      <FrameLength>0.1</FrameLength>
+      <LeftCoordinate>192</LeftCoordinate>
+      <RightCoordinate>256</RightCoordinate>
+      <TopCoordinate>384</TopCoordinate>
+      <BottomCoordinate>480</BottomCoordinate>
+      <ShapeCollectionSave>
+        <AxisAlignedRectangleSaves />
+        <AxisAlignedCubeSaves />
+        <PolygonSaves />
+        <CircleSaves />
+        <SphereSaves />
+      </ShapeCollectionSave>
+    </Frame>
+    <Frame>
+      <TextureName>puppetsheet.png</TextureName>
+      <FrameLength>0.1</FrameLength>
+      <LeftCoordinate>256</LeftCoordinate>
+      <RightCoordinate>320</RightCoordinate>
+      <TopCoordinate>384</TopCoordinate>
+      <BottomCoordinate>480</BottomCoordinate>
+      <ShapeCollectionSave>
+        <AxisAlignedRectangleSaves />
+        <AxisAlignedCubeSaves />
+        <PolygonSaves />
+        <CircleSaves />
+        <SphereSaves />
+      </ShapeCollectionSave>
+    </Frame>
+    <Frame>
+      <TextureName>puppetsheet.png</TextureName>
+      <FrameLength>0.1</FrameLength>
+      <LeftCoordinate>320</LeftCoordinate>
+      <RightCoordinate>384</RightCoordinate>
+      <TopCoordinate>384</TopCoordinate>
+      <BottomCoordinate>480</BottomCoordinate>
+      <ShapeCollectionSave>
+        <AxisAlignedRectangleSaves />
+        <AxisAlignedCubeSaves />
+        <PolygonSaves />
+        <CircleSaves />
+        <SphereSaves />
+      </ShapeCollectionSave>
+    </Frame>
+    <Frame>
+      <TextureName>puppetsheet.png</TextureName>
+      <FrameLength>0.1</FrameLength>
+      <LeftCoordinate>384</LeftCoordinate>
+      <RightCoordinate>448</RightCoordinate>
+      <TopCoordinate>384</TopCoordinate>
+      <BottomCoordinate>480</BottomCoordinate>
+      <ShapeCollectionSave>
+        <AxisAlignedRectangleSaves />
+        <AxisAlignedCubeSaves />
+        <PolygonSaves />
+        <CircleSaves />
+        <SphereSaves />
+      </ShapeCollectionSave>
+    </Frame>
+  </AnimationChain>
+  <AnimationChain>
+    <Name>PeepoPie</Name>
+    <Frame>
+      <TextureName>puppetsheet.png</TextureName>
+      <FrameLength>0.1</FrameLength>
+      <LeftCoordinate>0</LeftCoordinate>
+      <RightCoordinate>64</RightCoordinate>
+      <TopCoordinate>480</TopCoordinate>
+      <BottomCoordinate>576</BottomCoordinate>
+      <ShapeCollectionSave>
+        <AxisAlignedRectangleSaves />
+        <AxisAlignedCubeSaves />
+        <PolygonSaves />
+        <CircleSaves />
+        <SphereSaves />
+      </ShapeCollectionSave>
+    </Frame>
+    <Frame>
+      <TextureName>puppetsheet.png</TextureName>
+      <FrameLength>0.1</FrameLength>
+      <LeftCoordinate>64</LeftCoordinate>
+      <RightCoordinate>128</RightCoordinate>
+      <TopCoordinate>480</TopCoordinate>
+      <BottomCoordinate>576</BottomCoordinate>
+      <ShapeCollectionSave>
+        <AxisAlignedRectangleSaves />
+        <AxisAlignedCubeSaves />
+        <PolygonSaves />
+        <CircleSaves />
+        <SphereSaves />
+      </ShapeCollectionSave>
+    </Frame>
+    <Frame>
+      <TextureName>puppetsheet.png</TextureName>
+      <FrameLength>0.1</FrameLength>
+      <LeftCoordinate>128</LeftCoordinate>
+      <RightCoordinate>192</RightCoordinate>
+      <TopCoordinate>480</TopCoordinate>
+      <BottomCoordinate>576</BottomCoordinate>
+      <ShapeCollectionSave>
+        <AxisAlignedRectangleSaves />
+        <AxisAlignedCubeSaves />
+        <PolygonSaves />
+        <CircleSaves />
+        <SphereSaves />
+      </ShapeCollectionSave>
+    </Frame>
+    <Frame>
+      <TextureName>puppetsheet.png</TextureName>
+      <FrameLength>0.1</FrameLength>
+      <LeftCoordinate>192</LeftCoordinate>
+      <RightCoordinate>256</RightCoordinate>
+      <TopCoordinate>480</TopCoordinate>
+      <BottomCoordinate>576</BottomCoordinate>
+      <ShapeCollectionSave>
+        <AxisAlignedRectangleSaves />
+        <AxisAlignedCubeSaves />
+        <PolygonSaves />
+        <CircleSaves />
+        <SphereSaves />
+      </ShapeCollectionSave>
+    </Frame>
+    <Frame>
+      <TextureName>puppetsheet.png</TextureName>
+      <FrameLength>0.1</FrameLength>
+      <LeftCoordinate>256</LeftCoordinate>
+      <RightCoordinate>320</RightCoordinate>
+      <TopCoordinate>480</TopCoordinate>
+      <BottomCoordinate>576</BottomCoordinate>
+      <ShapeCollectionSave>
+        <AxisAlignedRectangleSaves />
+        <AxisAlignedCubeSaves />
+        <PolygonSaves />
+        <CircleSaves />
+        <SphereSaves />
+      </ShapeCollectionSave>
+    </Frame>
+    <Frame>
+      <TextureName>puppetsheet.png</TextureName>
+      <FrameLength>0.1</FrameLength>
+      <LeftCoordinate>320</LeftCoordinate>
+      <RightCoordinate>384</RightCoordinate>
+      <TopCoordinate>480</TopCoordinate>
+      <BottomCoordinate>576</BottomCoordinate>
+      <ShapeCollectionSave>
+        <AxisAlignedRectangleSaves />
+        <AxisAlignedCubeSaves />
+        <PolygonSaves />
+        <CircleSaves />
+        <SphereSaves />
+      </ShapeCollectionSave>
+    </Frame>
+    <Frame>
+      <TextureName>puppetsheet.png</TextureName>
+      <FrameLength>0.1</FrameLength>
+      <LeftCoordinate>384</LeftCoordinate>
+      <RightCoordinate>448</RightCoordinate>
+      <TopCoordinate>480</TopCoordinate>
+      <BottomCoordinate>576</BottomCoordinate>
+      <ShapeCollectionSave>
+        <AxisAlignedRectangleSaves />
+        <AxisAlignedCubeSaves />
+        <PolygonSaves />
+        <CircleSaves />
+        <SphereSaves />
+      </ShapeCollectionSave>
+    </Frame>
+  </AnimationChain>
+  <AnimationChain>
+    <Name>SmelvinDancing</Name>
+    <Frame>
+      <TextureName>puppetsheet.png</TextureName>
+      <FrameLength>0.1</FrameLength>
+      <LeftCoordinate>0</LeftCoordinate>
+      <RightCoordinate>64</RightCoordinate>
+      <TopCoordinate>576</TopCoordinate>
+      <BottomCoordinate>672</BottomCoordinate>
+      <ShapeCollectionSave>
+        <AxisAlignedRectangleSaves />
+        <AxisAlignedCubeSaves />
+        <PolygonSaves />
+        <CircleSaves />
+        <SphereSaves />
+      </ShapeCollectionSave>
+    </Frame>
+    <Frame>
+      <TextureName>puppetsheet.png</TextureName>
+      <FrameLength>0.1</FrameLength>
+      <LeftCoordinate>64</LeftCoordinate>
+      <RightCoordinate>128</RightCoordinate>
+      <TopCoordinate>576</TopCoordinate>
+      <BottomCoordinate>672</BottomCoordinate>
+      <ShapeCollectionSave>
+        <AxisAlignedRectangleSaves />
+        <AxisAlignedCubeSaves />
+        <PolygonSaves />
+        <CircleSaves />
+        <SphereSaves />
+      </ShapeCollectionSave>
+    </Frame>
+    <Frame>
+      <TextureName>puppetsheet.png</TextureName>
+      <FrameLength>0.1</FrameLength>
+      <LeftCoordinate>128</LeftCoordinate>
+      <RightCoordinate>192</RightCoordinate>
+      <TopCoordinate>576</TopCoordinate>
+      <BottomCoordinate>672</BottomCoordinate>
+      <ShapeCollectionSave>
+        <AxisAlignedRectangleSaves />
+        <AxisAlignedCubeSaves />
+        <PolygonSaves />
+        <CircleSaves />
+        <SphereSaves />
+      </ShapeCollectionSave>
+    </Frame>
+  </AnimationChain>
+  <AnimationChain>
+    <Name>JohnDancing</Name>
+    <Frame>
+      <TextureName>puppetsheet.png</TextureName>
+      <FrameLength>0.1</FrameLength>
+      <LeftCoordinate>0</LeftCoordinate>
+      <RightCoordinate>64</RightCoordinate>
+      <TopCoordinate>672</TopCoordinate>
+      <BottomCoordinate>768</BottomCoordinate>
+      <ShapeCollectionSave>
+        <AxisAlignedRectangleSaves />
+        <AxisAlignedCubeSaves />
+        <PolygonSaves />
+        <CircleSaves />
+        <SphereSaves />
+      </ShapeCollectionSave>
+    </Frame>
+    <Frame>
+      <TextureName>puppetsheet.png</TextureName>
+      <FrameLength>0.1</FrameLength>
+      <LeftCoordinate>64</LeftCoordinate>
+      <RightCoordinate>128</RightCoordinate>
+      <TopCoordinate>672</TopCoordinate>
+      <BottomCoordinate>768</BottomCoordinate>
+      <ShapeCollectionSave>
+        <AxisAlignedRectangleSaves />
+        <AxisAlignedCubeSaves />
+        <PolygonSaves />
+        <CircleSaves />
+        <SphereSaves />
+      </ShapeCollectionSave>
+    </Frame>
+    <Frame>
+      <TextureName>puppetsheet.png</TextureName>
+      <FrameLength>0.1</FrameLength>
+      <LeftCoordinate>128</LeftCoordinate>
+      <RightCoordinate>192</RightCoordinate>
+      <TopCoordinate>672</TopCoordinate>
+      <BottomCoordinate>768</BottomCoordinate>
+      <ShapeCollectionSave>
+        <AxisAlignedRectangleSaves />
+        <AxisAlignedCubeSaves />
+        <PolygonSaves />
+        <CircleSaves />
+        <SphereSaves />
+      </ShapeCollectionSave>
+    </Frame>
+  </AnimationChain>
+  <AnimationChain>
+    <Name>PeepoDancing</Name>
+    <Frame>
+      <TextureName>puppetsheet.png</TextureName>
+      <FrameLength>0.1</FrameLength>
+      <LeftCoordinate>0</LeftCoordinate>
+      <RightCoordinate>64</RightCoordinate>
+      <TopCoordinate>768</TopCoordinate>
+      <BottomCoordinate>864</BottomCoordinate>
+      <ShapeCollectionSave>
+        <AxisAlignedRectangleSaves />
+        <AxisAlignedCubeSaves />
+        <PolygonSaves />
+        <CircleSaves />
+        <SphereSaves />
+      </ShapeCollectionSave>
+    </Frame>
+    <Frame>
+      <TextureName>puppetsheet.png</TextureName>
+      <FrameLength>0.1</FrameLength>
+      <LeftCoordinate>64</LeftCoordinate>
+      <RightCoordinate>128</RightCoordinate>
+      <TopCoordinate>768</TopCoordinate>
+      <BottomCoordinate>864</BottomCoordinate>
+      <ShapeCollectionSave>
+        <AxisAlignedRectangleSaves />
+        <AxisAlignedCubeSaves />
+        <PolygonSaves />
+        <CircleSaves />
+        <SphereSaves />
+      </ShapeCollectionSave>
+    </Frame>
+    <Frame>
+      <TextureName>puppetsheet.png</TextureName>
+      <FrameLength>0.1</FrameLength>
+      <LeftCoordinate>128</LeftCoordinate>
+      <RightCoordinate>192</RightCoordinate>
+      <TopCoordinate>768</TopCoordinate>
+      <BottomCoordinate>864</BottomCoordinate>
+      <ShapeCollectionSave>
+        <AxisAlignedRectangleSaves />
+        <AxisAlignedCubeSaves />
+        <PolygonSaves />
+        <CircleSaves />
+        <SphereSaves />
+      </ShapeCollectionSave>
+    </Frame>
+  </AnimationChain>
+  <AnimationChain>
+    <Name>SmelvinIdle</Name>
+    <Frame>
+      <TextureName>puppetsheet.png</TextureName>
+      <FrameLength>0.1</FrameLength>
+      <LeftCoordinate>0</LeftCoordinate>
+      <RightCoordinate>64</RightCoordinate>
+      <TopCoordinate>576</TopCoordinate>
+      <BottomCoordinate>672</BottomCoordinate>
+      <ShapeCollectionSave>
+        <AxisAlignedRectangleSaves />
+        <AxisAlignedCubeSaves />
+        <PolygonSaves />
+        <CircleSaves />
+        <SphereSaves />
+      </ShapeCollectionSave>
+    </Frame>
+  </AnimationChain>
+  <AnimationChain>
+    <Name>JohnIdle</Name>
+    <Frame>
+      <TextureName>puppetsheet.png</TextureName>
+      <FrameLength>0.1</FrameLength>
+      <LeftCoordinate>0</LeftCoordinate>
+      <RightCoordinate>64</RightCoordinate>
+      <TopCoordinate>672</TopCoordinate>
+      <BottomCoordinate>768</BottomCoordinate>
+      <ShapeCollectionSave>
+        <AxisAlignedRectangleSaves />
+        <AxisAlignedCubeSaves />
+        <PolygonSaves />
+        <CircleSaves />
+        <SphereSaves />
+      </ShapeCollectionSave>
+    </Frame>
+  </AnimationChain>
+  <AnimationChain>
+    <Name>PeepoIdle</Name>
+    <Frame>
+      <TextureName>puppetsheet.png</TextureName>
+      <FrameLength>0.1</FrameLength>
+      <LeftCoordinate>0</LeftCoordinate>
+      <RightCoordinate>64</RightCoordinate>
+      <TopCoordinate>768</TopCoordinate>
+      <BottomCoordinate>864</BottomCoordinate>
+      <ShapeCollectionSave>
+        <AxisAlignedRectangleSaves />
+        <AxisAlignedCubeSaves />
+        <PolygonSaves />
+        <CircleSaves />
+        <SphereSaves />
+      </ShapeCollectionSave>
+    </Frame>
+  </AnimationChain>
   <ProjectFile>../../../makemelaughjam.gluj</ProjectFile>
 </AnimationChainArraySave>

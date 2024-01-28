@@ -69,6 +69,26 @@
       ],
       "Name": "CurrentFacingState",
       "SetByDerived": true
+    },
+    {
+      "Properties": [
+        {
+          "Name": "Type",
+          "Value": "Color",
+          "Type": "String"
+        },
+        {
+          "Name": "Category",
+          "Value": "Appearance",
+          "Type": "String"
+        }
+      ],
+      "Name": "AxisAlignedRectangleInstanceColor",
+      "DefaultValue": "White",
+      "SetByDerived": true,
+      "SourceObject": "AxisAlignedRectangleInstance",
+      "SourceObjectProperty": "Color",
+      "Category": "Appearance"
     }
   ],
   "Properties": [
@@ -162,24 +182,29 @@
               "Time": 0.0
             }
           ]
+        },
+        {
+          "Name": "Down",
+          "InstructionSaves": []
         }
       ],
       "ExcludedVariables": [
         "X",
         "Y",
         "Z",
-        "CurrentFacingState"
+        "CurrentFacingState",
+        "AxisAlignedRectangleInstanceColor"
       ]
     },
     {
       "Name": "IsPressed",
       "States": [
         {
-          "Name": "Unpressed",
+          "Name": "Pressed",
           "InstructionSaves": []
         },
         {
-          "Name": "Pressed",
+          "Name": "Unpressed",
           "InstructionSaves": []
         }
       ],
@@ -188,7 +213,8 @@
         "Y",
         "Z",
         "SpriteInstanceFlipHorizontal",
-        "CurrentFacingState"
+        "CurrentFacingState",
+        "AxisAlignedRectangleInstanceColor"
       ]
     }
   ],

@@ -17,6 +17,7 @@ using Microsoft.Xna.Framework;
 
 using MakeMeLaughJam.Entities;
 using MakeMeLaughJam.GumRuntimes;
+using Microsoft.Xna.Framework.Input;
 
 
 namespace MakeMeLaughJam.Screens
@@ -28,15 +29,26 @@ namespace MakeMeLaughJam.Screens
         {
             GumScreen.CurrentMainMenuState = MainMenuGumRuntime.MainMenu.Main;
             
-            Forms.MainMenuInstance.PlayButton.Click += (sender, args) => ScreenManager.MoveToScreen("Level1");
-            Forms.MainMenuInstance.OptionsButton.Click += (sender, args) => GumScreen.CurrentMainMenuState = MainMenuGumRuntime.MainMenu.Options;
-            Forms.MainMenuInstance.QuitButton.Click += (sender, args) => FlatRedBallServices.Game.Exit();
+            Forms.MainMenuInstance.ButtonStartInstance.Click += (sender, args) => ScreenManager.MoveToScreen("Level1");
+            Forms.MainMenuInstance.ButtonOptionsInstance.Click += (sender, args) => GumScreen.CurrentMainMenuState = MainMenuGumRuntime.MainMenu.Options;
+            Forms.MainMenuInstance.ButtonCreditsInstance.Click += (sender, args) => GumScreen.CurrentMainMenuState = MainMenuGumRuntime.MainMenu.Credits    ;
+            Forms.MainMenuInstance.ButtonQuitInstance.Click += (sender, args) => FlatRedBallServices.Game.Exit();
             
             Forms.OptionsInstance.BackButton.Click += (sender, args) => GumScreen.CurrentMainMenuState = MainMenuGumRuntime.MainMenu.Main;
+            
+            Forms.CreditsInstance.BackButton.Click += (sender, args) => GumScreen.CurrentMainMenuState = MainMenuGumRuntime.MainMenu.Main;
         }
 
         void CustomActivity(bool firstTimeCalled)
         {
+            if (InputManager.Xbox360GamePads[0].GetButton(Xbox360GamePad.Button.Start).WasJustPressedOrRepeated
+                || InputManager.Keyboard.GetKey(Keys.Escape).WasJustPressed)
+            {
+                if (GumScreen.CurrentMainMenuState is MainMenuGumRuntime.MainMenu.Credits or MainMenuGumRuntime.MainMenu.Options)
+                {
+                    GumScreen.CurrentMainMenuState = MainMenuGumRuntime.MainMenu.Main;
+                }
+            }
         }
 
         void CustomDestroy()

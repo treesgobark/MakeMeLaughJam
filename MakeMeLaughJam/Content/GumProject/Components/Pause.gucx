@@ -17,20 +17,9 @@
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
-      <Type>string</Type>
-      <Name>MainMenuButton.ButtonDisplayText</Name>
-      <Value xsi:type="xsd:string">Main Menu</Value>
-      <SetsValue>true</SetsValue>
-    </Variable>
-    <Variable>
-      <Type>string</Type>
-      <Name>MainMenuButton.Parent</Name>
-      <SetsValue>true</SetsValue>
-    </Variable>
-    <Variable>
       <Type>float</Type>
       <Name>MainMenuButton.X</Name>
-      <Value xsi:type="xsd:float">0</Value>
+      <Value xsi:type="xsd:float">-197</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
@@ -48,7 +37,7 @@
     <Variable>
       <Type>float</Type>
       <Name>MainMenuButton.Y</Name>
-      <Value xsi:type="xsd:float">37</Value>
+      <Value xsi:type="xsd:float">67</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
@@ -64,15 +53,9 @@
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
-      <Type>string</Type>
-      <Name>OptionsButton.ButtonDisplayText</Name>
-      <Value xsi:type="xsd:string">Options</Value>
-      <SetsValue>true</SetsValue>
-    </Variable>
-    <Variable>
       <Type>float</Type>
       <Name>OptionsButton.X</Name>
-      <Value xsi:type="xsd:float">0</Value>
+      <Value xsi:type="xsd:float">200</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
@@ -90,7 +73,7 @@
     <Variable>
       <Type>float</Type>
       <Name>OptionsButton.Y</Name>
-      <Value xsi:type="xsd:float">-17</Value>
+      <Value xsi:type="xsd:float">-69</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
@@ -106,20 +89,9 @@
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
-      <Type>string</Type>
-      <Name>QuitButton.ButtonDisplayText</Name>
-      <Value xsi:type="xsd:string">Quit</Value>
-      <SetsValue>true</SetsValue>
-    </Variable>
-    <Variable>
-      <Type>string</Type>
-      <Name>QuitButton.Parent</Name>
-      <SetsValue>true</SetsValue>
-    </Variable>
-    <Variable>
       <Type>float</Type>
       <Name>QuitButton.X</Name>
-      <Value xsi:type="xsd:float">0</Value>
+      <Value xsi:type="xsd:float">196</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
@@ -137,7 +109,7 @@
     <Variable>
       <Type>float</Type>
       <Name>QuitButton.Y</Name>
-      <Value xsi:type="xsd:float">90</Value>
+      <Value xsi:type="xsd:float">72</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
@@ -153,15 +125,9 @@
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
-      <Type>string</Type>
-      <Name>ResumeButton.ButtonDisplayText</Name>
-      <Value xsi:type="xsd:string">Resume</Value>
-      <SetsValue>true</SetsValue>
-    </Variable>
-    <Variable>
       <Type>float</Type>
       <Name>ResumeButton.X</Name>
-      <Value xsi:type="xsd:float">0</Value>
+      <Value xsi:type="xsd:float">-197</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
@@ -179,7 +145,7 @@
     <Variable>
       <Type>float</Type>
       <Name>ResumeButton.Y</Name>
-      <Value xsi:type="xsd:float">-69</Value>
+      <Value xsi:type="xsd:float">-71</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
@@ -215,22 +181,22 @@
   </State>
   <Instance>
     <Name>ResumeButton</Name>
-    <BaseType>Controls/ButtonStandard</BaseType>
+    <BaseType>Controls/ButtonStart</BaseType>
     <DefinedByBase>false</DefinedByBase>
   </Instance>
   <Instance>
     <Name>OptionsButton</Name>
-    <BaseType>Controls/ButtonStandard</BaseType>
+    <BaseType>Controls/ButtonOptions</BaseType>
     <DefinedByBase>false</DefinedByBase>
   </Instance>
   <Instance>
     <Name>MainMenuButton</Name>
-    <BaseType>Controls/ButtonStandard</BaseType>
+    <BaseType>Controls/ButtonCredits</BaseType>
     <DefinedByBase>false</DefinedByBase>
   </Instance>
   <Instance>
     <Name>QuitButton</Name>
-    <BaseType>Controls/ButtonStandard</BaseType>
+    <BaseType>Controls/ButtonQuit</BaseType>
     <DefinedByBase>false</DefinedByBase>
   </Instance>
   <Behaviors />

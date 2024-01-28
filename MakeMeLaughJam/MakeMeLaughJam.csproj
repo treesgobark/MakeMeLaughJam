@@ -20,6 +20,58 @@
     <None Remove="**\*.glsj" />
     <None Remove="**\*.glej" />
     <None Remove="**\*.gluj" />
+    <None Include="content\entities\actionselector\actionselectoranimations.achx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>ActionSelectorAnimations</Name>
+    </None>
+    <None Include="content\entities\actionselector\switcher-sheet.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>switcher-sheet</Name>
+    </None>
+    <None Include="content\entities\button\bluebutton.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>BlueButton</Name>
+    </None>
+    <None Include="content\entities\button\bluebuttonpressed.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>BlueButtonPressed</Name>
+    </None>
+    <None Include="content\entities\button\button-sheet.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>button-sheet</Name>
+    </None>
+    <None Include="content\entities\button\redbutton.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>RedButton</Name>
+    </None>
+    <None Include="content\entities\button\redbuttonpressed.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>RedButtonPressed</Name>
+    </None>
+    <None Include="content\entities\button\yellowbutton.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>YellowButton</Name>
+    </None>
+    <None Include="content\entities\button\yellowbuttonpressed.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>YellowButtonPressed</Name>
+    </None>
+    <None Include="content\entities\confirmationlever\lever-sheet.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>lever-sheet</Name>
+    </None>
+    <None Include="content\entities\confirmlever\leveranimations.achx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>LeverAnimations</Name>
+    </None>
+    <None Include="content\entities\musicbox\musicbox.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>musicbox</Name>
+    </None>
+    <None Include="content\entities\musicbox\musicboxchains.achx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>MusicBoxChains</Name>
+    </None>
     <None Include="content\entities\player\boysprite-sheet.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Name>boysprite-sheet</Name>
@@ -44,6 +96,10 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Name>PlatformerValuesStatic</Name>
     </None>
+    <None Include="content\entities\puppet\puppetsheet.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>puppetsheet</Name>
+    </None>
     <None Include="content\gumproject\components\audiencebar.gucx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Name>audiencebar</Name>
@@ -56,6 +112,10 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Name>buttonconfirm</Name>
     </None>
+    <None Include="content\gumproject\components\controls\buttoncredits.gucx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>buttoncredits</Name>
+    </None>
     <None Include="content\gumproject\components\controls\buttondeny.gucx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Name>buttondeny</Name>
@@ -63,6 +123,14 @@
     <None Include="content\gumproject\components\controls\buttonicon.gucx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Name>buttonicon</Name>
+    </None>
+    <None Include="content\gumproject\components\controls\buttonoptions.gucx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>buttonoptions</Name>
+    </None>
+    <None Include="content\gumproject\components\controls\buttonquit.gucx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>buttonquit</Name>
     </None>
     <None Include="content\gumproject\components\controls\buttonsprite.gucx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -75,6 +143,10 @@
     <None Include="content\gumproject\components\controls\buttonstandardicon.gucx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Name>buttonstandardicon</Name>
+    </None>
+    <None Include="content\gumproject\components\controls\buttonstart.gucx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>buttonstart</Name>
     </None>
     <None Include="content\gumproject\components\controls\buttontab.gucx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -140,10 +212,6 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Name>slider</Name>
     </None>
-    <None Include="content\gumproject\components\controls\slidersprites.gucx">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <Name>slidersprites</Name>
-    </None>
     <None Include="content\gumproject\components\controls\textbox.gucx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Name>textbox</Name>
@@ -167,6 +235,10 @@
     <None Include="content\gumproject\components\controls\usercontrol.gucx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Name>usercontrol</Name>
+    </None>
+    <None Include="content\gumproject\components\credits.gucx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>credits</Name>
     </None>
     <None Include="content\gumproject\components\elements\cautionlines.gucx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -295,14 +367,6 @@
     <None Include="content\gumproject\fontcache\font28arial_bold_0.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Name>font28arial_bold_0</Name>
-    </None>
-    <None Include="content\gumproject\fontcache\font36arial_nosmooth.fnt">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <Name>font36arial_nosmooth</Name>
-    </None>
-    <None Include="content\gumproject\fontcache\font36arial_nosmooth_0.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <Name>font36arial_nosmooth_0</Name>
     </None>
     <None Include="content\gumproject\gumproject.gumx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -572,6 +636,50 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Name>WhiteSquare32</Name>
     </None>
+    <None Include="content\screens\mainmenu\button 1 start hover.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>button 1 start hover</Name>
+    </None>
+    <None Include="content\screens\mainmenu\button 1 start.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>button 1 start</Name>
+    </None>
+    <None Include="content\screens\mainmenu\button 2 settings hover.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>button 2 settings hover</Name>
+    </None>
+    <None Include="content\screens\mainmenu\button 2 settings.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>button 2 settings</Name>
+    </None>
+    <None Include="content\screens\mainmenu\button 3 credits hover.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>button 3 credits hover</Name>
+    </None>
+    <None Include="content\screens\mainmenu\button 3 credits.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>button 3 credits</Name>
+    </None>
+    <None Include="content\screens\mainmenu\button 4 close hover.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>button 4 close hover</Name>
+    </None>
+    <None Include="content\screens\mainmenu\button 4 close.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>button 4 close</Name>
+    </None>
+    <None Include="content\screens\mainmenu\credits tall.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>credits tall</Name>
+    </None>
+    <None Include="content\screens\mainmenu\settings tall.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>settings tall</Name>
+    </None>
+    <None Include="content\screens\mainmenu\title.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>title</Name>
+    </None>
     <None Include="content\standardtileset.tsx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Name>standardtileset</Name>
@@ -588,13 +696,9 @@
     <Compile Include="Entities\ActionSelector.Generated.cs">
       <DependentUpon>ActionSelector.cs</DependentUpon>
     </Compile>
-    <Compile Include="Entities\CeilingButton.cs" />
-    <Compile Include="Entities\CeilingButton.Generated.cs">
-      <DependentUpon>CeilingButton.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Entities\WallButton.cs" />
-    <Compile Include="Entities\WallButton.Generated.cs">
-      <DependentUpon>WallButton.cs</DependentUpon>
+    <Compile Include="Entities\Button.cs" />
+    <Compile Include="Entities\Button.Generated.cs">
+      <DependentUpon>Button.cs</DependentUpon>
     </Compile>
     <Compile Include="Entities\ConfirmLever.cs" />
     <Compile Include="Entities\ConfirmLever.Generated.cs">
@@ -617,14 +721,14 @@
       <DependentUpon>SpriteContainer.cs</DependentUpon>
     </Compile>
     <Compile Include="Factories\ActionSelectorFactory.Generated.cs" />
-    <Compile Include="Factories\CeilingButtonFactory.Generated.cs" />
-    <Compile Include="Factories\WallButtonFactory.Generated.cs" />
+    <Compile Include="Factories\ButtonFactory.Generated.cs" />
     <Compile Include="Factories\ConfirmLeverFactory.Generated.cs" />
     <Compile Include="Factories\MusicBoxFactory.Generated.cs" />
     <Compile Include="Factories\PlayerFactory.Generated.cs" />
     <Compile Include="Factories\PuppetFactory.Generated.cs" />
     <Compile Include="Factories\SpriteContainerFactory.Generated.cs" />
     <Compile Include="FileAliases.Generated.cs" />
+    <Compile Include="Forms\Components\CreditsForms.Generated.cs" />
     <Compile Include="Forms\Components\MainMenuForms.Generated.cs" />
     <Compile Include="Forms\Components\OptionsForms.Generated.cs" />
     <Compile Include="Forms\Components\PauseForms.Generated.cs" />
@@ -716,6 +820,10 @@
     <Compile Include="GumRuntimes\Controls\ButtonConfirmRuntime.Generated.cs">
       <DependentUpon>ButtonConfirmRuntime.cs</DependentUpon>
     </Compile>
+    <Compile Include="GumRuntimes\Controls\ButtonCreditsRuntime.cs" />
+    <Compile Include="GumRuntimes\Controls\ButtonCreditsRuntime.Generated.cs">
+      <DependentUpon>ButtonCreditsRuntime.cs</DependentUpon>
+    </Compile>
     <Compile Include="GumRuntimes\Controls\ButtonDenyRuntime.cs" />
     <Compile Include="GumRuntimes\Controls\ButtonDenyRuntime.Generated.cs">
       <DependentUpon>ButtonDenyRuntime.cs</DependentUpon>
@@ -723,6 +831,14 @@
     <Compile Include="GumRuntimes\Controls\ButtonIconRuntime.cs" />
     <Compile Include="GumRuntimes\Controls\ButtonIconRuntime.Generated.cs">
       <DependentUpon>ButtonIconRuntime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GumRuntimes\Controls\ButtonOptionsRuntime.cs" />
+    <Compile Include="GumRuntimes\Controls\ButtonOptionsRuntime.Generated.cs">
+      <DependentUpon>ButtonOptionsRuntime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GumRuntimes\Controls\ButtonQuitRuntime.cs" />
+    <Compile Include="GumRuntimes\Controls\ButtonQuitRuntime.Generated.cs">
+      <DependentUpon>ButtonQuitRuntime.cs</DependentUpon>
     </Compile>
     <Compile Include="GumRuntimes\Controls\ButtonSpriteRuntime.cs" />
     <Compile Include="GumRuntimes\Controls\ButtonSpriteRuntime.Generated.cs">
@@ -735,6 +851,10 @@
     <Compile Include="GumRuntimes\Controls\ButtonStandardRuntime.cs" />
     <Compile Include="GumRuntimes\Controls\ButtonStandardRuntime.Generated.cs">
       <DependentUpon>ButtonStandardRuntime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GumRuntimes\Controls\ButtonStartRuntime.cs" />
+    <Compile Include="GumRuntimes\Controls\ButtonStartRuntime.Generated.cs">
+      <DependentUpon>ButtonStartRuntime.cs</DependentUpon>
     </Compile>
     <Compile Include="GumRuntimes\Controls\ButtonTabRuntime.cs" />
     <Compile Include="GumRuntimes\Controls\ButtonTabRuntime.Generated.cs">
@@ -800,10 +920,6 @@
     <Compile Include="GumRuntimes\Controls\SliderRuntime.Generated.cs">
       <DependentUpon>SliderRuntime.cs</DependentUpon>
     </Compile>
-    <Compile Include="GumRuntimes\Controls\SliderSpritesRuntime.cs" />
-    <Compile Include="GumRuntimes\Controls\SliderSpritesRuntime.Generated.cs">
-      <DependentUpon>SliderSpritesRuntime.cs</DependentUpon>
-    </Compile>
     <Compile Include="GumRuntimes\Controls\TextBoxRuntime.cs" />
     <Compile Include="GumRuntimes\Controls\TextBoxRuntime.Generated.cs">
       <DependentUpon>TextBoxRuntime.cs</DependentUpon>
@@ -827,6 +943,10 @@
     <Compile Include="GumRuntimes\Controls\UserControlRuntime.cs" />
     <Compile Include="GumRuntimes\Controls\UserControlRuntime.Generated.cs">
       <DependentUpon>UserControlRuntime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GumRuntimes\CreditsRuntime.cs" />
+    <Compile Include="GumRuntimes\CreditsRuntime.Generated.cs">
+      <DependentUpon>CreditsRuntime.cs</DependentUpon>
     </Compile>
     <Compile Include="GumRuntimes\Elements\CautionLinesRuntime.cs" />
     <Compile Include="GumRuntimes\Elements\CautionLinesRuntime.Generated.cs">

@@ -4,9 +4,27 @@
   <State>
     <Name>Default</Name>
     <Variable>
+      <Type>bool</Type>
+      <Name>CreditsInstance.Visible</Name>
+      <Value xsi:type="xsd:boolean">false</Value>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
+      <Type>bool</Type>
+      <Name>MainMenuInstance.Visible</Name>
+      <Value xsi:type="xsd:boolean">false</Value>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
       <Type>MainMenu</Type>
       <Name>MainMenuState</Name>
       <SetsValue>false</SetsValue>
+    </Variable>
+    <Variable>
+      <Type>bool</Type>
+      <Name>OptionsInstance.Visible</Name>
+      <Value xsi:type="xsd:boolean">false</Value>
+      <SetsValue>true</SetsValue>
     </Variable>
   </State>
   <Category>
@@ -14,6 +32,12 @@
     <IsSetRecursively>false</IsSetRecursively>
     <State>
       <Name>Main</Name>
+      <Variable>
+        <Type>bool</Type>
+        <Name>CreditsInstance.Visible</Name>
+        <Value xsi:type="xsd:boolean">false</Value>
+        <SetsValue>true</SetsValue>
+      </Variable>
       <Variable>
         <Type>bool</Type>
         <Name>MainMenuInstance.Visible</Name>
@@ -31,6 +55,12 @@
       <Name>Options</Name>
       <Variable>
         <Type>bool</Type>
+        <Name>CreditsInstance.Visible</Name>
+        <Value xsi:type="xsd:boolean">false</Value>
+        <SetsValue>true</SetsValue>
+      </Variable>
+      <Variable>
+        <Type>bool</Type>
         <Name>MainMenuInstance.Visible</Name>
         <Value xsi:type="xsd:boolean">false</Value>
         <SetsValue>true</SetsValue>
@@ -39,6 +69,27 @@
         <Type>bool</Type>
         <Name>OptionsInstance.Visible</Name>
         <Value xsi:type="xsd:boolean">true</Value>
+        <SetsValue>true</SetsValue>
+      </Variable>
+    </State>
+    <State>
+      <Name>Credits</Name>
+      <Variable>
+        <Type>bool</Type>
+        <Name>CreditsInstance.Visible</Name>
+        <Value xsi:type="xsd:boolean">true</Value>
+        <SetsValue>true</SetsValue>
+      </Variable>
+      <Variable>
+        <Type>bool</Type>
+        <Name>MainMenuInstance.Visible</Name>
+        <Value xsi:type="xsd:boolean">false</Value>
+        <SetsValue>true</SetsValue>
+      </Variable>
+      <Variable>
+        <Type>bool</Type>
+        <Name>OptionsInstance.Visible</Name>
+        <Value xsi:type="xsd:boolean">false</Value>
         <SetsValue>true</SetsValue>
       </Variable>
     </State>
@@ -51,6 +102,11 @@
   <Instance>
     <Name>OptionsInstance</Name>
     <BaseType>Options</BaseType>
+    <DefinedByBase>false</DefinedByBase>
+  </Instance>
+  <Instance>
+    <Name>CreditsInstance</Name>
+    <BaseType>Credits</BaseType>
     <DefinedByBase>false</DefinedByBase>
   </Instance>
   <Behaviors />

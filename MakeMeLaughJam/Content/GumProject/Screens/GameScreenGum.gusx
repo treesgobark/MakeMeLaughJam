@@ -10,6 +10,12 @@
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
+      <Type>Filled</Type>
+      <Name>FancyAudienceBarInstance.FilledState</Name>
+      <Value xsi:type="xsd:string">38</Value>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
       <Type>Pause</Type>
       <Name>PauseState</Name>
       <SetsValue>false</SetsValue>
@@ -20,6 +26,18 @@
     <IsSetRecursively>false</IsSetRecursively>
     <State>
       <Name>NotPaused</Name>
+      <Variable>
+        <Type>bool</Type>
+        <Name>AudienceBarInstance.Visible</Name>
+        <Value xsi:type="xsd:boolean">false</Value>
+        <SetsValue>true</SetsValue>
+      </Variable>
+      <Variable>
+        <Type>bool</Type>
+        <Name>FancyAudienceBarInstance.Visible</Name>
+        <Value xsi:type="xsd:boolean">true</Value>
+        <SetsValue>true</SetsValue>
+      </Variable>
       <Variable>
         <Type>bool</Type>
         <Name>OptionsInstance.Visible</Name>
@@ -37,6 +55,18 @@
       <Name>Main</Name>
       <Variable>
         <Type>bool</Type>
+        <Name>AudienceBarInstance.Visible</Name>
+        <Value xsi:type="xsd:boolean">false</Value>
+        <SetsValue>true</SetsValue>
+      </Variable>
+      <Variable>
+        <Type>bool</Type>
+        <Name>FancyAudienceBarInstance.Visible</Name>
+        <Value xsi:type="xsd:boolean">true</Value>
+        <SetsValue>true</SetsValue>
+      </Variable>
+      <Variable>
+        <Type>bool</Type>
         <Name>OptionsInstance.Visible</Name>
         <Value xsi:type="xsd:boolean">false</Value>
         <SetsValue>true</SetsValue>
@@ -50,6 +80,18 @@
     </State>
     <State>
       <Name>Options</Name>
+      <Variable>
+        <Type>bool</Type>
+        <Name>AudienceBarInstance.Visible</Name>
+        <Value xsi:type="xsd:boolean">false</Value>
+        <SetsValue>true</SetsValue>
+      </Variable>
+      <Variable>
+        <Type>bool</Type>
+        <Name>FancyAudienceBarInstance.Visible</Name>
+        <Value xsi:type="xsd:boolean">false</Value>
+        <SetsValue>true</SetsValue>
+      </Variable>
       <Variable>
         <Type>bool</Type>
         <Name>OptionsInstance.Visible</Name>

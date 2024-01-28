@@ -5,6 +5,44 @@
   "Source": "GLUE",
   "CreatedByOtherEntities": true,
   "Is2D": true,
+  "ReferencedFiles": [
+    {
+      "Name": "Entities/Button/BlueButton.png",
+      "IsSharedStatic": true,
+      "RuntimeType": "Microsoft.Xna.Framework.Graphics.Texture2D",
+      "ProjectsToExcludeFrom": []
+    },
+    {
+      "Name": "Entities/Button/BlueButtonPressed.png",
+      "IsSharedStatic": true,
+      "RuntimeType": "Microsoft.Xna.Framework.Graphics.Texture2D",
+      "ProjectsToExcludeFrom": []
+    },
+    {
+      "Name": "Entities/Button/RedButton.png",
+      "IsSharedStatic": true,
+      "RuntimeType": "Microsoft.Xna.Framework.Graphics.Texture2D",
+      "ProjectsToExcludeFrom": []
+    },
+    {
+      "Name": "Entities/Button/RedButtonPressed.png",
+      "IsSharedStatic": true,
+      "RuntimeType": "Microsoft.Xna.Framework.Graphics.Texture2D",
+      "ProjectsToExcludeFrom": []
+    },
+    {
+      "Name": "Entities/Button/YellowButton.png",
+      "IsSharedStatic": true,
+      "RuntimeType": "Microsoft.Xna.Framework.Graphics.Texture2D",
+      "ProjectsToExcludeFrom": []
+    },
+    {
+      "Name": "Entities/Button/YellowButtonPressed.png",
+      "IsSharedStatic": true,
+      "RuntimeType": "Microsoft.Xna.Framework.Graphics.Texture2D",
+      "ProjectsToExcludeFrom": []
+    }
+  ],
   "CustomVariables": [
     {
       "Properties": [
@@ -38,6 +76,148 @@
       ],
       "Name": "Z",
       "SetByDerived": true
+    },
+    {
+      "Properties": [
+        {
+          "Name": "Type",
+          "Value": "bool",
+          "Type": "String"
+        },
+        {
+          "Name": "Category",
+          "Value": "Texture",
+          "Type": "String"
+        }
+      ],
+      "Name": "SpriteInstanceFlipHorizontal",
+      "DefaultValue": false,
+      "SetByDerived": true,
+      "SourceObject": "SpriteInstance",
+      "SourceObjectProperty": "FlipHorizontal",
+      "Category": "Texture"
+    },
+    {
+      "Properties": [
+        {
+          "Name": "Type",
+          "Value": "Facing",
+          "Type": "String"
+        }
+      ],
+      "Name": "CurrentFacingState",
+      "SetByDerived": true
+    },
+    {
+      "Properties": [
+        {
+          "Name": "Type",
+          "Value": "Color",
+          "Type": "String"
+        },
+        {
+          "Name": "Category",
+          "Value": "Appearance",
+          "Type": "String"
+        }
+      ],
+      "Name": "AxisAlignedRectangleInstanceColor",
+      "DefaultValue": "White",
+      "SetByDerived": true,
+      "SourceObject": "AxisAlignedRectangleInstance",
+      "SourceObjectProperty": "Color",
+      "Category": "Appearance"
+    },
+    {
+      "Properties": [
+        {
+          "Name": "Type",
+          "Value": "float",
+          "Type": "String"
+        },
+        {
+          "Name": "Category",
+          "Value": "Rotation",
+          "Type": "String"
+        }
+      ],
+      "Name": "SpriteInstanceRotationZ",
+      "DefaultValue": 0.0,
+      "SetByDerived": true,
+      "SourceObject": "SpriteInstance",
+      "SourceObjectProperty": "RotationZ",
+      "Category": "Rotation"
+    },
+    {
+      "Properties": [
+        {
+          "Name": "Type",
+          "Value": "Texture2D",
+          "Type": "String"
+        },
+        {
+          "Name": "Category",
+          "Value": "Texture",
+          "Type": "String"
+        }
+      ],
+      "Name": "SpriteInstanceTexture",
+      "DefaultValue": "BlueButton",
+      "SetByDerived": true,
+      "SourceObject": "SpriteInstance",
+      "SourceObjectProperty": "Texture",
+      "Category": "Texture"
+    },
+    {
+      "Properties": [
+        {
+          "Name": "Type",
+          "Value": "IsPressed",
+          "Type": "String"
+        }
+      ],
+      "Name": "CurrentIsPressedState",
+      "SetByDerived": true
+    },
+    {
+      "Properties": [
+        {
+          "Name": "Type",
+          "Value": "float",
+          "Type": "String"
+        },
+        {
+          "Name": "Category",
+          "Value": "Size",
+          "Type": "String"
+        }
+      ],
+      "Name": "AxisAlignedRectangleInstanceWidth",
+      "DefaultValue": 16.0,
+      "SetByDerived": true,
+      "SourceObject": "AxisAlignedRectangleInstance",
+      "SourceObjectProperty": "Width",
+      "Category": "Size"
+    },
+    {
+      "Properties": [
+        {
+          "Name": "Type",
+          "Value": "float",
+          "Type": "String"
+        },
+        {
+          "Name": "Category",
+          "Value": "Size",
+          "Type": "String"
+        }
+      ],
+      "Name": "AxisAlignedRectangleInstanceHeight",
+      "DefaultValue": 9.0,
+      "SetByDerived": true,
+      "SourceObject": "AxisAlignedRectangleInstance",
+      "SourceObjectProperty": "Height",
+      "Category": "Size"
     }
   ],
   "Properties": [
@@ -65,9 +245,27 @@
       ],
       "InstructionSaves": [
         {
+          "Type": "Texture2D",
+          "Member": "Texture",
+          "Value": "BlueButton",
+          "Time": 0.0
+        },
+        {
           "Type": "float",
           "Member": "TextureScale",
           "Value": 1.0,
+          "Time": 0.0
+        },
+        {
+          "Type": "float",
+          "Member": "X",
+          "Value": 0.0,
+          "Time": 0.0
+        },
+        {
+          "Type": "float",
+          "Member": "Y",
+          "Value": 0.0,
           "Time": 0.0
         }
       ],
@@ -90,19 +288,31 @@
         {
           "Type": "float",
           "Member": "Height",
-          "Value": 32.0,
+          "Value": 9.0,
+          "Time": 0.0
+        },
+        {
+          "Type": "bool",
+          "Member": "Visible",
+          "Value": false,
           "Time": 0.0
         },
         {
           "Type": "float",
           "Member": "Width",
-          "Value": 16.0,
+          "Value": 32.0,
           "Time": 0.0
         },
         {
           "Type": "float",
           "Member": "X",
-          "Value": 8.0,
+          "Value": 0.0,
+          "Time": 0.0
+        },
+        {
+          "Type": "float",
+          "Member": "Y",
+          "Value": 0.0,
           "Time": 0.0
         }
       ],
@@ -111,6 +321,160 @@
       "HasPublicProperty": true,
       "AttachToContainer": true,
       "GenerateTimedEmit": true
+    }
+  ],
+  "StateCategoryList": [
+    {
+      "Name": "Facing",
+      "States": [
+        {
+          "Name": "Right",
+          "InstructionSaves": [
+            {
+              "Type": "float",
+              "Member": "SpriteInstanceRotationZ",
+              "Value": 90.0,
+              "Time": 0.0
+            }
+          ]
+        },
+        {
+          "Name": "Left",
+          "InstructionSaves": [
+            {
+              "Type": "bool",
+              "Member": "SpriteInstanceFlipHorizontal",
+              "Value": false,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "SpriteInstanceRotationZ",
+              "Value": 90.0,
+              "Time": 0.0
+            }
+          ]
+        },
+        {
+          "Name": "Down",
+          "InstructionSaves": [
+            {
+              "Type": "float",
+              "Member": "SpriteInstanceRotationZ",
+              "Value": 180.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "AxisAlignedRectangleInstanceWidth",
+              "Value": 32.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "AxisAlignedRectangleInstanceHeight",
+              "Value": 16.0,
+              "Time": 0.0
+            }
+          ]
+        }
+      ],
+      "ExcludedVariables": [
+        "X",
+        "Y",
+        "Z",
+        "CurrentFacingState",
+        "AxisAlignedRectangleInstanceColor",
+        "SpriteInstanceTexture",
+        "CurrentIsPressedState",
+        "AxisAlignedRectangleInstanceWidth",
+        "AxisAlignedRectangleInstanceHeight",
+        "SpriteInstanceRotationZ",
+        "SpriteInstanceFlipHorizontal"
+      ]
+    },
+    {
+      "Name": "IsPressed",
+      "States": [
+        {
+          "Name": "PressedRed",
+          "InstructionSaves": [
+            {
+              "Type": "Texture2D",
+              "Member": "SpriteInstanceTexture",
+              "Value": "RedButtonPressed",
+              "Time": 0.0
+            }
+          ]
+        },
+        {
+          "Name": "UnpressedRed",
+          "InstructionSaves": [
+            {
+              "Type": "Texture2D",
+              "Member": "SpriteInstanceTexture",
+              "Value": "RedButton",
+              "Time": 0.0
+            }
+          ]
+        },
+        {
+          "Name": "PressedYellow",
+          "InstructionSaves": [
+            {
+              "Type": "Texture2D",
+              "Member": "SpriteInstanceTexture",
+              "Value": "YellowButtonPressed",
+              "Time": 0.0
+            }
+          ]
+        },
+        {
+          "Name": "UnpressedYellow",
+          "InstructionSaves": [
+            {
+              "Type": "Texture2D",
+              "Member": "SpriteInstanceTexture",
+              "Value": "YellowButton",
+              "Time": 0.0
+            }
+          ]
+        },
+        {
+          "Name": "PressedBlue",
+          "InstructionSaves": [
+            {
+              "Type": "Texture2D",
+              "Member": "SpriteInstanceTexture",
+              "Value": "BlueButtonPressed",
+              "Time": 0.0
+            }
+          ]
+        },
+        {
+          "Name": "UnpressedBlue",
+          "InstructionSaves": [
+            {
+              "Type": "Texture2D",
+              "Member": "SpriteInstanceTexture",
+              "Value": "BlueButton",
+              "Time": 0.0
+            }
+          ]
+        }
+      ],
+      "ExcludedVariables": [
+        "X",
+        "Y",
+        "Z",
+        "SpriteInstanceFlipHorizontal",
+        "CurrentFacingState",
+        "AxisAlignedRectangleInstanceColor",
+        "SpriteInstanceRotationZ",
+        "CurrentIsPressedState",
+        "AxisAlignedRectangleInstanceWidth",
+        "AxisAlignedRectangleInstanceHeight"
+      ]
     }
   ],
   "Name": "Entities\\Button",

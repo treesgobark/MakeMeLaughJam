@@ -1,6 +1,80 @@
 {
   "EntityManagementValueList": [
     {
+      "Name": "Entities\\CeilingButton",
+      "SelectedProperties": [],
+      "InstanceManagementValuesList": [
+        {
+          "SelectedProperties": [],
+          "Name": "SpriteInstance"
+        },
+        {
+          "SelectedProperties": [],
+          "Name": "AxisAlignedRectangleInstance"
+        }
+      ]
+    },
+    {
+      "Name": "Entities\\ConfirmLever",
+      "SelectedProperties": [],
+      "InstanceManagementValuesList": [
+        {
+          "SelectedProperties": [],
+          "Name": "SpriteInstance"
+        },
+        {
+          "SelectedProperties": [],
+          "Name": "AxisAlignedRectangleInstance"
+        }
+      ]
+    },
+    {
+      "Name": "Entities\\Player",
+      "SelectedProperties": [],
+      "InstanceManagementValuesList": [
+        {
+          "SelectedProperties": [],
+          "Name": "SpriteInstance"
+        },
+        {
+          "SelectedProperties": [],
+          "Name": "AxisAlignedRectangleInstance"
+        },
+        {
+          "SelectedProperties": [],
+          "Name": "PunchHitbox"
+        }
+      ]
+    },
+    {
+      "Name": "Entities\\Puppet",
+      "SelectedProperties": [],
+      "InstanceManagementValuesList": [
+        {
+          "SelectedProperties": [],
+          "Name": "SpriteInstance"
+        },
+        {
+          "SelectedProperties": [],
+          "Name": "AxisAlignedRectangleInstance"
+        }
+      ]
+    },
+    {
+      "Name": "Entities\\MusicBox",
+      "SelectedProperties": [],
+      "InstanceManagementValuesList": [
+        {
+          "SelectedProperties": [],
+          "Name": "SpriteInstance"
+        },
+        {
+          "SelectedProperties": [],
+          "Name": "AxisAlignedRectangleInstance"
+        }
+      ]
+    },
+    {
       "Name": "Entities\\Button",
       "SelectedProperties": [],
       "InstanceManagementValuesList": [

@@ -665,6 +665,720 @@
         "ElementType": "Components",
         "EventType": 6,
         "TimestampUtc": "2024-01-27T22:00:01.2154304Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "MainMenu (Container).Text TextInstance in MainMenu (Container)",
+        "ElementType": "Components",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-28T02:03:47.814802Z"
+      },
+      {
+        "NewName": "MainMenu (Container).SpriteInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-28T02:03:50.5235732Z"
+      },
+      {
+        "NewName": "MainMenu (Container).ButtonSpriteInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-28T02:05:10.666658Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "MainMenu (Container).Controls/ButtonSprite ButtonSpriteInstance in MainMenu (Container)",
+        "ElementType": "Components",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-28T02:06:53.4972965Z"
+      },
+      {
+        "NewName": "MainMenu (Container).SpriteInstance1",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-28T02:06:55.6068527Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "MainMenu (Container).Sprite SpriteInstance1 in MainMenu (Container)",
+        "ElementType": "Components",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-28T02:07:14.1741474Z"
+      },
+      {
+        "NewName": "MainMenu (Container).ButtonSpriteInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-28T02:07:18.2062221Z"
+      },
+      {
+        "NewName": "Controls/StartButtonSprite",
+        "OldName": "Controls/ButtonSprite",
+        "ElementType": "Components",
+        "EventType": 2,
+        "TimestampUtc": "2024-01-28T02:07:46.684618Z"
+      },
+      {
+        "NewName": "MainMenu (Container).TitleSprite",
+        "OldName": "MainMenu (Container).SpriteInstance",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-28T02:10:31.6233492Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "MainMenu (Container).Controls/StartButtonSprite ButtonSpriteInstance in MainMenu (Container)",
+        "ElementType": "Components",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-28T02:10:36.5256148Z"
+      },
+      {
+        "NewName": "MainMenu (Container).SpriteInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-28T02:10:41.4971928Z"
+      },
+      {
+        "NewName": "MainMenu (Container).CreditsButton",
+        "OldName": "MainMenu (Container).SpriteInstance",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-28T02:10:46.9581937Z"
+      },
+      {
+        "NewName": "MainMenu (Container).ContainerInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-28T02:15:42.1741308Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "MainMenu (Container).Sprite CreditsButton in MainMenu (Container)",
+        "ElementType": "Components",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-28T02:15:45.2227437Z"
+      },
+      {
+        "NewName": "MainMenu (Container).CreditsButton",
+        "OldName": "MainMenu (Container).ContainerInstance",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-28T02:15:50.483375Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "MainMenu (Container).Container CreditsButton in MainMenu (Container)",
+        "ElementType": "Components",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-28T02:18:50.0399654Z"
+      },
+      {
+        "NewName": "Controls/SpriteButton",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 0,
+        "TimestampUtc": "2024-01-28T02:19:00.6743495Z"
+      },
+      {
+        "NewName": "MainMenu (Container).SpriteButtonInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-28T02:19:09.3493495Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "MainMenu (Container).Controls/SpriteButton SpriteButtonInstance in MainMenu (Container)",
+        "ElementType": "Components",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-28T02:19:52.7480387Z"
+      },
+      {
+        "NewName": "MainMenu (Container).SpriteButtonInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-28T02:20:17.5859385Z"
+      },
+      {
+        "NewName": "MainMenu (Container).ButtonStandardInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-28T02:20:42.208928Z"
+      },
+      {
+        "NewName": "MainMenuGum.ButtonStandardInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-28T02:21:38.5835172Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "MainMenu (Container).Controls/SpriteButton SpriteButtonInstance in MainMenu (Container)",
+        "ElementType": "Components",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-28T02:22:05.5494611Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "MainMenu (Container).Controls/ButtonStandard ButtonStandardInstance in MainMenu (Container)",
+        "ElementType": "Components",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-28T02:22:06.7073851Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "Controls/SpriteButton",
+        "ElementType": "Components",
+        "EventType": 1,
+        "TimestampUtc": "2024-01-28T02:22:25.6615965Z"
+      },
+      {
+        "NewName": "MainMenu (Container).ContainerInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-28T02:22:41.3449933Z"
+      },
+      {
+        "NewName": "MainMenu (Container).StartButton",
+        "OldName": "MainMenu (Container).ContainerInstance",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-28T02:22:50.0240281Z"
+      },
+      {
+        "NewName": "MainMenu (Container).SpriteInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-28T02:23:07.5545252Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "MainMenu (Container).Container StartButton in MainMenu (Container)",
+        "ElementType": "Components",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-28T02:23:16.5484794Z"
+      },
+      {
+        "NewName": "ButtonSprite",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 0,
+        "TimestampUtc": "2024-01-28T02:23:23.3360901Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "ButtonSprite",
+        "ElementType": "Components",
+        "EventType": 1,
+        "TimestampUtc": "2024-01-28T02:23:28.2547449Z"
+      },
+      {
+        "NewName": "Controls/ButtonStandard1",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 0,
+        "TimestampUtc": "2024-01-28T02:23:30.4211419Z"
+      },
+      {
+        "NewName": "Controls/ButtonSprite",
+        "OldName": "Controls/ButtonStandard1",
+        "ElementType": "Components",
+        "EventType": 2,
+        "TimestampUtc": "2024-01-28T02:23:41.8663324Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "Controls/ButtonSprite (Container).Text TextInstance in Controls/ButtonSprite (Container)",
+        "ElementType": "Components",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-28T02:23:50.9939136Z"
+      },
+      {
+        "NewName": "Controls/ButtonSprite (Container).SpriteInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-28T02:23:57.2683026Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "Controls/ButtonSprite (Container).NineSlice Background in Controls/ButtonSprite (Container)",
+        "ElementType": "Components",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-28T02:24:05.3533515Z"
+      },
+      {
+        "NewName": "MainMenu (Container).ButtonSpriteInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-28T02:24:20.5736692Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "MainMenu (Container).Sprite SpriteInstance in MainMenu (Container)",
+        "ElementType": "Components",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-28T02:24:21.9175036Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "MainMenu (Container).Controls/ButtonSprite ButtonSpriteInstance in MainMenu (Container)",
+        "ElementType": "Components",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-28T02:24:58.5581249Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "Controls/StartButtonSprite",
+        "ElementType": "Components",
+        "EventType": 1,
+        "TimestampUtc": "2024-01-28T02:25:56.1458932Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "Controls/SliderSprites",
+        "ElementType": "Components",
+        "EventType": 1,
+        "TimestampUtc": "2024-01-28T02:26:34.2612329Z"
+      },
+      {
+        "NewName": "MainMenu (Container).ButtonSpriteInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-28T02:28:18.5878247Z"
+      },
+      {
+        "NewName": "MainMenu (Container).StartButton",
+        "OldName": "MainMenu (Container).ButtonSpriteInstance",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-28T02:29:51.2716532Z"
+      },
+      {
+        "NewName": "MainMenu (Container).StartButton",
+        "OldName": "MainMenu (Container).ButtonSpriteInstance",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-28T02:29:51.2726544Z"
+      },
+      {
+        "NewName": "MainMenu (Container).StartButton",
+        "OldName": "MainMenu (Container).ButtonSpriteInstance",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-28T02:29:51.2726544Z"
+      },
+      {
+        "NewName": "MainMenu (Container).StartButton",
+        "OldName": "MainMenu (Container).ButtonSpriteInstance",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-28T02:29:51.2826533Z"
+      },
+      {
+        "NewName": "MainMenu (Container).StartButton",
+        "OldName": "MainMenu (Container).ButtonSpriteInstance",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-28T02:29:51.2876554Z"
+      },
+      {
+        "NewName": "MainMenu (Container).StartButton",
+        "OldName": "MainMenu (Container).ButtonSpriteInstance",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-28T02:29:51.2926535Z"
+      },
+      {
+        "NewName": "MainMenu (Container).StartButton",
+        "OldName": "MainMenu (Container).ButtonSpriteInstance",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-28T02:29:51.2966527Z"
+      },
+      {
+        "NewName": "MainMenu (Container).StartButton",
+        "OldName": "MainMenu (Container).ButtonSpriteInstance",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-28T02:29:51.300653Z"
+      },
+      {
+        "NewName": "Controls/ButtonStart",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 0,
+        "TimestampUtc": "2024-01-28T02:32:22.0391087Z"
+      },
+      {
+        "NewName": "Controls/ButtonStart (Container).SpriteInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-28T02:32:47.5997138Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "MainMenu (Container).Controls/ButtonSprite StartButton in MainMenu (Container)",
+        "ElementType": "Components",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-28T02:33:24.1670572Z"
+      },
+      {
+        "NewName": "MainMenu (Container).ButtonStartInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-28T02:33:26.7911382Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "MainMenuGum.Controls/ButtonStandard ButtonStandardInstance in MainMenuGum",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-28T02:34:25.5347007Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "MainMenu (Container).Controls/ButtonStandard PlayButton in MainMenu (Container)",
+        "ElementType": "Components",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-28T02:34:32.9955891Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "MainMenu (Container).Controls/ButtonStandard OptionsButton in MainMenu (Container)",
+        "ElementType": "Components",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-28T02:34:34.4458407Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "MainMenu (Container).Controls/ButtonStandard QuitButton in MainMenu (Container)",
+        "ElementType": "Components",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-28T02:34:35.4570273Z"
+      },
+      {
+        "NewName": "Controls/ButtonOptions",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 0,
+        "TimestampUtc": "2024-01-28T02:34:45.8788349Z"
+      },
+      {
+        "NewName": "Controls/ButtonOptions (Container).SpriteInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-28T02:34:49.7162408Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "Controls/ButtonOptions",
+        "ElementType": "Components",
+        "EventType": 1,
+        "TimestampUtc": "2024-01-28T02:34:51.7463357Z"
+      },
+      {
+        "NewName": "Controls/ButtonStart1",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 0,
+        "TimestampUtc": "2024-01-28T02:34:53.3043984Z"
+      },
+      {
+        "NewName": "Controls/ButtonOptions",
+        "OldName": "Controls/ButtonStart1",
+        "ElementType": "Components",
+        "EventType": 2,
+        "TimestampUtc": "2024-01-28T02:34:57.2641257Z"
+      },
+      {
+        "NewName": "MainMenu (Container).ButtonOptionsInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-28T02:35:17.0205322Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "Controls/ButtonOptions",
+        "ElementType": "Components",
+        "EventType": 1,
+        "TimestampUtc": "2024-01-28T02:36:22.6288874Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "MainMenu (Container).Controls/ButtonOptions ButtonOptionsInstance in MainMenu (Container)",
+        "ElementType": "Components",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-28T02:36:34.1457551Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "MainMenu (Container).Controls/ButtonStart ButtonStartInstance in MainMenu (Container)",
+        "ElementType": "Components",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-28T02:36:35.3410414Z"
+      },
+      {
+        "NewName": "Controls/ButtonStart1",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 0,
+        "TimestampUtc": "2024-01-28T02:36:43.3458027Z"
+      },
+      {
+        "NewName": "Controls/ButtonOptions",
+        "OldName": "Controls/ButtonStart",
+        "ElementType": "Components",
+        "EventType": 2,
+        "TimestampUtc": "2024-01-28T02:36:52.7561302Z"
+      },
+      {
+        "NewName": "Controls/ButtonStart",
+        "OldName": "Controls/ButtonStart1",
+        "ElementType": "Components",
+        "EventType": 2,
+        "TimestampUtc": "2024-01-28T02:39:05.0107616Z"
+      },
+      {
+        "NewName": "MainMenu (Container).ButtonStartInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-28T02:39:07.2421727Z"
+      },
+      {
+        "NewName": "Controls/ButtonStart1",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 0,
+        "TimestampUtc": "2024-01-28T02:39:45.333525Z"
+      },
+      {
+        "NewName": "Controls/ButtonQuit",
+        "OldName": "Controls/ButtonStart1",
+        "ElementType": "Components",
+        "EventType": 2,
+        "TimestampUtc": "2024-01-28T02:39:51.9036117Z"
+      },
+      {
+        "NewName": "Controls/ButtonStart1",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 0,
+        "TimestampUtc": "2024-01-28T02:40:40.1187009Z"
+      },
+      {
+        "NewName": "Controls/ButtonCredits",
+        "OldName": "Controls/ButtonStart1",
+        "ElementType": "Components",
+        "EventType": 2,
+        "TimestampUtc": "2024-01-28T02:40:45.6057658Z"
+      },
+      {
+        "NewName": "MainMenu (Container).ButtonOptionsInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-28T02:41:12.2030276Z"
+      },
+      {
+        "NewName": "MainMenu (Container).ButtonCreditsInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-28T02:41:14.7060276Z"
+      },
+      {
+        "NewName": "MainMenu (Container).ButtonCloseInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-28T02:42:55.6101042Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "MainMenu (Container).Controls/ButtonClose ButtonCloseInstance in MainMenu (Container)",
+        "ElementType": "Components",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-28T02:42:58.6861037Z"
+      },
+      {
+        "NewName": "MainMenu (Container).ButtonQuitInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-28T02:43:02.8091077Z"
+      },
+      {
+        "NewName": "Options (Container).SpriteInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-28T03:18:54.2760559Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "Options (Container).Controls/ButtonStandard BackButton in Options (Container)",
+        "ElementType": "Components",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-28T03:22:58.9098848Z"
+      },
+      {
+        "NewName": "Options (Container).ButtonQuitInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-28T03:26:29.9364997Z"
+      },
+      {
+        "NewName": "Options (Container).BacklButton",
+        "OldName": "Options (Container).ButtonQuitInstance",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-28T03:26:56.506715Z"
+      },
+      {
+        "NewName": "Options (Container).BackButton",
+        "OldName": "Options (Container).BacklButton",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-28T03:26:59.5560228Z"
+      },
+      {
+        "NewName": "Credits",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 0,
+        "TimestampUtc": "2024-01-28T03:31:15.5365949Z"
+      },
+      {
+        "NewName": "Credits (Container).SpriteInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-28T03:31:30.6837013Z"
+      },
+      {
+        "NewName": "Credits (Container).ButtonQuitInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-28T03:31:42.0579621Z"
+      },
+      {
+        "NewName": "MainMenuGum.CreditsInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-28T03:32:57.7511716Z"
+      },
+      {
+        "NewName": "Credits (Container).BackButton",
+        "OldName": "Credits (Container).ButtonQuitInstance",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-28T03:34:46.0492263Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "Pause (Container).Controls/ButtonStandard ResumeButton in Pause (Container)",
+        "ElementType": "Components",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-28T03:40:26.2912729Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "Pause (Container).Controls/ButtonStandard OptionsButton in Pause (Container)",
+        "ElementType": "Components",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-28T03:40:28.3905602Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "Pause (Container).Controls/ButtonStandard MainMenuButton in Pause (Container)",
+        "ElementType": "Components",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-28T03:40:30.3940262Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "Pause (Container).Controls/ButtonStandard QuitButton in Pause (Container)",
+        "ElementType": "Components",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-28T03:40:31.5150877Z"
+      },
+      {
+        "NewName": "Pause (Container).ButtonOptionsInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-28T03:40:37.4247157Z"
+      },
+      {
+        "NewName": "Pause (Container).ButtonQuitInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-28T03:40:42.2957663Z"
+      },
+      {
+        "NewName": "Pause (Container).ButtonStartInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-28T03:41:07.8565883Z"
+      },
+      {
+        "NewName": "Pause (Container).ButtonCreditsInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-28T03:41:12.6366253Z"
+      },
+      {
+        "NewName": "Pause (Container).ResumeButton",
+        "OldName": "Pause (Container).ButtonStartInstance",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-28T03:41:29.5969842Z"
+      },
+      {
+        "NewName": "Pause (Container).OptionsButton",
+        "OldName": "Pause (Container).ButtonOptionsInstance",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-28T03:41:34.8108012Z"
+      },
+      {
+        "NewName": "Pause (Container).MainMenuButton",
+        "OldName": "Pause (Container).ButtonCreditsInstance",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-28T03:41:45.2808921Z"
+      },
+      {
+        "NewName": "Pause (Container).QuitButton",
+        "OldName": "Pause (Container).ButtonQuitInstance",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-28T03:41:54.8994284Z"
       }
     ]
   }

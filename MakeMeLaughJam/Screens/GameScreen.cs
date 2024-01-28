@@ -27,7 +27,6 @@ namespace MakeMeLaughJam.Screens
         
         public Puppets SelectedPuppet { get; set; }
         public Actions SelectedAction { get; set; }
-        public float MusicBoxPercentage { get; set; } = 100;
 
         public float CurrentAudienceHealth
         {
@@ -116,15 +115,22 @@ namespace MakeMeLaughJam.Screens
         void CustomActivity(bool firstTimeCalled)
         {
             HandleInput();
-            CurrentAudienceHealth -= 10 * TimeManager.SecondDifference;
         }
 
         private void HandleInput()
         {
-            if (Player1.GameplayInputDevice.Pause.WasJustPressed && !ScreenManager.CurrentScreen.IsPaused)
+            if (Player1.GameplayInputDevice.Pause.WasJustPressed)
             {
-                ScreenManager.CurrentScreen.PauseThisScreen();
-                GumScreen.CurrentPauseState = GameScreenGumRuntime.Pause.Main;
+                if (!ScreenManager.CurrentScreen.IsPaused)
+                {
+                    ScreenManager.CurrentScreen.PauseThisScreen();
+                    GumScreen.CurrentPauseState = GameScreenGumRuntime.Pause.Main;
+                }
+                else
+                {
+                    ScreenManager.CurrentScreen.UnpauseThisScreen();
+                    GumScreen.CurrentPauseState = GameScreenGumRuntime.Pause.NotPaused;
+                }
             }
         }
 

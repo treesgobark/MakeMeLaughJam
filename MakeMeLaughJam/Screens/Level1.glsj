@@ -44,6 +44,58 @@
       "DefaultValue": 100.0,
       "SetByDerived": true,
       "DefinedByBase": true
+    },
+    {
+      "Properties": [
+        {
+          "Name": "Type",
+          "Value": "double",
+          "Type": "String"
+        }
+      ],
+      "Name": "PuppetDeployTime",
+      "DefaultValue": 0.5,
+      "SetByDerived": true,
+      "DefinedByBase": true
+    },
+    {
+      "Properties": [
+        {
+          "Name": "Type",
+          "Value": "float",
+          "Type": "String"
+        }
+      ],
+      "Name": "MusicBoxPercentageGainOnHit",
+      "DefaultValue": 30.0,
+      "SetByDerived": true,
+      "DefinedByBase": true
+    },
+    {
+      "Properties": [
+        {
+          "Name": "Type",
+          "Value": "float",
+          "Type": "String"
+        }
+      ],
+      "Name": "MusicBoxPercentageLossPerSecond",
+      "DefaultValue": 5.0,
+      "SetByDerived": true,
+      "DefinedByBase": true
+    },
+    {
+      "Properties": [
+        {
+          "Name": "Type",
+          "Value": "float",
+          "Type": "String"
+        }
+      ],
+      "Name": "AudiencePercentLossPerSecond",
+      "DefaultValue": 5.0,
+      "SetByDerived": true,
+      "DefinedByBase": true
     }
   ],
   "NamedObjects": [
@@ -493,7 +545,7 @@
       "InstructionSaves": [],
       "SourceType": 2,
       "SourceFile": "PositionedObjectList (Generic)",
-      "SourceClassGenericType": "Entities\\WallButton",
+      "SourceClassGenericType": "Entities\\Button",
       "ExposedInDerived": true,
       "AttachToContainer": true,
       "GenerateTimedEmit": true,
@@ -501,8 +553,8 @@
       "InstantiatedByBase": true,
       "ContainedObjects": [
         {
-          "InstanceName": "PeepoButton",
-          "SourceClassType": "Entities\\WallButton",
+          "InstanceName": "JohnButton",
+          "SourceClassType": "Entities\\Button",
           "Properties": [
             {
               "Name": "AssociateWithFactory",
@@ -512,15 +564,39 @@
           ],
           "InstructionSaves": [
             {
+              "Type": "float",
+              "Member": "AxisAlignedRectangleInstanceHeight",
+              "Value": 32.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "AxisAlignedRectangleInstanceWidth",
+              "Value": 16.0,
+              "Time": 0.0
+            },
+            {
               "Type": "Facing",
               "Member": "CurrentFacingState",
               "Value": "Right",
               "Time": 0.0
             },
             {
+              "Type": "IsPressed",
+              "Member": "CurrentIsPressedState",
+              "Value": "UnpressedYellow",
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "SpriteInstanceRotationZ",
+              "Value": -1.5707964,
+              "Time": 0.0
+            },
+            {
               "Type": "float",
               "Member": "X",
-              "Value": 192.0,
+              "Value": 196.5,
               "Time": 0.0
             },
             {
@@ -537,7 +613,7 @@
         },
         {
           "InstanceName": "SmelvinButton",
-          "SourceClassType": "Entities\\WallButton",
+          "SourceClassType": "Entities\\Button",
           "Properties": [
             {
               "Name": "AssociateWithFactory",
@@ -547,15 +623,39 @@
           ],
           "InstructionSaves": [
             {
+              "Type": "float",
+              "Member": "AxisAlignedRectangleInstanceHeight",
+              "Value": 32.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "AxisAlignedRectangleInstanceWidth",
+              "Value": 16.0,
+              "Time": 0.0
+            },
+            {
               "Type": "Facing",
               "Member": "CurrentFacingState",
               "Value": "Left",
               "Time": 0.0
             },
             {
+              "Type": "IsPressed",
+              "Member": "CurrentIsPressedState",
+              "Value": "UnpressedRed",
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "SpriteInstanceRotationZ",
+              "Value": 1.5707964,
+              "Time": 0.0
+            },
+            {
               "Type": "float",
               "Member": "X",
-              "Value": 816.0,
+              "Value": 827.5,
               "Time": 0.0
             },
             {
@@ -568,6 +668,64 @@
           "SourceType": 1,
           "SourceFile": "Entities\\Button",
           "AttachToContainer": true,
+          "GenerateTimedEmit": true
+        },
+        {
+          "InstanceName": "PeepoButton",
+          "SourceClassType": "Entities\\Button",
+          "Properties": [
+            {
+              "Name": "AssociateWithFactory",
+              "Value": true,
+              "Type": "bool"
+            }
+          ],
+          "InstructionSaves": [
+            {
+              "Type": "float",
+              "Member": "AxisAlignedRectangleInstanceHeight",
+              "Value": 24.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "AxisAlignedRectangleInstanceWidth",
+              "Value": 32.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "Facing",
+              "Member": "CurrentFacingState",
+              "Value": "Down",
+              "Time": 0.0
+            },
+            {
+              "Type": "IsPressed",
+              "Member": "CurrentIsPressedState",
+              "Value": "UnpressedBlue",
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "SpriteInstanceRotationZ",
+              "Value": -3.1415927,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "X",
+              "Value": 512.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Y",
+              "Value": -420.5,
+              "Time": 0.0
+            }
+          ],
+          "SourceType": 1,
+          "SourceFile": "Entities\\Button",
           "GenerateTimedEmit": true
         }
       ]
@@ -669,7 +827,7 @@
             {
               "Type": "float",
               "Member": "Y",
-              "Value": -496.0,
+              "Value": -500.0,
               "Time": 0.0
             }
           ],
@@ -714,13 +872,13 @@
             {
               "Type": "float",
               "Member": "X",
-              "Value": 208.0,
+              "Value": 320.0,
               "Time": 0.0
             },
             {
               "Type": "float",
               "Member": "Y",
-              "Value": -496.0,
+              "Value": -482.0,
               "Time": 0.0
             }
           ],
@@ -765,69 +923,18 @@
             {
               "Type": "float",
               "Member": "X",
-              "Value": 816.0,
+              "Value": 704.0,
               "Time": 0.0
             },
             {
               "Type": "float",
               "Member": "Y",
-              "Value": -496.0,
+              "Value": -483.5,
               "Time": 0.0
             }
           ],
           "SourceType": 1,
           "SourceFile": "Entities\\ActionSelector",
-          "AttachToContainer": true,
-          "GenerateTimedEmit": true
-        }
-      ]
-    },
-    {
-      "InstanceName": "CeilingButtonList",
-      "SourceClassType": "FlatRedBall.Math.PositionedObjectList<T>",
-      "Properties": [
-        {
-          "Name": "AssociateWithFactory",
-          "Value": true,
-          "Type": "bool"
-        }
-      ],
-      "InstructionSaves": [],
-      "SourceType": 2,
-      "SourceFile": "PositionedObjectList (Generic)",
-      "SourceClassGenericType": "Entities\\CeilingButton",
-      "ExposedInDerived": true,
-      "AttachToContainer": true,
-      "GenerateTimedEmit": true,
-      "DefinedByBase": true,
-      "InstantiatedByBase": true,
-      "ContainedObjects": [
-        {
-          "InstanceName": "JohnButton",
-          "SourceClassType": "Entities\\CeilingButton",
-          "Properties": [
-            {
-              "Name": "AssociateWithFactory",
-              "Value": true,
-              "Type": "bool"
-            }
-          ],
-          "InstructionSaves": [
-            {
-              "Type": "float",
-              "Member": "X",
-              "Value": 512.0,
-              "Time": 0.0
-            },
-            {
-              "Type": "float",
-              "Member": "Y",
-              "Value": -424.0,
-              "Time": 0.0
-            }
-          ],
-          "SourceType": 1,
-          "SourceFile": "Entities\\CeilingButton",
           "AttachToContainer": true,
           "GenerateTimedEmit": true
         }

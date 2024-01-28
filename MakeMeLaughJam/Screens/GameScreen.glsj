@@ -57,6 +57,18 @@
         }
       ],
       "Name": "MusicBoxPercentageLossPerSecond",
+      "DefaultValue": 10.0,
+      "SetByDerived": true
+    },
+    {
+      "Properties": [
+        {
+          "Name": "Type",
+          "Value": "float",
+          "Type": "String"
+        }
+      ],
+      "Name": "AudiencePercentLossPerSecond",
       "DefaultValue": 5.0,
       "SetByDerived": true
     }
@@ -143,7 +155,7 @@
       "InstructionSaves": [],
       "SourceType": 2,
       "SourceFile": "PositionedObjectList (Generic)",
-      "SourceClassGenericType": "Entities\\WallButton",
+      "SourceClassGenericType": "Entities\\Button",
       "ExposedInDerived": true,
       "AttachToContainer": true,
       "GenerateTimedEmit": true
@@ -216,24 +228,6 @@
       "SourceType": 2,
       "SourceFile": "PositionedObjectList (Generic)",
       "SourceClassGenericType": "Entities\\ActionSelector",
-      "ExposedInDerived": true,
-      "AttachToContainer": true,
-      "GenerateTimedEmit": true
-    },
-    {
-      "InstanceName": "CeilingButtonList",
-      "SourceClassType": "FlatRedBall.Math.PositionedObjectList<T>",
-      "Properties": [
-        {
-          "Name": "AssociateWithFactory",
-          "Value": true,
-          "Type": "bool"
-        }
-      ],
-      "InstructionSaves": [],
-      "SourceType": 2,
-      "SourceFile": "PositionedObjectList (Generic)",
-      "SourceClassGenericType": "Entities\\CeilingButton",
       "ExposedInDerived": true,
       "AttachToContainer": true,
       "GenerateTimedEmit": true
@@ -917,94 +911,8 @@
       "GenerateTimedEmit": true
     },
     {
-      "InstanceName": "PlayerPunchHitboxVsCeilingButton",
-      "SourceClassType": "FlatRedBall.Math.Collision.ListVsListRelationship<Entities.Player, Entities.CeilingButton>",
-      "Properties": [
-        {
-          "Name": "AssociateWithFactory",
-          "Value": true,
-          "Type": "bool"
-        },
-        {
-          "Name": "IsAutoNameEnabled",
-          "Value": true,
-          "Type": "bool"
-        },
-        {
-          "Name": "FirstCollisionName",
-          "Value": "PlayerList",
-          "Type": "String"
-        },
-        {
-          "Name": "SecondCollisionName",
-          "Value": "CeilingButtonList",
-          "Type": "String"
-        },
-        {
-          "Name": "IsCollisionActive",
-          "Value": true,
-          "Type": "bool"
-        },
-        {
-          "Name": "IsAutomaticallyApplyPhysicsChecked",
-          "Value": true,
-          "Type": "bool"
-        },
-        {
-          "Name": "FirstCollisionMass",
-          "Value": 1.0,
-          "Type": "float"
-        },
-        {
-          "Name": "SecondCollisionMass",
-          "Value": 1.0,
-          "Type": "float"
-        },
-        {
-          "Name": "SoftCollisionCoefficient",
-          "Value": 1.0,
-          "Type": "float"
-        },
-        {
-          "Name": "CollisionElasticity",
-          "Value": 1.0,
-          "Type": "float"
-        },
-        {
-          "Name": "FirstSubCollisionSelectedItem",
-          "Value": "PunchHitbox",
-          "Type": "String"
-        },
-        {
-          "Name": "SecondSubCollisionSelectedItem",
-          "Value": "<Entire Object>",
-          "Type": "String"
-        },
-        {
-          "Name": "IsDealDamageChecked",
-          "Value": true,
-          "Type": "Object"
-        },
-        {
-          "Name": "IsDestroyFirstOnDamageChecked",
-          "Value": true,
-          "Type": "Object"
-        },
-        {
-          "Name": "IsDestroySecondOnDamageChecked",
-          "Value": true,
-          "Type": "Object"
-        }
-      ],
-      "InstructionSaves": [],
-      "SourceType": 2,
-      "SourceFile": "FlatRedBall.Math.Collision.ListVsListRelationship<Entities.Player, Entities.CeilingButton>",
-      "AttachToContainer": true,
-      "GenerateTimedEmit": true
-    },
-    {
       "InstanceName": "PlayerPunchHitboxVsButton",
-      "SourceClassType": "FlatRedBall.Math.Collision.ListVsListRelationship<Entities.Player, Entities.WallButton>",
+      "SourceClassType": "FlatRedBall.Math.Collision.ListVsListRelationship<Entities.Player, Entities.Button>",
       "Properties": [
         {
           "Name": "AssociateWithFactory",
@@ -1138,11 +1046,6 @@
     {
       "EventName": "PlayerVsButtonCollided",
       "SourceObject": "PlayerPunchHitboxVsButton",
-      "SourceObjectEvent": "CollisionOccurred"
-    },
-    {
-      "EventName": "PlayerVsCeilingButtonCollided",
-      "SourceObject": "PlayerPunchHitboxVsCeilingButton",
       "SourceObjectEvent": "CollisionOccurred"
     }
   ],

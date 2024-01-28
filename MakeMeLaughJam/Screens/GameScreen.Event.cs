@@ -48,46 +48,42 @@ namespace MakeMeLaughJam.Screens
                 OnActionSelectorPressed();
             }
         }
-        void OnPlayerVsButtonCollided (Entities.Player player, Entities.WallButton wallButton) 
+        void OnPlayerVsButtonCollided (Entities.Player player, Entities.Button wallButton) 
         {
             if (player.IsPunchActive)
             {
                 player.PunchConsumed = true;
                 
                 var vector = wallButton.Position.GetVectorTo(player.Position);
-                if (wallButton.CurrentFacingState == WallButton.Facing.Right)
+                if (wallButton.CurrentFacingState == Button.Facing.Right)
                 {
                     vector = Vector3.UnitX;
                 }
-                else
+                else if (wallButton.CurrentFacingState == Button.Facing.Left)
                 {
                     vector = -Vector3.UnitX;
                 }
-                player.Velocity      += vector * player.PunchKnockbackSpeed;
-
-                if (wallButton.Name == "PeepoButton")
+                else if (wallButton.CurrentFacingState == Button.Facing.Down)
                 {
-                    OnPuppetButtonPressed(Puppets.Peepo);
+                    vector = -Vector3.UnitY;
+                }
+
+                player.Velocity += vector * player.PunchKnockbackSpeed;
+
+                if (wallButton.Name == "JohnButton")
+                {
+                    OnPuppetButtonPressed(Puppets.John);
                 }
                 
                 if (wallButton.Name == "SmelvinButton")
                 {
                     OnPuppetButtonPressed(Puppets.Smelvin);
                 }
-            }
-        }
-        void OnPlayerVsCeilingButtonCollided (Entities.Player player, Entities.CeilingButton ceilingButton) 
-        {
-            if (player.IsPunchActive)
-            {
-                player.PunchConsumed =  true;
                 
-                player.Velocity      += -Vector3.UnitY * player.PunchKnockbackSpeed;
-            }
-                
-            if (ceilingButton.Name == "JohnButton")
-            {
-                OnPuppetButtonPressed(Puppets.John);
+                if (wallButton.Name == "PeepoButton")
+                {
+                    OnPuppetButtonPressed(Puppets.Peepo);
+                }
             }
         }
         

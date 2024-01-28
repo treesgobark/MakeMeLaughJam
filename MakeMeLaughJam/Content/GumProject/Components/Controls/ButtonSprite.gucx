@@ -69,27 +69,29 @@
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
-      <Type>float</Type>
-      <Name>SpriteInstance.Height</Name>
-      <Value xsi:type="xsd:float">100</Value>
-      <SetsValue>true</SetsValue>
-    </Variable>
-    <Variable>
       <Type>DimensionUnitType</Type>
       <Name>SpriteInstance.Height Units</Name>
       <Value xsi:type="xsd:int">3</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
-      <Type>float</Type>
-      <Name>SpriteInstance.Width</Name>
-      <Value xsi:type="xsd:float">100</Value>
+      <IsFile>true</IsFile>
+      <Type>string</Type>
+      <Name>SpriteInstance.SourceFile</Name>
+      <Value xsi:type="xsd:string"></Value>
+      <ExposedAsName>SpriteInstanceSourceFile</ExposedAsName>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
       <Type>DimensionUnitType</Type>
       <Name>SpriteInstance.Width Units</Name>
       <Value xsi:type="xsd:int">3</Value>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
+      <Type>float</Type>
+      <Name>SpriteInstance.X</Name>
+      <Value xsi:type="xsd:float">0</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
@@ -102,6 +104,12 @@
       <Type>PositionUnitType</Type>
       <Name>SpriteInstance.X Units</Name>
       <Value xsi:type="xsd:int">6</Value>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
+      <Type>float</Type>
+      <Name>SpriteInstance.Y</Name>
+      <Value xsi:type="xsd:float">0</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
@@ -122,55 +130,6 @@
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
-      <Type>ColorCategory</Type>
-      <Name>TextInstance.ColorCategoryState</Name>
-      <Value xsi:type="xsd:string">White</Value>
-      <SetsValue>true</SetsValue>
-    </Variable>
-    <Variable>
-      <Type>DimensionUnitType</Type>
-      <Name>TextInstance.Height Units</Name>
-      <Value xsi:type="xsd:int">2</Value>
-      <SetsValue>true</SetsValue>
-    </Variable>
-    <Variable>
-      <Type>HorizontalAlignment</Type>
-      <Name>TextInstance.HorizontalAlignment</Name>
-      <Value xsi:type="xsd:int">1</Value>
-      <SetsValue>true</SetsValue>
-    </Variable>
-    <Variable>
-      <Type>SizeCategory</Type>
-      <Name>TextInstance.SizeCategoryState</Name>
-      <Value xsi:type="xsd:string">Strong</Value>
-      <SetsValue>true</SetsValue>
-    </Variable>
-    <Variable>
-      <Type>StyleCategory</Type>
-      <Name>TextInstance.StyleCategoryState</Name>
-      <Value xsi:type="xsd:string">Strong</Value>
-      <SetsValue>true</SetsValue>
-    </Variable>
-    <Variable>
-      <Type>string</Type>
-      <Name>TextInstance.Text</Name>
-      <Value xsi:type="xsd:string">Click Me</Value>
-      <ExposedAsName>ButtonDisplayText</ExposedAsName>
-      <SetsValue>true</SetsValue>
-    </Variable>
-    <Variable>
-      <Type>VerticalAlignment</Type>
-      <Name>TextInstance.VerticalAlignment</Name>
-      <Value xsi:type="xsd:int">1</Value>
-      <SetsValue>true</SetsValue>
-    </Variable>
-    <Variable>
-      <Type>DimensionUnitType</Type>
-      <Name>TextInstance.Width Units</Name>
-      <Value xsi:type="xsd:int">2</Value>
-      <SetsValue>true</SetsValue>
-    </Variable>
-    <Variable>
       <Type>float</Type>
       <Name>Width</Name>
       <Value xsi:type="xsd:float">128</Value>
@@ -188,12 +147,6 @@
         <Value xsi:type="xsd:boolean">false</Value>
         <SetsValue>true</SetsValue>
       </Variable>
-      <Variable>
-        <Type>ColorCategory</Type>
-        <Name>TextInstance.ColorCategoryState</Name>
-        <Value xsi:type="xsd:string">White</Value>
-        <SetsValue>true</SetsValue>
-      </Variable>
     </State>
     <State>
       <Name>Disabled</Name>
@@ -201,12 +154,6 @@
         <Type>bool</Type>
         <Name>FocusedIndicator.Visible</Name>
         <Value xsi:type="xsd:boolean">false</Value>
-        <SetsValue>true</SetsValue>
-      </Variable>
-      <Variable>
-        <Type>ColorCategory</Type>
-        <Name>TextInstance.ColorCategoryState</Name>
-        <Value xsi:type="xsd:string">Gray</Value>
         <SetsValue>true</SetsValue>
       </Variable>
     </State>
@@ -218,12 +165,6 @@
         <Value xsi:type="xsd:boolean">false</Value>
         <SetsValue>true</SetsValue>
       </Variable>
-      <Variable>
-        <Type>ColorCategory</Type>
-        <Name>TextInstance.ColorCategoryState</Name>
-        <Value xsi:type="xsd:string">White</Value>
-        <SetsValue>true</SetsValue>
-      </Variable>
     </State>
     <State>
       <Name>Pushed</Name>
@@ -231,12 +172,6 @@
         <Type>bool</Type>
         <Name>FocusedIndicator.Visible</Name>
         <Value xsi:type="xsd:boolean">false</Value>
-        <SetsValue>true</SetsValue>
-      </Variable>
-      <Variable>
-        <Type>ColorCategory</Type>
-        <Name>TextInstance.ColorCategoryState</Name>
-        <Value xsi:type="xsd:string">White</Value>
         <SetsValue>true</SetsValue>
       </Variable>
     </State>
@@ -248,12 +183,6 @@
         <Value xsi:type="xsd:boolean">true</Value>
         <SetsValue>true</SetsValue>
       </Variable>
-      <Variable>
-        <Type>ColorCategory</Type>
-        <Name>TextInstance.ColorCategoryState</Name>
-        <Value xsi:type="xsd:string">White</Value>
-        <SetsValue>true</SetsValue>
-      </Variable>
     </State>
     <State>
       <Name>Focused</Name>
@@ -261,12 +190,6 @@
         <Type>bool</Type>
         <Name>FocusedIndicator.Visible</Name>
         <Value xsi:type="xsd:boolean">true</Value>
-        <SetsValue>true</SetsValue>
-      </Variable>
-      <Variable>
-        <Type>ColorCategory</Type>
-        <Name>TextInstance.ColorCategoryState</Name>
-        <Value xsi:type="xsd:string">White</Value>
         <SetsValue>true</SetsValue>
       </Variable>
     </State>
@@ -278,22 +201,11 @@
         <Value xsi:type="xsd:boolean">true</Value>
         <SetsValue>true</SetsValue>
       </Variable>
-      <Variable>
-        <Type>ColorCategory</Type>
-        <Name>TextInstance.ColorCategoryState</Name>
-        <Value xsi:type="xsd:string">Gray</Value>
-        <SetsValue>true</SetsValue>
-      </Variable>
     </State>
   </Category>
   <Instance>
     <Name>SpriteInstance</Name>
     <BaseType>Sprite</BaseType>
-    <DefinedByBase>false</DefinedByBase>
-  </Instance>
-  <Instance>
-    <Name>TextInstance</Name>
-    <BaseType>Text</BaseType>
     <DefinedByBase>false</DefinedByBase>
   </Instance>
   <Instance>

@@ -5,6 +5,14 @@
   "Source": "GLUE",
   "CreatedByOtherEntities": true,
   "Is2D": true,
+  "ReferencedFiles": [
+    {
+      "Name": "Entities/MusicBox/MusicBoxChains.achx",
+      "IsSharedStatic": true,
+      "RuntimeType": "FlatRedBall.Graphics.Animation.AnimationChainList",
+      "ProjectsToExcludeFrom": []
+    }
+  ],
   "CustomVariables": [
     {
       "Properties": [
@@ -65,6 +73,18 @@
       ],
       "InstructionSaves": [
         {
+          "Type": "AnimationChainList",
+          "Member": "AnimationChains",
+          "Value": "MusicBoxChains",
+          "Time": 0.0
+        },
+        {
+          "Type": "string",
+          "Member": "CurrentChainName",
+          "Value": "Green",
+          "Time": 0.0
+        },
+        {
           "Type": "float",
           "Member": "TextureScale",
           "Value": 1.0,
@@ -73,6 +93,7 @@
       ],
       "SourceType": 2,
       "SourceFile": "Sprite",
+      "HasPublicProperty": true,
       "AttachToContainer": true,
       "GenerateTimedEmit": true
     },
@@ -90,13 +111,19 @@
         {
           "Type": "float",
           "Member": "Height",
-          "Value": 32.0,
+          "Value": 60.0,
+          "Time": 0.0
+        },
+        {
+          "Type": "bool",
+          "Member": "Visible",
+          "Value": false,
           "Time": 0.0
         },
         {
           "Type": "float",
           "Member": "Width",
-          "Value": 32.0,
+          "Value": 64.0,
           "Time": 0.0
         }
       ],

@@ -58,26 +58,6 @@
       "Properties": [
         {
           "Name": "Type",
-          "Value": "Color",
-          "Type": "String"
-        },
-        {
-          "Name": "Category",
-          "Value": "Appearance",
-          "Type": "String"
-        }
-      ],
-      "Name": "AxisAlignedRectangleInstanceColor",
-      "DefaultValue": "White",
-      "SetByDerived": true,
-      "SourceObject": "AxisAlignedRectangleInstance",
-      "SourceObjectProperty": "Color",
-      "Category": "Appearance"
-    },
-    {
-      "Properties": [
-        {
-          "Name": "Type",
           "Value": "MakeMeLaughJam.DataTypes.PlatformerValues",
           "Type": "String"
         }
@@ -158,21 +138,21 @@
       "Properties": [
         {
           "Name": "Type",
-          "Value": "float",
+          "Value": "string",
           "Type": "String"
         },
         {
           "Name": "Category",
-          "Value": "Position",
+          "Value": "Animation",
           "Type": "String"
         }
       ],
-      "Name": "AxisAlignedRectangleInstanceY",
-      "DefaultValue": 0.0,
+      "Name": "SpriteInstanceCurrentChainName",
+      "DefaultValue": "SmelvinFire",
       "SetByDerived": true,
-      "SourceObject": "AxisAlignedRectangleInstance",
-      "SourceObjectProperty": "Y",
-      "Category": "Position"
+      "SourceObject": "SpriteInstance",
+      "SourceObjectProperty": "CurrentChainName",
+      "Category": "Animation"
     }
   ],
   "Properties": [
@@ -200,6 +180,18 @@
       ],
       "InstructionSaves": [
         {
+          "Type": "AnimationChainList",
+          "Member": "AnimationChains",
+          "Value": "PuppetAnimations",
+          "Time": 0.0
+        },
+        {
+          "Type": "string",
+          "Member": "CurrentChainName",
+          "Value": "SmelvinFire",
+          "Time": 0.0
+        },
+        {
           "Type": "float",
           "Member": "TextureScale",
           "Value": 1.0,
@@ -210,36 +202,6 @@
       "SourceFile": "Sprite",
       "AttachToContainer": true,
       "GenerateTimedEmit": true
-    },
-    {
-      "InstanceName": "AxisAlignedRectangleInstance",
-      "SourceClassType": "FlatRedBall.Math.Geometry.AxisAlignedRectangle",
-      "Properties": [
-        {
-          "Name": "AssociateWithFactory",
-          "Value": true,
-          "Type": "bool"
-        }
-      ],
-      "InstructionSaves": [
-        {
-          "Type": "float",
-          "Member": "Height",
-          "Value": 96.0,
-          "Time": 0.0
-        },
-        {
-          "Type": "float",
-          "Member": "Width",
-          "Value": 32.0,
-          "Time": 0.0
-        }
-      ],
-      "SourceType": 2,
-      "SourceFile": "AxisAlignedRectangle",
-      "HasPublicProperty": true,
-      "AttachToContainer": true,
-      "GenerateTimedEmit": true
     }
   ],
   "StateCategoryList": [
@@ -248,31 +210,80 @@
       "States": [
         {
           "Name": "PeepoIdle",
-          "InstructionSaves": []
+          "InstructionSaves": [
+            {
+              "Type": "string",
+              "Member": "SpriteInstanceCurrentChainName",
+              "Value": "PeepoIdle",
+              "Time": 0.0
+            }
+          ]
         },
         {
           "Name": "PeepoPie",
-          "InstructionSaves": []
+          "InstructionSaves": [
+            {
+              "Type": "string",
+              "Member": "SpriteInstanceCurrentChainName",
+              "Value": "PeepoPie",
+              "Time": 0.0
+            }
+          ]
         },
         {
           "Name": "PeepoDancing",
-          "InstructionSaves": []
+          "InstructionSaves": [
+            {
+              "Type": "string",
+              "Member": "SpriteInstanceCurrentChainName",
+              "Value": "PeepoDancing",
+              "Time": 0.0
+            }
+          ]
         },
         {
           "Name": "PeepoFire",
-          "InstructionSaves": []
+          "InstructionSaves": [
+            {
+              "Type": "string",
+              "Member": "SpriteInstanceCurrentChainName",
+              "Value": "PeepoFire",
+              "Time": 0.0
+            }
+          ]
         },
         {
           "Name": "SmelvinIdle",
-          "InstructionSaves": []
+          "InstructionSaves": [
+            {
+              "Type": "string",
+              "Member": "SpriteInstanceCurrentChainName",
+              "Value": "SmelvinIdle",
+              "Time": 0.0
+            }
+          ]
         },
         {
           "Name": "SmelvinPie",
-          "InstructionSaves": []
+          "InstructionSaves": [
+            {
+              "Type": "string",
+              "Member": "SpriteInstanceCurrentChainName",
+              "Value": "SmelvinPie",
+              "Time": 0.0
+            }
+          ]
         },
         {
           "Name": "SmelvinDancing",
-          "InstructionSaves": []
+          "InstructionSaves": [
+            {
+              "Type": "string",
+              "Member": "SpriteInstanceCurrentChainName",
+              "Value": "SmelvinDancing",
+              "Time": 0.0
+            }
+          ]
         },
         {
           "Name": "SmelvinFire",
@@ -280,19 +291,47 @@
         },
         {
           "Name": "JohnIdle",
-          "InstructionSaves": []
+          "InstructionSaves": [
+            {
+              "Type": "string",
+              "Member": "SpriteInstanceCurrentChainName",
+              "Value": "JohnIdle",
+              "Time": 0.0
+            }
+          ]
         },
         {
           "Name": "JohnPie",
-          "InstructionSaves": []
+          "InstructionSaves": [
+            {
+              "Type": "string",
+              "Member": "SpriteInstanceCurrentChainName",
+              "Value": "JohnPie",
+              "Time": 0.0
+            }
+          ]
         },
         {
           "Name": "JohnDancing",
-          "InstructionSaves": []
+          "InstructionSaves": [
+            {
+              "Type": "string",
+              "Member": "SpriteInstanceCurrentChainName",
+              "Value": "JohnDancing",
+              "Time": 0.0
+            }
+          ]
         },
         {
           "Name": "JohnFire",
-          "InstructionSaves": []
+          "InstructionSaves": [
+            {
+              "Type": "string",
+              "Member": "SpriteInstanceCurrentChainName",
+              "Value": "JohnFire",
+              "Time": 0.0
+            }
+          ]
         }
       ],
       "ExcludedVariables": [
@@ -319,33 +358,36 @@
           "InstructionSaves": [
             {
               "Type": "float",
-              "Member": "SpriteInstanceY",
-              "Value": 40.0,
-              "Time": 0.0
-            },
-            {
-              "Type": "float",
-              "Member": "AxisAlignedRectangleInstanceY",
-              "Value": 40.0,
+              "Member": "Y",
+              "Value": -384.0,
               "Time": 0.0
             }
           ]
         },
         {
           "Name": "Down",
-          "InstructionSaves": []
+          "InstructionSaves": [
+            {
+              "Type": "float",
+              "Member": "Y",
+              "Value": -432.0,
+              "Time": 0.0
+            }
+          ]
         }
       ],
       "ExcludedVariables": [
         "X",
-        "Y",
         "Z",
         "AxisAlignedRectangleInstanceColor",
         "GroundMovement",
         "AirMovement",
         "AfterDoubleJump",
         "CurrentPuppetNameState",
-        "CurrentDeploymentState"
+        "CurrentDeploymentState",
+        "SpriteInstanceCurrentChainName",
+        "AxisAlignedRectangleInstanceY",
+        "SpriteInstanceY"
       ]
     }
   ],
