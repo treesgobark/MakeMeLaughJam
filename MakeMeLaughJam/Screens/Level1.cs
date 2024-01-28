@@ -15,6 +15,7 @@ using FlatRedBall.Localization;
 using Microsoft.Xna.Framework;
 
 using MakeMeLaughJam.Entities;
+using Microsoft.Xna.Framework.Media;
 
 
 namespace MakeMeLaughJam.Screens
@@ -60,6 +61,8 @@ namespace MakeMeLaughJam.Screens
         void CustomInitialize()
         {
             TimeElapsed = 0;
+            MediaPlayer.Play(PuppetStruggleWarpEnd);
+            MediaPlayer.IsRepeating = true;
         }
 
         void CustomActivity(bool firstTimeCalled)

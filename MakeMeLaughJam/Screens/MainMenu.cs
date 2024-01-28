@@ -30,6 +30,10 @@ namespace MakeMeLaughJam.Screens
 
         void CustomInitialize()
         {
+            // AudioManager.PlaySong(Entitled, true, true);
+            MediaPlayer.Play(Entitled);
+            MediaPlayer.IsRepeating = true;
+            
             GumScreen.CurrentMainMenuState = MainMenuGumRuntime.MainMenu.Main;
             
             Forms.MainMenuInstance.ButtonStartInstance.Click += (sender, args) => ScreenManager.MoveToScreen("Level1");
@@ -40,12 +44,24 @@ namespace MakeMeLaughJam.Screens
             Forms.OptionsInstance.BackButton.Click += (sender, args) => GumScreen.CurrentMainMenuState = MainMenuGumRuntime.MainMenu.Main;
             
             Forms.OptionsInstance.FullscreenCheckBox.Checked += (sender, args) =>
-                FlatRedBallServices.GraphicsOptions.WindowedFullscreenMode =
-                    WindowedFullscreenMode.FullscreenBorderless;
+            {
+                CameraSetup.Data.IsFullScreen = true;
+                if (CameraSetup.GraphicsDeviceManager != null)
+                {
+                    CameraSetup.ResetWindow();
+                    CameraSetup.ResetCamera();
+                }
+            };
             
             Forms.OptionsInstance.FullscreenCheckBox.Unchecked += (sender, args) =>
-                FlatRedBallServices.GraphicsOptions.WindowedFullscreenMode =
-                    WindowedFullscreenMode.Windowed;
+            {
+                CameraSetup.Data.IsFullScreen = false;
+                if (CameraSetup.GraphicsDeviceManager != null)
+                {
+                    CameraSetup.ResetWindow();
+                    CameraSetup.ResetCamera();
+                }
+            };
 
             Forms.OptionsInstance.MusicSlider.Minimum = 0;
             Forms.OptionsInstance.MusicSlider.Maximum = 100;

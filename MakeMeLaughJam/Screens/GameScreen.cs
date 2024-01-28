@@ -7,6 +7,7 @@ using FlatRedBall;
 using FlatRedBall.Input;
 using FlatRedBall.Instructions;
 using FlatRedBall.AI.Pathfinding;
+using FlatRedBall.Audio;
 using FlatRedBall.Graphics.Animation;
 using FlatRedBall.Gui;
 using FlatRedBall.Math;
@@ -143,6 +144,38 @@ namespace MakeMeLaughJam.Screens
             
             Forms.OptionsInstance.BackButton.Click += (sender, args) =>
                 GumScreen.CurrentPauseState = GameScreenGumRuntime.Pause.Main;
+            
+            Forms.OptionsInstance.FullscreenCheckBox.Checked += (sender, args) =>
+            {
+                CameraSetup.Data.IsFullScreen = true;
+                if (CameraSetup.GraphicsDeviceManager != null)
+                {
+                    CameraSetup.ResetWindow();
+                    CameraSetup.ResetCamera();
+                }
+            };
+            
+            Forms.OptionsInstance.FullscreenCheckBox.Unchecked += (sender, args) =>
+            {
+                CameraSetup.Data.IsFullScreen = false;
+                if (CameraSetup.GraphicsDeviceManager != null)
+                {
+                    CameraSetup.ResetWindow();
+                    CameraSetup.ResetCamera();
+                }
+            };
+
+            Forms.OptionsInstance.MusicSlider.Minimum = 0;
+            Forms.OptionsInstance.MusicSlider.Maximum = 100;
+            Forms.OptionsInstance.MusicSlider.Value   = 50;
+            Forms.OptionsInstance.MusicSlider.ValueChanged += (sender, args) =>
+                AudioManager.MasterSongVolume = (float)Forms.OptionsInstance.MusicSlider.Value / 100;
+            
+            Forms.OptionsInstance.SoundEffectSlider.Minimum = 0;
+            Forms.OptionsInstance.SoundEffectSlider.Maximum = 100;
+            Forms.OptionsInstance.SoundEffectSlider.Value   = 50;
+            Forms.OptionsInstance.SoundEffectSlider.ValueChanged += (sender, args) =>
+                AudioManager.MasterSoundVolume = (float)Forms.OptionsInstance.SoundEffectSlider.Value / 100;
         }
 
         void CustomActivity(bool firstTimeCalled)

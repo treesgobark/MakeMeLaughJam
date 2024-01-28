@@ -9,6 +9,19 @@
       "IsSharedStatic": true,
       "RuntimeType": "MakeMeLaughJam.GumRuntimes.MainMenuGumRuntime",
       "ProjectsToExcludeFrom": []
+    },
+    {
+      "Name": "Screens/MainMenu/Entitled.ogg",
+      "Properties": [
+        {
+          "Name": "Volume",
+          "Value": 100,
+          "Type": "int"
+        }
+      ],
+      "IsSharedStatic": true,
+      "RuntimeType": "Microsoft.Xna.Framework.Media.Song",
+      "ProjectsToExcludeFrom": []
     }
   ],
   "Name": "Screens\\MainMenu",

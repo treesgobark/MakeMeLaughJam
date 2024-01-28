@@ -41,6 +41,12 @@
       "IsSharedStatic": true,
       "RuntimeType": "Microsoft.Xna.Framework.Graphics.Texture2D",
       "ProjectsToExcludeFrom": []
+    },
+    {
+      "Name": "Screens/Level1/PuppetStruggleWarpEnd.ogg",
+      "IsSharedStatic": true,
+      "RuntimeType": "Microsoft.Xna.Framework.Media.Song",
+      "ProjectsToExcludeFrom": []
     }
   ],
   "NamedObjects": [

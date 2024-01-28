@@ -692,6 +692,10 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Name>mask5</Name>
     </None>
+    <None Include="content\screens\level1\puppetstrugglewarpend.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>PuppetStruggleWarpEnd</Name>
+    </None>
     <None Include="content\screens\level1\whitesquare32.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Name>WhiteSquare32</Name>
@@ -739,6 +743,10 @@
     <None Include="content\screens\mainmenu\credits tall.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Name>credits tall</Name>
+    </None>
+    <None Include="content\screens\mainmenu\entitled.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>Entitled</Name>
     </None>
     <None Include="content\screens\mainmenu\main menu button.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
