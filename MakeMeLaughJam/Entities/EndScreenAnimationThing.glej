@@ -68,15 +68,15 @@
       ],
       "InstructionSaves": [
         {
-          "Type": "float",
-          "Member": "TextureScale",
-          "Value": 2.0,
-          "Time": 0.0
-        },
-        {
           "Type": "AnimationChainList",
           "Member": "AnimationChains",
           "Value": "EndAnimation",
+          "Time": 0.0
+        },
+        {
+          "Type": "float",
+          "Member": "AnimationSpeed",
+          "Value": 2.0,
           "Time": 0.0
         },
         {
@@ -87,12 +87,7 @@
         },
         {
           "Type": "float",
-          "Member": "Height",
-          "Time": 0.0
-        },
-        {
-          "Type": "float",
-          "Member": "AnimationSpeed",
+          "Member": "TextureScale",
           "Value": 2.0,
           "Time": 0.0
         },
@@ -128,14 +123,8 @@
       "InstructionSaves": [
         {
           "Type": "float",
-          "Member": "TextureScale",
+          "Member": "Alpha",
           "Value": 1.0,
-          "Time": 0.0
-        },
-        {
-          "Type": "float",
-          "Member": "Width",
-          "Value": 1024.0,
           "Time": 0.0
         },
         {
@@ -152,14 +141,14 @@
         },
         {
           "Type": "float",
-          "Member": "Alpha",
+          "Member": "TextureScale",
           "Value": 1.0,
           "Time": 0.0
         },
         {
           "Type": "float",
-          "Member": "Z",
-          "Value": 0.1,
+          "Member": "Width",
+          "Value": 1024.0,
           "Time": 0.0
         },
         {
@@ -172,6 +161,12 @@
           "Type": "float",
           "Member": "Y",
           "Value": 0.0,
+          "Time": 0.0
+        },
+        {
+          "Type": "float",
+          "Member": "Z",
+          "Value": 0.1,
           "Time": 0.0
         }
       ],

@@ -49,6 +49,151 @@
       "ProjectsToExcludeFrom": []
     }
   ],
+  "CustomVariables": [
+    {
+      "Properties": [
+        {
+          "Name": "Type",
+          "Value": "float",
+          "Type": "String"
+        }
+      ],
+      "Name": "MaxAudienceHealth",
+      "DefaultValue": 100.0,
+      "SetByDerived": true,
+      "DefinedByBase": true
+    },
+    {
+      "Properties": [
+        {
+          "Name": "Type",
+          "Value": "double",
+          "Type": "String"
+        }
+      ],
+      "Name": "PuppetDeployTime",
+      "DefaultValue": 0.5,
+      "SetByDerived": true,
+      "DefinedByBase": true
+    },
+    {
+      "Properties": [
+        {
+          "Name": "Type",
+          "Value": "float",
+          "Type": "String"
+        }
+      ],
+      "Name": "MusicBoxPercentageGainOnHit",
+      "DefaultValue": 60.0,
+      "SetByDerived": true,
+      "DefinedByBase": true
+    },
+    {
+      "Properties": [
+        {
+          "Name": "Type",
+          "Value": "float",
+          "Type": "String"
+        }
+      ],
+      "Name": "MusicBoxPercentageLossPerSecond",
+      "DefaultValue": 10.0,
+      "SetByDerived": true,
+      "DefinedByBase": true
+    },
+    {
+      "Properties": [
+        {
+          "Name": "Type",
+          "Value": "float",
+          "Type": "String"
+        }
+      ],
+      "Name": "AudiencePercentLossPerSecond",
+      "DefaultValue": 1.0,
+      "SetByDerived": true,
+      "DefinedByBase": true
+    },
+    {
+      "Properties": [
+        {
+          "Name": "Type",
+          "Value": "double",
+          "Type": "String"
+        }
+      ],
+      "Name": "PuppetDeployedDuration",
+      "DefaultValue": 2.0,
+      "SetByDerived": true,
+      "DefinedByBase": true
+    },
+    {
+      "Properties": [
+        {
+          "Name": "Type",
+          "Value": "float",
+          "Type": "String"
+        }
+      ],
+      "Name": "AudienceHealthPercentGainOnSuccess",
+      "DefaultValue": 20.0,
+      "SetByDerived": true,
+      "DefinedByBase": true
+    },
+    {
+      "Properties": [
+        {
+          "Name": "Type",
+          "Value": "double",
+          "Type": "String"
+        }
+      ],
+      "Name": "AudienceMovingDuration",
+      "DefaultValue": 2.0,
+      "SetByDerived": true,
+      "DefinedByBase": true
+    },
+    {
+      "Properties": [
+        {
+          "Name": "Type",
+          "Value": "double",
+          "Type": "String"
+        }
+      ],
+      "Name": "TimeBetweenRequests",
+      "DefaultValue": 3.0,
+      "SetByDerived": true,
+      "DefinedByBase": true
+    },
+    {
+      "Properties": [
+        {
+          "Name": "Type",
+          "Value": "float",
+          "Type": "String"
+        }
+      ],
+      "Name": "MaxAudienceHealthPercentLostPerSecond",
+      "DefaultValue": 6.0,
+      "SetByDerived": true,
+      "DefinedByBase": true
+    },
+    {
+      "Properties": [
+        {
+          "Name": "Type",
+          "Value": "float",
+          "Type": "String"
+        }
+      ],
+      "Name": "MinVolume",
+      "DefaultValue": 0.1,
+      "SetByDerived": true,
+      "DefinedByBase": true
+    }
+  ],
   "NamedObjects": [
     {
       "InstanceName": "Map",
@@ -1257,6 +1402,12 @@
           ],
           "InstructionSaves": [
             {
+              "Type": "string",
+              "Member": "SignSpriteCurrentChainName",
+              "Value": "None",
+              "Time": 0.0
+            },
+            {
               "Type": "float",
               "Member": "X",
               "Value": 88.0,
@@ -1266,12 +1417,6 @@
               "Type": "float",
               "Member": "Y",
               "Value": -312.0,
-              "Time": 0.0
-            },
-            {
-              "Type": "string",
-              "Member": "SignSpriteCurrentChainName",
-              "Value": "None",
               "Time": 0.0
             },
             {
@@ -1298,6 +1443,12 @@
           ],
           "InstructionSaves": [
             {
+              "Type": "string",
+              "Member": "SignSpriteCurrentChainName",
+              "Value": "None",
+              "Time": 0.0
+            },
+            {
               "Type": "float",
               "Member": "X",
               "Value": 184.0,
@@ -1307,12 +1458,6 @@
               "Type": "float",
               "Member": "Y",
               "Value": -312.0,
-              "Time": 0.0
-            },
-            {
-              "Type": "string",
-              "Member": "SignSpriteCurrentChainName",
-              "Value": "None",
               "Time": 0.0
             },
             {
@@ -1338,6 +1483,12 @@
           ],
           "InstructionSaves": [
             {
+              "Type": "string",
+              "Member": "SignSpriteCurrentChainName",
+              "Value": "None",
+              "Time": 0.0
+            },
+            {
               "Type": "float",
               "Member": "X",
               "Value": 384.0,
@@ -1347,12 +1498,6 @@
               "Type": "float",
               "Member": "Y",
               "Value": -320.0,
-              "Time": 0.0
-            },
-            {
-              "Type": "string",
-              "Member": "SignSpriteCurrentChainName",
-              "Value": "None",
               "Time": 0.0
             },
             {
@@ -1378,6 +1523,12 @@
           ],
           "InstructionSaves": [
             {
+              "Type": "string",
+              "Member": "SignSpriteCurrentChainName",
+              "Value": "None",
+              "Time": 0.0
+            },
+            {
               "Type": "float",
               "Member": "X",
               "Value": 496.0,
@@ -1387,12 +1538,6 @@
               "Type": "float",
               "Member": "Y",
               "Value": -320.0,
-              "Time": 0.0
-            },
-            {
-              "Type": "string",
-              "Member": "SignSpriteCurrentChainName",
-              "Value": "None",
               "Time": 0.0
             },
             {
@@ -1418,6 +1563,12 @@
           ],
           "InstructionSaves": [
             {
+              "Type": "string",
+              "Member": "SignSpriteCurrentChainName",
+              "Value": "None",
+              "Time": 0.0
+            },
+            {
               "Type": "float",
               "Member": "X",
               "Value": 616.0,
@@ -1427,12 +1578,6 @@
               "Type": "float",
               "Member": "Y",
               "Value": -320.0,
-              "Time": 0.0
-            },
-            {
-              "Type": "string",
-              "Member": "SignSpriteCurrentChainName",
-              "Value": "None",
               "Time": 0.0
             },
             {
@@ -1458,6 +1603,12 @@
           ],
           "InstructionSaves": [
             {
+              "Type": "string",
+              "Member": "SignSpriteCurrentChainName",
+              "Value": "None",
+              "Time": 0.0
+            },
+            {
               "Type": "float",
               "Member": "X",
               "Value": 832.0,
@@ -1467,12 +1618,6 @@
               "Type": "float",
               "Member": "Y",
               "Value": -320.0,
-              "Time": 0.0
-            },
-            {
-              "Type": "string",
-              "Member": "SignSpriteCurrentChainName",
-              "Value": "None",
               "Time": 0.0
             },
             {
@@ -1498,6 +1643,12 @@
           ],
           "InstructionSaves": [
             {
+              "Type": "string",
+              "Member": "SignSpriteCurrentChainName",
+              "Value": "None",
+              "Time": 0.0
+            },
+            {
               "Type": "float",
               "Member": "X",
               "Value": 136.0,
@@ -1507,12 +1658,6 @@
               "Type": "float",
               "Member": "Y",
               "Value": -248.0,
-              "Time": 0.0
-            },
-            {
-              "Type": "string",
-              "Member": "SignSpriteCurrentChainName",
-              "Value": "None",
               "Time": 0.0
             },
             {
@@ -1538,6 +1683,12 @@
           ],
           "InstructionSaves": [
             {
+              "Type": "string",
+              "Member": "SignSpriteCurrentChainName",
+              "Value": "None",
+              "Time": 0.0
+            },
+            {
               "Type": "float",
               "Member": "X",
               "Value": 24.0,
@@ -1547,12 +1698,6 @@
               "Type": "float",
               "Member": "Y",
               "Value": -248.0,
-              "Time": 0.0
-            },
-            {
-              "Type": "string",
-              "Member": "SignSpriteCurrentChainName",
-              "Value": "None",
               "Time": 0.0
             },
             {
@@ -1578,6 +1723,12 @@
           ],
           "InstructionSaves": [
             {
+              "Type": "string",
+              "Member": "SignSpriteCurrentChainName",
+              "Value": "None",
+              "Time": 0.0
+            },
+            {
               "Type": "float",
               "Member": "X",
               "Value": 232.0,
@@ -1587,12 +1738,6 @@
               "Type": "float",
               "Member": "Y",
               "Value": -256.0,
-              "Time": 0.0
-            },
-            {
-              "Type": "string",
-              "Member": "SignSpriteCurrentChainName",
-              "Value": "None",
               "Time": 0.0
             },
             {
@@ -1618,6 +1763,12 @@
           ],
           "InstructionSaves": [
             {
+              "Type": "string",
+              "Member": "SignSpriteCurrentChainName",
+              "Value": "None",
+              "Time": 0.0
+            },
+            {
               "Type": "float",
               "Member": "X",
               "Value": 792.0,
@@ -1627,12 +1778,6 @@
               "Type": "float",
               "Member": "Y",
               "Value": -88.0,
-              "Time": 0.0
-            },
-            {
-              "Type": "string",
-              "Member": "SignSpriteCurrentChainName",
-              "Value": "None",
               "Time": 0.0
             },
             {
@@ -1658,6 +1803,12 @@
           ],
           "InstructionSaves": [
             {
+              "Type": "string",
+              "Member": "SignSpriteCurrentChainName",
+              "Value": "None",
+              "Time": 0.0
+            },
+            {
               "Type": "float",
               "Member": "X",
               "Value": 664.0,
@@ -1667,12 +1818,6 @@
               "Type": "float",
               "Member": "Y",
               "Value": -80.0,
-              "Time": 0.0
-            },
-            {
-              "Type": "string",
-              "Member": "SignSpriteCurrentChainName",
-              "Value": "None",
               "Time": 0.0
             },
             {
@@ -1698,6 +1843,12 @@
           ],
           "InstructionSaves": [
             {
+              "Type": "string",
+              "Member": "SignSpriteCurrentChainName",
+              "Value": "None",
+              "Time": 0.0
+            },
+            {
               "Type": "float",
               "Member": "X",
               "Value": 536.0,
@@ -1707,12 +1858,6 @@
               "Type": "float",
               "Member": "Y",
               "Value": -80.0,
-              "Time": 0.0
-            },
-            {
-              "Type": "string",
-              "Member": "SignSpriteCurrentChainName",
-              "Value": "None",
               "Time": 0.0
             },
             {
@@ -1738,6 +1883,12 @@
           ],
           "InstructionSaves": [
             {
+              "Type": "string",
+              "Member": "SignSpriteCurrentChainName",
+              "Value": "None",
+              "Time": 0.0
+            },
+            {
               "Type": "float",
               "Member": "X",
               "Value": 416.0,
@@ -1747,12 +1898,6 @@
               "Type": "float",
               "Member": "Y",
               "Value": -96.0,
-              "Time": 0.0
-            },
-            {
-              "Type": "string",
-              "Member": "SignSpriteCurrentChainName",
-              "Value": "None",
               "Time": 0.0
             },
             {
@@ -1778,6 +1923,12 @@
           ],
           "InstructionSaves": [
             {
+              "Type": "string",
+              "Member": "SignSpriteCurrentChainName",
+              "Value": "None",
+              "Time": 0.0
+            },
+            {
               "Type": "float",
               "Member": "X",
               "Value": 296.0,
@@ -1787,12 +1938,6 @@
               "Type": "float",
               "Member": "Y",
               "Value": -88.0,
-              "Time": 0.0
-            },
-            {
-              "Type": "string",
-              "Member": "SignSpriteCurrentChainName",
-              "Value": "None",
               "Time": 0.0
             },
             {
@@ -1818,6 +1963,12 @@
           ],
           "InstructionSaves": [
             {
+              "Type": "string",
+              "Member": "SignSpriteCurrentChainName",
+              "Value": "None",
+              "Time": 0.0
+            },
+            {
               "Type": "float",
               "Member": "X",
               "Value": 176.0,
@@ -1827,12 +1978,6 @@
               "Type": "float",
               "Member": "Y",
               "Value": -88.0,
-              "Time": 0.0
-            },
-            {
-              "Type": "string",
-              "Member": "SignSpriteCurrentChainName",
-              "Value": "None",
               "Time": 0.0
             },
             {
@@ -1858,6 +2003,12 @@
           ],
           "InstructionSaves": [
             {
+              "Type": "string",
+              "Member": "SignSpriteCurrentChainName",
+              "Value": "None",
+              "Time": 0.0
+            },
+            {
               "Type": "float",
               "Member": "X",
               "Value": 920.0,
@@ -1867,12 +2018,6 @@
               "Type": "float",
               "Member": "Y",
               "Value": -128.0,
-              "Time": 0.0
-            },
-            {
-              "Type": "string",
-              "Member": "SignSpriteCurrentChainName",
-              "Value": "None",
               "Time": 0.0
             },
             {
@@ -1898,6 +2043,12 @@
           ],
           "InstructionSaves": [
             {
+              "Type": "string",
+              "Member": "SignSpriteCurrentChainName",
+              "Value": "None",
+              "Time": 0.0
+            },
+            {
               "Type": "float",
               "Member": "X",
               "Value": 784.0,
@@ -1907,12 +2058,6 @@
               "Type": "float",
               "Member": "Y",
               "Value": -136.0,
-              "Time": 0.0
-            },
-            {
-              "Type": "string",
-              "Member": "SignSpriteCurrentChainName",
-              "Value": "None",
               "Time": 0.0
             },
             {
@@ -1938,6 +2083,12 @@
           ],
           "InstructionSaves": [
             {
+              "Type": "string",
+              "Member": "SignSpriteCurrentChainName",
+              "Value": "None",
+              "Time": 0.0
+            },
+            {
               "Type": "float",
               "Member": "X",
               "Value": 632.0,
@@ -1947,12 +2098,6 @@
               "Type": "float",
               "Member": "Y",
               "Value": -128.0,
-              "Time": 0.0
-            },
-            {
-              "Type": "string",
-              "Member": "SignSpriteCurrentChainName",
-              "Value": "None",
               "Time": 0.0
             },
             {
@@ -1978,6 +2123,12 @@
           ],
           "InstructionSaves": [
             {
+              "Type": "string",
+              "Member": "SignSpriteCurrentChainName",
+              "Value": "None",
+              "Time": 0.0
+            },
+            {
               "Type": "float",
               "Member": "X",
               "Value": 512.0,
@@ -1987,12 +2138,6 @@
               "Type": "float",
               "Member": "Y",
               "Value": -120.0,
-              "Time": 0.0
-            },
-            {
-              "Type": "string",
-              "Member": "SignSpriteCurrentChainName",
-              "Value": "None",
               "Time": 0.0
             },
             {
@@ -2018,6 +2163,12 @@
           ],
           "InstructionSaves": [
             {
+              "Type": "string",
+              "Member": "SignSpriteCurrentChainName",
+              "Value": "None",
+              "Time": 0.0
+            },
+            {
               "Type": "float",
               "Member": "X",
               "Value": 392.0,
@@ -2027,12 +2178,6 @@
               "Type": "float",
               "Member": "Y",
               "Value": -128.0,
-              "Time": 0.0
-            },
-            {
-              "Type": "string",
-              "Member": "SignSpriteCurrentChainName",
-              "Value": "None",
               "Time": 0.0
             },
             {
@@ -2058,6 +2203,12 @@
           ],
           "InstructionSaves": [
             {
+              "Type": "string",
+              "Member": "SignSpriteCurrentChainName",
+              "Value": "None",
+              "Time": 0.0
+            },
+            {
               "Type": "float",
               "Member": "X",
               "Value": 264.0,
@@ -2067,12 +2218,6 @@
               "Type": "float",
               "Member": "Y",
               "Value": -136.0,
-              "Time": 0.0
-            },
-            {
-              "Type": "string",
-              "Member": "SignSpriteCurrentChainName",
-              "Value": "None",
               "Time": 0.0
             },
             {
@@ -2098,6 +2243,12 @@
           ],
           "InstructionSaves": [
             {
+              "Type": "string",
+              "Member": "SignSpriteCurrentChainName",
+              "Value": "None",
+              "Time": 0.0
+            },
+            {
               "Type": "float",
               "Member": "X",
               "Value": 144.0,
@@ -2107,12 +2258,6 @@
               "Type": "float",
               "Member": "Y",
               "Value": -136.0,
-              "Time": 0.0
-            },
-            {
-              "Type": "string",
-              "Member": "SignSpriteCurrentChainName",
-              "Value": "None",
               "Time": 0.0
             },
             {
@@ -2138,6 +2283,12 @@
           ],
           "InstructionSaves": [
             {
+              "Type": "string",
+              "Member": "SignSpriteCurrentChainName",
+              "Value": "None",
+              "Time": 0.0
+            },
+            {
               "Type": "float",
               "Member": "X",
               "Value": 272.0,
@@ -2147,12 +2298,6 @@
               "Type": "float",
               "Member": "Y",
               "Value": -200.0,
-              "Time": 0.0
-            },
-            {
-              "Type": "string",
-              "Member": "SignSpriteCurrentChainName",
-              "Value": "None",
               "Time": 0.0
             },
             {
@@ -2178,6 +2323,12 @@
           ],
           "InstructionSaves": [
             {
+              "Type": "string",
+              "Member": "SignSpriteCurrentChainName",
+              "Value": "None",
+              "Time": 0.0
+            },
+            {
               "Type": "float",
               "Member": "X",
               "Value": 400.0,
@@ -2187,12 +2338,6 @@
               "Type": "float",
               "Member": "Y",
               "Value": -184.0,
-              "Time": 0.0
-            },
-            {
-              "Type": "string",
-              "Member": "SignSpriteCurrentChainName",
-              "Value": "None",
               "Time": 0.0
             },
             {
@@ -2218,6 +2363,12 @@
           ],
           "InstructionSaves": [
             {
+              "Type": "string",
+              "Member": "SignSpriteCurrentChainName",
+              "Value": "None",
+              "Time": 0.0
+            },
+            {
               "Type": "float",
               "Member": "X",
               "Value": 576.0,
@@ -2227,12 +2378,6 @@
               "Type": "float",
               "Member": "Y",
               "Value": -184.0,
-              "Time": 0.0
-            },
-            {
-              "Type": "string",
-              "Member": "SignSpriteCurrentChainName",
-              "Value": "None",
               "Time": 0.0
             },
             {
@@ -2258,6 +2403,12 @@
           ],
           "InstructionSaves": [
             {
+              "Type": "string",
+              "Member": "SignSpriteCurrentChainName",
+              "Value": "None",
+              "Time": 0.0
+            },
+            {
               "Type": "float",
               "Member": "X",
               "Value": 728.0,
@@ -2267,12 +2418,6 @@
               "Type": "float",
               "Member": "Y",
               "Value": -208.0,
-              "Time": 0.0
-            },
-            {
-              "Type": "string",
-              "Member": "SignSpriteCurrentChainName",
-              "Value": "None",
               "Time": 0.0
             },
             {
@@ -2298,6 +2443,12 @@
           ],
           "InstructionSaves": [
             {
+              "Type": "string",
+              "Member": "SignSpriteCurrentChainName",
+              "Value": "None",
+              "Time": 0.0
+            },
+            {
               "Type": "float",
               "Member": "X",
               "Value": 920.0,
@@ -2307,12 +2458,6 @@
               "Type": "float",
               "Member": "Y",
               "Value": -200.0,
-              "Time": 0.0
-            },
-            {
-              "Type": "string",
-              "Member": "SignSpriteCurrentChainName",
-              "Value": "None",
               "Time": 0.0
             },
             {
@@ -2338,6 +2483,12 @@
           ],
           "InstructionSaves": [
             {
+              "Type": "string",
+              "Member": "SignSpriteCurrentChainName",
+              "Value": "None",
+              "Time": 0.0
+            },
+            {
               "Type": "float",
               "Member": "X",
               "Value": 936.0,
@@ -2347,12 +2498,6 @@
               "Type": "float",
               "Member": "Y",
               "Value": -256.0,
-              "Time": 0.0
-            },
-            {
-              "Type": "string",
-              "Member": "SignSpriteCurrentChainName",
-              "Value": "None",
               "Time": 0.0
             },
             {
@@ -2378,6 +2523,12 @@
           ],
           "InstructionSaves": [
             {
+              "Type": "string",
+              "Member": "SignSpriteCurrentChainName",
+              "Value": "None",
+              "Time": 0.0
+            },
+            {
               "Type": "float",
               "Member": "X",
               "Value": 832.0,
@@ -2387,12 +2538,6 @@
               "Type": "float",
               "Member": "Y",
               "Value": -256.0,
-              "Time": 0.0
-            },
-            {
-              "Type": "string",
-              "Member": "SignSpriteCurrentChainName",
-              "Value": "None",
               "Time": 0.0
             },
             {
@@ -2418,6 +2563,12 @@
           ],
           "InstructionSaves": [
             {
+              "Type": "string",
+              "Member": "SignSpriteCurrentChainName",
+              "Value": "None",
+              "Time": 0.0
+            },
+            {
               "Type": "float",
               "Member": "X",
               "Value": 712.0,
@@ -2427,12 +2578,6 @@
               "Type": "float",
               "Member": "Y",
               "Value": -256.0,
-              "Time": 0.0
-            },
-            {
-              "Type": "string",
-              "Member": "SignSpriteCurrentChainName",
-              "Value": "None",
               "Time": 0.0
             },
             {
@@ -2458,6 +2603,12 @@
           ],
           "InstructionSaves": [
             {
+              "Type": "string",
+              "Member": "SignSpriteCurrentChainName",
+              "Value": "None",
+              "Time": 0.0
+            },
+            {
               "Type": "float",
               "Member": "X",
               "Value": 568.0,
@@ -2467,12 +2618,6 @@
               "Type": "float",
               "Member": "Y",
               "Value": -264.0,
-              "Time": 0.0
-            },
-            {
-              "Type": "string",
-              "Member": "SignSpriteCurrentChainName",
-              "Value": "None",
               "Time": 0.0
             },
             {
@@ -2498,6 +2643,12 @@
           ],
           "InstructionSaves": [
             {
+              "Type": "string",
+              "Member": "SignSpriteCurrentChainName",
+              "Value": "None",
+              "Time": 0.0
+            },
+            {
               "Type": "float",
               "Member": "X",
               "Value": 456.0,
@@ -2507,12 +2658,6 @@
               "Type": "float",
               "Member": "Y",
               "Value": -272.0,
-              "Time": 0.0
-            },
-            {
-              "Type": "string",
-              "Member": "SignSpriteCurrentChainName",
-              "Value": "None",
               "Time": 0.0
             },
             {
@@ -2538,6 +2683,12 @@
           ],
           "InstructionSaves": [
             {
+              "Type": "string",
+              "Member": "SignSpriteCurrentChainName",
+              "Value": "None",
+              "Time": 0.0
+            },
+            {
               "Type": "float",
               "Member": "X",
               "Value": 344.0,
@@ -2547,12 +2698,6 @@
               "Type": "float",
               "Member": "Y",
               "Value": -248.0,
-              "Time": 0.0
-            },
-            {
-              "Type": "string",
-              "Member": "SignSpriteCurrentChainName",
-              "Value": "None",
               "Time": 0.0
             },
             {

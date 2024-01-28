@@ -35,11 +35,7 @@ namespace MakeMeLaughJam.Screens
             get => _musicBoxPercentage;
             set
             {
-                _musicBoxPercentage                       = value;
-                if (_musicBoxPercentage < 0)
-                {
-                    _musicBoxPercentage = 0;
-                }
+                _musicBoxPercentage = MathHelper.Clamp(value, 0f, 100f);
                 MusicBox1.SpriteInstance.CurrentChainName = _musicBoxPercentage switch
                 {
                     >80 => "Green",
@@ -70,7 +66,9 @@ namespace MakeMeLaughJam.Screens
         {
             if (!IsPaused)
             {
-                MusicBoxPercentage            -= MusicBoxPercentageLossPerSecond * TimeManager.SecondDifference;
+                MusicBoxPercentage            -=
+                    (float)((TimeElapsed * MusicBoxLossAcceleration + MusicBoxPercentageLossPerSecond) *
+                     TimeManager.SecondDifference);
                 
                 AudioManager.MasterSongVolume = MathHelper.Lerp(MinVolume * MainMenu.SongVolume, MainMenu.SongVolume,
                     MusicBoxPercentage                                    / 100);

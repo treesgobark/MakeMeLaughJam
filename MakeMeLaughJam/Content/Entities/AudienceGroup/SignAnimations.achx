@@ -98,8 +98,8 @@
     <Frame>
       <TextureName>signs-sheet.png</TextureName>
       <FrameLength>0.1</FrameLength>
-      <LeftCoordinate>451</LeftCoordinate>
-      <RightCoordinate>492</RightCoordinate>
+      <LeftCoordinate>369</LeftCoordinate>
+      <RightCoordinate>410</RightCoordinate>
       <TopCoordinate>0</TopCoordinate>
       <BottomCoordinate>45</BottomCoordinate>
       <ShapeCollectionSave>

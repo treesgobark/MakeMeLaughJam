@@ -94,12 +94,6 @@
       ],
       "InstructionSaves": [
         {
-          "Type": "float",
-          "Member": "TextureScale",
-          "Value": 1.0,
-          "Time": 0.0
-        },
-        {
           "Type": "AnimationChainList",
           "Member": "AnimationChains",
           "Value": "AudienceAnimations",
@@ -109,6 +103,12 @@
           "Type": "string",
           "Member": "CurrentChainName",
           "Value": "Idle",
+          "Time": 0.0
+        },
+        {
+          "Type": "float",
+          "Member": "TextureScale",
+          "Value": 1.0,
           "Time": 0.0
         }
       ],
@@ -130,12 +130,6 @@
       ],
       "InstructionSaves": [
         {
-          "Type": "float",
-          "Member": "TextureScale",
-          "Value": 1.0,
-          "Time": 0.0
-        },
-        {
           "Type": "AnimationChainList",
           "Member": "AnimationChains",
           "Value": "SignAnimations",
@@ -145,6 +139,12 @@
           "Type": "string",
           "Member": "CurrentChainName",
           "Value": "SmelvinDown",
+          "Time": 0.0
+        },
+        {
+          "Type": "float",
+          "Member": "TextureScale",
+          "Value": 1.0,
           "Time": 0.0
         },
         {
