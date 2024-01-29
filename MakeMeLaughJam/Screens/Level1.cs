@@ -126,12 +126,12 @@ namespace MakeMeLaughJam.Screens
 
         protected override void OnConfirmationLeverPressed()
         {
-            ConfirmLever1.CrankLever();
-
             if (SelectedPuppetEntity is null)
             {
                 return;
             }
+
+            ConfirmLever1.CrankLever();
             
             SelectedPuppetEntity.InterpolateToState(Puppet.Deployment.Up, PuppetDeployTime);
             MovePuppetDown(SelectedPuppetEntity, PuppetDeployedDuration);
