@@ -77,6 +77,7 @@ namespace MakeMeLaughJam.Screens
                 return;
             }
             EndScreenAnimationThingInstance.SpriteInstance.CurrentChainName = "Slash";
+            EndedEarly                                                      = true;
         }
 
     }
