@@ -2884,12 +2884,6 @@
       ],
       "InstructionSaves": [
         {
-          "Type": "float",
-          "Member": "TextureScale",
-          "Value": 1.0,
-          "Time": 0.0
-        },
-        {
           "Type": "Texture2D",
           "Member": "Texture",
           "Value": "carvedArrowLeft",
@@ -2897,8 +2891,8 @@
         },
         {
           "Type": "float",
-          "Member": "Z",
-          "Value": -1.0,
+          "Member": "TextureScale",
+          "Value": 1.0,
           "Time": 0.0
         },
         {
@@ -2911,6 +2905,12 @@
           "Type": "float",
           "Member": "Y",
           "Value": -464.0,
+          "Time": 0.0
+        },
+        {
+          "Type": "float",
+          "Member": "Z",
+          "Value": -1.0,
           "Time": 0.0
         }
       ],
@@ -2931,12 +2931,6 @@
       ],
       "InstructionSaves": [
         {
-          "Type": "float",
-          "Member": "TextureScale",
-          "Value": 1.0,
-          "Time": 0.0
-        },
-        {
           "Type": "Texture2D",
           "Member": "Texture",
           "Value": "carvedArrowUp",
@@ -2944,8 +2938,8 @@
         },
         {
           "Type": "float",
-          "Member": "Z",
-          "Value": -1.0,
+          "Member": "TextureScale",
+          "Value": 1.0,
           "Time": 0.0
         },
         {
@@ -2958,6 +2952,12 @@
           "Type": "float",
           "Member": "Y",
           "Value": -448.0,
+          "Time": 0.0
+        },
+        {
+          "Type": "float",
+          "Member": "Z",
+          "Value": -1.0,
           "Time": 0.0
         }
       ],
@@ -2977,12 +2977,6 @@
       ],
       "InstructionSaves": [
         {
-          "Type": "float",
-          "Member": "TextureScale",
-          "Value": 1.0,
-          "Time": 0.0
-        },
-        {
           "Type": "Texture2D",
           "Member": "Texture",
           "Value": "carvedArrowRight",
@@ -2990,8 +2984,8 @@
         },
         {
           "Type": "float",
-          "Member": "Z",
-          "Value": -1.0,
+          "Member": "TextureScale",
+          "Value": 1.0,
           "Time": 0.0
         },
         {
@@ -3004,6 +2998,12 @@
           "Type": "float",
           "Member": "Y",
           "Value": -464.0,
+          "Time": 0.0
+        },
+        {
+          "Type": "float",
+          "Member": "Z",
+          "Value": -1.0,
           "Time": 0.0
         }
       ],
