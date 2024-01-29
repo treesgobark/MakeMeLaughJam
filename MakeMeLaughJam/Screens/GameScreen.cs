@@ -222,19 +222,26 @@ namespace MakeMeLaughJam.Screens
             {
                 audienceGroup.AudienceSprite.CurrentChainName = "Shaking";
                 audienceGroup.AudienceSprite.AnimationSpeed = FlatRedBallServices.Random.Between(0.5f, 1.5f);
+                AudienceStopMovingIn(AudienceMovingDuration * FlatRedBallServices.Random.Between(0.5, 1.5), audienceGroup);
             }
             foreach (var audienceGroup in AudienceThatLooksCoolList)
             {
                 audienceGroup.AudienceSprite.CurrentChainName = "Shaking";
                 audienceGroup.AudienceSprite.AnimationSpeed   = FlatRedBallServices.Random.Between(0.5f, 1.5f);
+                AudienceStopMovingIn(AudienceMovingDuration * FlatRedBallServices.Random.Between(0.5, 1.5), audienceGroup);
             }
-            AudienceStopMovingIn(AudienceMovingDuration);
         }
 
         public async Task AudienceStopMovingIn(double delay)
         {
             await TimeManager.DelaySeconds(delay);
             AudienceStopMoving();
+        }
+
+        public async Task AudienceStopMovingIn(double delay, AudienceGroup group)
+        {
+            await TimeManager.DelaySeconds(delay);
+            AudienceStopMoving(group);
         }
 
         public void AudienceStopMoving()
@@ -247,6 +254,11 @@ namespace MakeMeLaughJam.Screens
             {
                 audienceGroup.AudienceSprite.CurrentChainName = "Idle";
             }
+        }
+
+        public void AudienceStopMoving(AudienceGroup group)
+        {
+            group.AudienceSprite.CurrentChainName = "Idle";
         }
 
         public void RandomAudienceRandomRequest()

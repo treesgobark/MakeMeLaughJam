@@ -7,18 +7,18 @@ namespace MakeMeLaughJam.Screens
 {
     public partial class GameScreen
     {
-        private void ApplyKnockback(Player player)
+        private void ApplyKnockback(Player player, float multiplier = 1.0f)
         {
             player.PunchConsumed = true;
             AudioManager.Play(punchhit);
             
             if (player.DirectionFacing == HorizontalDirection.Left)
             {
-                player.Velocity += Vector3.UnitX * player.PunchKnockbackSpeed;
+                player.Velocity.X = player.PunchKnockbackSpeed * multiplier;
             }
             else
             {
-                player.Velocity += -Vector3.UnitX * player.PunchKnockbackSpeed;
+                player.Velocity.X = -player.PunchKnockbackSpeed * multiplier;
             }
         }
         
@@ -53,20 +53,20 @@ namespace MakeMeLaughJam.Screens
             {
                 if (wallButton.Name == "JohnButton")
                 {
-                    ApplyKnockback(player);
+                    ApplyKnockback(player, 1.5f);
                     OnPuppetButtonPressed(Puppets.John);
                 }
                 
                 if (wallButton.Name == "SmelvinButton")
                 {
-                    ApplyKnockback(player);
+                    ApplyKnockback(player, 1.5f);
                     OnPuppetButtonPressed(Puppets.Smelvin);
                 }
                 
                 if (wallButton.Name == "PeepoButton")
                 {
                     player.PunchConsumed =  true;
-                    player.Velocity      += -Vector3.UnitY * player.PunchKnockbackSpeed;
+                    player.Velocity      = -Vector3.UnitY * player.PunchKnockbackSpeed * 1.5f;
                     AudioManager.Play(punchhit);
                     OnPuppetButtonPressed(Puppets.Peepo);
                 }

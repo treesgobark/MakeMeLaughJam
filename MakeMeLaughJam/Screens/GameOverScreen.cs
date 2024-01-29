@@ -26,7 +26,7 @@ namespace MakeMeLaughJam.Screens
 {
     public partial class GameOverScreen
     {
-
+        public bool EndedEarly = false;
         void CustomInitialize()
         {
             Camera.Main.X = 0;
@@ -40,6 +40,13 @@ namespace MakeMeLaughJam.Screens
 
         void CustomActivity(bool firstTimeCalled)
         {
+            if (!EndedEarly && (InputManager.Mouse.ButtonPushed(Mouse.MouseButtons.LeftButton)
+                                || InputManager.Xbox360GamePads[0].ButtonPushed(Xbox360GamePad.Button.A)))
+            {
+                EndedEarly                                                      = true;
+                EndScreenAnimationThingInstance.SpriteInstance.CurrentChainName = "Slash";
+            }
+            
             if (EndScreenAnimationThingInstance.SpriteInstance.CurrentChainName == "Slash" && EndScreenAnimationThingInstance.SpriteInstance.JustCycled)
             {
                 EndScreenAnimationThingInstance.SpriteInstance.CurrentChainName                  = "Final";
@@ -47,7 +54,6 @@ namespace MakeMeLaughJam.Screens
                 GumScreen.CurrentScoreState                      = GameOverScreenGumRuntime.Score.Show;
                 AudioManager.Play(slash);
             }
-
         }
 
         void CustomDestroy()
@@ -66,6 +72,10 @@ namespace MakeMeLaughJam.Screens
         {
             await EndScreenAnimationThingInstance.FadeCover.TweenAsync(x => EndScreenAnimationThingInstance.FadeCover.Alpha = x, 1, 0, FadeInTime, InterpolationType.Quadratic, Easing.InOut);
             await TimeManager.DelaySeconds(TimeBeforeAnimation);
+            if (EndedEarly)
+            {
+                return;
+            }
             EndScreenAnimationThingInstance.SpriteInstance.CurrentChainName = "Slash";
         }
 
