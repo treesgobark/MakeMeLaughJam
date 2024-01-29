@@ -192,6 +192,19 @@
       "DefaultValue": 0.1,
       "SetByDerived": true,
       "DefinedByBase": true
+    },
+    {
+      "Properties": [
+        {
+          "Name": "Type",
+          "Value": "float",
+          "Type": "String"
+        }
+      ],
+      "Name": "MusicBoxLossAcceleration",
+      "DefaultValue": 0.2,
+      "SetByDerived": true,
+      "DefinedByBase": true
     }
   ],
   "NamedObjects": [

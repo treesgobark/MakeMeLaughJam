@@ -232,7 +232,7 @@
         }
       ],
       "Name": "MinVolume",
-      "DefaultValue": 0.1,
+      "DefaultValue": 0.2,
       "SetByDerived": true
     },
     {
