@@ -148,7 +148,7 @@
         }
       ],
       "Name": "MusicBoxPercentageLossPerSecond",
-      "DefaultValue": 5.0,
+      "DefaultValue": 4.0,
       "SetByDerived": true
     },
     {

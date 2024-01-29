@@ -145,6 +145,7 @@ namespace MakeMeLaughJam.Screens
             Forms.OptionsInstance.BackButton.Click += (sender, args) =>
                 GumScreen.CurrentPauseState = GameScreenGumRuntime.Pause.Main;
             
+            Forms.OptionsInstance.FullscreenCheckBox.IsChecked = CameraSetup.Data.IsFullScreen;
             Forms.OptionsInstance.FullscreenCheckBox.Checked += (sender, args) =>
             {
                 CameraSetup.Data.IsFullScreen = true;

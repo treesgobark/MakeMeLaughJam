@@ -52,7 +52,8 @@ namespace MakeMeLaughJam.Screens
             Forms.MainMenuInstance.ButtonQuitInstance.Click += (sender, args) => FlatRedBallServices.Game.Exit();
             
             Forms.OptionsInstance.BackButton.Click += (sender, args) => GumScreen.CurrentMainMenuState = MainMenuGumRuntime.MainMenu.Main;
-            
+
+            Forms.OptionsInstance.FullscreenCheckBox.IsChecked = CameraSetup.Data.IsFullScreen;
             Forms.OptionsInstance.FullscreenCheckBox.Checked += (sender, args) =>
             {
                 CameraSetup.Data.IsFullScreen = true;
