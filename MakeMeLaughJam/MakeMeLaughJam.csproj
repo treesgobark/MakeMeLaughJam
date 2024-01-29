@@ -560,6 +560,22 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Name>BackGround</Name>
     </None>
+    <None Include="content\screens\level1\carvedarrowdown.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>carvedArrowDown</Name>
+    </None>
+    <None Include="content\screens\level1\carvedarrowleft.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>carvedArrowLeft</Name>
+    </None>
+    <None Include="content\screens\level1\carvedarrowright.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>carvedArrowRight</Name>
+    </None>
+    <None Include="content\screens\level1\carvedarrowup.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>carvedArrowUp</Name>
+    </None>
     <None Include="content\screens\level1\curtainsforeground.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Name>CurtainsForeground</Name>

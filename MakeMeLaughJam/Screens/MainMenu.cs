@@ -36,6 +36,7 @@ namespace MakeMeLaughJam.Screens
             {
                 AudioManager.MasterSongVolume  = 0.5f;
                 AudioManager.MasterSoundVolume = 0.5f;
+                SongVolume = 0.5f;
                 MustSetVolume                  = false;
             }
             

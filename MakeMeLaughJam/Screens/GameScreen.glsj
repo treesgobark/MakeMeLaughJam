@@ -136,7 +136,7 @@
         }
       ],
       "Name": "MusicBoxPercentageGainOnHit",
-      "DefaultValue": 60.0,
+      "DefaultValue": 50.0,
       "SetByDerived": true
     },
     {
@@ -184,7 +184,7 @@
         }
       ],
       "Name": "AudienceHealthPercentGainOnSuccess",
-      "DefaultValue": 30.0,
+      "DefaultValue": 25.0,
       "SetByDerived": true
     },
     {
@@ -232,7 +232,7 @@
         }
       ],
       "Name": "MinVolume",
-      "DefaultValue": 0.2,
+      "DefaultValue": 0.3,
       "SetByDerived": true
     },
     {

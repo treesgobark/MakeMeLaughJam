@@ -47,6 +47,30 @@
       "IsSharedStatic": true,
       "RuntimeType": "Microsoft.Xna.Framework.Media.Song",
       "ProjectsToExcludeFrom": []
+    },
+    {
+      "Name": "Screens/Level1/carvedArrowDown.png",
+      "IsSharedStatic": true,
+      "RuntimeType": "Microsoft.Xna.Framework.Graphics.Texture2D",
+      "ProjectsToExcludeFrom": []
+    },
+    {
+      "Name": "Screens/Level1/carvedArrowLeft.png",
+      "IsSharedStatic": true,
+      "RuntimeType": "Microsoft.Xna.Framework.Graphics.Texture2D",
+      "ProjectsToExcludeFrom": []
+    },
+    {
+      "Name": "Screens/Level1/carvedArrowRight.png",
+      "IsSharedStatic": true,
+      "RuntimeType": "Microsoft.Xna.Framework.Graphics.Texture2D",
+      "ProjectsToExcludeFrom": []
+    },
+    {
+      "Name": "Screens/Level1/carvedArrowUp.png",
+      "IsSharedStatic": true,
+      "RuntimeType": "Microsoft.Xna.Framework.Graphics.Texture2D",
+      "ProjectsToExcludeFrom": []
     }
   ],
   "CustomVariables": [
@@ -189,7 +213,7 @@
         }
       ],
       "Name": "MinVolume",
-      "DefaultValue": 0.1,
+      "DefaultValue": 0.5,
       "SetByDerived": true,
       "DefinedByBase": true
     },
@@ -1045,6 +1069,12 @@
               "Type": "float",
               "Member": "Y",
               "Value": -483.5,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Z",
+              "Value": -1.0,
               "Time": 0.0
             }
           ],
@@ -2835,6 +2865,145 @@
           "Type": "float",
           "Member": "Z",
           "Value": -2.0,
+          "Time": 0.0
+        }
+      ],
+      "SourceType": 2,
+      "SourceFile": "Sprite",
+      "GenerateTimedEmit": true
+    },
+    {
+      "InstanceName": "Arrow1",
+      "SourceClassType": "FlatRedBall.Sprite",
+      "Properties": [
+        {
+          "Name": "AssociateWithFactory",
+          "Value": true,
+          "Type": "bool"
+        }
+      ],
+      "InstructionSaves": [
+        {
+          "Type": "float",
+          "Member": "TextureScale",
+          "Value": 1.0,
+          "Time": 0.0
+        },
+        {
+          "Type": "Texture2D",
+          "Member": "Texture",
+          "Value": "carvedArrowLeft",
+          "Time": 0.0
+        },
+        {
+          "Type": "float",
+          "Member": "Z",
+          "Value": -1.0,
+          "Time": 0.0
+        },
+        {
+          "Type": "float",
+          "Member": "X",
+          "Value": 224.0,
+          "Time": 0.0
+        },
+        {
+          "Type": "float",
+          "Member": "Y",
+          "Value": -464.0,
+          "Time": 0.0
+        }
+      ],
+      "SourceType": 2,
+      "SourceFile": "Sprite",
+      "AttachToContainer": true,
+      "GenerateTimedEmit": true
+    },
+    {
+      "InstanceName": "Arrow2",
+      "SourceClassType": "FlatRedBall.Sprite",
+      "Properties": [
+        {
+          "Name": "AssociateWithFactory",
+          "Value": true,
+          "Type": "bool"
+        }
+      ],
+      "InstructionSaves": [
+        {
+          "Type": "float",
+          "Member": "TextureScale",
+          "Value": 1.0,
+          "Time": 0.0
+        },
+        {
+          "Type": "Texture2D",
+          "Member": "Texture",
+          "Value": "carvedArrowUp",
+          "Time": 0.0
+        },
+        {
+          "Type": "float",
+          "Member": "Z",
+          "Value": -1.0,
+          "Time": 0.0
+        },
+        {
+          "Type": "float",
+          "Member": "X",
+          "Value": 512.0,
+          "Time": 0.0
+        },
+        {
+          "Type": "float",
+          "Member": "Y",
+          "Value": -448.0,
+          "Time": 0.0
+        }
+      ],
+      "SourceType": 2,
+      "SourceFile": "Sprite",
+      "GenerateTimedEmit": true
+    },
+    {
+      "InstanceName": "Arrow3",
+      "SourceClassType": "FlatRedBall.Sprite",
+      "Properties": [
+        {
+          "Name": "AssociateWithFactory",
+          "Value": true,
+          "Type": "bool"
+        }
+      ],
+      "InstructionSaves": [
+        {
+          "Type": "float",
+          "Member": "TextureScale",
+          "Value": 1.0,
+          "Time": 0.0
+        },
+        {
+          "Type": "Texture2D",
+          "Member": "Texture",
+          "Value": "carvedArrowRight",
+          "Time": 0.0
+        },
+        {
+          "Type": "float",
+          "Member": "Z",
+          "Value": -1.0,
+          "Time": 0.0
+        },
+        {
+          "Type": "float",
+          "Member": "X",
+          "Value": 800.0,
+          "Time": 0.0
+        },
+        {
+          "Type": "float",
+          "Member": "Y",
+          "Value": -464.0,
           "Time": 0.0
         }
       ],
