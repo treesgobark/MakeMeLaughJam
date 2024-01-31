@@ -118,7 +118,7 @@
     <Variable>
       <Type>float</Type>
       <Name>ThumbInstance.Height</Name>
-      <Value xsi:type="xsd:float">24</Value>
+      <Value xsi:type="xsd:float">66</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
@@ -143,7 +143,7 @@
     <Variable>
       <Type>float</Type>
       <Name>ThumbInstance.Width</Name>
-      <Value xsi:type="xsd:float">32</Value>
+      <Value xsi:type="xsd:float">68</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
